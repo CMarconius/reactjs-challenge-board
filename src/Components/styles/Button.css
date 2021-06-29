@@ -1,0 +1,73 @@
+:root {
+  --primary: #fff;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 40px 15px;
+  margin: 15px 0px 15px 5px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn--primary {
+  background-color: var(--cmarc-blue-1);
+  color: white;
+  font-weight: bold;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 13px 20px;
+  font-size: 20px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+  background: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: right;
+  align-content: right;
+  align-items: right;
+}
+
+.btn-nav:hover {
+  color: var(--cmarc-blue-1);
+  transform: translateY(-3px);
+  transform: scale(1.05);
+}
+
+.btn-nav:hover a {
+  color: var(--cmarc-blue-1);
+}
+
+@media screen and (max-width: 520px) {
+  .btn {
+    padding: 8px 10px;
+  }
+}

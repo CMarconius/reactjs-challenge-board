@@ -1,0 +1,23 @@
+.card {
+  background-color: #155c4f;
+  padding: 20px;
+  margin: 20px 20px;
+  border: solid 1px grey;
+  border-radius: 20%;
+
+  box-shadow: rgba(16, 16, 36, 0.726) 0px 7px 29px 0px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.card h1 {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100px;
+}
