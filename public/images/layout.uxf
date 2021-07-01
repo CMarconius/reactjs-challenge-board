@@ -1,0 +1,35 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>26</x><y>12</y><w>720</w><h>40</h></coordinates><panel_attributes>_NAVBAR_
+
+bg=#ffffff
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>26</x><y>652</y><w>720</w><h>40</h></coordinates><panel_attributes>_FOOTER_
+bg=#ffffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>26</x><y>92</y><w>720</w><h>520</h></coordinates><panel_attributes>_CardSection_
+--
+bg=#ffffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>86</x><y>142</y><w>610</w><h>430</h></coordinates><panel_attributes>_CardsContainer_
+--
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>146</x><y>202</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>202</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>322</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>146</x><y>322</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>442</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>146</x><y>442</y><w>210</w><h>80</h></coordinates><panel_attributes>_Card_
+--
+_Activates Popup_
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>806</x><y>12</y><w>440</w><h>390</h></coordinates><panel_attributes>_POPUP_
+--
+bg=#ffffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>2</y><w>210</w><h>220</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>190;10;10;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>866</x><y>42</y><w>330</w><h>330</h></coordinates><panel_attributes>bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>946</x><y>82</y><w>120</w><h>40</h></coordinates><panel_attributes>&lt;-Awesomeness-&gt;
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1036</x><y>142</y><w>120</w><h>40</h></coordinates><panel_attributes>&lt;-Awesomeness-&gt;
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1016</x><y>282</y><w>120</w><h>40</h></coordinates><panel_attributes>&lt;-Awesomeness-&gt;
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>272</y><w>210</w><h>150</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>190;130;10;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>906</x><y>212</y><w>120</w><h>40</h></coordinates><panel_attributes>&lt;-Awesomeness-&gt;
+bg=#444444</panel_attributes><additional_attributes></additional_attributes></element></diagram>

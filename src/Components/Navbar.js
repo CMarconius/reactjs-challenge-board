@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles/Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
 import { Button } from './Button'
 
 function Navbar() {

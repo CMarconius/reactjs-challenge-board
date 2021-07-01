@@ -19,7 +19,7 @@ export const Button = ({children, type, linkTo, onClick, buttonStyle, buttonSize
                 onClick={onClick}
                 type={type}
             >
-                <a href={goToLink} target="_blank">
+                <a href={goToLink} target="_blank" rel="noreferrer">
                   {children}
                 </a>
             </button>

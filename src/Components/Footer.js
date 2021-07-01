@@ -8,7 +8,7 @@ function Footer() {
         <>
         <div className="footer">
             <h2>
-                <a href="http://cmarconius.com/react3/" target="_blank">
+                <a href="http://cmarconius.com/react3/" target="_blank" rel="noreferrer">
                     Check out some of my other work <FontAwesomeIcon className="footer-icon" icon={faArrowRight}/>
                 </a>
             </h2>
