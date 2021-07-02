@@ -3,14 +3,16 @@ import './styles/Button.css'
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--primary btn-nav']
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--small', 'btn--medium', 'btn--large'];
 
-export const Button = ({children, type, linkTo, onClick, buttonStyle, buttonSize, goHere}) => {
+export const Button = ({buttonActive, children, type, linkTo, onClick, buttonStyle, buttonSize, goHere, bTarget}) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
-    const goToLink =  goHere ? goHere : 'https://twitter.com/CMarconius';
+    const buttonTarget= bTarget ? bTarget : "";
+
+    const goToLink =  goHere ? goHere : '';
 
     return (
         <div to={linkTo} className='btn-mobile'>
@@ -19,9 +21,16 @@ export const Button = ({children, type, linkTo, onClick, buttonStyle, buttonSize
                 onClick={onClick}
                 type={type}
             >
-                <a href={goToLink} target="_blank" rel="noreferrer">
-                  {children}
-                </a>
+                {buttonActive ? (
+                    <p>
+                    {children}
+                    </p>
+                ) : (
+                    <a href={goToLink} target={buttonTarget} rel="noreferrer">
+                    {children}
+                    </a>
+                )
+                }
             </button>
         </div>
     )
