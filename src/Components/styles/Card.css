@@ -12,10 +12,28 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   transition-duration: 200ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
   cursor: pointer;
+}
+
+.challengeContainer {
+  display: none;
+}
+
+.card:hover .challengeContainer {
+  display: block;
+}
+
+.card:hover .defaultAppearance {
+  display: none;
+}
+
+.card:hover h2 {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
 }
 
 .card h2 {

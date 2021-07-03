@@ -1,16 +1,24 @@
 import React from 'react'
-import SortBubble from './Challenges/SortBubble'
 import './styles/Card.css'
 
-function Card() {
+function Card(props) {
     return (
+        
         <div className="card">
-            {/* <img src="../images/card-default-img.png" alt="" /> */}
+            <img className="defaultAppearance" src="../images/card-default-img.png" alt="" />
             <div className="innerCardContainer">
 
-                <SortBubble/>
-                {/* <h2>Sorting Algorithm: bubble</h2>
-                <p>This is a lovely, also brief, description of this particular coding sample.</p> */}
+
+                <h2 className="defaultAppearance"></h2>
+                <p className="defaultAppearance">This is a lovely, also brief, description of this particular coding sample.</p>
+
+                
+                <div className="challengeContainer">
+                    <h2>{props.challengeName}</h2>
+                    {props.thisChallenge}
+                </div>
+
+
             </div>
         </div>
     )
