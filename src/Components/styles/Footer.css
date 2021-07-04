@@ -3,6 +3,9 @@
   height: 80px;
   width: 100%;
   background-color: var(--cmarc-blue-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .footer a {

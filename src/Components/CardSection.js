@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import SortBubble from './Challenges/SortBubble'
+import MyVideoPlayer from './Challenges/MyVideoPlayer'
 import './styles/CardSection.css'
 
 function CardSection() {
@@ -10,8 +11,8 @@ function CardSection() {
             <h1>Pick a card, any card</h1>
             <div className="cardsContainer">
                 <div className="cardRow">
-                    <Card challengeName={"Bubble Sort 1"} thisChallenge={<SortBubble/>}/>
-                    <Card challengeName={"Bubble Sort 2"} thisChallenge={<SortBubble/>}/>
+                    <Card size="small" challengeName={"Bubble Sort 1"} thisChallenge={<SortBubble/>}/>
+                    <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
                 </div>
             </div>
         </div>

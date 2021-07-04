@@ -12,6 +12,7 @@ function SortBubble() {
             newArray.push(Math.floor(Math.random() * 100));
         }
         setRandomArray(newArray);
+        setSortedArray('...');
     }
 
     const sortArray = () => {
@@ -40,7 +41,7 @@ function SortBubble() {
                 <div>Current Array:{"\n"}{randomArray.toString()}</div>
                 
                 <Button onClick={sortArray} buttonSize="btn--small" buttonActive="false" goHere="" bTarget="">Sort Array</Button>
-                <div>New Array:{"\n"}{sortedArray.toString()}</div>
+                <div>Sorted Array:{"\n"}{sortedArray.toString()}</div>
             </div>
         </>
     )
