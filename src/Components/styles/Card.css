@@ -9,28 +9,39 @@
   text-align: left;
   font-size: 13px;
   font-weight: 400;
+  z-index: 1;
 }
 
-.card:hover {
+.card:not(.open):hover {
   transform: scale(1.15);
   transition-duration: 200ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
   cursor: pointer;
 }
 
-.challengeContainer {
-  display: none;
+/* ======================= */
+/* START CARD OPEN STYLING */
+/* ======================= */
+
+.card.small.open {
+  z-index: 2;
+  position: absolute;
+  transform: scale(1.15);
+  /* transition-duration: 500ms; */
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  cursor: pointer;
+}
+.card.medium.open {
+  z-index: 2;
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  /* transition-duration: 500ms; */
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  cursor: pointer;
 }
 
-.card:hover .challengeContainer {
-  display: block;
-}
-
-.card:hover .defaultAppearance {
-  display: none;
-}
-
-.card:hover h2 {
+.card.open h2 {
   text-align: center;
   font-size: 18px;
   padding-top: 5px;
@@ -55,5 +66,21 @@
   padding: 0px 10px;
 }
 
-.small {
+.expand {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  font-weight: 600;
+  color: #2c55a1;
+}
+
+@media (max-width: 524px) {
+  .card.medium.open {
+    width: 380px;
+  }
+}
+@media (max-width: 394px) {
+  .card.medium.open {
+    width: 290px;
+  }
 }

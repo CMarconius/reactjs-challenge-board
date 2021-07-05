@@ -11,7 +11,7 @@ function CardSection() {
             <h1>Pick a card, any card</h1>
             <div className="cardsContainer">
                 <div className="cardRow">
-                    <Card size="small" challengeName={"Bubble Sort 1"} thisChallenge={<SortBubble/>}/>
+                    <Card size="medium" challengeName={"Bubble Sort 1"} thisChallenge={<SortBubble/>}/>
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
                 </div>
             </div>
