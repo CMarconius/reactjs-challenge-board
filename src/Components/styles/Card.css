@@ -19,26 +19,38 @@
   cursor: pointer;
 }
 
-/* ======================= */
-/* START CARD OPEN STYLING */
-/* ======================= */
-
-.card.small.open {
+.card.large.open {
+  display: flex;
+  justify-content: center;
   z-index: 2;
   position: absolute;
-  transform: scale(1.15);
-  /* transition-duration: 500ms; */
+  height: fit-content;
+  width: 800px;
+  transition-duration: 300ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
   cursor: pointer;
+  border-radius: 8px;
 }
 .card.medium.open {
   z-index: 2;
   position: absolute;
-  height: 350px;
-  width: 500px;
-  /* transition-duration: 500ms; */
+  height: fit-content;
+  width: 600px;
+  transition-duration: 300ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
   cursor: pointer;
+  border-radius: 8px;
+}
+.card.small.open {
+  z-index: 2;
+  position: absolute;
+  transform: scale(1.15);
+  transition-duration: 300ms;
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  cursor: pointer;
+  height: fit-content;
+  min-height: 300px;
+  border-radius: 8px;
 }
 
 .card.open h2 {
@@ -75,12 +87,18 @@
 }
 
 @media (max-width: 524px) {
-  .card.medium.open {
+  .card.large.open {
+    width: fit-content;
+  }
+  .card.medium.open,
+  .card.small.open {
     width: 380px;
   }
 }
+
 @media (max-width: 394px) {
-  .card.medium.open {
+  .card.medium.open,
+  .card.small.open {
     width: 290px;
   }
 }

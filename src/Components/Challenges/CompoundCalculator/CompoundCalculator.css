@@ -1,0 +1,278 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 50rem;
+  /* background-color: #f6f6f6; */
+  max-width: 90%;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 80%;
+  background-color: #7dd6c6;
+  border-radius: 1rem 1rem 0 0;
+  margin: 20px 20px 0px 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.input-row {
+  display: flex;
+  flex: 2;
+}
+
+.currency-indicator {
+  box-sizing: border-box;
+  order: 1;
+  background-color: #f0eeee;
+  height: 3rem;
+  width: 20%;
+  max-width: 60px;
+  color: #2ba790;
+  border: solid 1px #165348;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 15px;
+  padding: 5px 0px;
+  margin: 0px 0px 0px 20px;
+  -moz-box-shadow: inset 1px 0px 5px 1px rgb(167, 167, 167);
+  -webkit-box-shadow: inset 1px 0px 5px 1px rgb(167, 167, 167);
+  box-shadow: inset 1px 0px 5px 1px rgb(167, 167, 167);
+  outline: none;
+  margin-right: 0px;
+}
+.interest-input {
+  box-sizing: border-box;
+  order: 2;
+  height: 3rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0 20px 20px 0px;
+  padding-left: 10px;
+  font-size: 24px;
+  -moz-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  -webkit-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+}
+
+.period-input {
+  box-sizing: border-box;
+  order: 1;
+  height: 3rem;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 0 20px 20px 20px;
+  padding-left: 10px;
+  font-size: 24px;
+  -moz-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  -webkit-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+}
+
+.period-dropdown {
+  box-sizing: border-box;
+  order: 2;
+  background-color: #f0eeee;
+  height: 3rem;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #165348;
+  border: solid 1px #165348;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  -moz-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+}
+
+.currencies-container {
+  margin-bottom: 30px;
+}
+
+.currency-button {
+  background-color: #f0eeee;
+  height: 55px;
+  width: 55px;
+  color: #2ba790;
+  border: solid 1px #165348;
+  -moz-box-shadow: inset 0px 0px 5px 1px rgb(167, 167, 167);
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgb(167, 167, 167);
+  box-shadow: inset 0px 0px 5px 1px rgb(167, 167, 167);
+}
+
+.currencies-container button:first-child {
+  border-radius: 0.7rem 0px 0px 0.7rem !important;
+}
+
+.currencies-container button:last-child {
+  border-radius: 0px 0.7rem 0.7rem 0px !important;
+}
+
+.currency-button:hover {
+  transform: scale(1.05);
+}
+.currency-button.active {
+  background-color: #cf402d;
+  border: solid 1px #165348;
+  color: white;
+  -moz-box-shadow: inset 0px 0px 5px 1px rgb(161, 99, 99);
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgb(161, 99, 99);
+  box-shadow: inset 0px 0px 5px 1px rgb(161, 99, 99);
+  transition-delay: 200;
+}
+.currency-button.active:hover {
+  transform: scale(1);
+  cursor: default;
+}
+
+button:hover,
+select:hover {
+  cursor: pointer;
+}
+
+.input-label {
+  margin: 0px;
+  padding: 0 0 10px 0;
+}
+
+.interval-dropdown {
+  box-sizing: border-box;
+  order: 2;
+  background-color: #f0eeee;
+  height: 3rem;
+  width: 10rem;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #165348;
+  border: solid 1px #165348;
+  font-weight: bold;
+  margin: 0px auto 40px auto;
+  border-radius: 6px;
+  -moz-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+}
+
+.deposit-container {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #5fb9a9;
+}
+
+.deposit-input {
+  box-sizing: border-box;
+  order: 2;
+  height: 3rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0 20px 20px 0px;
+  padding-left: 10px;
+  font-size: 24px;
+  -moz-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  -webkit-box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+  box-shadow: 0px 0px 7px 1px rgb(170, 170, 170);
+}
+
+.deposit-frequency {
+  box-sizing: border-box;
+  order: 3;
+  background-color: #f0eeee;
+  height: 3rem;
+  width: 7rem;
+  padding: 5px 10px;
+  font-size: 17px;
+  color: #165348;
+  border: solid 1px #165348;
+  font-weight: bold;
+  margin: 0px 20px 40px auto;
+  border-radius: 6px;
+  -moz-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+}
+
+.calculate-button-container {
+  margin-bottom: 20px;
+}
+
+.calculate-button {
+  background-color: #f0eeee;
+  height: 2.5rem;
+  padding: 5px 10px;
+  font-size: 24px;
+  color: #165348;
+  border: solid 1px #165348;
+  font-weight: bold;
+  margin-left: auto;
+  border-radius: 6px;
+  -moz-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+  box-shadow: inset 0px 0px 2px 1px rgb(161, 99, 99);
+}
+.calculate-button:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.calculate-button:active,
+select:hover {
+  transform: scale(1);
+  background-color: #dfdfdf;
+  cursor: default;
+}
+
+.calculate-container {
+  width: 100%;
+  display: block;
+}
+
+.projection-container {
+  box-sizing: border-box;
+  width: 80%;
+  background-color: #7dd6c6;
+  border: solid 2px rgb(185, 185, 185);
+}
+
+@media screen and (max-width: 506px) {
+  .main-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .inner-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 40px 0px 40px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .projection-container {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #7dd6c6;
+    border: solid 2px rgb(185, 185, 185);
+  }
+}

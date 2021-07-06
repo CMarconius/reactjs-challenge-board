@@ -12,10 +12,21 @@
   max-width: 1210px;
   margin: 0 auto;
   padding-top: 30px;
+  background-color: rgb(240, 240, 240);
 }
 
 .cardRow {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 370px;
+}
+
+.cardDivider {
+  background-color: var(--cmarc-blue-1);
+  color: white;
+  display: inline-block;
+  width: 30%;
+  min-width: fit-content;
+  padding: 10px;
 }

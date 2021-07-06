@@ -8,7 +8,10 @@ function Card(props) {
 
 
     const [heroImage, setHeroImage] = useState(<img src="../images/card-default-img.png" alt="" />);
-    const [containerContent, setContainerContent] = useState(<h2>{props.challengeName}</h2>);
+    const [containerContent, setContainerContent] = useState(<>
+        <h2>{props.challengeName}</h2>
+        <p className="expand">Click to Expand</p>
+        </>);
 
 
     const handleClick = (e) => {
