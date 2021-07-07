@@ -1,0 +1,117 @@
+.gernerator-container {
+  background-color: #0b486b;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.input-section {
+  width: 300px;
+  border-right-color: #0b486b;
+  align-items: left;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.output-section {
+  background-color: #052c42;
+  width: 35%;
+  min-width: 200px;
+  border-left-color: #0b486b;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.link-text-area {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 4px 10px -8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.input-section p {
+  margin-bottom: 0px;
+}
+
+.super-input-box {
+  width: 16rem;
+  line-height: 25px;
+  margin-top: 10px;
+  font-size: 18px;
+  resize: none;
+}
+
+.generator-button {
+  display: inline-block;
+  padding: 0.65em 2.2em;
+  border: 0.1em solid #ffffff;
+  margin: 2em 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #052c42;
+  text-align: center;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.generator-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.copy-success {
+  font-size: 25px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 30em) {
+  a.button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+@media (max-width: 395px) {
+  .gernerator-container {
+    width: 95%;
+  }
+
+  .input-section {
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
+  input,
+  .super-input-box,
+  .output-section {
+    max-width: 90%;
+  }
+
+  .output-section {
+    width: 95%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,81 @@
+.converterPage {
+  height: fit-content;
+  margin: 0px;
+  padding: 20px;
+}
+
+.ConverterSection {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(58, 87, 155, 0.9);
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 0 20px 20px;
+  border-radius: 1em;
+}
+
+.input {
+  border: 1px solid #333;
+  border-radius: 0.3em;
+  padding: 0.65rem;
+  width: 15em;
+  font-size: 1.7em;
+}
+
+select {
+  border: 1px solid #333;
+  border-radius: 0.2em;
+  padding: 0.7rem;
+  font-size: 1.7em;
+  margin-left: 1.5rem;
+  font-size: 1.7em;
+  color: rgba(0, 34, 114);
+}
+
+.equals {
+  font-weight: bold;
+  font-size: 1rem;
+  transform: rotate(-90deg);
+  padding: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .input {
+    padding: 0.75rem;
+    font-size: 1.5em;
+  }
+
+  select {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .input {
+    padding: 0.45rem;
+    width: 6em;
+    font-size: 1.5em;
+  }
+
+  select {
+    border-radius: 0.2em;
+    padding: 0.5rem 0.15rem;
+    font-size: 1.7em;
+    margin-left: 1rem;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .converterPage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -23,7 +23,8 @@
   display: flex;
   justify-content: center;
   z-index: 2;
-  position: absolute;
+  position: fixed;
+  top: 20px;
   height: fit-content;
   width: 800px;
   transition-duration: 300ms;
@@ -33,7 +34,8 @@
 }
 .card.medium.open {
   z-index: 2;
-  position: absolute;
+  position: fixed;
+  top: 20px;
   height: fit-content;
   width: 600px;
   transition-duration: 300ms;
@@ -43,7 +45,8 @@
 }
 .card.small.open {
   z-index: 2;
-  position: absolute;
+  position: fixed;
+  top: 20px;
   transform: scale(1.15);
   transition-duration: 300ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
@@ -88,10 +91,12 @@
 
 @media (max-width: 524px) {
   .card.large.open {
+    position: absolute;
     width: fit-content;
   }
   .card.medium.open,
   .card.small.open {
+    position: absolute;
     width: 380px;
   }
 }

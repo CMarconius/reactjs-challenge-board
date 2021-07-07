@@ -25,6 +25,7 @@ function Card(props) {
                 </div>
             );
             setHeroImage("");
+            window.scrollTo(0, 0);
             return;
         }
         else {
