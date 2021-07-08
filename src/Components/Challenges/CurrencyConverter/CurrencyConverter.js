@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import CurrencyRow from './CurrencyRow.js'
 
-const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=5651c1a2f85f71a12e6e0061a4fe1318'
+const BASE_URL = 'https://free.currconv.com/api/v7/convert?q='
+const key = "c400ea8f6d4c966086d7";
 
 function CurrencyConverter() {
+
+    // fetch(`https://free.currconv.com/api/v7/currencies?apiKey=c400ea8f6d4c966086d7`)
+    //     .then(res => res.json())
+    //     .then(data => console.log(data.results.AED["id"]))
+    
 
     const [currencyOptions, setCurrencyOptions] = useState([])
     const [fromCurrency, setFromCurrency] = useState()
@@ -23,24 +29,25 @@ function CurrencyConverter() {
 
 
     useEffect(() => {
-        fetch(BASE_URL)
+        fetch("https://free.currconv.com/api/v7/currencies?apiKey=c400ea8f6d4c966086d7")
         .then(res => res.json())
         .then(data => {
-            const firstCurrency = Object.keys(data.rates)[0]
-            setCurrencyOptions([data.base, ...Object.keys(data.rates)])
-            setFromCurrency(data.base)
+            const firstCurrency = Object.keys(data.results.EUR["id"])
+            setCurrencyOptions([data.results[0], ...Object.keys(data.results)])
+            setFromCurrency(data.results.GBP["id"])
             setToCurrency(firstCurrency)
-            setExchangeRate(data.rates[firstCurrency])
+            setExchangeRate(data.results[firstCurrency])
         })
     }, [])
 
 
     useEffect(() => {
         if (fromCurrency != null && toCurrency != null) {
-            console.log(`This is the link, yo!!!!!!!!!!!!! =================================================================================================== ${BASE_URL}&base=${fromCurrency}&symbols=${toCurrency}`);
-            fetch(`${BASE_URL}&base=${fromCurrency}&symbols=${toCurrency}`)
+            console.log(`${fromCurrency}`);
+            fetch(`${BASE_URL}${fromCurrency[`${fromCurrency}`]}_${toCurrency[`${toCurrency}`]}&compact=ultra&apiKey=${key}`)
             .then(res => res.json())
-            .then(data => setExchangeRate(data.rates[toCurrency]))
+            .then(data => setExchangeRate(data.results[toCurrency]))
+
         }
     }, [fromCurrency, toCurrency])
 
