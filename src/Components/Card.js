@@ -14,8 +14,8 @@ function Card(props) {
         </>);
 
 
-    const handleClick = (e) => {
-        if (node.current.contains(e.target)) {
+    const handleButtonClick = (e) => {
+        if (node.current.contains(e.target) && open === " notOpen") {
             setOpen(" open");
             setContainerContent(
                 <div className="challengeContainer">
@@ -28,7 +28,7 @@ function Card(props) {
             window.scrollTo(0, 0);
             return;
         }
-        else {
+        else if (node.current.contains(e.target) !== true) {
             setOpen(" notOpen");
             setContainerContent(
                 <>
@@ -39,20 +39,21 @@ function Card(props) {
             setHeroImage(<img src="../images/card-default-img.png" alt="" />);
             return;
         }
+        else return;
     }
 
 
     useEffect(() => {
-        document.addEventListener("mousedown", handleClick);
+        document.addEventListener("mousedown", handleButtonClick);
     
         return () => {
-          document.removeEventListener("mousedown", handleClick);
+          document.removeEventListener("mousedown", handleButtonClick);
         };
       }, []);
 
     return (
         
-        <div onClick={handleClick} className={"card " + props.size + open} ref={node}>
+        <div onClick={handleButtonClick} className={"card " + props.size + open} ref={node}>
             
             {heroImage}
             

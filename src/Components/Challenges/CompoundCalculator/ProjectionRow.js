@@ -16,7 +16,7 @@ function ProjectionRow(props) {
     var totalDepositsOutput = parseFloat(totalDeposits).toFixed(2)
     var totalInterestOutput = parseFloat(totalInterest).toFixed(2)
     var balanceOutput = parseFloat(balance).toFixed(2)
-    var currencyFinalOutput = parseFloat(currencyFinal).toFixed(2)
+    // var currencyFinalOutput = parseFloat(currencyFinal).toFixed(2)
     
     var rowColorClass1 = "proj-row col1 proj-grey-row"
     var rowColorClass = "proj-row col2 proj-grey-row"

@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   z-index: 2;
-  position: fixed;
+  position: absolute;
   top: 20px;
   height: fit-content;
   width: 800px;
@@ -34,7 +34,7 @@
 }
 .card.medium.open {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   top: 20px;
   height: fit-content;
   width: 600px;
@@ -45,7 +45,7 @@
 }
 .card.small.open {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   top: 20px;
   transform: scale(1.15);
   transition-duration: 300ms;
@@ -79,17 +79,31 @@
 
 .innerCardContainer {
   padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .expand {
-  display: flex;
-  justify-content: center;
-  margin-top: 45px;
   font-weight: 600;
   color: #2c55a1;
 }
 
 @media (max-width: 524px) {
+  .card {
+    background-color: #c2cecf;
+    padding: 0px 0px 20px;
+    margin: 10px 6px;
+    height: 200px;
+    width: 130px;
+    box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
+    border: solid 1px grey;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+  }
+
   .card.large.open {
     position: absolute;
     width: fit-content;

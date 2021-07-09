@@ -7,9 +7,9 @@ function ProjectionBlock(props) {
         currencyFinal,
         initBalance,
         interestRate,
-        interestFrequency,
         calculationIterations,
-        calculationFrequency,
+        // interestFrequency,
+        // calculationFrequency,
         // compoundInterval,
         deposit,
         depositFrequency,
@@ -18,8 +18,8 @@ function ProjectionBlock(props) {
     
     var balance = parseFloat(initBalance)
     var rate = (parseFloat(interestRate)) / 100
-    var interestFreq = parseFloat(interestFrequency)
-    var calculationFreq = parseFloat(calculationFrequency)
+    // var interestFreq = parseFloat(interestFrequency)
+    // var calculationFreq = parseFloat(calculationFrequency)
     // var compoundInterval = parseFloat(compoundInterval)
     var regularDeposit = parseFloat(deposit)
 

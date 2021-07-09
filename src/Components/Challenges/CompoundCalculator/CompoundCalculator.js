@@ -13,7 +13,7 @@ function CompoundCalculator() {
     const [interestFrequency, setInterestFrequency] = useState("Yearly")
     const [calculationIterations, setCalculationIterations] = useState(0)
     const [calculationFrequency, setCalculationFrequency] = useState("Yearly")
-    const [compoundInterval, setCompoundInterval] = useState("Yearly")
+    // const [compoundInterval, setCompoundInterval] = useState("Yearly")
     const [deposit, setDeposit] = useState(0)
     const [depositFrequency, setDepositFrequency] = useState("Monthly")
     const [active, setActive] = useState(false)
@@ -64,10 +64,10 @@ function CompoundCalculator() {
         setActive(false)
     }
 
-    const onChangeCompoundInterval = (e) => {
-        setCompoundInterval(e.currentTarget.value)
-        setActive(false)
-    }
+    // const onChangeCompoundInterval = (e) => {
+    //     setCompoundInterval(e.currentTarget.value)
+    //     setActive(false)
+    // }
 
     const onChangeDeposit = (e) => {
         setDeposit(e.currentTarget.value)
@@ -101,8 +101,8 @@ function CompoundCalculator() {
     useEffect(() => {
     }, [calculationFrequency]);
 
-    useEffect(() => {
-    }, [compoundInterval]);
+    // useEffect(() => {
+    // }, [compoundInterval]);
 
     useEffect(() => {
     }, [deposit]);
