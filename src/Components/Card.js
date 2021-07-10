@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './styles/Card.css'
+import CloseIcon from './CloseIcon';
 
 function Card(props) {
     const node = useRef();
 
-    const [open, setOpen] = useState(" notOpen");
+    const [open, setOpen] = useState("notOpen");
 
 
     const [heroImage, setHeroImage] = useState(<img src="../images/card-default-img.png" alt="" />);
@@ -13,23 +14,41 @@ function Card(props) {
         <p className="expand">Click to Expand</p>
         </>);
 
+    function handleCloseButtonClick() {
+        setOpen("notOpen");
+            setContainerContent(
+                <>
+                <h2>{props.challengeName}</h2>
+                <p className="expand">Click to Expand</p>
+                </>
+            );
+            setHeroImage(<img src="../images/card-default-img.png" alt="" />);
+    }
 
     const handleButtonClick = (e) => {
-        if (node.current.contains(e.target) && open === " notOpen") {
-            setOpen(" open");
+        if (open === "notOpen") {
+            
             setContainerContent(
-                <div className="challengeContainer">
-                    <h2>{props.challengeName}</h2>
-
+                <>
+                    <div className="cardHeader">
+                        <div><h2>{props.challengeName}</h2></div>
+                        <button onClick={handleCloseButtonClick}>
+                            <CloseIcon/>
+                        </button>
+                    </div>
                     {props.thisChallenge}
-                </div>
+                </>
             );
             setHeroImage("");
-            window.scrollTo(0, 0);
+            if (open === "notOpen") {
+                window.scrollTo(0, 0);
+            }
+            
+            setOpen("open");
             return;
         }
         else if (node.current.contains(e.target) !== true) {
-            setOpen(" notOpen");
+            setOpen("notOpen");
             setContainerContent(
                 <>
                 <h2>{props.challengeName}</h2>
@@ -43,18 +62,10 @@ function Card(props) {
     }
 
 
-    useEffect(() => {
-        document.addEventListener("mousedown", handleButtonClick);
-    
-        return () => {
-          document.removeEventListener("mousedown", handleButtonClick);
-        };
-      }, []);
 
     return (
         
-        <div onClick={handleButtonClick} className={"card " + props.size + open} ref={node}>
-            
+        <div onClick={handleButtonClick} className={"card " + props.size + " " + open} ref={node}>
             {heroImage}
             
             <div className="innerCardContainer">

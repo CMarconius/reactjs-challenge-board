@@ -1,6 +1,9 @@
 :root {
   --cmarc-blue-1: #155c4f;
   --cmarc-blue-2: #7dd6c6;
+  --softorange: #f4a259;
+  --tomatored: #df6169;
+  --mediumblu: #1e272d;
 }
 
 * {
@@ -15,4 +18,10 @@
   flex-direction: column;
   align-items: center;
   font-family: monospace;
+}
+
+@media (max-width: 524px) {
+  h1 {
+    font-size: 20px;
+  }
 }

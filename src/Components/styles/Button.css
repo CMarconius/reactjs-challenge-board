@@ -72,8 +72,9 @@
   color: var(--cmarc-blue-1);
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 524px) {
   .btn {
-    padding: 8px 10px;
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }

@@ -22,7 +22,7 @@
   min-height: 370px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 524px) {
   .cardRow {
     min-height: 200px;
   }

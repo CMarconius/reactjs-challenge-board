@@ -1,0 +1,38 @@
+.close-container {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0px 0px 0px;
+  cursor: pointer;
+  padding: auto;
+}
+
+.leftright {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: var(--cmarc-blue-1);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: var(--cmarc-blue-1);
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: var(--tomatored);
+}
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: var(--tomatored);
+}

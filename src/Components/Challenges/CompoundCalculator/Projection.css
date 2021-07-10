@@ -78,37 +78,25 @@
 }
 
 @media screen and (max-width: 900px) {
-  .proj-column h2 {
-    font-size: 17px;
-  }
-  .proj-row h3 {
+  .proj-column h3 {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .proj-column h2 {
-    font-size: 15px;
-  }
-  .proj-row h3 {
+  .proj-column h3 {
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .proj-column h2 {
-    font-size: 13px;
-  }
-  .proj-row h3 {
-    font-size: 11px;
+  .proj-column h3 {
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .proj-column h2 {
+  .proj-column h3 {
     font-size: 11px;
-  }
-  .proj-row h3 {
-    font-size: 9px;
   }
 }

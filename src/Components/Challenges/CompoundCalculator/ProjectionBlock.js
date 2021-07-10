@@ -88,23 +88,23 @@ function ProjectionBlock(props) {
             <>
                 <div className="proj-table">
                     <div className="proj-column col1">
-                        <h2>Year</h2>
+                        <h3>Year</h3>
                     </div>
 
                     <div className="proj-column col2">
-                        <h2>Year Interest</h2>
+                        <h3>Year Interest</h3>
                     </div>
 
                     <div className="proj-column col3">
-                        <h2>Total Deposits</h2>
+                        <h3>Total Deposits</h3>
                     </div>
 
                     <div className="proj-column col4">
-                        <h2>Total Interest</h2>
+                        <h3>Total Interest</h3>
                     </div>
 
                     <div className="proj-column col5">
-                        <h2>Balance</h2>
+                        <h3>Balance</h3>
                     </div>
                 </div>
 
@@ -116,23 +116,23 @@ function ProjectionBlock(props) {
                 
                 <div className="proj-table">
                     <div className="proj-column col1">
-                        <h2>Year</h2>
+                        <h3>Year</h3>
                     </div>
 
                     <div className="proj-column col2">
-                        <h2>Year Interest</h2>
+                        <h3>Year Interest</h3>
                     </div>
 
                     <div className="proj-column col3">
-                        <h2>Total Deposits</h2>
+                        <h3>Total Deposits</h3>
                     </div>
 
                     <div className="proj-column col4">
-                        <h2>Total Interest</h2>
+                        <h3>Total Interest</h3>
                     </div>
 
                     <div className="proj-column col5">
-                        <h2>Balance</h2>
+                        <h3>Balance</h3>
                     </div>
                 </div>
 
