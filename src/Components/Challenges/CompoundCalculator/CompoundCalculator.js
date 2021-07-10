@@ -8,13 +8,13 @@ import ProjectionBlock from './ProjectionBlock.js'
 
 function CompoundCalculator() {
     const [currency, setCurrency] = useState("Dollar")
-    const [initBalance, setInitBalance] = useState(0)
-    const [interestRate, setIinterestRate] = useState(0)
+    const [initBalance, setInitBalance] = useState()
+    const [interestRate, setIinterestRate] = useState()
     const [interestFrequency, setInterestFrequency] = useState("Yearly")
-    const [calculationIterations, setCalculationIterations] = useState(0)
+    const [calculationIterations, setCalculationIterations] = useState()
     const [calculationFrequency, setCalculationFrequency] = useState("Yearly")
     // const [compoundInterval, setCompoundInterval] = useState("Yearly")
-    const [deposit, setDeposit] = useState(0)
+    const [deposit, setDeposit] = useState()
     const [depositFrequency, setDepositFrequency] = useState("Monthly")
     const [active, setActive] = useState(false)
     const [firstCalculationDone, setFirstCalculationDone] = useState(false)
@@ -162,13 +162,13 @@ function CompoundCalculator() {
                     <span className="currency-indicator">
                         {currencyComponent}
                     </span>
-                    <input onChange={onChangeInitBalance} name="initBalance" type="number" horizontal="true" className="interest-input" min="0" value={initBalance}/>               
+                    <input placeholder="0" onChange={onChangeInitBalance} name="initBalance" type="number" horizontal="true" className="interest-input" min="0" value={initBalance}/>               
                 </div>
 
 
                 <h3 labelfor="interestRate" className="input-label">Interest Rate (%):</h3>
                 <div className="input-row">
-                    <input onChange={onChangeInterestPercent} name="interestRate" type="number" horizontal="true" className="period-input" min="0" value={interestRate}/> 
+                    <input placeholder="0" onChange={onChangeInterestPercent} name="interestRate" type="number" horizontal="true" className="period-input" min="0" value={interestRate}/> 
                     <select onChange={onChangeInterestFrequency} className="period-dropdown">
                         <option>Yearly</option>
                     </select>
@@ -177,7 +177,7 @@ function CompoundCalculator() {
 
                 <h3 labelfor="calculationPeriod" className="input-label">Calculation Period:</h3>
                 <div className="input-row">
-                    <input onChange={onChangeCalculationIterations} name="calculationPeriod" type="number" horizontal="true" className="period-input" min="0" value={calculationIterations}/> 
+                    <input placeholder="0" placeholder="0" onChange={onChangeCalculationIterations} name="calculationPeriod" type="number" horizontal="true" className="period-input" min="0" value={calculationIterations}/> 
                     <select onChange={onChangeCalculationFrequency} className="period-dropdown">
                         <option>Years</option>
                     </select>
@@ -200,7 +200,7 @@ function CompoundCalculator() {
                         <span className="currency-indicator">
                             {currencyComponent}
                         </span>
-                        <input onChange={onChangeDeposit} value={deposit} name="initBalance" type="number" horizontal="true" className="deposit-input" min="0"/>               
+                        <input placeholder="0" onChange={onChangeDeposit} value={deposit} name="initBalance" type="number" horizontal="true" className="deposit-input" min="0"/>               
                     
                         <select onChange={onChangeDepostFrequency} className="deposit-frequency">
                             <option>Monthly</option>
