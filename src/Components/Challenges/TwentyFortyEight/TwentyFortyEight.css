@@ -1,0 +1,60 @@
+.twentyFortyEight {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.gameHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: var(--cmarc-blue-1);
+}
+
+.headerLeft {
+  text-align: left;
+  font-size: 22px;
+}
+.headerLeft p:nth-child(1) {
+  font-size: 60px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.headerRight {
+  text-align: right;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.scoreBox {
+  background-color: var(--cmarc-blue-1);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin: 0px 2px;
+  font-size: 18px;
+  text-align: center;
+  width: 60px;
+}
+.scoreBox p:nth-child(1) {
+  font-size: 14px;
+}
+.scoreBox p:nth-child(2) {
+  font-size: 20px;
+}
+
+.newGame {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .gameContainer {
+} */

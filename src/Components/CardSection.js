@@ -4,8 +4,9 @@ import SortBubble from './Challenges/SortingAlgo/BubbleSort/SortBubble'
 import MyVideoPlayer from './Challenges/VideoPlayer/MyVideoPlayer'
 import CompoundCalculator from './Challenges/CompoundCalculator/CompoundCalculator'
 import LinkGenerator from './Challenges/CalendarLinkGenerator/Link-Generator'
-import './styles/CardSection.css'
 import CurrencyConverter from './Challenges/CurrencyConverter/CurrencyConverter'
+import './styles/CardSection.css'
+import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
 
 function CardSection() {
 
@@ -23,6 +24,7 @@ function CardSection() {
                 <div className="cardRow">
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
                     <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
+                    <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight/>}/>
                 </div>
 
                 
