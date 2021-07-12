@@ -24,7 +24,6 @@ function CardSection() {
                 <div className="cardRow">
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
                     <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
-                    <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight/>}/>
                 </div>
 
                 
@@ -40,6 +39,7 @@ function CardSection() {
                 <div className="cardRow">
                     <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
                     <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
+                    <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight/>}/>
                 </div>
 
                                 

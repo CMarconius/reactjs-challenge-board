@@ -1,22 +1,92 @@
 .gameCell {
-  width: 22%;
-  height: 22%;
+  min-width: 21%;
+  min-height: 21%;
+  background-color: #cdc1b4;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
-  margin: 5px;
-  background-color: #cfae3f;
+  margin: 8px;
   color: white;
-  font-size: 30px;
+  font-size: 45px;
+  font-weight: 700;
   text-align: center;
+}
+
+.gameCell.tile-2 {
+  background-color: #e2d9d1;
+  color: #555555;
+}
+
+.gameCell.tile-4 {
+  background-color: #eee1c9;
+  color: #776e65;
+}
+
+.gameCell.tile-8 {
+  background-color: #f3b27a;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-16 {
+  background-color: #f69664;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-32 {
+  background-color: #f77c5f;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-64 {
+  background-color: #f75f3b;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-128 {
+  background-color: #edd073;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-256 {
+  background-color: #edcc62;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-512 {
+  background-color: #edc950;
+  color: #f9f6f2;
+}
+
+.gameCell.tile-1024 {
+  background-color: #edc53f;
+  color: #f9f6f2;
+  font-size: 40px;
+}
+
+.gameCell.tile-2048 {
+  background-color: #eec22e;
+  color: #f9f6f2;
+  font-size: 40px;
+}
+
+.cellId {
+  position: fixed;
+  margin: 80px 0px 0px 85px;
+  font-size: 30%;
 }
 
 @media (max-width: 524px) {
   .gameCell {
     margin: 4px;
     font-size: 25px;
+  }
+  .gameCell.tile-2048 {
+    font-size: 22px;
+  }
+  .gameCell.tile-1024 {
+    font-size: 22px;
   }
 }
 

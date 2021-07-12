@@ -6,8 +6,8 @@ import './TwentyFortyEight.css'
 
 function TwentyFortyEight() {
 
-    const [currentScore, setCurrentScore] = useState(1024)
-    const [bestScore, setBestScore] = useState(801024)
+    const [currentScore, setCurrentScore] = useState(0)
+    const [bestScore, setBestScore] = useState(0)
     const [gameOn, setGameOn] = useState(false)
     const [currentGridState, setCurrentGridState] = useState([])
     const [previousGridState, setPreviousGridState] = useState([])
@@ -69,12 +69,14 @@ function TwentyFortyEight() {
     }, [])
 
     function startGame() {
+        setCurrentScore(123123);
+        setBestScore(1000000);
         setGameButtons(
             <>
-            <Button onClick={undoLastMove} buttonSize="btn--small" buttonActive="false" goHere="" bTarget="">
+            <Button onClick={undoLastMove} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                 &#10531; UNDO
             </Button>
-            <Button buttonSize="btn--small" buttonActive="false" goHere="" bTarget="">
+            <Button buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                 NEW GAME
             </Button>
             </>
@@ -83,25 +85,25 @@ function TwentyFortyEight() {
         setGameContent(
             <>
             <div className="cellWrap">
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
-
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
+                <GameCell cellId={1}/>
+                <GameCell cellId={2}/>
+                <GameCell cellId={3}/>
+                <GameCell cellId={4}/>
                 
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
+                <GameCell cellId={5}/>
+                <GameCell cellId={6}/>
+                <GameCell cellId={7}/>
+                <GameCell cellId={8}/>
                 
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
-                <GameCell/>
+                <GameCell cellId={9}/>
+                <GameCell cellId={10}/>
+                <GameCell cellId={11}/>
+                <GameCell cellId={12}/>
+                
+                <GameCell cellId={13}/>                
+                <GameCell cellId={14}/>
+                <GameCell cellId={15}/>
+                <GameCell cellId={16}/>
             </div>
             </>
         )
@@ -115,8 +117,9 @@ function TwentyFortyEight() {
                 <div className="gameHeader">
 
                     <div className="headerLeft">
-                        <p>2048</p>
-                        <p>Join the tiles, get to <strong>2048!</strong></p>
+                        <p>20</p>
+                        <p>CMarconius</p>
+                        <p>48</p>
                     </div>
 
                     <div className="headerRight">
@@ -136,7 +139,11 @@ function TwentyFortyEight() {
                     </div>
 
                 </div>
-                    
+
+                <div className="instructions">
+                    <h2>Join the tiles, get to <strong>2048!</strong></h2>
+                </div>
+
                 <div className="gameContainer">
                     <div className="gameGrid">
                         {gameContent}
