@@ -16,13 +16,14 @@ function Card(props) {
 
     function handleCloseButtonClick() {
         setOpen("notOpen");
-            setContainerContent(
-                <>
-                <h2>{props.challengeName}</h2>
-                <p className="expand">Click to Expand</p>
-                </>
-            );
-            setHeroImage(<img src="../images/card-default-img.png" alt="" />);
+        setContainerContent(
+            <>
+            <h2>{props.challengeName}</h2>
+            <p className="expand">Click to Expand</p>
+            </>
+        );
+        setHeroImage(<img src="../images/card-default-img.png" alt="" />);
+        document.removeEventListener('keydown', onkeydown);
     }
 
     const handleButtonClick = (e) => {

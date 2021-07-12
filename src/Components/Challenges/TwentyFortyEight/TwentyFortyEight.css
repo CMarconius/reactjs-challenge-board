@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
+  max-width: 100%;
 }
 
 .gameHeader {
@@ -12,6 +13,7 @@
     Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   color: var(--cmarc-blue-1);
+  margin: 5px;
 }
 
 .headerLeft {
@@ -56,5 +58,107 @@
   justify-content: flex-end;
 }
 
-/* .gameContainer {
-} */
+.gameContainer {
+  width: 500px;
+  height: 500px;
+  background-color: #bbada0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.gameGrid {
+  width: 100%;
+  height: 100%;
+  background-color: #eee1c9;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.startGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cellWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .twentyFortyEight {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 524px) {
+  .twentyFortyEight {
+    width: 350px;
+  }
+  .headerLeft {
+    text-align: left;
+    font-size: 18px;
+  }
+  .headerLeft p:nth-child(1) {
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .scores {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+  }
+
+  .scoreBox {
+    padding: 4px 20px;
+    margin: 0px 2px;
+    font-size: 15px;
+    width: 40px;
+  }
+
+  .scoreBox p:nth-child(1) {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scoreBox p:nth-child(2) {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .gameContainer {
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .newGame p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .twentyFortyEight {
+    width: 270px;
+  }
+  .headerLeft {
+    text-align: left;
+    font-size: 15px;
+  }
+  .headerLeft p:nth-child(1) {
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 700;
+  }
+  .gameContainer {
+    width: 250px;
+    height: 250px;
+  }
+}
