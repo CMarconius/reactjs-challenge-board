@@ -3,13 +3,20 @@ import './GameCell.css'
 
 function GameCell(props) {
     
-    const [cellValue, setCellValue] = useState()
+    const [cellValue, setCellValue] = useState(0)
     const [cellOptions, setCellOptions] = useState([2,4,8,16,32,64,128,256,512,1024,2048])
     const [cellId, setCellID] = useState(props.cellId);
 
+
+    // const [cellUp, setCellUp] = useState(cellId-4);
+    // const [cellRight, setCellRight] = useState(cellId+1);
+    // const [cellDown, setCellDown] = useState(cellId+4);
+    // const [cellLeft, setCellLeft] = useState(cellId-1);
+
     useEffect(() => {
-        var x = Math.floor(Math.random() * cellOptions.length);
-        setCellValue(cellOptions[x])
+        // var x = Math.floor(Math.random() * cellOptions.length);
+        // setCellValue(cellOptions[x])
+        if (props.cellValue) {setCellValue(props.cellValue)};
     }, [])
 
     return (
@@ -17,7 +24,10 @@ function GameCell(props) {
 
             <div className={`gameCell tile-${cellValue}`}>
                 {cellValue}
-                <div className="cellId">{cellId}</div>
+                {/* <div className="cellUp">{cellUp}</div>
+                <div className="cellRight">{cellRight}</div>
+                <div className="cellDown">{cellDown}</div>
+                <div className="cellLeft">{cellLeft}</div> */}
             </div>
         </>
     )
