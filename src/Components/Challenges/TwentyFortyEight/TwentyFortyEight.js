@@ -1,5 +1,5 @@
 import react from 'react'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { isMobile } from 'react-device-detect'
 import { Button } from '../../Button'
 import GameCell from './GameCell'
@@ -16,49 +16,15 @@ function TwentyFortyEight() {
     const [gameButtons, setGameButtons] = useState()
     const [gameContent, setGameContent] = useState(        
         <div className="startGame">      
-            <Button onClick={startGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                START GAME
+            <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                START NEW GAME
             </Button>
         </div>
     )
 
     const [gameCells, setGameCells] = useState([])
 
-
-    function undoLastMove() {
-        setCurrentGridState(...[previousGridState]);
-        setPreviousGridState([]);
-        setGameContent(
-            <Button onClick={startGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                START GAME
-            </Button>
-        )
-        
-        setGameOn(false);
-        setGameCells([])
-    }
-
-    function moveUp() {
-        console.log("Move Up");
-    }
-
-    function moveRight() {
-        console.log("Move Right");
-    }
-
-    function moveDown() {
-        console.log("Move Down");
-    }
-
-    function moveLeft() {
-        console.log("Move Left");
-    }
-
-
-    useEffect(() => {
-        
-        
-    }, [])
+    
 
     useEffect(() => {
         if (gameOn) {
@@ -74,85 +40,111 @@ function TwentyFortyEight() {
         }
         
     }, [gameCells])
-        
-    useEffect(() => {
-        resetCells();
-    }, [gameOn])
 
-    function resetCells() {
+
+    function exitCurrentGame() {
+        setCurrentGridState(...[previousGridState]);
+        setPreviousGridState([]);
+        setGameOn(false);
+        setGameButtons();
+        setGameContent(
+            <div className="startGame">      
+                <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                    START NEW GAME
+                </Button>
+            </div>
+        );
+        
+        setGameOn(false);
+        setGameCells([]);
+        window.removeEventListener('keydown', setDirectionsKeys);
+    }
+
+    function startNewGame() {
+            setCurrentScore(123123);
+            setBestScore(1000000);
+            setCells();
+            setGameButtons(
+                <>
+                <Button onClick={exitCurrentGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                    &#10531; EXIT
+                </Button>
+                {/* <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                    NEW GAME
+                </Button> */}
+                </>
+            )
+            setGameOn(true);
+            
+            if (!isMobile) {
+                window.addEventListener('keydown', setDirectionsKeys);
+            }
+    }
+
+    function setCells() {
+        let k = Math.floor(Math.random() * 16);
         for (let i = 1; i < 17; i++) {     
             
             // let newCell = <GameCell cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 13))))}/>
             
-            let newCell = <GameCell key={i} cellId={i} cellValue={0}/>
-            
-            setGameCells(gameCells => [...gameCells, newCell]);
-        }
-        if (gameOn) {
-            if (!isMobile) {
-                document.addEventListener('keydown', function(e){
-                    e.preventDefault();
-                    if (e.key === "ArrowUp") {
-                        moveUp();
-                    }
-                    if (e.key === "ArrowRight") {
-                        moveRight();
-                    }
-                    if (e.key === "ArrowDown") {
-                        moveDown();
-                    }
-                    if (e.key === "ArrowLeft") {
-                        moveLeft();
-                    }
-                })
+            if (i === k) {
+                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={2}/>)]);
             }
-
-            // let startCells = [...gameCells];
-
-            // startCells[5].props["cellValue"]
-
-            // setGameCells({...gameCells, []});
-
-
-            let k = Math.floor(Math.random() * 16);
-            const startCells = gameCells.map((item, i) => {
-                if (i === k) {
-                  const updatedItem = {
-                    ...item,
-                    props: {cellId: (k+1), cellValue: 2},
-                  };
-                  
-                  return updatedItem;
-                }
-           
-                return item;
-              });
-              
-            setGameCells([...startCells]);
+            else {
+                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
+            }
         }
     }
 
-    function startGame() {
-        if (!gameOn) {
-            setCurrentScore(123123);
-            setBestScore(1000000);
-            setGameButtons(
-                <>
-                <Button onClick={undoLastMove} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                    &#10531; UNDO
-                </Button>
-                <Button onClick={startGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                    NEW GAME
-                </Button>
-                </>
-            )
+    
+
+    function setDirectionsKeys(event) {
+        event.preventDefault();
+        if (event.key === "ArrowUp") {
+            moveUp();
         }
-        else {
-            resetCells();
+        if (event.key === "ArrowRight") {
+            moveRight();
         }
-       
-        setGameOn(true)
+        if (event.key === "ArrowDown") {
+            moveDown();
+        }
+        if (event.key === "ArrowLeft") {
+            moveLeft();
+        }
+    }
+
+    function moveRight() {
+        console.log("Move  Right");
+    }
+
+    function moveDown() {
+        console.log("Move Down");
+    }
+
+    function moveLeft() {
+        console.log("Move Left");
+    }
+
+    function moveUp() {
+        console.log("Move Up");
+        console.log(gameCells);
+        gameCells.map((item) => {
+            console.log("This is the cellValue, yo: " + item.props['cellValue']);
+        })
         
+    }
+
+    function checkAboveCells(currentCellId) {
+        let outOfBoundsCells = [-3, -2, -1, 0];
+
+        // gameCells[(currentCellId-1)]
+        
+        if (gameCells[(currentCellId-5)] > 0) {
+            if (gameCells[(currentCellId-9)] > 0) {
+
+            }
+        }
     }
     
 
