@@ -134,7 +134,6 @@ function TwentyFortyEight() {
 
     function moveUp() {
         console.log("Move Up");
-        console.log(gameCells);
 
         let gameCellsClone = [...gameCells];
 
@@ -148,7 +147,7 @@ function TwentyFortyEight() {
 
                                     const startCells = [...gameCells].map((item, it) => {
                                         if ((i-12) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={16}/>);
+                                            return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                             
                                         } else if ((i) === it) {
                                             return (<GameCell key={it} cellId={it} cellValue={0}/>)
@@ -162,7 +161,7 @@ function TwentyFortyEight() {
                                         
                                     const startCells = [...gameCells].map((item, it) => {
                                         if ((i-8) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={16}/>);
+                                            return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                             
                                         } else if ((i) === it) {
                                             return (<GameCell key={it} cellId={it} cellValue={0}/>)
@@ -177,7 +176,7 @@ function TwentyFortyEight() {
                                 
                                 const startCells = [...gameCells].map((item, it) => {
                                     if ((i-4) === it) {
-                                        return (<GameCell key={it} cellId={it} cellValue={16}/>);
+                                        return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                         
                                     } else if ((i) === it) {
                                         return (<GameCell key={it} cellId={it} cellValue={0}/>)
@@ -189,12 +188,13 @@ function TwentyFortyEight() {
 
                         }
                         else {
-                            console.log("The cell is on the top row...");
+                            console.log("The cell is  on the top row...");
                         }
 
                     }
                 })
-            ).then(
+            ).then( () => {
+                console.log(gameCells);
                 setGameContent(
                     <div className="cellWrap">
                         {
@@ -204,6 +204,8 @@ function TwentyFortyEight() {
                         }
                     </div>
                 )
+            }
+                
             )
     }
 
