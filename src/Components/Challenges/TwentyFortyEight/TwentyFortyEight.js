@@ -7,24 +7,32 @@ import './TwentyFortyEight.css'
 
 function TwentyFortyEight() {
 
-    const [currentScore, setCurrentScore] = useState(0)
-    const [bestScore, setBestScore] = useState(0)
-    const [gameOn, setGameOn] = useState(false)
-    const [currentGridState, setCurrentGridState] = useState([])
-    const [previousGridState, setPreviousGridState] = useState([])
+    const [currentScore, setCurrentScore] = useState(0);
+    const [bestScore, setBestScore] = useState(0);
+    const [gameOn, setGameOn] = useState(false);
+    const [currentGridState, setCurrentGridState] = useState([]);
+    const [previousGridState, setPreviousGridState] = useState([]);
 
-    const [gameButtons, setGameButtons] = useState()
+    const [gameButtons, setGameButtons] = useState();
     const [gameContent, setGameContent] = useState(        
         <div className="startGame">      
             <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                 START NEW GAME
             </Button>
         </div>
-    )
+    );
 
-    const [gameCells, setGameCells] = useState([])
+    const [gameCells, setGameCells] = useState([]);
 
     
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleUserKeyPress);
+    
+        return () => {
+          window.removeEventListener('keydown', handleUserKeyPress);
+        };
+      }, [handleUserKeyPress]);
 
     useEffect(() => {
         if (gameOn) {
@@ -38,27 +46,7 @@ function TwentyFortyEight() {
                 </div>
             )
         }
-        
-    }, [gameCells])
-
-
-    function exitCurrentGame() {
-        setCurrentGridState(...[previousGridState]);
-        setPreviousGridState([]);
-        setGameOn(false);
-        setGameButtons();
-        setGameContent(
-            <div className="startGame">      
-                <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                    START NEW GAME
-                </Button>
-            </div>
-        );
-        
-        setGameOn(false);
-        setGameCells([]);
-        window.removeEventListener('keydown', setDirectionsKeys);
-    }
+    }, [gameCells]);
 
     function startNewGame() {
             setCurrentScore(123123);
@@ -76,46 +64,64 @@ function TwentyFortyEight() {
             )
             setGameOn(true);
             
-            if (!isMobile) {
-                window.addEventListener('keydown', setDirectionsKeys);
-            }
+            // if (!isMobile) {
+            //     window.addEventListener('keydown', setDirectionsKeys);
+            // }
+    }
+
+    function exitCurrentGame() {
+        setCurrentGridState(...[previousGridState]);
+        setPreviousGridState([]);
+        setGameOn(false);
+        setGameButtons();
+        setGameContent(
+            <div className="startGame">      
+                <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                    START NEW GAME
+                </Button>
+            </div>
+        );
+        
+        setGameOn(false);
+        setGameCells([]);
+        // window.removeEventListener('keydown', setDirectionsKeys);
     }
 
     function setCells() {
         let k = Math.floor(Math.random() * 16);
-        for (let i = 1; i < 17; i++) {     
+        for (let i = 0; i < 16; i++) {     
             
             // let newCell = <GameCell cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 13))))}/>
             
-            if (i === k) {
-                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={2}/>)]);
+            if (i !== k) {
+                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
             }
             else {
-                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
+                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={2}/>)]);
             }
         }
     }
 
-    
-
-    function setDirectionsKeys(event) {
-        event.preventDefault();
-        if (event.key === "ArrowUp") {
-            moveUp();
-        }
-        if (event.key === "ArrowRight") {
-            moveRight();
-        }
-        if (event.key === "ArrowDown") {
-            moveDown();
-        }
-        if (event.key === "ArrowLeft") {
-            moveLeft();
+    function handleUserKeyPress(event) {
+        if (gameOn) {
+            event.preventDefault();
+            if (event.key === "ArrowUp") {
+                moveUp();
+            }
+            if (event.key === "ArrowRight") {
+                moveRight();
+            }
+            if (event.key === "ArrowDown") {
+                moveDown();
+            }
+            if (event.key === "ArrowLeft") {
+                moveLeft();
+            }
         }
     }
 
     function moveRight() {
-        console.log("Move  Right");
+        console.log("Move Right");
     }
 
     function moveDown() {
@@ -129,10 +135,50 @@ function TwentyFortyEight() {
     function moveUp() {
         console.log("Move Up");
         console.log(gameCells);
-        gameCells.map((item) => {
-            console.log("This is the cellValue, yo: " + item.props['cellValue']);
+
+        gameCells.map((item, i) => {
+            if (item.props['cellValue'] !== 0) {
+                if (gameCells[(i-4)].props["cellValue"] === 0) {
+                    
+                    console.log("CellChecked");
+                    // setGameCells({...gameCells, [i]: item});
+
+                    const startCells = [...gameCells].map((item, it) => {
+                        if ((i-4) === it) {
+                            let updatedItem = {
+                            ...item,
+                            props: {cellId: it, cellValue: 16},
+                            };
+                            
+                            return updatedItem;
+                        } else if ((i) === it) {
+                            let updatedItem = {
+                            ...item,
+                            props: {cellId: it, cellValue: 0},
+                            };
+                            
+                            return updatedItem;
+                        }
+                        
+                        return item;
+                    });
+                      
+                    setGameCells([...startCells]);
+                    console.log("Cell updated...");
+                    console.log(startCells);
+
+                    setGameContent(
+                        <div className="cellWrap">
+                            {
+                                gameCells.map(cell => {
+                                    return cell;
+                                })
+                            }
+                        </div>
+                    )
+                }
+            }
         })
-        
     }
 
     function checkAboveCells(currentCellId) {

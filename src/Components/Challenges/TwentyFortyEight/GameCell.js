@@ -4,7 +4,6 @@ import './GameCell.css'
 function GameCell(props) {
     
     const [cellValue, setCellValue] = useState(0)
-    const [cellOptions, setCellOptions] = useState([2,4,8,16,32,64,128,256,512,1024,2048])
     const [cellId, setCellID] = useState(props.cellId);
 
 
