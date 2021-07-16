@@ -7,21 +7,25 @@ function GameCell(props) {
     const [cellId, setCellID] = useState(props.cellId);
 
 
-    const [cellUp, setCellUp] = useState(cellId-4);
-    const [cellRight, setCellRight] = useState(cellId+1);
-    const [cellDown, setCellDown] = useState(cellId+4);
-    const [cellLeft, setCellLeft] = useState(cellId-1);
+    useEffect(() => {
+        setCellValue(props.cellValue);
+    }, [props]);
+
+    // const [cellUp, setCellUp] = useState(cellId-4);
+    // const [cellRight, setCellRight] = useState(cellId+1);
+    // const [cellDown, setCellDown] = useState(cellId+4);
+    // const [cellLeft, setCellLeft] = useState(cellId-1);
 
     return (
         <>
 
-            <div className={`gameCell tile-${props.cellValue}`}>
-                {props.cellValue}
+            <div className={`gameCell tile-${cellValue}`}>
+                {cellValue}
                 {/* {cellId} */}
-                <div className="cellUp">{cellUp}</div>
+                {/* <div className="cellUp">{cellUp}</div>
                 <div className="cellRight">{cellRight}</div>
                 <div className="cellDown">{cellDown}</div>
-                <div className="cellLeft">{cellLeft}</div>
+                <div className="cellLeft">{cellLeft}</div> */}
             </div>
         </>
     )

@@ -91,9 +91,9 @@ function TwentyFortyEight() {
         let k = Math.floor(Math.random() * 16);
         for (let i = 0; i < 16; i++) {     
             
-            // let newCell = <GameCell cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 13))))}/>
+            // setGameCells(gameCells => [...gameCells, (<GameCell cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 12))))}/>)]);
             
-            if (i !== k) {
+            if (i !== 14 && i !== 4 && i !== 11 && i !== 8) {
                 setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
             }
             else {
@@ -138,14 +138,17 @@ function TwentyFortyEight() {
         let gameCellsClone = [...gameCells];
 
         Promise.all(
-                gameCellsClone.map((item, i) => {
-                    if (item.props['cellValue'] !== 0) {
-                        if (gameCellsClone[(i-4)] && gameCellsClone[(i-4)].props["cellValue"] === 0) {
-                            if (gameCellsClone[(i-8)] && gameCellsClone[(i-8)].props["cellValue"] === 0) {
-                                if (gameCellsClone[(i-12)] && gameCellsClone[(i-12)].props["cellValue"] === 0) {
-                                    console.log("The cell is on the last row...");
-
-                                    const startCells = [...gameCells].map((item, it) => {
+            gameCellsClone.map((item, i) => {
+                console.log(i);
+                if (item.props['cellValue'] !== 0) {
+                    if (gameCellsClone[(i-4)] && gameCellsClone[(i-4)].props["cellValue"] === 0) {
+                        if (gameCellsClone[(i-8)] && gameCellsClone[(i-8)].props["cellValue"] === 0) {
+                            if (gameCellsClone[(i-12)] && gameCellsClone[(i-12)].props["cellValue"] === 0) {
+                                console.log("The cell is on the bottom row...");
+                                let startCells = [];                                    
+                                
+                                Promise.all(
+                                    startCells = [...gameCells].map((item, it) => {
                                         if ((i-12) === it) {
                                             return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                             
@@ -153,13 +156,14 @@ function TwentyFortyEight() {
                                             return (<GameCell key={it} cellId={it} cellValue={0}/>)
                                         }
                                         return item;
-                                    });
-                                    setGameCells([...startCells]);
-                                } 
-                                else {
-                                    console.log("The cell is on the 3rd row...");
-                                        
-                                    const startCells = [...gameCells].map((item, it) => {
+                                    })
+                                ).then(setGameCells([...startCells]));
+                            } 
+                            else {
+                                console.log("The cell is on the 3rd row...");
+                                let startCells = [];
+                                Promise.all(
+                                    startCells = [...gameCells].map((item, it) => {
                                         if ((i-8) === it) {
                                             return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                             
@@ -167,14 +171,16 @@ function TwentyFortyEight() {
                                             return (<GameCell key={it} cellId={it} cellValue={0}/>)
                                         }
                                         return item;
-                                    });
-                                    setGameCells([...startCells]);
-                                }
-                            } 
-                            else {
-                                console.log("The cell is on the 2nd row...");
-                                
-                                const startCells = [...gameCells].map((item, it) => {
+                                    })
+                                ).then(setGameCells([...startCells]));
+
+                            }
+                        } 
+                        else {
+                            console.log("The cell is on the 2nd row...");
+                            let startCells = [];
+                            Promise.all(
+                                startCells = [...gameCells].map((item, it) => {
                                     if ((i-4) === it) {
                                         return (<GameCell key={it} cellId={it} cellValue={2}/>);
                                         
@@ -182,31 +188,30 @@ function TwentyFortyEight() {
                                         return (<GameCell key={it} cellId={it} cellValue={0}/>)
                                     }
                                     else return item;
-                                });
-                                setGameCells([...startCells]);
-                            }
-
-                        }
-                        else {
-                            console.log("The cell is  on the top row...");
+                                })
+                            ).then(setGameCells([...startCells]));
+                            
                         }
 
                     }
-                })
-            ).then( () => {
-                console.log(gameCells);
-                setGameContent(
-                    <div className="cellWrap">
-                        {
-                            gameCells.map(cell => {
-                                return cell;
-                            })
-                        }
-                    </div>
-                )
-            }
-                
+                    else {
+                        console.log("The cell is  on the top row...");
+                    }
+
+                }
+            })
+        ).then( () => {
+            console.log(gameCells);
+            setGameContent(
+                <div className="cellWrap">
+                    {
+                        gameCells.map(cell => {
+                            return cell;
+                        })
+                    }
+                </div>
             )
+        })
     }
 
 
