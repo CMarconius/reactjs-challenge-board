@@ -9,6 +9,7 @@ function GameCell(props) {
 
     useEffect(() => {
         setCellValue(props.cellValue);
+        setCellID(props.cellId);
     }, [props]);
 
     // const [cellUp, setCellUp] = useState(cellId-4);
@@ -18,9 +19,8 @@ function GameCell(props) {
 
     return (
         <>
-
-            <div className={`gameCell tile-${cellValue}`}>
-                {cellValue}
+            <div className={`gameCell tile-${props.cellValue}`}>
+                {props.cellValue}
                 {/* {cellId} */}
                 {/* <div className="cellUp">{cellUp}</div>
                 <div className="cellRight">{cellRight}</div>

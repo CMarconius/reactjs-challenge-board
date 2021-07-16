@@ -91,7 +91,7 @@ function TwentyFortyEight() {
         let k = Math.floor(Math.random() * 16);
         for (let i = 0; i < 16; i++) {     
             
-            // setGameCells(gameCells => [...gameCells, (<GameCell cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 12))))}/>)]);
+            // setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 12))))}/>)]);
             
             if (i !== 14 && i !== 4 && i !== 11 && i !== 8) {
                 setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
@@ -145,59 +145,48 @@ function TwentyFortyEight() {
                         if (gameCellsClone[(i-8)] && gameCellsClone[(i-8)].props["cellValue"] === 0) {
                             if (gameCellsClone[(i-12)] && gameCellsClone[(i-12)].props["cellValue"] === 0) {
                                 console.log("The cell is on the bottom row...");
-                                let startCells = [];                                    
-                                
-                                Promise.all(
-                                    startCells = [...gameCells].map((item, it) => {
-                                        if ((i-12) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={2}/>);
-                                            
-                                        } else if ((i) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={0}/>)
-                                        }
-                                        return item;
-                                    })
-                                ).then(setGameCells([...startCells]));
-                            } 
-                            else {
-                                console.log("The cell is on the 3rd row...");
                                 let startCells = [];
-                                Promise.all(
-                                    startCells = [...gameCells].map((item, it) => {
-                                        if ((i-8) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={2}/>);
-                                            
-                                        } else if ((i) === it) {
-                                            return (<GameCell key={it} cellId={it} cellValue={0}/>)
-                                        }
-                                        return item;
-                                    })
-                                ).then(setGameCells([...startCells]));
-
-                            }
-                        } 
-                        else {
-                            console.log("The cell is on the 2nd row...");
-                            let startCells = [];
-                            Promise.all(
                                 startCells = [...gameCells].map((item, it) => {
-                                    if ((i-4) === it) {
+                                    if ((i-12) === it) {
                                         return (<GameCell key={it} cellId={it} cellValue={2}/>);
-                                        
                                     } else if ((i) === it) {
                                         return (<GameCell key={it} cellId={it} cellValue={0}/>)
                                     }
-                                    else return item;
+                                    return item;
                                 })
-                            ).then(setGameCells([...startCells]));
-                            
+                                setGameCells([...startCells]);
+                            }
+                            else {
+                                console.log("The cell is on the 3rd row...");
+                                let startCells = [];
+                                startCells = [...gameCells].map((item, it) => {
+                                    if ((i-8) === it) {
+                                        return (<GameCell key={it} cellId={it} cellValue={2}/>);
+                                    } else if ((i) === it) {
+                                        return (<GameCell key={it} cellId={it} cellValue={0}/>)
+                                    }
+                                    return item;
+                                })
+                                setGameCells([...startCells]);
+                            }
                         }
-
+                        else {
+                            console.log("The cell is on the 2nd row...");
+                            let startCells = [];
+                            startCells = [...gameCells].map((item, it) => {
+                                if ((i-4) === it) {
+                                    return (<GameCell key={it} cellId={it} cellValue={2}/>);
+                                } else if ((i) === it) {
+                                    return (<GameCell key={it} cellId={it} cellValue={0}/>)
+                                }
+                                else return item;
+                            })
+                            setGameCells([...startCells]);
+                        }
                     }
                     else {
                         console.log("The cell is  on the top row...");
                     }
-
                 }
             })
         ).then( () => {
