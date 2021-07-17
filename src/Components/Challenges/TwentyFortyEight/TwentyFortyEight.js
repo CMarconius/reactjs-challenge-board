@@ -160,7 +160,7 @@ function TwentyFortyEight() {
                             console.log(startCells);
                             setGameCells([...startCells]);
                             startCells = [];
-                        }
+                        }   YO!!!
                         else {
                             console.log("The cell is on the 3rd row...");
 
