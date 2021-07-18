@@ -22,7 +22,10 @@ function TwentyFortyEight() {
         </div>
     );
 
-    const [gameCells, setGameCells] = useState([]);
+    var gameCells = [];
+
+    
+    const [superCells, setSuperCells] = useState([]);
 
     
 
@@ -33,20 +36,7 @@ function TwentyFortyEight() {
           window.removeEventListener('keydown', handleUserKeyPress);
         };
       }, [handleUserKeyPress]);
-
-    useEffect(() => {
-        if (gameOn) {
-            setGameContent(
-                <div className="cellWrap">
-                    {
-                        gameCells.map(cell => {
-                            return cell;
-                        })
-                    }
-                </div>
-            )
-        }
-    }, [gameCells]);
+      
 
     function startNewGame() {
             setCurrentScore(123123);
@@ -57,16 +47,9 @@ function TwentyFortyEight() {
                 <Button onClick={exitCurrentGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                     &#10531; EXIT
                 </Button>
-                {/* <Button onClick={startNewGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
-                    NEW GAME
-                </Button> */}
                 </>
             )
             setGameOn(true);
-            
-            // if (!isMobile) {
-            //     window.addEventListener('keydown', setDirectionsKeys);
-            // }
     }
 
     function exitCurrentGame() {
@@ -83,23 +66,29 @@ function TwentyFortyEight() {
         );
         
         setGameOn(false);
-        setGameCells([]);
-        // window.removeEventListener('keydown', setDirectionsKeys);
+        gameCells = [];
     }
 
     function setCells() {
-        let k = Math.floor(Math.random() * 16);
-        for (let i = 0; i < 16; i++) {     
-            
-            // setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={(Math.pow(2, (Math.floor(Math.random() * 12))))}/>)]);
-            
+        for (let i = 0; i < 16; i++) {
             if (i !== 14 && i !== 4 && i !== 11 && i !== 12) {
-                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={0}/>)]);
+                gameCells.push(<GameCell key={i} cellId={i} cellValue={0}/>);
             }
             else {
-                setGameCells(gameCells => [...gameCells, (<GameCell key={i} cellId={i} cellValue={2}/>)]);
+                gameCells.push(<GameCell key={i} cellId={i} cellValue={2}/>);
             }
         }
+    
+        setGameContent(
+            <div className="cellWrap">
+                {
+                    gameCells.map(cell => {
+                        return cell;
+                    })
+                }
+            </div>
+        )
+        setSuperCells(gameCells);
     }
 
     function handleUserKeyPress(event) {
@@ -133,70 +122,32 @@ function TwentyFortyEight() {
     }
 
     function moveUp() {
-        console.log("Move Up");
+        gameCells = superCells;
 
-        let gameCellsClone = [...gameCells];
-
-        let startCells = [];
-
-        gameCells.map((item, i) => {
-            // console.log(i);
+        gameCells.forEach((item, i) => {
+            console.log("is it even getting here? :P");
             if (item.props['cellValue'] !== 0) {
-                if (gameCellsClone[(i-4)] && gameCellsClone[(i-4)].props["cellValue"] === 0) {
-                    if (gameCellsClone[(i-8)] && gameCellsClone[(i-8)].props["cellValue"] === 0) {
-                        if (gameCellsClone[(i-12)] && gameCellsClone[(i-12)].props["cellValue"] === 0) {
-                            console.log("The cell is on the bottom row...");
-                            
+                if (gameCells[(i-4)] && gameCells[(i-4)].props["cellValue"] === 0) {
+                    if (gameCells[(i-8)] && gameCells[(i-8)].props["cellValue"] === 0) {
+                        if (gameCells[(i-12)] && gameCells[(i-12)].props["cellValue"] === 0) {
 
-                            gameCells.forEach((item,it) => {
-                                if ((i-12) === it) {
-                                    startCells.push(<GameCell key={it} cellId={it} cellValue={2}/>);
-                                } else if ((i) === it) {
-                                    startCells.push(<GameCell key={it} cellId={it} cellValue={0}/>);
-                                }
-                                else startCells.push(item);
-                            })
-                            
-                            console.log(startCells);
-                            setGameCells([...startCells]);
-                            startCells = [];
-                        }   YO!!!
+                            gameCells[i-12] = (<GameCell key={i-12} cellId={i-12} cellValue={2}/>);
+                            gameCells[i] = (<GameCell key={i} cellId={i} cellValue={0}/>);
+
+                        }
                         else {
-                            console.log("The cell is on the 3rd row...");
 
-                            gameCells.forEach((item,it) => {
-                                if ((i-8) === it) {
-                                    startCells.push(<GameCell key={it} cellId={it} cellValue={2}/>);
-                                } else if ((i) === it) {
-                                    startCells.push(<GameCell key={it} cellId={it} cellValue={0}/>);
-                                }
-                                else startCells.push(item);
-                            })
+                            gameCells[i-8] = (<GameCell key={i-8} cellId={i-8} cellValue={2}/>);
+                            gameCells[i] = (<GameCell key={i} cellId={i} cellValue={0}/>);
 
-                            console.log(startCells);
-                            setGameCells([...startCells]);
-                            startCells = [];
                         }
                     }
                     else {
-                        console.log("The cell is on the 2nd row...");
-                        
-                        gameCells.forEach((item,it) => {
-                            if ((i-4) === it) {
-                                startCells.push(<GameCell key={it} cellId={it} cellValue={2}/>);
-                            } else if ((i) === it) {
-                                startCells.push(<GameCell key={it} cellId={it} cellValue={0}/>);
-                            }
-                            else startCells.push(item);
-                        })
 
-                        console.log(startCells);
-                        setGameCells([...startCells]);
-                        startCells = [];
+                        gameCells[i-4] = (<GameCell key={i-4} cellId={i-4} cellValue={2}/>);
+                        gameCells[i] = (<GameCell key={i} cellId={i} cellValue={0}/>);
+
                     }
-                }
-                else {
-                    console.log("The cell is  on the top row...");
                 }
             }
         })
@@ -211,6 +162,8 @@ function TwentyFortyEight() {
                 }
             </div>
         )
+
+        setSuperCells(gameCells);
     }
 
 
