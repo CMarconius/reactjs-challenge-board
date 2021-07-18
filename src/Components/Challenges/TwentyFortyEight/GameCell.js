@@ -21,7 +21,7 @@ function GameCell(props) {
         <>
             <div className={`gameCell tile-${props.cellValue}`}>
                 {props.cellValue}
-                {/* {cellId} */}
+                {/* {props.cellId} */}
                 {/* <div className="cellUp">{cellUp}</div>
                 <div className="cellRight">{cellRight}</div>
                 <div className="cellDown">{cellDown}</div>
