@@ -22,9 +22,12 @@ function TwentyFortyEight() {
         </div>
     );
 
-    var gameCells = [];
+    var gameCells = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
+    var simpleCells = [...gameCells];
+
     var moved = 'notMoved';
-    const [superCells, setSuperCells] = useState([]);
+
+    const [globalCells, setGlobalCells] = useState([...gameCells]);
 
     
 
@@ -51,6 +54,7 @@ function TwentyFortyEight() {
                 </>
             )
             setGameOn(true);
+            moved = 'notMoved';
     }
 
     function exitCurrentGame() {
@@ -71,26 +75,38 @@ function TwentyFortyEight() {
     }
 
     function setCells() {
-        for (let i = 0; i < 16; i++) {
-            // if (i !== 14 && i !== 4 && i !== 11 && i !== 12 && i !== 0 && i !== 7) {
-            if (i !== 1 && i !== 2 && i !== 7 && i !== 11) {
-                gameCells.push(<GameCell key={i} cellId={i} cellValue={0}/>);
-            }
-            else {
-                gameCells.push(<GameCell key={i} cellId={i} cellValue={2}/>);
+        for (let i = 0; i < 4; i++) {
+            for (let k = 0; k < 4; k++) {
+                let index = (i*4) + k;
+
+                if (index !== 14 && index !== 4 && index !== 11 && index !== 12 && index !== 0 && index !== 7) {
+                // if (i !== 1 && i !== 2 && i !== 7 && i !== 11) {
+                    gameCells[i][k] = newCell(0, index);
+                }
+                else {
+                    gameCells[i][k] = newCell(2, index);
+                }
             }
         }
-    
+        
+        simpleCells = [];
+
+        gameCells.map((item) => {
+            item.map(cell => {
+                simpleCells.push(cell);
+            })
+        });
+
         setGameContent(
             <div className="cellWrap">
                 {
-                    gameCells.map(cell => {
+                    simpleCells.map(cell => {
                         return cell;
                     })
                 }
             </div>
         )
-        setSuperCells(gameCells);
+        setGlobalCells([...gameCells]);
     }
 
     function handleUserKeyPress(event) {
@@ -111,144 +127,157 @@ function TwentyFortyEight() {
         }
     }
 
-    function moveRight() {
-        console.log("Move Right");
-    }
-
-    function moveDown() {
-        console.log("Move Down");
-    }
-
-    function moveLeft() {
-        console.log("Move Left");
-    }
-
     function newCell(value, id) {
         return (<GameCell key={id} cellId={id} cellValue={value}/>);
     }
 
     function addNewCellToGame() {
         let freeCells = [];
-        superCells.forEach((item, i) => {
+
+        simpleCells.forEach((item, i) => {
             if (item.props['cellValue'] === 0) {
                 freeCells.push(i);
             }
         });
-        
 
-        console.log(freeCells);
         let newCellIndex = freeCells[Math.floor(Math.random() * (freeCells.length))];
 
-
         let x = Math.random();
-        console.log(x);
-        if (x > 0.2) {
-            gameCells[newCellIndex] = newCell(2, newCellIndex);
+        
+        for (let i = 0; i < 4; i++) {
+            for (let k = 0; k < 4; k++) {
+                let index = (i*4) + k;
+                if (newCellIndex === index) {
+                    if (x > 0.2) {
+                        gameCells[i][k] = newCell(2, index);
+                    }
+                    else gameCells[i][k] = newCell(4, index);
+                }
+            }
         }
-        else gameCells[newCellIndex] = newCell(4, newCellIndex);
-        setSuperCells(gameCells);
+
+        gameCells.map((item) => {
+            item.map(cell => {
+                simpleCells.push(cell);
+            })
+        });
+    }
+
+    function moveLeft() {
+
+    }
+
+    function moveRight() {
+        
+    }
+
+    function moveDown() {
     }
 
 
     function moveUp() {
-        gameCells = superCells;
-
-        gameCells.forEach((item, i) => {
-            let currentCellValue = gameCells[(i)].props["cellValue"];
-
-            if (item.props['cellValue'] !== 0) {
-                if (gameCells[(i-4)]) {
-                    if (gameCells[(i-4)].props["cellValue"] === currentCellValue) {
-                        gameCells[i-4] = newCell((currentCellValue * 2),(i-4));
-                        gameCells[i] = newCell(0, i);
-                            
-                        moved = 'moved';
-                        console.log(moved);
-                    }
-                    else if (gameCells[(i-4)].props["cellValue"] === 0) {
-                        if (gameCells[(i-8)]) {
-                            if (gameCells[(i-8)].props["cellValue"] === currentCellValue) {
-                                gameCells[i-8] = newCell((currentCellValue * 2),(i-8));
-                                gameCells[i] = newCell(0, i);
-                            
-                                moved = 'moved';
-                                console.log(moved);
-                            }
-                            else if (gameCells[(i-8)].props["cellValue"] === 0) {
-                                if (gameCells[(i-12)]) {
-                                    if (gameCells[(i-12)].props["cellValue"] === currentCellValue) {
-                                        gameCells[i-12] = newCell((currentCellValue * 2),(i-12));
-                                        gameCells[i] = newCell(0, i);
-                            
-                                        moved = 'moved';
-                                        console.log(moved);
-                                    }
-                                    else if (gameCells[(i-12)].props["cellValue"] === 0) {
-                                        gameCells[i-12] = newCell(currentCellValue,(i-12));
-                                        gameCells[i] = newCell(0, i);
-                            
-                                        moved = 'moved';
-                                        console.log(moved);
-                                    }
-                                    else {
-                                        gameCells[i-8] = newCell(currentCellValue,(i-8));
-                                        gameCells[i] = newCell(0, i);
-                            
-                                        moved = 'moved';
-                                        console.log(moved);
-                                    }
-                                }
-                                else {
-                                    gameCells[i-8] = newCell(currentCellValue,(i-8));
-                                    gameCells[i] = newCell(0, i);
-                            
-                                    moved = 'moved';
-                                    console.log(moved);
-                                }
-                            }
-                            else {
-                                gameCells[i-4] = newCell(currentCellValue,(i-4));
-                                gameCells[i] = newCell(0, i);
-                            
-                                moved = 'moved';
-                                console.log(moved);
-                            }
-                        }
-                        else {
-                            gameCells[i-4] = newCell(currentCellValue,(i-4));
-                            gameCells[i] = newCell(0, i);
-                            
-                            moved = 'moved';
-                            console.log(moved);
-                        }
-                    }                        
+        gameCells = [...globalCells];
+        
+        for (let r = 1; r < 4; r++) {
+            for (let c = 0; c < 4; c++) {
+                if (gameCells[r][c].props["cellValue"] !== 0) {
+                    console.log("Row: " + (r+1));
+                    console.log("Column: " + (c+1));
+                    
+                    // if (gameCells[(r-1)][c]) {                                                                       // If Cell Above Exists
+                    //     if (gameCells[(r-1)][c].props["cellValue"] === gameCells[r][c].props["cellValue"]) {        // 
+                    //         console.log("Row: " + r);
+                    //         console.log("Column: " + c);
+                    //     }
+                    // }
                 }
             }
-        })
-        
-        setSuperCells(gameCells);
-        
-        if (moved === 'moved') {
-            addNewCellToGame();
-                            
-            moved = 'notMoved';
         }
+
+
+
+
+
+
+
+
+        // gameCells.forEach((item, i) => {
+        //     let currentCellValue = gameCells[(i)].props["cellValue"];
+
+        //     if (item.props['cellValue'] !== 0) {
+        //         if (gameCells[(i-4)]) {
+        //             if (gameCells[(i-4)].props["cellValue"] === currentCellValue) {
+        //                 gameCells[i-4] = newCell((currentCellValue * 2),(i-4));
+        //                 gameCells[i] = newCell(0, i);
+        //                 moved = 'moved';
+        //             }
+        //             else if (gameCells[(i-4)].props["cellValue"] === 0) {
+        //                 if (gameCells[(i-8)]) {
+        //                     if (gameCells[(i-8)].props["cellValue"] === currentCellValue) {
+        //                         gameCells[i-8] = newCell((currentCellValue * 2),(i-8));
+        //                         gameCells[i] = newCell(0, i);
+        //                         moved = 'moved';
+        //                     }
+        //                     else if (gameCells[(i-8)].props["cellValue"] === 0) {
+        //                         if (gameCells[(i-12)]) {
+        //                             if (gameCells[(i-12)].props["cellValue"] === currentCellValue) {
+        //                                 gameCells[i-12] = newCell((currentCellValue * 2),(i-12));
+        //                                 gameCells[i] = newCell(0, i);
+        //                                 moved = 'moved';
+        //                             }
+        //                             else if (gameCells[(i-12)].props["cellValue"] === 0) {
+        //                                 gameCells[i-12] = newCell(currentCellValue,(i-12));
+        //                                 gameCells[i] = newCell(0, i);
+        //                                 moved = 'moved';
+        //                             }
+        //                             else {
+        //                                 gameCells[i-8] = newCell(currentCellValue,(i-8));
+        //                                 gameCells[i] = newCell(0, i);
+        //                                 moved = 'moved';
+        //                             }
+        //                         }
+        //                         else {
+        //                             gameCells[i-8] = newCell(currentCellValue,(i-8));
+        //                             gameCells[i] = newCell(0, i);
+        //                             moved = 'moved';
+        //                         }
+        //                     }
+        //                     else {
+        //                         gameCells[i-4] = newCell(currentCellValue,(i-4));
+        //                         gameCells[i] = newCell(0, i);
+        //                         moved = 'moved';
+        //                     }
+        //                 }
+        //                 else {
+        //                     gameCells[i-4] = newCell(currentCellValue,(i-4));
+        //                     gameCells[i] = newCell(0, i);
+        //                     moved = 'moved';
+        //                 }
+        //             }                        
+        //         }
+        //     }
+        // })
         
-        setGameContent(
-            <div className="cellWrap">
-                {
-                    gameCells.map(cell => {
-                        return cell;
-                    })
-                }
-            </div>
-        )
+        // setSuperCells(gameCells);
         
-        setSuperCells(gameCells);
+        // if (moved === 'moved') {
+        //     addNewCellToGame();
+                            
+        //     moved = 'notMoved';
+        // }
+        
+        // setGameContent(
+        //     <div className="cellWrap">
+        //         {
+        //             gameCells.map(cell => {
+        //                 return cell;
+        //             })
+        //         }
+        //     </div>
+        // )
+        
+        // setSuperCells(gameCells);
     }
-
-
-    
 
     return (
         <>
