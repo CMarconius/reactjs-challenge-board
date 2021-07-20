@@ -72,9 +72,12 @@ function TwentyFortyEight() {
         
         setGameOn(false);
         gameCells = [];
+        simpleCells = [];
+        setGlobalCells([]);
     }
 
     function setCells() {
+        gameCells = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
         for (let i = 0; i < 4; i++) {
             for (let k = 0; k < 4; k++) {
                 let index = (i*4) + k;
@@ -132,6 +135,15 @@ function TwentyFortyEight() {
     }
 
     function addNewCellToGame() {
+        gameCells = [...globalCells];
+        simpleCells = [];
+
+        globalCells.map((item) => {
+            item.map(cell => {
+                simpleCells.push(cell);
+            })
+        });
+
         let freeCells = [];
 
         simpleCells.forEach((item, i) => {
@@ -149,9 +161,9 @@ function TwentyFortyEight() {
                 let index = (i*4) + k;
                 if (newCellIndex === index) {
                     if (x > 0.2) {
-                        gameCells[i][k] = newCell(2, index);
+                        gameCells[i][k] = newCell((2), index);
                     }
-                    else gameCells[i][k] = newCell(4, index);
+                    else gameCells[i][k] = newCell((4), index);
                 }
             }
         }
@@ -161,6 +173,9 @@ function TwentyFortyEight() {
                 simpleCells.push(cell);
             })
         });
+
+        setGlobalCells([...gameCells]);
+
     }
 
     function moveLeft() {
@@ -176,29 +191,129 @@ function TwentyFortyEight() {
 
 
     function moveUp() {
-        gameCells = [...globalCells];
+
+        let activeCells = [...globalCells];
         
-        for (let r = 1; r < 4; r++) {
-            for (let c = 0; c < 4; c++) {
-                if (gameCells[r][c].props["cellValue"] !== 0) {
-                    console.log("Row: " + (r+1));
-                    console.log("Column: " + (c+1));
-                    
-                    // if (gameCells[(r-1)][c]) {                                                                       // If Cell Above Exists
-                    //     if (gameCells[(r-1)][c].props["cellValue"] === gameCells[r][c].props["cellValue"]) {        // 
-                    //         console.log("Row: " + r);
-                    //         console.log("Column: " + c);
-                    //     }
-                    // }
+        moved = 'notMoved';
+        
+        for (let r = 1; r < 4; r++) {           // Loop through bottom 3 rows (staring at second because top row can't move)
+            for (let c = 0; c < 4; c++) {       // Loop through each column
+                
+                let index = (r*4) + c;
+                // console.log("Current Cell:");
+                // console.log(gameCells[r])
+                
+                var currentCellValue = activeCells[r][c].props["cellValue"];
+
+                if (currentCellValue !== 0) {
+                    switch (r) {
+                        case 3:
+                            //Cell Is On Bottom Row
+                            if (activeCells[r-1][c].props["cellValue"] === currentCellValue) {
+                                activeCells[r-1][c] = newCell((currentCellValue * 2),(index-4));
+                                activeCells[r][c] = newCell(0, index);
+                                moved = 'moved';
+                            }
+                            else if (activeCells[r-1][c].props["cellValue"] === 0) {
+                                //MOVE UP TO NEXT CELL
+                                if (activeCells[r-2][c].props["cellValue"] === currentCellValue) {
+                                    activeCells[r-2][c] = newCell((currentCellValue * 2),(index-8));
+                                    activeCells[r][c] = newCell(0, index);
+                                    moved = 'moved';
+                                }
+                                else if (activeCells[r-2][c].props["cellValue"] === 0) {
+                                    //MOVE UP TO NEXT CELL
+                                    if (activeCells[r-3][c].props["cellValue"] === currentCellValue) {
+                                        activeCells[r-3][c] = newCell((currentCellValue * 2),(index-12));
+                                        activeCells[r][c] = newCell(0, index);
+                                        moved = 'moved';
+                                    }
+                                    else if (activeCells[r-3][c].props["cellValue"] === 0) {
+                                        activeCells[r-3][c] = newCell(currentCellValue,(index-12));
+                                        activeCells[r][c] = newCell(0, index);
+                                        moved = 'moved';
+                                    }
+                                    else {
+                                        activeCells[r-2][c] = newCell(currentCellValue,(index-8));
+                                        activeCells[r][c] = newCell(0, index);
+                                        moved = 'moved';
+                                    }
+                                }
+                                else {
+                                    activeCells[r-1][c] = newCell(currentCellValue,(index-4));
+                                    activeCells[r][c] = newCell(0, index);
+                                    moved = 'moved';
+                                }
+                            }
+                        break;
+                        case 2:
+                            //Cell Is On 3rd Row
+                            if (activeCells[r-1][c].props["cellValue"] === currentCellValue) {
+                                activeCells[r-1][c] = newCell((currentCellValue * 2),(index-4));
+                                activeCells[r][c] = newCell(0, index);
+                                moved = 'moved';
+                            }
+                            else if (activeCells[r-1][c].props["cellValue"] === 0) {
+                                //MOVE UP TO NEXT CELL
+                                if (activeCells[r-2][c].props["cellValue"] === currentCellValue) {
+                                    activeCells[r-2][c] = newCell((currentCellValue * 2),(index-8));
+                                    activeCells[r][c] = newCell(0, index);
+                                    moved = 'moved';
+                                }
+                                else if (activeCells[r-2][c].props["cellValue"] === 0) {
+                                    activeCells[r-2][c] = newCell(currentCellValue,(index-8));
+                                    activeCells[r][c] = newCell(0, index);
+                                    moved = 'moved';
+                                }
+                                else {
+                                    activeCells[r-1][c] = newCell(currentCellValue,(index-4));
+                                    activeCells[r][c] = newCell(0, index);
+                                    moved = 'moved';
+                                }
+                            }
+                        break;
+                        case 1:
+                            //Cell Is On Second Row
+                            if (activeCells[r-1][c].props["cellValue"] === currentCellValue) {
+                                activeCells[r-1][c] = newCell((currentCellValue * 2),(index-4));
+                                activeCells[r][c] = newCell(0, index);
+                                moved = 'moved';
+                            }
+                            else if (activeCells[r-1][c].props["cellValue"] === 0) {
+                                activeCells[r-1][c] = newCell(currentCellValue,(index-4));
+                                activeCells[r][c] = newCell(0, index);
+                                moved = 'moved';
+                            }
+                        break;
+                    }
                 }
+                
             }
         }
 
 
+        if (moved === 'moved') {
+            addNewCellToGame();
+            moved = 'notMoved';
+        }
+                
+        simpleCells = [];
 
+        activeCells.map((item) => {
+            item.map(cell => {
+                simpleCells.push(cell);
+            })
+        });
 
-
-
+        setGameContent(
+            <div className="cellWrap">
+                {
+                    simpleCells.map(cell => {
+                        return cell;
+                    })
+                }
+            </div>
+        )
 
 
         // gameCells.forEach((item, i) => {
