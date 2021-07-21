@@ -10,8 +10,9 @@ function TwentyFortyEight() {
     const [currentScore, setCurrentScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
     const [gameOn, setGameOn] = useState(false);
+
     const [currentGridState, setCurrentGridState] = useState([]);
-    const [previousGridState, setPreviousGridState] = useState([]);
+    const [undoPressed, setUndoPressed] = useState(false);
 
     const [gameButtons, setGameButtons] = useState();
     const [gameContent, setGameContent] = useState(        
@@ -24,6 +25,7 @@ function TwentyFortyEight() {
 
     var gameCells = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
     var simpleCells = [...gameCells];
+    const [previousGridState, setPreviousGridState] = useState([]);
 
     var moved = 'notMoved';
 
@@ -48,6 +50,9 @@ function TwentyFortyEight() {
             setCells();
             setGameButtons(
                 <>
+                <Button onClick={undoLastMove}  buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                    &#10531; UNDO
+                </Button>
                 <Button onClick={exitCurrentGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                     &#10531; EXIT
                 </Button>
@@ -58,8 +63,7 @@ function TwentyFortyEight() {
     }
 
     function exitCurrentGame() {
-        setCurrentGridState(...[previousGridState]);
-        setPreviousGridState([]);
+        previousGridState = [];
         setGameOn(false);
         setGameButtons();
         setGameContent(
@@ -109,7 +113,8 @@ function TwentyFortyEight() {
                 }
             </div>
         )
-        setGlobalCells([...gameCells]);
+        setPreviousGridState(JSON.parse(JSON.stringify(gameCells)));
+        setGlobalCells(JSON.parse(JSON.stringify(gameCells)));
     }
 
     function handleUserKeyPress(event) {
@@ -180,6 +185,10 @@ function TwentyFortyEight() {
 
     function moveLeft() {
         let activeCells = [...globalCells];
+        let tempPastGrid = JSON.parse(JSON.stringify(globalCells));
+        console.log("Temp Grid: ");
+        console.log(tempPastGrid);
+
         moved = 'notMoved';
         
         for (let r = 0; r < 4; r++) {
@@ -274,10 +283,11 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
+            setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
             addNewCellToGame();
             moved = 'notMoved';
         }
-                
+        
         simpleCells = [];
 
         activeCells.map((item) => {
@@ -295,12 +305,12 @@ function TwentyFortyEight() {
                 }
             </div>
         )
-
-        console.log(simpleCells)
     }
 
     function moveRight() {
+        let tempPastGrid = [...globalCells];
         let activeCells = [...globalCells];
+
         moved = 'notMoved';
         
         for (let r = 0; r < 4; r++) {           // Loop through bottom 3 rows (staring at second because top row can't move)
@@ -398,6 +408,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
+            previousGridState = [...tempPastGrid];
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -422,8 +433,9 @@ function TwentyFortyEight() {
     }
 
     function moveDown() {
-
+        let tempPastGrid = [...globalCells];
         let activeCells = [...globalCells];
+        
         console.log(activeCells)
         moved = 'notMoved';
         
@@ -522,6 +534,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
+            previousGridState = [...tempPastGrid];
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -546,9 +559,8 @@ function TwentyFortyEight() {
 
     }
 
-
     function moveUp() {
-
+        let tempPastGrid = [...globalCells];
         let activeCells = [...globalCells];
         
         moved = 'notMoved';
@@ -648,6 +660,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
+            previousGridState = [...tempPastGrid];
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -669,6 +682,29 @@ function TwentyFortyEight() {
                 }
             </div>
         )
+    }
+
+    function undoLastMove() {
+        gameCells = JSON.parse(JSON.stringify(globalCells));
+
+        simpleCells = [];
+
+        gameCells.map((item) => {
+            item.map(cell => {
+                simpleCells.push(cell);
+            })
+        });
+
+        setGameContent(
+            <div className="cellWrap">
+                {
+                    simpleCells.map(cell => {
+                        return cell;
+                    })
+                }
+            </div>
+        )
+        setGlobalCells([...gameCells]);
     }
 
     return (
