@@ -33,8 +33,6 @@ function TwentyFortyEight() {
 
     
 
-    
-
     useEffect(() => {
         window.addEventListener('keydown', handleUserKeyPress);
     
@@ -63,7 +61,7 @@ function TwentyFortyEight() {
     }
 
     function exitCurrentGame() {
-        previousGridState = [];
+        setPreviousGridState([]);
         setGameOn(false);
         setGameButtons();
         setGameContent(
@@ -113,8 +111,8 @@ function TwentyFortyEight() {
                 }
             </div>
         )
-        setPreviousGridState(JSON.parse(JSON.stringify(gameCells)));
-        setGlobalCells(JSON.parse(JSON.stringify(gameCells)));
+        // setPreviousGridState(JSON.parse(JSON.stringify(gameCells)));
+        setGlobalCells([...gameCells]);
     }
 
     function handleUserKeyPress(event) {
@@ -183,11 +181,36 @@ function TwentyFortyEight() {
 
     }
 
+    function copyArray(arr) {
+        console.log("Copying Array:");
+        console.log(arr);
+        let arr2 = [];
+        let arr3 = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let k = 0; k < arr[i].length; k++) {
+                let temp = [];
+                temp = arr[i][k];
+                temp.unshift({$$typeof: Symbol(react.element)});
+                arr2.push(temp)
+            }
+            console.log("YO!!!")
+            console.log([...arr2]);
+            arr3.push([...arr2]);
+            arr2 = []
+        }
+
+        console.log("Here's arr3: ");
+        console.log(arr3);
+
+        return arr3;
+    }
+
     function moveLeft() {
         let activeCells = [...globalCells];
         let tempPastGrid = JSON.parse(JSON.stringify(globalCells));
-        console.log("Temp Grid: ");
-        console.log(tempPastGrid);
+
+        // console.log("tempPastGrid");
+        // console.log(tempPastGrid);
 
         moved = 'notMoved';
         
@@ -277,13 +300,14 @@ function TwentyFortyEight() {
                         break;
                     }
                 }
-                
             }
         }
 
 
         if (moved === 'moved') {
-            setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
+            setPreviousGridState(copyArray([...tempPastGrid]));
+            // console.log("Move Up - tempPastGrid:");
+            // console.log(previousGridState);
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -295,6 +319,9 @@ function TwentyFortyEight() {
                 simpleCells.push(cell);
             })
         });
+
+        console.log("simpleCells:");
+        console.log(simpleCells);
 
         setGameContent(
             <div className="cellWrap">
@@ -408,7 +435,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
-            previousGridState = [...tempPastGrid];
+            // setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -436,7 +463,7 @@ function TwentyFortyEight() {
         let tempPastGrid = [...globalCells];
         let activeCells = [...globalCells];
         
-        console.log(activeCells)
+        
         moved = 'notMoved';
         
         for (let r = 2; r >= 0; r--) {
@@ -534,7 +561,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
-            previousGridState = [...tempPastGrid];
+            // setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -562,6 +589,9 @@ function TwentyFortyEight() {
     function moveUp() {
         let tempPastGrid = [...globalCells];
         let activeCells = [...globalCells];
+
+        
+        
         
         moved = 'notMoved';
         
@@ -660,7 +690,7 @@ function TwentyFortyEight() {
 
 
         if (moved === 'moved') {
-            previousGridState = [...tempPastGrid];
+            // setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -685,7 +715,14 @@ function TwentyFortyEight() {
     }
 
     function undoLastMove() {
-        gameCells = JSON.parse(JSON.stringify(globalCells));
+        // gameCells = JSON.parse(JSON.stringify(globalCells));
+        gameCells = [];
+        for (let i = 0; i < previousGridState.length; i++) {
+            gameCells.push(previousGridState[i]);
+        }
+        console.log("previousGridState");
+        console.log(previousGridState);
+
 
         simpleCells = [];
 
