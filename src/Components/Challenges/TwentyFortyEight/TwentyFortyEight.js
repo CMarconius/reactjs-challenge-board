@@ -25,6 +25,8 @@ function TwentyFortyEight() {
 
     var gameCells = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
     var simpleCells = [...gameCells];
+    let tempPastGrid = [];
+    
     const [previousGridState, setPreviousGridState] = useState([]);
 
     var moved = 'notMoved';
@@ -188,9 +190,8 @@ function TwentyFortyEight() {
         let arr3 = [];
         for (let i = 0; i < arr.length; i++) {
             for (let k = 0; k < arr[i].length; k++) {
-                let temp = [];
-                temp = arr[i][k];
-                temp.unshift({$$typeof: Symbol(react.element)});
+                let temp = arr[i][k];
+                temp["$$typeof"] = ("Symbol(react.element)");
                 arr2.push(temp)
             }
             console.log("YO!!!")
@@ -587,11 +588,14 @@ function TwentyFortyEight() {
     }
 
     function moveUp() {
-        let tempPastGrid = [...globalCells];
-        let activeCells = [...globalCells];
+        let arr = [];
+        for (let i = 0; i < globalCells.length; i++) {
+            arr.push([...globalCells[i]]);
+        }
 
-        
-        
+        tempPastGrid = arr;
+
+        let activeCells = [...globalCells];
         
         moved = 'notMoved';
         
@@ -687,10 +691,17 @@ function TwentyFortyEight() {
                 
             }
         }
+        
 
+        console.log("globalCells");
+        console.log(globalCells);
+        console.log("tempPastGrid");
+        console.log(tempPastGrid);
+        console.log("activeCells");
+        console.log(activeCells);
 
         if (moved === 'moved') {
-            // setPreviousGridState(JSON.parse(JSON.stringify(tempPastGrid)));
+            setPreviousGridState([...tempPastGrid]);
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -712,16 +723,18 @@ function TwentyFortyEight() {
                 }
             </div>
         )
+
+        
+
     }
 
     function undoLastMove() {
         // gameCells = JSON.parse(JSON.stringify(globalCells));
-        gameCells = [];
         for (let i = 0; i < previousGridState.length; i++) {
             gameCells.push(previousGridState[i]);
         }
         console.log("previousGridState");
-        console.log(previousGridState);
+        console.log(tempPastGrid);
 
 
         simpleCells = [];
