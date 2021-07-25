@@ -200,8 +200,8 @@ function TwentyFortyEight() {
 
         moved = 'notMoved';
         
-        for (let r = 0; r < 4; r++) {
-            for (let c = 1; c < 4; c++) {
+        for (let c = 1; c < 4; c++) {
+            for (let r = 0; r < 4; r++) {
                 
                 let index = (r*4) + c;
                 
@@ -305,8 +305,6 @@ function TwentyFortyEight() {
             })
         });
 
-        console.log("simpleCells:");
-        console.log(simpleCells);
 
         setGameContent(
             <div className="cellWrap">
@@ -325,8 +323,8 @@ function TwentyFortyEight() {
 
         moved = 'notMoved';
         
-        for (let r = 0; r < 4; r++) {           // Loop through bottom 3 rows (staring at second because top row can't move)
-            for (let c = 2; c >= 0; c--) {       // Loop through each column
+        for (let c = 2; c >= 0; c--) {           // Loop through bottom 3 rows (staring at second because top row can't move)
+            for (let r = 0; r < 4; r++) {       // Loop through each column
                 
                 let index = (r*4) + c;
                 
@@ -424,7 +422,7 @@ function TwentyFortyEight() {
             addNewCellToGame();
             moved = 'notMoved';
         }
-                
+        
         simpleCells = [];
 
         activeCells.map((item) => {
@@ -572,12 +570,10 @@ function TwentyFortyEight() {
     }
 
     function moveUp() {
-        let arr = [];
+        tempPastGrid = [];
         for (let i = 0; i < globalCells.length; i++) {
-            arr.push([...globalCells[i]]);
+            tempPastGrid.push([...globalCells[i]]);
         }
-
-        tempPastGrid = arr;
 
         let activeCells = globalCells;
         
@@ -685,12 +681,12 @@ function TwentyFortyEight() {
             moved = 'notMoved';
         }
 
-        console.log("previousGridState");
-        console.log(previousGridState);
-        console.log("tempPastGrid");
-        console.log(tempPastGrid);
-        console.log("activeCells");
-        console.log(activeCells);
+        // console.log("previousGridState");
+        // console.log(previousGridState);
+        // console.log("tempPastGrid");
+        // console.log(tempPastGrid);
+        // console.log("activeCells");
+        // console.log(activeCells);
                 
         simpleCells = [];
 
@@ -709,9 +705,6 @@ function TwentyFortyEight() {
                 }
             </div>
         )
-
-        
-
     }
 
     function undoLastMove() {
@@ -719,6 +712,9 @@ function TwentyFortyEight() {
         // for (let i = 0; i < previousGridState.length; i++) {
         //     gameCells.push([...previousGridState[i]]);
         // }
+        console.log("tempPastGrid");
+        console.log(tempPastGrid);
+
         if (previousGridState) {
             for (let i = 0; i < previousGridState.length; i++) {
                 for (let k = 0; k < previousGridState.length; k++) {
