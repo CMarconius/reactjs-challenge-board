@@ -7,6 +7,7 @@ import LinkGenerator from './Challenges/CalendarLinkGenerator/Link-Generator'
 import CurrencyConverter from './Challenges/CurrencyConverter/CurrencyConverter'
 import './styles/CardSection.css'
 import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
+import SortQuick from './Challenges/SortingAlgo/QuickSort/SortQuick'
 
 function CardSection() {
 
@@ -54,6 +55,7 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card size="small" challengeName={"Bubble Sort"} thisChallenge={<SortBubble/>}/>
+                    <Card size="medium" challengeName={"Quick Sort"} thisChallenge={<SortQuick/>}/>
                 </div>
 
 
