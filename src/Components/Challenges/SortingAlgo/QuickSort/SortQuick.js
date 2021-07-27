@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Button } from '../../../Button';
 import './SortQuick.css';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function SortQuick() {
 
@@ -13,14 +13,8 @@ function SortQuick() {
     const [leftArray, setLeftArray] = useState([]);
     const [rightArray, setRightArray] = useState([]);
 
-    const images = [
-        'images/profile_pic_1.jpg',
-        'images/profile_pic_2.jpg',
-        'images/profile_pic_3.jpg',
-      ];
+    const images = 'images/QuickSortImages/profile_pic_1.jpg'
     
-    var photoIndex = 0;
-    const [isOpen, setIsOpen] = useState(false);
 
     const randomizeArray = () => {
         const newArray = [];
@@ -32,35 +26,50 @@ function SortQuick() {
         setStartArray(newArray);
         setSortedArray('...');
 
-        setPivot(startArray[(startArray.length - 1)]);
+        setPivot(newArray[(newArray.length - 1)]);
     }
 
     return (
         <>
             <div className="quickSort">
+
                 
-                <button type="button" onClick={() => setIsOpen({ isOpen: true })}>
-                    <img src={toString(images[0])} alt="" />
-                </button>
                 
-                {isOpen && (
-                    <Lightbox
-                        mainSrc={images[photoIndex]}
-                        nextSrc={images[(photoIndex + 1) % images.length]}
-                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                        onCloseRequest={() => this.setState({ isOpen: false })}
-                        onMovePrevRequest={() =>
-                        this.setState({
-                            photoIndex: (photoIndex + images.length - 1) % images.length,
-                        })
-                        }
-                        onMoveNextRequest={() =>
-                        this.setState({
-                            photoIndex: (photoIndex + 1) % images.length,
-                        })
-                        }
-                    />
-                )}
+                <Popup 
+                    trigger={<img src={'images/QuickSortImages/profile_pic_1.jpg'} alt="" />} 
+                    modal
+                    nested>
+                {close => (
+                    <div className="modal">
+                        <button className="close" onClick={close}>
+                        &times;
+                        </button>
+                        <div className="header"> Modal Title </div>
+                        <div className="content">
+                        {' '}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+                        Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+                        delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+                        commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+                        explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+                        </div>
+                        <div className="actions">
+                        
+                        <button
+                            className="button"
+                            onClick={() => {
+                            console.log('modal closed ');
+                            close();
+                            }}
+                        >
+                            close modal
+                        </button>
+                        </div>
+                    </div>
+                    )}
+                </Popup>
                 
                 
                 <Button onClick={randomizeArray} buttonSize="btn--small" buttonActive="false" goHere="" bTarget="">Click to randomize array</Button>
