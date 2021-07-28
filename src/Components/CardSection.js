@@ -8,6 +8,7 @@ import CurrencyConverter from './Challenges/CurrencyConverter/CurrencyConverter'
 import './styles/CardSection.css'
 import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
 import SortQuick from './Challenges/SortingAlgo/QuickSort/SortQuick'
+import Podcasts from './Challenges/Podcasts/Podcasts'
 
 function CardSection() {
 
@@ -24,6 +25,7 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
+                    <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/>
                     <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
                 </div>
 
