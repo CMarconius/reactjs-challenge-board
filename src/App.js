@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import CardSection from './Components/CardSection';
+import BubbleFlyer from './Components/Challenges/BubbleFlyer/BubbleFlyer';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
 
           {/* MAIN BODY OF PAGE */}
 
-          <CardSection/>
+          {/* <CardSection/> */}
+
+          <BubbleFlyer/>
 
           {/* END MAIN BODY OF PAGE */}
 
