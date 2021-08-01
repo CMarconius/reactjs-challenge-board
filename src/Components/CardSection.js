@@ -9,6 +9,7 @@ import './styles/CardSection.css'
 import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
 import SortQuick from './Challenges/SortingAlgo/QuickSort/SortQuick'
 import Podcasts from './Challenges/Podcasts/Podcasts'
+import Pokedex from './Challenges/Pokedex/Pokedex'
 
 function CardSection() {
 
@@ -25,7 +26,8 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
-                    <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/>
+                    {/* <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/> */}
+                    <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>}/>
                     <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
                 </div>
 
@@ -57,7 +59,7 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card size="small" challengeName={"Bubble Sort"} thisChallenge={<SortBubble/>}/>
-                    <Card size="medium" challengeName={"Quick Sort"} thisChallenge={<SortQuick/>}/>
+                    {/* <Card size="medium" challengeName={"Quick Sort"} thisChallenge={<SortQuick/>}/> */}
                 </div>
 
 

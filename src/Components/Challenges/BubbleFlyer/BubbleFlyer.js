@@ -4,7 +4,7 @@ function BubbleFlyer() {
     return (
         <div>
             
-            <div>
+            {/* <div>
                 <div style="display:none;">
                     <img src="./images/coin.png" width="30" height="30">
                     <img src="./images/bubbletext.png" width="445" height="69">
@@ -38,7 +38,7 @@ function BubbleFlyer() {
                 <script src="SceneManager.js"></script>
                 <script src="Health.js"></script>
                 
-            </div>
+            </div> */}
         </div>
     )
 }

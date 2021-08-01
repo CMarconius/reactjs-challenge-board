@@ -13,9 +13,9 @@ function App() {
 
           {/* MAIN BODY OF PAGE */}
 
-          {/* <CardSection/> */}
+          <CardSection/>
 
-          <BubbleFlyer/>
+          {/* <BubbleFlyer/> */}
 
           {/* END MAIN BODY OF PAGE */}
 
