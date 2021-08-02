@@ -6,10 +6,12 @@ function Pokedex() {
 
     const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 
-    const [currentPokeId, setCurrentPokeId] = useState(800);
+    const [currentPokeId, setCurrentPokeId] = useState(250);
     const [currentPokeData, setCurrentPokeData] = useState();
     const [currentPokeName, setCurrentPokeName] = useState();
     const [currentPokeImage, setCurrentPokeImage] = useState();
+
+    const [allPokemonNames, setAllPokemonNames] = useState([]);
 
     const backOne = () => {
         if (currentPokeId !== 1) {
@@ -40,6 +42,14 @@ function Pokedex() {
     }
 
     useEffect(() => {
+        axios.get(`${baseUrl+'?limit=898'}`)
+        .then((response) => {
+            setAllPokemonNames(response.data.results)
+            console.log(allPokemonNames);
+        });
+    }, [])
+
+    useEffect(() => {
         axios.get(`${baseUrl+currentPokeId}`)   // Get Current Pokemon by Id
         .then((response) => {
 
@@ -48,6 +58,7 @@ function Pokedex() {
                 return n.charAt(0).toUpperCase() + n.slice(1);
             });
 
+            console.log(allPokemonNames);
             setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
         })
     }, [currentPokeId])
