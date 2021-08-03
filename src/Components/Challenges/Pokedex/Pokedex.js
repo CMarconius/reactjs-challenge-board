@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import './Pokedex.css'
+import SearchBar from './SearchBar';
 
 function Pokedex() {
 
@@ -45,7 +46,6 @@ function Pokedex() {
         axios.get(`${baseUrl+'?limit=898'}`)
         .then((response) => {
             setAllPokemonNames(response.data.results)
-            console.log(allPokemonNames);
         });
     }, [])
 
@@ -58,14 +58,23 @@ function Pokedex() {
                 return n.charAt(0).toUpperCase() + n.slice(1);
             });
 
-            console.log(allPokemonNames);
+            // console.log(allPokemonNames);
             setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
         })
     }, [currentPokeId])
 
+    useEffect(() => {
+        console.log(allPokemonNames);
+    }, [allPokemonNames])
+
+
     
     return (
         <div className="pokedex">
+            <div className="searchBarSection">
+                <SearchBar/>
+            </div>
+
             <div className="pokedexImageSection">
                 <img src="images/Pokedex/pokedex_center.png"/>
                 <img src={currentPokeImage} alt="" />
