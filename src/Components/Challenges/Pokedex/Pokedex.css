@@ -1,9 +1,15 @@
 .pokedex {
   max-width: 400px;
+  margin-top: 20px;
+  width: fit-content;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+  border: solid 5px #414141;
+  box-shadow: 10px 10px 10px 10px #858585;
 }
 
 .pokedex img {
@@ -49,17 +55,20 @@
 
 @media (max-width: 524px) {
   .pokedexImageSection img:nth-child(2) {
-    width: 160px;
-    height: 160px;
+    width: 155px;
+    height: 155px;
     margin-top: 38px;
   }
 }
 
 @media (max-width: 400px) {
+  .pokedex {
+    max-width: 100%;
+  }
   .pokedexImageSection img:nth-child(2) {
-    width: 117px;
-    height: 117px;
-    margin-top: 29px;
+    width: 112px;
+    height: 112px;
+    margin-top: 27px;
   }
 }
 
