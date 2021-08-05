@@ -38,8 +38,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--cmarc-blue-1);
-  border: solid 4px var(--cmarc-blue-3);
+  border: solid 3px var(--cmarc-blue-3);
   border-radius: 20px 20px 00px 0px;
+  border-bottom: none;
+}
+
+.arrowRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  width: 80%;
+  height: auto;
+  background-color: #adadad;
+  border: solid 3px var(--cmarc-blue-3);
+  border-radius: 0px 0px 20px 20px;
 }
 
 .currentPokeInfo h2 {
@@ -72,25 +85,9 @@
   }
 }
 
-.arrowRow {
-  display: flex;
-  align-items: center;
-  padding: 20px 20px 0px 20px;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 80%;
-  height: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #a1a1a1;
-  border: solid 4px var(--cmarc-blue-3);
-  border-radius: 0px 0px 20px 20px;
-}
-
 .arrowRow img {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
 }
 
 .arrowRow img.arrow {
