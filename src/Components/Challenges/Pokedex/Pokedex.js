@@ -51,7 +51,7 @@ function Pokedex() {
         .then((response) => {
             let names = [];
             response.data.results.map((pokemon) => {
-                names.push(pokemon.name);
+                names.push(pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1));
             })
             setAllPokemonNames(names);
         });
