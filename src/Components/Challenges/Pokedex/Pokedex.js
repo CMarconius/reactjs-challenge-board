@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import './Pokedex.css'
 import SearchBar from './SearchBar';
+import Autocomplete from './AutoComplete';
+import './AutoComplete.css';
 
 function Pokedex() {
 
@@ -13,6 +15,8 @@ function Pokedex() {
     const [currentPokeImage, setCurrentPokeImage] = useState();
 
     const [allPokemonNames, setAllPokemonNames] = useState([]);
+
+    var currentSearchContents = "";
 
     const backOne = () => {
         if (currentPokeId !== 1) {
@@ -45,7 +49,11 @@ function Pokedex() {
     useEffect(() => {
         axios.get(`${baseUrl+'?limit=898'}`)
         .then((response) => {
-            setAllPokemonNames(response.data.results)
+            let names = [];
+            response.data.results.map((pokemon) => {
+                names.push(pokemon.name);
+            })
+            setAllPokemonNames(names);
         });
     }, [])
 
@@ -67,14 +75,9 @@ function Pokedex() {
         console.log(allPokemonNames);
     }, [allPokemonNames])
 
-
     
     return (
         <div className="pokedex">
-            <h2 className="pokedexHeadine">Search for your favourite Pokemon</h2>
-            <div className="searchBarSection">
-                <SearchBar/>
-            </div>
 
             <div className="pokedexImageSection">
                 <img src="images/Pokedex/pokedex_center.png"/>
@@ -98,6 +101,12 @@ function Pokedex() {
                 <img onClick={forwardOne} className="" src="images/Pokedex/arrow-right.svg" alt="" />
 
                 <img onClick={forwardTen} className="arrow" src="images/Pokedex/arrow-double-right.svg" alt="" />
+            </div>
+
+            
+            <h3 className="pokedexHeadine">Search for your favourite Pokemon</h3>
+            <div className="searchBarSection">
+                <Autocomplete suggestions={[...allPokemonNames]}/>
             </div>
         </div>
     )

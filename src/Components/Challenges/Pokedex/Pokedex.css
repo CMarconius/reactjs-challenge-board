@@ -69,6 +69,7 @@
 .pokedexHeadine {
   background-color: aliceblue;
   padding: 5px 20px;
+  margin: 15px 0px;
   border-radius: 20px;
 }
 
@@ -80,7 +81,7 @@
   }
 
   .pokedexHeadine {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -102,4 +103,8 @@
 
 .arrowRow img.arrow {
   width: 15%;
+}
+
+input {
+  margin-bottom: 10px;
 }
