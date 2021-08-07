@@ -71,6 +71,7 @@ function Pokedex() {
     
     return (
         <div className="pokedex">
+            <h2 className="pokedexHeadine">Search for your favourite Pokemon</h2>
             <div className="searchBarSection">
                 <SearchBar/>
             </div>

@@ -66,11 +66,21 @@
   margin-top: 48px;
 }
 
+.pokedexHeadine {
+  background-color: aliceblue;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
 @media (max-width: 524px) {
   .pokedexImageSection img:nth-child(2) {
     width: 155px;
     height: 155px;
     margin-top: 38px;
+  }
+
+  .pokedexHeadine {
+    font-size: 10px;
   }
 }
 
