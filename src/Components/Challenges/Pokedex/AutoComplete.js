@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import './SearchBar.css'
 
 class Autocomplete extends Component {
   static propTypes = {
@@ -51,6 +50,7 @@ class Autocomplete extends Component {
       showSuggestions: false,
       userInput: e.currentTarget.innerText
     });
+    this.props.onSelectedPokemon(e.currentTarget.innerText);
   };
 
   onKeyDown = e => {
@@ -63,6 +63,7 @@ class Autocomplete extends Component {
         showSuggestions: false,
         userInput: filteredSuggestions[activeSuggestion]
       });
+      this.props.onSelectedPokemon(filteredSuggestions[activeSuggestion]);
     }
     // User pressed the up arrow
     else if (e.keyCode === 38) {
@@ -119,8 +120,10 @@ class Autocomplete extends Component {
         );
       } else {
         suggestionsListComponent = (
-          <div class="no-suggestions">
-            <em>No suggestions, you're on your own!</em>
+          <div className="no-suggestions">
+            <em>No suggestions...</em>
+            <br></br>
+            <em>Are you sure this Pokemon exists??</em>
           </div>
         );
       }

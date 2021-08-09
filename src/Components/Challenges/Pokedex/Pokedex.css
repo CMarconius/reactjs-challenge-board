@@ -73,11 +73,27 @@
   border-radius: 20px;
 }
 
+.infoContainer h2 {
+  font-size: 18px !important;
+}
+
+.searchBarSection {
+  display: flex;
+  flex-direction: column;
+  width: 254px;
+  align-items: stretch;
+}
+
 @media (max-width: 524px) {
   .pokedexImageSection img:nth-child(2) {
     width: 155px;
     height: 155px;
     margin-top: 38px;
+  }
+
+  .infoContainer h2 {
+    font-size: 14px !important;
+    margin-bottom: 0px;
   }
 
   .pokedexHeadine {
@@ -103,8 +119,4 @@
 
 .arrowRow img.arrow {
   width: 15%;
-}
-
-input {
-  margin-bottom: 10px;
 }

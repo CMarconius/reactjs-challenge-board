@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import './Pokedex.css'
-import SearchBar from './SearchBar';
 import Autocomplete from './AutoComplete';
 import './AutoComplete.css';
 
@@ -9,7 +8,7 @@ function Pokedex() {
 
     const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 
-    const [currentPokeId, setCurrentPokeId] = useState(250);
+    const [currentPokeId, setCurrentPokeId] = useState(1);
     const [currentPokeData, setCurrentPokeData] = useState();
     const [currentPokeName, setCurrentPokeName] = useState();
     const [currentPokeImage, setCurrentPokeImage] = useState();
@@ -72,8 +71,23 @@ function Pokedex() {
     }, [currentPokeId])
 
     useEffect(() => {
-        console.log(allPokemonNames);
+        // console.log(allPokemonNames);
     }, [allPokemonNames])
+
+    function pokemonPicked(newPokemon) {
+        axios.get(`${baseUrl+(newPokemon.toLowerCase())}`)   // Get Current Pokemon by Id
+        .then((response) => {
+
+            setCurrentPokeName(() => {          // Set Pokemon Name (Capitalise first letter first)
+                let n = response.data.name;
+                return n.charAt(0).toUpperCase() + n.slice(1);
+            });
+
+            setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
+
+            setCurrentPokeId(response.data.id)
+        })
+    }
 
     
     return (
@@ -87,8 +101,8 @@ function Pokedex() {
             
             <div className="currentPokeInfo">
                 <div className="infoContainer">
-                    <h2>Pokemon Number: {currentPokeId}</h2>
-                    <h2>Name: {currentPokeName}</h2>
+                    <h2>Pokemon Id : {currentPokeId}</h2>
+                    <h2>Name : {currentPokeName}</h2>
                 </div>
             </div>
 
@@ -106,7 +120,7 @@ function Pokedex() {
             
             <h3 className="pokedexHeadine">Search for your favourite Pokemon</h3>
             <div className="searchBarSection">
-                <Autocomplete suggestions={[...allPokemonNames]}/>
+                <Autocomplete onSelectedPokemon={pokemonPicked} suggestions={[...allPokemonNames]}/>
             </div>
         </div>
     )

@@ -50,9 +50,9 @@ function TwentyFortyEight() {
             setCells();
             setGameButtons(
                 <>
-                <Button onClick={undoLastMove}  buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
+                {/* <Button onClick={undoLastMove}  buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                     &#10531; UNDO
-                </Button>
+                </Button> */}
                 <Button onClick={exitCurrentGame} buttonSize="btn--medium" buttonActive="false" goHere="" bTarget="">
                     &#10531; EXIT
                 </Button>
@@ -762,14 +762,15 @@ function TwentyFortyEight() {
 
                     <div className="headerRight">
                         <div className="scores">
-                            <div className="scoreBox">
+                            <h2>Note: For now, Game only playable with a keyboard...</h2>
+                            {/* <div className="scoreBox">
                                 <p>SCORE</p>
                                 <p>{currentScore}</p>
                             </div>
                             <div className="scoreBox">
                                 <p>BEST</p>
                                 <p>{bestScore}</p>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="newGame">
                             {gameButtons}

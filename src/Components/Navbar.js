@@ -21,8 +21,10 @@ function Navbar() {
                         <div className="navbar-right">
                             {/* <h2 classNameName="nav-right-link">Super Link</h2>
                             <h2 classNameName="nav-right-link">Super Link</h2> */}
-                            <Button buttonStyle="btn--primary btn-nav" goHere="https://www.youtube.com" bTarget="_blank">Follow My Progress</Button>
-                        </div>
+                            <Button buttonSize="btn--medium" goHere="https://instagram.com/CMarconius" bTarget="_blank">Instagram</Button>
+                            <Button buttonSize="btn--medium" goHere="https://www.facebook.com/cmarconius/" bTarget="_blank">Facebook</Button>
+                            <Button buttonSize="btn--medium" goHere="https://github.com/CMarconius" bTarget="_blank">Github</Button>
+                         </div>
                     </div>
                 </div>
 

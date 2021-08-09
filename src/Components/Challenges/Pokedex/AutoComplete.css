@@ -3,9 +3,8 @@ body {
 }
 
 input {
-  border: 1px solid #999;
+  border: 2px solid var(--cmarc-blue-1);
   padding: 0.5rem;
-  width: 100%;
 }
 
 .no-suggestions {
@@ -29,8 +28,8 @@ input {
 
 .suggestion-active,
 .suggestions li:hover {
-  background-color: #008f68;
-  color: #fae042;
+  background-color: var(--cmarc-blue-1);
+  color: white;
   cursor: pointer;
   font-weight: 700;
 }

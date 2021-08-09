@@ -25,10 +25,10 @@ function CardSection() {
 
 
                 <div className="cardRow">
-                    <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
-                    {/* <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/> */}
+                    <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
+                    <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
                     <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>}/>
-                    <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
+                    <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight/>}/>
                 </div>
 
                 
@@ -38,13 +38,13 @@ function CardSection() {
 
 
                 <div className="cardDivider">
-                    <h2>Larger Projects</h2>
+                    <h2>Smaller Projects</h2>
                 </div>
 
                 <div className="cardRow">
-                    <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
-                    <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
-                    <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight/>}/>
+                    <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
+                    <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>}/>
+                    {/* <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/> */}
                 </div>
 
                                 
