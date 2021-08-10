@@ -136,6 +136,7 @@ class Autocomplete extends Component {
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          placeholder="Enter Pokemon Name"
         />
         {suggestionsListComponent}
       </Fragment>
