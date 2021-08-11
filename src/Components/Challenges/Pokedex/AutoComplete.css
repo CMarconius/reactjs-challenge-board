@@ -6,7 +6,7 @@ input {
   border: 2px solid var(--cmarc-blue-1);
   border-radius: 3px;
   padding: 0.5rem;
-  box-shadow: inset 0px 2px 25px rgba(0, 110, 77, 0.3);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .no-suggestions {

@@ -10,6 +10,7 @@ import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
 import SortQuick from './Challenges/SortingAlgo/QuickSort/SortQuick'
 import Podcasts from './Challenges/Podcasts/Podcasts'
 import Pokedex from './Challenges/Pokedex/Pokedex'
+import { LoadingBoxes } from './Challenges/LoadingBoxes/LoadingBoxes'
 
 function CardSection() {
 
@@ -25,6 +26,7 @@ function CardSection() {
 
 
                 <div className="cardRow">
+                    <Card size="large" challengeName={"Loading"} thisChallenge={<LoadingBoxes/>}/>
                     <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
                     <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
                     <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>}/>
