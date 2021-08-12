@@ -66,6 +66,12 @@
   margin-top: 48px;
 }
 
+.loadingContainer {
+  position: absolute;
+  padding-top: 6em;
+  padding-left: 1em;
+}
+
 .pokedexHeadine {
   background-color: aliceblue;
   padding: 5px 20px;
@@ -85,10 +91,19 @@
 }
 
 @media (max-width: 524px) {
+  .pokedex {
+    box-shadow: none;
+  }
+
   .pokedexImageSection img:nth-child(2) {
     width: 155px;
     height: 155px;
     margin-top: 38px;
+  }
+
+  .loadingContainer {
+    position: absolute;
+    padding-top: 5em;
   }
 
   .infoContainer h2 {
@@ -109,6 +124,10 @@
     width: 112px;
     height: 112px;
     margin-top: 27px;
+  }
+
+  .loadingContainer {
+    padding-left: 0.5em;
   }
 }
 

@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Pokedex.css'
 import Autocomplete from './AutoComplete';
 import './AutoComplete.css';
+import { LoadingBoxes } from '../LoadingBoxes/LoadingBoxes';
 
 function Pokedex() {
 
@@ -14,6 +15,7 @@ function Pokedex() {
     const [currentPokeImage, setCurrentPokeImage] = useState();
 
     const [allPokemonNames, setAllPokemonNames] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     var currentSearchContents = "";
 
@@ -57,6 +59,7 @@ function Pokedex() {
     }, [])
 
     useEffect(() => {
+        setLoading(true);
         axios.get(`${baseUrl+currentPokeId}`)   // Get Current Pokemon by Id
         .then((response) => {
 
@@ -74,7 +77,12 @@ function Pokedex() {
         // console.log(allPokemonNames);
     }, [allPokemonNames])
 
+    useEffect(() => {
+        setLoading(false);
+    }, [currentPokeImage])
+
     function pokemonPicked(newPokemon) {
+        setLoading(true);
         axios.get(`${baseUrl+(newPokemon.toLowerCase())}`)   // Get Current Pokemon by Id
         .then((response) => {
 
@@ -85,7 +93,7 @@ function Pokedex() {
 
             setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
 
-            setCurrentPokeId(response.data.id)
+            setCurrentPokeId(response.data.id);
         })
     }
 
@@ -95,7 +103,12 @@ function Pokedex() {
 
             <div className="pokedexImageSection">
                 <img src="images/Pokedex/pokedex_center.png"/>
-                <img src={currentPokeImage} alt="" />
+
+                {loading
+                    ? <div className="loadingContainer"><LoadingBoxes/></div>
+                    : <img src={currentPokeImage} alt="" />
+                }
+
             </div> 
 
             
