@@ -90,6 +90,21 @@
   align-items: stretch;
 }
 
+.arrowRow img {
+  width: 25%;
+  height: 25%;
+}
+
+.arrowRow img.arrow {
+  width: 15%;
+  border: solid 3px white;
+}
+
+.arrowRow img:hover,
+.searchBarSection:hover {
+  box-shadow: 0 0 6px 1px var(--cmarc-blue-2);
+}
+
 @media (max-width: 524px) {
   .pokedex {
     box-shadow: none;
@@ -130,13 +145,9 @@
     padding-left: 0.5em;
     padding-top: 3.5em;
   }
-}
 
-.arrowRow img {
-  width: 25%;
-  height: 25%;
-}
-
-.arrowRow img.arrow {
-  width: 15%;
+  .arrowRow img.arrow {
+    width: 13%;
+    border: solid 1px white;
+  }
 }
