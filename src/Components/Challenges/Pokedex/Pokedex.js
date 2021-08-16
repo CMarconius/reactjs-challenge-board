@@ -77,9 +77,9 @@ function Pokedex() {
         // console.log(allPokemonNames);
     }, [allPokemonNames])
 
-    useEffect(() => {
-        setLoading(false);
-    }, [currentPokeImage])
+    // useEffect(() => {
+    //     // setLoading(false);
+    // }, [currentPokeImage])
 
     function pokemonPicked(newPokemon) {
         setLoading(true);
@@ -90,9 +90,6 @@ function Pokedex() {
                 let n = response.data.name;
                 return n.charAt(0).toUpperCase() + n.slice(1);
             });
-
-            setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
-
             setCurrentPokeId(response.data.id);
         })
     }
@@ -104,10 +101,11 @@ function Pokedex() {
             <div className="pokedexImageSection">
                 <img src="images/Pokedex/pokedex_center.png"/>
 
-                {loading
-                    ? <div className="loadingContainer"><LoadingBoxes/></div>
-                    : <img src={currentPokeImage} alt="" />
-                }
+                <img style={loading ? {display: 'none'} : {}} onLoad={() => setLoading(false)} src={currentPokeImage} alt="" />
+
+
+                {loading ? <div className="loadingContainer"><LoadingBoxes/></div> : null}
+
 
             </div> 
 

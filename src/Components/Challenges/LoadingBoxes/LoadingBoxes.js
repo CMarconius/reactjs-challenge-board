@@ -16,14 +16,14 @@ export const LoadingBoxes = (props) => {
         if (colorful) {
             let arr = [];
             for (let i = 0; i < boxCount; i++) {
-                arr.push(<LoadingBox boxDelay={'' + (timeGap * i) + 'ms'} boxColor={'#' + Math.floor(Math.random()*16777215).toString(16)} secondColor={'#' + Math.floor(Math.random()*16777215).toString(16)}/>)
+                arr.push(<LoadingBox key={i} boxDelay={'' + (timeGap * i) + 'ms'} boxColor={'#' + Math.floor(Math.random()*16777215).toString(16)} secondColor={'#' + Math.floor(Math.random()*16777215).toString(16)}/>)
             }
             return arr;
         }
         else {
             let arr = [];
             for (let i = 0; i < boxCount; i++) {
-                arr.push(<LoadingBox boxDelay={'' + (timeGap * i) + 'ms'} boxColor={'#FFFF00'} secondColor={'#2e2e2e'}/>)
+                arr.push(<LoadingBox key={i} boxDelay={'' + (timeGap * i) + 'ms'} boxColor={'#FFFF00'} secondColor={'#2e2e2e'}/>)
             }
             return arr;
         }

@@ -53,6 +53,8 @@ function Card(props) {
             setContainerContent(
                 <>
                 <h2>{props.challengeName}</h2>
+                <h3>THIS IS TEXT, YO!!</h3>
+                <h2>{props.challengeName}</h2>
                 <p className="expand">Click to Expand</p>
                 </>
             );
