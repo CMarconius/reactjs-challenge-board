@@ -37,6 +37,8 @@ function Card(props) {
                             <CloseIcon/>
                         </button>
                     </div>
+                    {props.description ? <h3 className="challengeDescription">{props.description}</h3> : null}
+
                     {props.thisChallenge}
                 </>
             );
@@ -52,8 +54,6 @@ function Card(props) {
             setOpen("notOpen");
             setContainerContent(
                 <>
-                <h2>{props.challengeName}</h2>
-                <h3>THIS IS TEXT, YO!!</h3>
                 <h2>{props.challengeName}</h2>
                 <p className="expand">Click to Expand</p>
                 </>

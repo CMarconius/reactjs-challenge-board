@@ -105,6 +105,12 @@
   color: #2c55a1;
 }
 
+.challengeDescription {
+  text-align: center;
+  width: 90%;
+  box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
+}
+
 @media (max-width: 850px) {
   .card.large.open {
     position: absolute;
@@ -140,6 +146,10 @@
     position: absolute;
     width: 380px;
   }
+
+  .challengeDescription {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 394px) {
@@ -147,8 +157,4 @@
   .card.small.open {
     width: 290px;
   }
-}
-
-.challengeDescription {
-  text-align: center;
 }
