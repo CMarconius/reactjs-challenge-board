@@ -28,3 +28,8 @@
     font-size: 20px;
   }
 }
+
+.bioSection {
+  background: url("images/bck-1.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+}

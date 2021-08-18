@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { Button } from './Button'
 
 function Footer() {
     return (
@@ -9,7 +10,7 @@ function Footer() {
         <div className="footer">
             <h2>
                 <a href="http://cmarconius.com/react3/" target="_blank" rel="noreferrer">
-                    Check out some of my other work <FontAwesomeIcon className="footer-icon" icon={faArrowRight}/>
+                    <Button buttonSize="btn--medium" goHere="https://github.com/CMarconius" bTarget="_blank">Github</Button>
                 </a>
             </h2>
         </div>

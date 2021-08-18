@@ -1,0 +1,104 @@
+.bioSection {
+  width: 100%;
+  background-color: #002529;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.bioContainer {
+  display: flex;
+  width: 70%;
+  padding: 80px 0px;
+}
+
+.bioLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-bottom: 40px;
+}
+
+.bioLeft img {
+  width: 200px;
+  max-width: 140px;
+  border-radius: 50%;
+}
+
+.bioSection h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bioSection p {
+  font-size: 16px;
+  color: rgb(206, 206, 206);
+  letter-spacing: 0.06em;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+.bioRight {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.bioDescription {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contactAndCV {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.bioContact {
+  width: 50%;
+}
+
+.bioCV {
+  width: 50%;
+}
+
+Button:hover a {
+  color: var(--cmarc-blue-3);
+}
+
+@media screen and (max-width: 850px) {
+  .bioContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bioSection h3 {
+    font-size: 20px;
+  }
+
+  .bioDescription p {
+    font-size: 14px;
+  }
+
+  .bioContact p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bioContainer {
+    padding-top: 40px;
+  }
+  .bioLeft img {
+    display: none;
+  }
+}

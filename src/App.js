@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import CardSection from './Components/CardSection';
 import BubbleFlyer from './Components/Challenges/BubbleFlyer/BubbleFlyer';
+import BioSection from './Components/BioSection';
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         <Navbar/>
 
           {/* MAIN BODY OF PAGE */}
+
+          <BioSection/>
+
+          
 
           <CardSection/>
 

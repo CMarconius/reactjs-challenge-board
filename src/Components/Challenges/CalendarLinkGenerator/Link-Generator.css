@@ -94,9 +94,9 @@
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 400px) {
   .gernerator-container {
-    width: 95%;
+    width: 100%;
   }
 
   .input-section {
@@ -107,7 +107,7 @@
   input,
   .super-input-box,
   .output-section {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .output-section {

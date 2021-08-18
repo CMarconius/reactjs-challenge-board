@@ -16,7 +16,10 @@ function CardSection() {
 
     return (
         <div className="cardSection">
-            <h1>Pick a card, any card</h1>
+            <div className="cardSectionTitle">
+                <h1>Pick a card, any card</h1>
+            </div>
+            
             <div className="cardsContainer">
 
                 
@@ -27,9 +30,9 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
-                    <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
                     <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>} description={"Pokedex made using pokeapi.co API"}/>
                     <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight boxCount={2} colorful={true}/>}/>
+                    <Card size="medium" challengeName={"Calender Link Generator"} thisChallenge={<LinkGenerator/>}/>
                 </div>
 
                 
@@ -46,6 +49,7 @@ function CardSection() {
                     <Card size="medium" challengeName={"Currency Converter"} thisChallenge={<CurrencyConverter/>}/>
                     <Card size="small" challengeName={"Loading"} thisChallenge={<LoadingBoxes boxCount={10} timeGap={110} colorful={true}/>} description={"This is a custom loading animation made with css"}/>
                     <Card size="medium" challengeName={"Video Player"} thisChallenge={<MyVideoPlayer/>} description={"This is a video I made back in college..."}/>
+                    <Card size="small" challengeName={"Bubble Sort"} thisChallenge={<SortBubble/>}/>
                     {/* <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/> */}
                 </div>
 
@@ -54,15 +58,14 @@ function CardSection() {
                 {/* ADD CURRENCY CONVERTER && GOOGLE CALENDAR LINK GENERATOR */}
                 {/* ======================================================== */}
 
-
+{/* 
                 <div className="cardDivider">
                     <h2>Sorting Algorithms</h2>
                 </div>
 
                 <div className="cardRow">
-                    <Card size="small" challengeName={"Bubble Sort"} thisChallenge={<SortBubble/>}/>
-                    {/* <Card size="medium" challengeName={"Quick Sort"} thisChallenge={<SortQuick/>}/> */}
-                </div>
+                    {/* <Card size="medium" challengeName={"Quick Sort"} thisChallenge={<SortQuick/>}/>
+                </div> */}
 
 
 
