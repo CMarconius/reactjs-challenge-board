@@ -99,7 +99,7 @@ function Pokedex() {
         <div className="pokedex">
 
             <div className="pokedexImageSection">
-                <img src="images/Pokedex/pokedex_center.png"/>
+                <img src="./images/Pokedex/pokedex_center.png"/>
 
                 <img style={loading ? {display: 'none'} : {}} onLoad={() => setLoading(false)} src={currentPokeImage} alt="" />
 
@@ -118,14 +118,14 @@ function Pokedex() {
             </div>
 
             <div className="arrowRow">
-                <img onClick={backTen} className="arrow" src="images/Pokedex/arrow-double-left.svg" alt="" />
+                <img onClick={backTen} className="arrow" src="./images/Pokedex/arrow-double-left.svg" alt="" />
 
-                <img onClick={backOne} className="" src="images/Pokedex/arrow-left.svg" alt="" />
+                <img onClick={backOne} className="" src="./images/Pokedex/arrow-left.svg" alt="" />
 
                 
-                <img onClick={forwardOne} className="" src="images/Pokedex/arrow-right.svg" alt="" />
+                <img onClick={forwardOne} className="" src="./images/Pokedex/arrow-right.svg" alt="" />
 
-                <img onClick={forwardTen} className="arrow" src="images/Pokedex/arrow-double-right.svg" alt="" />
+                <img onClick={forwardTen} className="arrow" src="./images/Pokedex/arrow-double-right.svg" alt="" />
             </div>
 
             

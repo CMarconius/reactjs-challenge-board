@@ -9,9 +9,7 @@ function Footer() {
         <>
         <div className="footer">
             <h2>
-                <a href="http://cmarconius.com/react3/" target="_blank" rel="noreferrer">
-                    <Button buttonSize="btn--medium" goHere="https://github.com/CMarconius" bTarget="_blank">Github</Button>
-                </a>
+                <Button buttonSize="btn--medium" goHere="https://github.com/CMarconius" bTarget="_blank">Github</Button>
             </h2>
         </div>
         </>

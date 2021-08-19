@@ -23,13 +23,19 @@
     Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+.bioSection {
+  background: url("images/bck-1.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-attachment: fixed;
+}
+
 @media (max-width: 524px) {
   h1 {
     font-size: 20px;
   }
-}
 
-.bioSection {
-  background: url("images/bck-1.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
+  .bioSection {
+    background-image: none;
+  }
 }

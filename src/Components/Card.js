@@ -8,7 +8,7 @@ function Card(props) {
     const [open, setOpen] = useState("notOpen");
 
 
-    const [heroImage, setHeroImage] = useState(<img src="../images/card-default-img.png" alt="" />);
+    const [heroImage, setHeroImage] = useState(<img src="./images/card-default-img.png" alt="" />);
     const [containerContent, setContainerContent] = useState(<>
         <h2>{props.challengeName}</h2>
         <p className="expand">Click to Expand</p>
@@ -22,7 +22,7 @@ function Card(props) {
             <p className="expand">Click to Expand</p>
             </>
         );
-        setHeroImage(<img src="../images/card-default-img.png" alt="" />);
+        setHeroImage(<img src="./images/card-default-img.png" alt="" />);
         document.removeEventListener('keydown', onkeydown);
     }
 
@@ -58,7 +58,7 @@ function Card(props) {
                 <p className="expand">Click to Expand</p>
                 </>
             );
-            setHeroImage(<img src="../images/card-default-img.png" alt="" />);
+            setHeroImage(<img src="./images/card-default-img.png" alt="" />);
             return;
         }
         else return;
