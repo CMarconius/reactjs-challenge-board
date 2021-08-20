@@ -1,0 +1,83 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popupContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #c2cecf;
+  padding: 0px 0px 40px;
+  margin: 20px 12px;
+  height: 280px;
+  width: 200px;
+  box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
+  border: solid 1px grey;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.popupContainer.large {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  height: fit-content;
+  width: 800px;
+  transition-duration: 300ms;
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  border-radius: 8px;
+}
+
+.popupContainer.medium {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  height: fit-content;
+  width: 600px;
+  transition-duration: 300ms;
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  border-radius: 8px;
+}
+.popupContainer.small {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  transform: scale(1.15);
+  transition-duration: 300ms;
+  box-shadow: #155c4f 0px 0px 10px 0px;
+  height: fit-content;
+  min-height: 300px;
+  border-radius: 8px;
+}
+
+.cardHeader {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px lightslategrey;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cardHeader button {
+  background: none;
+  border: none;
+}
+
+.cardHeader h2 {
+  display: inline-flex;
+}

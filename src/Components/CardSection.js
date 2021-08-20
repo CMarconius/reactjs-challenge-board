@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './Card'
+import CardPopup from './CardPopup'
 import SortBubble from './Challenges/SortingAlgo/BubbleSort/SortBubble'
 import MyVideoPlayer from './Challenges/VideoPlayer/MyVideoPlayer'
 import CompoundCalculator from './Challenges/CompoundCalculator/CompoundCalculator'
@@ -11,11 +12,23 @@ import SortQuick from './Challenges/SortingAlgo/QuickSort/SortQuick'
 import Podcasts from './Challenges/Podcasts/Podcasts'
 import Pokedex from './Challenges/Pokedex/Pokedex'
 import { LoadingBoxes } from './Challenges/LoadingBoxes/LoadingBoxes'
+import { Button } from './Button'
 
 function CardSection() {
 
+    const [popupActive, setPopupActive] = useState(false);
+
+    function togglePopup(challenge, ChallengeName, size) {
+        setPopupActive(!popupActive);
+    }
+
     return (
         <div className="cardSection">
+            
+            {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<LoadingBoxes/>}/> : null}
+            
+            <Button buttonActive={true} onClick={togglePopup}>Popup!</Button>
+            
             <div className="cardSectionTitle">
                 <h1>Pick a card, any card</h1>
             </div>
@@ -29,6 +42,7 @@ function CardSection() {
 
 
                 <div className="cardRow">
+                    <Card onClick={togglePopup}/>
                     <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
                     <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>} description={"Pokedex made using pokeapi.co API"}/>
                     <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight boxCount={2} colorful={true}/>}/>

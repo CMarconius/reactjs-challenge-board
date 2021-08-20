@@ -67,7 +67,6 @@ function Card(props) {
 
 
     return (
-        
         <div onClick={handleButtonClick} className={"card " + props.size + " " + open} ref={node}>
             {heroImage}
             

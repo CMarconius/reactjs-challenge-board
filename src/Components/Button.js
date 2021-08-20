@@ -16,22 +16,29 @@ export const Button = ({buttonActive, children, type, linkTo, onClick, buttonSty
 
     return (
         <div to={linkTo} className='btn-mobile'>
-            <button 
-                className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
-                onClick={onClick}
-                type={type}
-            >
+            
                 {buttonActive ? (
-                    <p>
-                    {children}
-                    </p>
+                    <button 
+                        className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
+                        onClick={onClick}
+                        type={type}
+                    >
+                        <p>
+                        {children}
+                        </p>
+                    </button>
                 ) : (
-                    <a href={goToLink} target={buttonTarget} rel="noreferrer">
-                    {children}
-                    </a>
+                    <button 
+                        className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
+                        onClick={onClick}
+                        type={type}
+                    >
+                        <a href={goToLink} target={buttonTarget} rel="noreferrer">
+                        {children}
+                        </a>
+                    </button>
                 )
                 }
-            </button>
         </div>
     )
 }
