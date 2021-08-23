@@ -25,7 +25,7 @@ function CardSection() {
     return (
         <div className="cardSection">
             
-            {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<LoadingBoxes/>}/> : null}
+            {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<Pokedex/>}/> : null}
             
             <Button buttonActive={true} onClick={togglePopup}>Popup!</Button>
             

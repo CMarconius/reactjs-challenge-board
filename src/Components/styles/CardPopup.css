@@ -17,7 +17,7 @@
   justify-content: center;
   background-color: #c2cecf;
   padding: 0px 0px 40px;
-  margin: 20px 12px;
+  margin: 0px 12px;
   height: 280px;
   width: 200px;
   box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
@@ -26,6 +26,16 @@
   font-size: 13px;
   font-weight: 400;
   z-index: 1;
+}
+
+.popupContent {
+  margin: 35px 10px 30px 10px;
+  width: 95%;
+  height: 86vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 }
 
 .popupContainer.large {
@@ -71,6 +81,7 @@
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 10px;
 }
 
 .cardHeader button {
@@ -80,4 +91,53 @@
 
 .cardHeader h2 {
   display: inline-flex;
+}
+
+@media (max-width: 850px) {
+  .popupContainer.large {
+    position: absolute;
+    width: 650px;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 524px) {
+  .popupContainer {
+    background-color: #c2cecf;
+    padding: 0px 0px 20px;
+    margin: 10px 6px;
+    height: 200px;
+    width: 130px;
+    box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
+    border: solid 1px grey;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .popupContainer.large {
+    position: absolute;
+    width: fit-content;
+  }
+  .popupContainer.medium,
+  .popupContainer.small {
+    position: absolute;
+    width: 380px;
+  }
+
+  .challengeDescription {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 394px) {
+  .cardHeader {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .popupContainer.medium,
+  .popupContainer.small {
+    width: 290px;
+  }
 }

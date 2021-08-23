@@ -99,9 +99,9 @@ function Pokedex() {
         <div className="pokedex">
 
             <div className="pokedexImageSection">
-                <img src="./images/Pokedex/pokedex_center.png"/>
+                <img className="pokedexBackgroundImage" src="./images/Pokedex/pokedex_center.png"/>
 
-                <img style={loading ? {display: 'none'} : {}} onLoad={() => setLoading(false)} src={currentPokeImage} alt="" />
+                <img className="pokedexPokemonImage" style={loading ? {display: 'none'} : {}} onLoad={() => setLoading(false)} src={currentPokeImage} alt="" />
 
 
                 {loading ? <div className="loadingContainer"><LoadingBoxes/></div> : null}

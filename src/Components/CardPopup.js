@@ -16,18 +16,19 @@ const CardPopup = (props) => {
         <>
             <div className={"popup"}>
                 <div className={"popupContainer " + popupSize}>
+                        
+                    <div className="cardHeader">
+                        <div><h2>{props.challengeName}</h2></div>
+                        <button onClick={handleCloseButtonClick}>
+                            <CloseIcon/>
+                        </button>
+                    </div>
                     <div className="popupContent">
                         
-                        <div className="cardHeader">
-                            <div><h2>{props.challengeName}</h2></div>
-                            <button onClick={handleCloseButtonClick}>
-                                <CloseIcon/>
-                            </button>
-                        </div>
-
                         {props.description ? <h3 className="challengeDescription">{props.description}</h3> : null}
 
-                        {props.thisChallenge}
+
+                        {popupContent}
                     </div>
                 </div>
             </div>  
