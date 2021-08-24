@@ -17,15 +17,32 @@ import { Button } from './Button'
 function CardSection() {
 
     const [popupActive, setPopupActive] = useState(false);
+    const [popupContent, setPopupContent] = useState(<Pokedex/>);
 
-    function togglePopup(challenge, ChallengeName, size) {
+    function togglePopup() {
         setPopupActive(!popupActive);
     }
+
+    function activatePopup(challenge, ChallengeName, size, description) {
+        setPopupActive(true);
+        
+        setPopupContent(
+            <CardPopup challengeName={ChallengeName} description={description} togglePopup={togglePopup} size={size} popupContent={challenge}/>
+        )
+    }
+
 
     return (
         <div className="cardSection">
             
-            {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<Pokedex/>}/> : null}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<Pokedex/>}/> : null} */}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"large"} popupContent={<CompoundCalculator/>}/> : null} */}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<TwentyFortyEight boxCount={2} colorful={true}/>}/> : null} */}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<LinkGenerator/>}/> : null} */}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={<CurrencyConverter/>}/> : null} */}
+            {/* {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"small"} popupContent={<LoadingBoxes boxCount={10} timeGap={110} colorful={true}/>}/> : null} */}
+            {popupActive ? <CardPopup challengeName={"Loading"} togglePopup={togglePopup} size={"medium"} popupContent={popupContent}/> : null}
+            {/* {popupActive ? {popupContent} : null} */}
             
             <Button buttonActive={true} onClick={togglePopup}>Popup!</Button>
             
@@ -35,14 +52,14 @@ function CardSection() {
             
             <div className="cardsContainer">
 
-                
                 {/* ======================================================== */}
                 {/* ===================  Simple Projects  ================== */}
                 {/* ======================================================== */}
 
+                {/* function activatePopup(challenge, ChallengeName, size, description) { */}
 
                 <div className="cardRow">
-                    <Card onClick={togglePopup}/>
+                    {/* <Card challengeName={"Compound Interest Calculator"} onClick={activatePopup((() => { return <CompoundCalculator/>}), "Compound Interest Calculator", "large")}/> */}
                     <Card size="large" challengeName={"Compound Interest Calculator"} thisChallenge={<CompoundCalculator/>}/>
                     <Card size="medium" challengeName={"Pokedex"} thisChallenge={<Pokedex/>} description={"Pokedex made using pokeapi.co API"}/>
                     <Card size="medium" challengeName={"GAME: Twenty Forty Eight"} thisChallenge={<TwentyFortyEight boxCount={2} colorful={true}/>}/>
@@ -66,11 +83,6 @@ function CardSection() {
                     <Card size="small" challengeName={"Bubble Sort"} thisChallenge={<SortBubble/>}/>
                     {/* <Card size="medium" challengeName={"Podcasts"} thisChallenge={<Podcasts/>}/> */}
                 </div>
-
-                                
-                {/* ======================================================== */}
-                {/* ADD CURRENCY CONVERTER && GOOGLE CALENDAR LINK GENERATOR */}
-                {/* ======================================================== */}
 
 {/* 
                 <div className="cardDivider">

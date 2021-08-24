@@ -54,6 +54,12 @@
   font-size: 25px;
 }
 
+@media (min-width: 800px) {
+  .scores h2 {
+    font-size: 25px;
+  }
+}
+
 .newGame .btn--medium {
   background-color: #f75f3b;
   width: 160px;
