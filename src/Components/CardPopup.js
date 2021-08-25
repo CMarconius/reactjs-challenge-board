@@ -4,7 +4,6 @@ import CloseIcon from './CloseIcon';
 
 const CardPopup = (props) => {
     const popupContent = (props.popupContent ? props.popupContent : "");
-    const backgroundColor = (props.backColor ? props.backColor : "grey");
     const challengeName = (props.challengeName ? props.challengeName : "default");
     const popupSize = (props.size ? props.size : "medium");
 
@@ -18,7 +17,7 @@ const CardPopup = (props) => {
                 <div className={"popupContainer " + popupSize}>
                         
                     <div className="cardHeader">
-                        <div><h2>{props.challengeName}</h2></div>
+                        <div><h2>{challengeName}</h2></div>
                         <button onClick={handleCloseButtonClick}>
                             <CloseIcon/>
                         </button>

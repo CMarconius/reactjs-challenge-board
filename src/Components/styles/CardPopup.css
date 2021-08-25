@@ -19,6 +19,7 @@
   padding: 0px 0px 40px;
   margin: 0px 12px;
   height: 280px;
+  max-height: 90vh;
   width: 200px;
   box-shadow: rgba(16, 16, 36, 0.326) 0px 0px 10px 0px;
   border: solid 1px grey;
@@ -30,13 +31,25 @@
 
 .popupContent {
   margin: 10px;
-  padding: 30px 0px;
+  padding: 40px 0px;
   width: 95%;
-  height: 86vh;
+  height: 85vh;
+  max-height: 78vh;
   align-items: center;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
+}
+.popupContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popupContent::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.popupContent::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px var(--cmarc-blue-3);
 }
 
 .popupContainer.large {
@@ -99,6 +112,12 @@
 
 .cardHeader h2 {
   display: inline-flex;
+}
+
+.popup h2 {
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
 }
 
 @media (max-width: 850px) {

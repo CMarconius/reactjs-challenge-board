@@ -10,6 +10,7 @@
   border-radius: 20px;
   border: solid 5px #414141;
   box-shadow: 10px 10px 10px 10px #858585;
+  margin-bottom: 30em;
 }
 
 .pokedex img {
@@ -105,7 +106,7 @@
 }
 
 .arrowRow img:hover,
-.searchBarSection:hover {
+.searchBarSection input:hover {
   box-shadow: 0 0 6px 1px var(--cmarc-blue-2);
 }
 
@@ -157,5 +158,13 @@
 
   .searchBarSection {
     align-items: center;
+  }
+
+  .searchBarSection input {
+    min-width: calc(80% - 1rem);
+  }
+
+  .suggestions {
+    min-width: 80%;
   }
 }
