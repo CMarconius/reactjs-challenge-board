@@ -1,18 +1,17 @@
-import react from 'react'
-import React, { useEffect, useState, useCallback } from 'react'
-import { isMobile } from 'react-device-detect'
+import React, { useEffect, useState  } from 'react'
+// import { isMobile } from 'react-device-detect'
 import { Button } from '../../Button'
 import GameCell from './GameCell'
 import './TwentyFortyEight.css'
 
 function TwentyFortyEight() {
 
-    const [currentScore, setCurrentScore] = useState(0);
-    const [bestScore, setBestScore] = useState(0);
+    // const [currentScore, setCurrentScore] = useState(0);
+    // const [bestScore, setBestScore] = useState(0);
     const [gameOn, setGameOn] = useState(false);
 
-    const [currentGridState, setCurrentGridState] = useState([]);
-    const [undoPressed, setUndoPressed] = useState(false);
+    // const [currentGridState, setCurrentGridState] = useState([]);
+    // const [undoPressed, setUndoPressed] = useState(false);
 
     const [gameButtons, setGameButtons] = useState();
     const [gameContent, setGameContent] = useState(        
@@ -27,7 +26,7 @@ function TwentyFortyEight() {
     var simpleCells = [...gameCells];
     let tempPastGrid = [];
     
-    const [previousGridState, setPreviousGridState] = useState([]);
+    // const [previousGridState, setPreviousGridState] = useState([]);
 
     var moved = 'notMoved';
 
@@ -45,8 +44,8 @@ function TwentyFortyEight() {
       
 
     function startNewGame() {
-            setCurrentScore(123123);
-            setBestScore(1000000);
+            // setCurrentScore(123123);
+            // setBestScore(1000000);
             setCells();
             setGameButtons(
                 <>
@@ -63,7 +62,7 @@ function TwentyFortyEight() {
     }
 
     function exitCurrentGame() {
-        setPreviousGridState([]);
+        // setPreviousGridState([]);
         setGameOn(false);
         setGameButtons();
         setGameContent(
@@ -98,8 +97,8 @@ function TwentyFortyEight() {
         
         simpleCells = [];
 
-        gameCells.map((item) => {
-            item.map(cell => {
+        gameCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -143,8 +142,8 @@ function TwentyFortyEight() {
         gameCells = [...globalCells];
         simpleCells = [];
 
-        globalCells.map((item) => {
-            item.map(cell => {
+        globalCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -173,8 +172,8 @@ function TwentyFortyEight() {
             }
         }
 
-        gameCells.map((item) => {
-            item.map(cell => {
+        gameCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -183,13 +182,13 @@ function TwentyFortyEight() {
 
     }
 
-    function copyArray(sourceArray) {
-        let arr = [];
-        for (let i = 0; i < sourceArray.length; i++) {
-            arr.push([...sourceArray[i]]);
-        }
-        return arr;
-    }
+    // function copyArray(sourceArray) {
+    //     let arr = [];
+    //     for (let i = 0; i < sourceArray.length; i++) {
+    //         arr.push([...sourceArray[i]]);
+    //     }
+    //     return arr;
+    // }
 
     function moveLeft() {
         let activeCells = [...globalCells];
@@ -272,7 +271,7 @@ function TwentyFortyEight() {
                                 }
                             }
                         break;
-                        case 1:
+                        default:
                             if (activeCells[r][c-1].props["cellValue"] === currentCellValue) {
                                 activeCells[r][c-1] = newCell((currentCellValue * 2),(index-1));
                                 activeCells[r][c] = newCell(0, index);
@@ -299,8 +298,8 @@ function TwentyFortyEight() {
         
         simpleCells = [];
 
-        activeCells.map((item) => {
-            item.map(cell => {
+        activeCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -397,7 +396,7 @@ function TwentyFortyEight() {
                                 }
                             }
                         break;
-                        case 2:
+                        default:
                             //Cell Is On 3rd Row
                             if (activeCells[r][c+1].props["cellValue"] === currentCellValue) {
                                 activeCells[r][c+1] = newCell((currentCellValue * 2),(index+1));
@@ -425,8 +424,8 @@ function TwentyFortyEight() {
         
         simpleCells = [];
 
-        activeCells.map((item) => {
-            item.map(cell => {
+        activeCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -523,7 +522,7 @@ function TwentyFortyEight() {
                                 }
                             }
                         break;
-                        case 2:
+                        default:
                             //Cell Is On 3rd Row
                             if (activeCells[r+1][c].props["cellValue"] === currentCellValue) {
                                 activeCells[r+1][c] = newCell((currentCellValue * 2),(index+4));
@@ -551,8 +550,8 @@ function TwentyFortyEight() {
                 
         simpleCells = [];
 
-        activeCells.map((item) => {
-            item.map(cell => {
+        activeCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -653,7 +652,7 @@ function TwentyFortyEight() {
                                 }
                             }
                         break;
-                        case 1:
+                        default:
                             //Cell Is On Second Row
                             if (activeCells[r-1][c].props["cellValue"] === currentCellValue) {
                                 activeCells[r-1][c] = newCell((currentCellValue * 2),(index-4));
@@ -676,7 +675,7 @@ function TwentyFortyEight() {
         if (moved === 'moved') {
             // console.log("Check this one, yo:");
             // console.log(copyArray(tempPastGrid));
-            setPreviousGridState(copyArray(tempPastGrid));
+            // setPreviousGridState(copyArray(tempPastGrid));
             addNewCellToGame();
             moved = 'notMoved';
         }
@@ -690,8 +689,8 @@ function TwentyFortyEight() {
                 
         simpleCells = [];
 
-        activeCells.map((item) => {
-            item.map(cell => {
+        activeCells.forEach((item) => {
+            item.forEach(cell => {
                 simpleCells.push(cell);
             })
         });
@@ -707,46 +706,46 @@ function TwentyFortyEight() {
         )
     }
 
-    function undoLastMove() {
+    // function undoLastMove() {
         
-        // for (let i = 0; i < previousGridState.length; i++) {
-        //     gameCells.push([...previousGridState[i]]);
-        // }
-        console.log("tempPastGrid");
-        console.log(tempPastGrid);
+    //     // for (let i = 0; i < previousGridState.length; i++) {
+    //     //     gameCells.push([...previousGridState[i]]);
+    //     // }
+    //     console.log("tempPastGrid");
+    //     console.log(tempPastGrid);
 
-        if (previousGridState) {
-            for (let i = 0; i < previousGridState.length; i++) {
-                for (let k = 0; k < previousGridState.length; k++) {
-                    simpleCells.push(previousGridState[i][k]);
-                }
-            }
-        }
+    //     if (previousGridState) {
+    //         for (let i = 0; i < previousGridState.length; i++) {
+    //             for (let k = 0; k < previousGridState.length; k++) {
+    //                 simpleCells.push(previousGridState[i][k]);
+    //             }
+    //         }
+    //     }
 
-        setGameContent(
-            <div className="cellWrap">
-                {
-                    simpleCells.map(cell => {
-                        return cell;
-                    })
-                }
-            </div>
-        )
+    //     setGameContent(
+    //         <div className="cellWrap">
+    //             {
+    //                 simpleCells.map(cell => {
+    //                     return cell;
+    //                 })
+    //             }
+    //         </div>
+    //     )
 
-        let arr = [];
-        let innerArray = [];
+    //     let arr = [];
+    //     let innerArray = [];
 
-        gameCells = [];
+    //     gameCells = [];
 
-        for (let i = 0; i < 4; i++) {
-            innerArray = [];
-            for (let k = 0; k < 4; k++) {
-                innerArray.push(simpleCells[((i*4) + k)])
-            }
-            gameCells.push([...innerArray]);
-        }
-        setGlobalCells([...gameCells]);
-    }
+    //     for (let i = 0; i < 4; i++) {
+    //         innerArray = [];
+    //         for (let k = 0; k < 4; k++) {
+    //             innerArray.push(simpleCells[((i*4) + k)])
+    //         }
+    //         gameCells.push([...innerArray]);
+    //     }
+    //     setGlobalCells([...gameCells]);
+    // }
 
     return (
         <>

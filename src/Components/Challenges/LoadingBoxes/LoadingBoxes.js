@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
 export const LoadingBoxes = (props) => {
@@ -12,7 +12,7 @@ export const LoadingBoxes = (props) => {
     boxCount = props.boxCount || 6;
     colorful = props.colorful || false;
 
-    const [boxes, setBoxes] = useState(() => {
+    const [boxes] = useState(() => {
         if (colorful) {
             let arr = [];
             for (let i = 0; i < boxCount; i++) {

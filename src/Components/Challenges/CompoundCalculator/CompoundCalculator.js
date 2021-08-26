@@ -13,7 +13,6 @@ function CompoundCalculator() {
     const [interestFrequency, setInterestFrequency] = useState("Yearly")
     const [calculationIterations, setCalculationIterations] = useState()
     const [calculationFrequency, setCalculationFrequency] = useState("Yearly")
-    // const [compoundInterval, setCompoundInterval] = useState("Yearly")
     const [deposit, setDeposit] = useState()
     const [depositFrequency, setDepositFrequency] = useState("Monthly")
     const [active, setActive] = useState(false)
@@ -64,11 +63,6 @@ function CompoundCalculator() {
         setActive(false)
     }
 
-    // const onChangeCompoundInterval = (e) => {
-    //     setCompoundInterval(e.currentTarget.value)
-    //     setActive(false)
-    // }
-
     const onChangeDeposit = (e) => {
         setDeposit(e.currentTarget.value)
         setActive(false)
@@ -101,9 +95,6 @@ function CompoundCalculator() {
     useEffect(() => {
     }, [calculationFrequency]);
 
-    // useEffect(() => {
-    // }, [compoundInterval]);
-
     useEffect(() => {
     }, [deposit]);
 
@@ -133,7 +124,6 @@ function CompoundCalculator() {
     return (
         <>
         <div className="main-container">
-            {/* <h1>Compound Interest Calculator</h1> */}
             <div className="inner-container">
 
                 <h2>Currency</h2>
@@ -177,22 +167,11 @@ function CompoundCalculator() {
 
                 <h3 labelfor="calculationPeriod" className="input-label">Calculation Period:</h3>
                 <div className="input-row">
-                    <input placeholder="0" placeholder="0" onChange={onChangeCalculationIterations} name="calculationPeriod" type="number" horizontal="true" className="period-input" min="0" value={calculationIterations}/> 
+                    <input placeholder="0" onChange={onChangeCalculationIterations} name="calculationPeriod" type="number" horizontal="true" className="period-input" min="0" value={calculationIterations}/> 
                     <select onChange={onChangeCalculationFrequency} className="period-dropdown">
                         <option>Years</option>
                     </select>
                 </div>      
-
-
-                {/* <h3 labelfor="calculationPeriod" className="input-label">Compound Interval:</h3>
-                <div className="input-row">
-                    <select onChange={onChangeCompoundInterval} className="interval-dropdown">
-                        <option>Yearly</option>
-                        <option>Monthly</option>
-                        <option>Weekly</option>
-                        <option>Daily</option>
-                    </select>
-                </div>              */}
 
                 <div className="deposit-container">
                     <h3 labelfor="initBalance" className="input-label">Regular Deposit</h3>
@@ -208,8 +187,6 @@ function CompoundCalculator() {
                         </select>
                     </div>
                 </div>
-
-                
 
                 <span className="calculate-button-container">
                     <button className="calculate-button" onClick={onClickCalculate}>{calcButtonText}</button>

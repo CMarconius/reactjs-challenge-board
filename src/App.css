@@ -30,6 +30,10 @@
   background-attachment: fixed;
 }
 
+h1 {
+  margin: 20px 0px;
+}
+
 @media (max-width: 524px) {
   h1 {
     font-size: 20px;

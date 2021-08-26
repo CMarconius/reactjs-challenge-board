@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, {  } from 'react'
 import './GameCell.css'
 
 function GameCell(props) {
     
-    const [cellValue, setCellValue] = useState(props.cellValue)
-    const [cellId, setCellID] = useState(props.cellId);
+    // const [cellValue, setCellValue] = useState(props.cellValue)
+    // const [cellId, setCellID] = useState(props.cellId);
 
 
-    useEffect(() => {
-        setCellValue(props.cellValue);
-        setCellID(props.cellId);
-    }, [props]);
+    // useEffect(() => {
+    //     setCellValue(props.cellValue);
+    //     setCellID(props.cellId);
+    // }, [props]);
 
     // const [cellUp, setCellUp] = useState(cellId-4);
     // const [cellRight, setCellRight] = useState(cellId+1);

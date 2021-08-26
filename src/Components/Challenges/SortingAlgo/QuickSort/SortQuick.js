@@ -10,10 +10,10 @@ function SortQuick() {
     const [sortedArray, setSortedArray] = useState([]);
 
     const [pivot, setPivot] = useState(startArray[(startArray.length - 1)]);
-    const [leftArray, setLeftArray] = useState([]);
-    const [rightArray, setRightArray] = useState([]);
+    // const [leftArray, setLeftArray] = useState([]);
+    // const [rightArray, setRightArray] = useState([]);
 
-    const images = 'images/QuickSortImages/profile_pic_1.jpg'
+    // const images = 'images/QuickSortImages/profile_pic_1.jpg'
     
 
     const randomizeArray = () => {

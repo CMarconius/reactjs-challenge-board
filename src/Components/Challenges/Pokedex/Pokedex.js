@@ -10,14 +10,11 @@ function Pokedex() {
     const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 
     const [currentPokeId, setCurrentPokeId] = useState(1);
-    const [currentPokeData, setCurrentPokeData] = useState();
     const [currentPokeName, setCurrentPokeName] = useState();
     const [currentPokeImage, setCurrentPokeImage] = useState();
 
     const [allPokemonNames, setAllPokemonNames] = useState([]);
     const [loading, setLoading] = useState(false);
-
-    var currentSearchContents = "";
 
     const backOne = () => {
         if (currentPokeId !== 1) {
@@ -68,24 +65,18 @@ function Pokedex() {
                 return n.charAt(0).toUpperCase() + n.slice(1);
             });
 
-            // console.log(allPokemonNames);
             setCurrentPokeImage(response.data.sprites.front_default);   // Set Pokemon Image
         })
     }, [currentPokeId])
 
     useEffect(() => {
-        // console.log(allPokemonNames);
     }, [allPokemonNames])
 
-    // useEffect(() => {
-    //     // setLoading(false);
-    // }, [currentPokeImage])
 
     function pokemonPicked(newPokemon) {
         setLoading(true);
         axios.get(`${baseUrl+(newPokemon.toLowerCase())}`)   // Get Current Pokemon by Id
         .then((response) => {
-
             setCurrentPokeName(() => {          // Set Pokemon Name (Capitalise first letter first)
                 let n = response.data.name;
                 return n.charAt(0).toUpperCase() + n.slice(1);
@@ -99,13 +90,12 @@ function Pokedex() {
         <div className="pokedex">
 
             <div className="pokedexImageSection">
-                <img className="pokedexBackgroundImage" src="./images/Pokedex/pokedex_center.png"/>
+
+                <img className="pokedexBackgroundImage" src="./images/Pokedex/pokedex_center.png" alt="Lovely Scenery for the Pokemon"/>
 
                 <img className="pokedexPokemonImage" style={loading ? {display: 'none'} : {}} onLoad={() => setLoading(false)} src={currentPokeImage} alt="" />
 
-
                 {loading ? <div className="loadingContainer"><LoadingBoxes/></div> : null}
-
 
             </div> 
 
