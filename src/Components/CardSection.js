@@ -10,6 +10,7 @@ import './styles/CardSection.css'
 import TwentyFortyEight from './Challenges/TwentyFortyEight/TwentyFortyEight'
 import Pokedex from './Challenges/Pokedex/Pokedex'
 import { LoadingBoxes } from './Challenges/LoadingBoxes/LoadingBoxes'
+import VowelCount from './Challenges/VowelCounter/VowelCount'
 
 function CardSection() {
 
@@ -76,6 +77,7 @@ function CardSection() {
                 <div className="cardRow">
                     <Card onClick={() => {activatePopup(<CurrencyConverter/>, "Currency Converter", "medium")}} challengeName={"Currency Converter"}/>
                     <Card onClick={() => {activatePopup(<LoadingBoxes boxCount={10} timeGap={110} colorful={true}/>, "Loading", "small", "This is a custom loading animation made with css")}} challengeName={"Loading"}/>
+                    <Card onClick={() => {activatePopup(<VowelCount/>, "Vowel Counter", "small")}} challengeName={"Vowel Counter"}/>
                     <Card onClick={() => {activatePopup(<MyVideoPlayer/>, "Video Player", "medium", "This is a video I made back in college...")}} challengeName={"Video Player"}/>
                     <Card onClick={() => {activatePopup(<SortBubble/>, "Bubble Sort", "small")}} challengeName={"Bubble Sort"}/>
                 </div>
