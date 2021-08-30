@@ -12,7 +12,7 @@ const VowelCount = () => {
         setInputText(e.target.value);
     }
     
-    function countVowels() {
+    const countVowels = () => {
         let num = 0;
 
         for (let i = 0; i < inputText.length; i++) {

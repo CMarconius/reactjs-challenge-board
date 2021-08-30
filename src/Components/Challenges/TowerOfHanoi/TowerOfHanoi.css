@@ -1,0 +1,18 @@
+.towerOfHanoi .mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 20px 5px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(172, 172, 172);
+  border: 2px solid var(--cmarc-blue-1);
+}
+
+.towerOfHanoi .towersSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

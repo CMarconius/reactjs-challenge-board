@@ -1,0 +1,71 @@
+.towerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.towerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.discsSection {
+  position: absolute;
+  top: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.towerPole {
+  width: 10px;
+  height: 120px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: var(--cmarc-blue-1);
+  display: flex;
+  z-index: 1;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+.towerDisc {
+  width: 90px;
+  height: 15px;
+  z-index: 2;
+  border-radius: 5px;
+  border: 1px solid rgb(83, 83, 83);
+}
+
+.towerDisc:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 5px 1px #f0f;
+}
+.active {
+  box-shadow: 0 0 10px 2px rgb(174, 0, 255);
+}
+
+.disc1 {
+  background-color: var(--cmarc-blue-2);
+  width: 30px;
+}
+.disc2 {
+  background-color: var(--cmarc-blue-2);
+  width: 50px;
+}
+.disc3 {
+  background-color: var(--cmarc-blue-2);
+  width: 70px;
+}
+.disc4 {
+  background-color: var(--cmarc-blue-2);
+  width: 90px;
+}
+
+.towerBase {
+  width: 120px;
+  height: 12px;
+  background-color: var(--cmarc-blue-3);
+  border: 1px solid black;
+}
