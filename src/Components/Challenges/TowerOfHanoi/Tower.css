@@ -40,10 +40,11 @@
 
 .towerDisc:hover {
   transform: scale(1.1, 1.1);
-  box-shadow: 0 0 5px 1px #f0f;
+  box-shadow: 0 0 5px 1px white;
+  transition: 200ms;
 }
 .active {
-  box-shadow: 0 0 10px 2px rgb(174, 0, 255);
+  box-shadow: 0 0 10px 2px white;
 }
 
 .disc1 {
@@ -51,15 +52,15 @@
   width: 30px;
 }
 .disc2 {
-  background-color: var(--cmarc-blue-2);
+  background-color: #c4e941;
   width: 50px;
 }
 .disc3 {
-  background-color: var(--cmarc-blue-2);
+  background-color: #4337b7;
   width: 70px;
 }
 .disc4 {
-  background-color: var(--cmarc-blue-2);
+  background-color: #cf567a;
   width: 90px;
 }
 
