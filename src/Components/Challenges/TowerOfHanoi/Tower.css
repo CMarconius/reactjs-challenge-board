@@ -12,11 +12,22 @@
 }
 
 .discsSection {
-  position: absolute;
-  top: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+}
+.discsSection.discCount1 {
+  top: 104px;
+}
+.discsSection.discCount2 {
+  top: 87px;
+}
+.discsSection.discCount3 {
+  top: 70px;
+}
+.discsSection.discCount4 {
+  top: 53px;
 }
 
 .towerPole {

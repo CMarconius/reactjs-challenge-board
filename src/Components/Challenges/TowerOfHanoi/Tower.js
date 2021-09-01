@@ -2,10 +2,22 @@ import React, { useState } from 'react'
 import './Tower.css'
 
 const Tower = (props) => {
-    const [disc1Present, setDisc1Present] = useState(true);
-    const [disc2Present, setDisc2Present] = useState(true);
-    const [disc3Present, setDisc3Present] = useState(true);
-    const [disc4Present, setDisc4Present] = useState(true);
+
+    const [discCount, setDiscCount] = useState(props.discs.reduce((a, b) => a + b, 0))
+    console.log("Number of Discs: " + discCount);
+
+    const [disc1Present, setDisc1Present] = useState(() => {
+        return props.discs[0] === 1 ? true : false;    
+    });
+    const [disc2Present, setDisc2Present] = useState(() => {
+        return props.discs[1] === 1 ? true : false;    
+    });
+    const [disc3Present, setDisc3Present] = useState(() => {
+        return props.discs[2] === 1 ? true : false;    
+    });
+    const [disc4Present, setDisc4Present] = useState(() => {
+        return props.discs[3] === 1 ? true : false;    
+    });
 
     const [disc1Active, setDisc1Active] = useState("");
     const [disc2Active, setDisc2Active] = useState("");
@@ -66,7 +78,7 @@ const Tower = (props) => {
             <div className="towerContainer">
                 <div className="towerSection">
                     <div className="towerPole"></div>
-                    <div className="discsSection">
+                    <div className={"discsSection discCount" + discCount}>
                         {disc1Present ? <div onClick={handleClick1} className={"towerDisc disc1 " + disc1Active}></div> : null}
                         {disc2Present ? <div onClick={handleClick2} className={"towerDisc disc2 " + disc2Active}></div> : null}
                         {disc3Present ? <div onClick={handleClick3} className={"towerDisc disc3 " + disc3Active}></div> : null}
