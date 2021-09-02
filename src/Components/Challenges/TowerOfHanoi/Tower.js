@@ -73,9 +73,9 @@ const Tower = (props) => {
     }
 
     return (
-        <div>
-            <h3>Tower {props.id ? props.id : null}</h3>
+        <div className="tower">
             <div className="towerContainer">
+                <h3>Tower {props.id ? props.id : null}</h3>
                 <div className="towerSection">
                     <div className="towerPole"></div>
                     <div className={"discsSection discCount" + discCount}>
