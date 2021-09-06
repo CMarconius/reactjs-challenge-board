@@ -1,8 +1,9 @@
 import React from 'react'
 import './Projection.css'
 import ProjectionRow from './ProjectionRow'
+import PropTypes from 'prop-types';
 
-function ProjectionBlock(props) {
+const ProjectionBlock = (props) => {
     const {
         currencyFinal,
         initBalance,
@@ -15,6 +16,18 @@ function ProjectionBlock(props) {
         depositFrequency,
         active
     } = props
+
+    ProjectionBlock.PropTypes = {
+        initBalance: PropTypes.number,
+        interestRate: PropTypes.number,
+        deposit: PropTypes.number
+      };
+      
+    ProjectionBlock.defaultProps = {
+        initBalance: 0,
+        interestRate: 1,
+        deposit: 0
+    };
     
     var balance = parseFloat(initBalance)
     var rate = (parseFloat(interestRate)) / 100
@@ -34,7 +47,7 @@ function ProjectionBlock(props) {
     
     var depositFreq = checkDepositFrequency()
 
-    var totalDeposits = balance, totalInterest = 0, yearInterest = 0
+    var totalDeposits = 0, totalInterest = 0, yearInterest = 0
 
     let items = []
     
@@ -42,18 +55,22 @@ function ProjectionBlock(props) {
     // MAIN CALCULATION LOOP //
     ///////////////////////////
     const calculateNextIteration = () => {
-        for (var i=0; i<depositFreq; i++) {
-            console.log("THIS YOKE HAS LOOPED " + (i) + " Times!")
-            balance += regularDeposit
-            if (depositFreq > 1) {
-                balance += (balance * (rate/12))
-            } else {
-                balance += (balance * rate)
+        let prevBalance = balance
+        if (depositFreq) {
+            for (var i=0; i<depositFreq; i++) {
+                balance += regularDeposit
+                if (depositFreq > 1) {
+                    balance += (balance * (rate/12))
+                } else {
+                    balance += (balance * rate)
+                }
             }
         }
-        totalDeposits += (regularDeposit * depositFreq)
+        if (regularDeposit) {
+            totalDeposits += (regularDeposit * depositFreq)
+        }
 
-        yearInterest = balance - totalDeposits
+        yearInterest = balance - prevBalance
         totalInterest += yearInterest
         
     }
