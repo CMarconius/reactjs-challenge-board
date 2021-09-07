@@ -25,7 +25,7 @@ const ProjectionBlock = (props) => {
       
     ProjectionBlock.defaultProps = {
         initBalance: 0,
-        interestRate: 1,
+        interestRate: 0,
         deposit: 0
     };
     
@@ -59,10 +59,12 @@ const ProjectionBlock = (props) => {
         if (depositFreq) {
             for (var i=0; i<depositFreq; i++) {
                 balance += regularDeposit
-                if (depositFreq > 1) {
-                    balance += (balance * (rate/12))
-                } else {
-                    balance += (balance * rate)
+                if (rate !== 0) {
+                    if (depositFreq > 1) {
+                        balance += (balance * (rate/12))
+                    } else {
+                        balance += (balance * rate)
+                    }
                 }
             }
         }
