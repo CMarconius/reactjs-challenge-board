@@ -20,13 +20,15 @@ const ProjectionBlock = (props) => {
     ProjectionBlock.PropTypes = {
         initBalance: PropTypes.number,
         interestRate: PropTypes.number,
-        deposit: PropTypes.number
+        deposit: PropTypes.number,
+        interestRate: PropTypes.number
       };
       
     ProjectionBlock.defaultProps = {
         initBalance: 0,
         interestRate: 0,
-        deposit: 0
+        deposit: 0,
+        interestRate: 0
     };
     
     var balance = parseFloat(initBalance)
@@ -55,25 +57,38 @@ const ProjectionBlock = (props) => {
     // MAIN CALCULATION LOOP //
     ///////////////////////////
     const calculateNextIteration = () => {
-        let prevBalance = balance
-        if (depositFreq) {
-            for (var i=0; i<depositFreq; i++) {
-                balance += regularDeposit
-                if (rate !== 0) {
-                    if (depositFreq > 1) {
-                        balance += (balance * (rate/12))
-                    } else {
-                        balance += (balance * rate)
-                    }
-                }
-            }
-        }
-        if (regularDeposit) {
-            totalDeposits += (regularDeposit * depositFreq)
-        }
+        balance += (regularDeposit*12)
+        totalDeposits += (regularDeposit*12)
 
-        yearInterest = balance - prevBalance
+        yearInterest = (balance * rate)
         totalInterest += yearInterest
+
+        balance += yearInterest
+
+        // {totalDeposits}
+        // {yearInterest}
+        // {totalInterest}
+        // {balance}
+
+        // let prevBalance = balance
+        // if (depositFreq) {
+        //     for (var i=0; i<depositFreq; i++) { // While only yearly compounding is active, this will always loop only once
+        //         balance += regularDeposit
+        //         if (rate !== 0) {
+        //             if (depositFreq > 1) {
+        //                 balance += (balance * (rate/12))
+        //             } else {
+        //                 balance += (balance * rate)
+        //             }
+        //         }
+        //     }
+        // }
+        // if (regularDeposit) {
+        //     totalDeposits += (regularDeposit * depositFreq)
+        // }
+
+        // yearInterest = balance - prevBalance
+        // totalInterest += yearInterest
         
     }
     // - End - /////////////////////////
