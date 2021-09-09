@@ -65,11 +65,6 @@ const ProjectionBlock = (props) => {
 
         balance += yearInterest
 
-        // {totalDeposits}
-        // {yearInterest}
-        // {totalInterest}
-        // {balance}
-
         // let prevBalance = balance
         // if (depositFreq) {
         //     for (var i=0; i<depositFreq; i++) { // While only yearly compounding is active, this will always loop only once

@@ -2,7 +2,6 @@
   "name": "reactjs-challenge-board",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/projects",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",

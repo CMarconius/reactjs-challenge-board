@@ -4,7 +4,6 @@ import './Tower.css'
 const Tower = (props) => {
 
     const [discCount, setDiscCount] = useState(props.discs.reduce((a, b) => a + b, 0))
-    console.log("Number of Discs: " + discCount);
 
     const [disc1Present, setDisc1Present] = useState(() => {
         return props.discs[0] === 1 ? true : false;    
@@ -72,8 +71,9 @@ const Tower = (props) => {
         }
     }
 
+
     return (
-        <div className="tower">
+        <div onClick={() => props.handleClickOnTower(props.id)} className="tower">
             <div className="towerContainer">
                 <h3>Tower {props.id ? props.id : null}</h3>
                 <div className="towerSection">
