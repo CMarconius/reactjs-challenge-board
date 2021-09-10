@@ -65,6 +65,7 @@ function CardSection() {
 
                 <div className="cardRow">
                     <Card onClick={() => {activatePopup(<TowerOfHanoi/>, "Tower Of Hanoi", "large")}} challengeName={"Tower Of Hanoi"}/>
+                    {/* <Card onClick={() => {activatePopup(<CountdownTimer/>, "Countdown Timer", "large")}} challengeName={"Countdown Timer"}/> */}
                     <Card onClick={() => {activatePopup(<CompoundCalculator/>, "Compound Interest Calculator", "large")}} challengeName={"Compound Interest Calculator"}/>
                     <Card onClick={() => {activatePopup(<Pokedex/>, "Pokedex", "medium", "Pokedex made using pokeapi.co API")}} challengeName={"Pokedex"}/>
                     <Card onClick={() => {activatePopup(<TwentyFortyEight boxCount={2} colorful={true}/>, "GAME: Twenty Forty Eight", "medium", "Pokedex made using pokeapi.co API")}} challengeName={"GAME: Twenty Forty Eight"}/>

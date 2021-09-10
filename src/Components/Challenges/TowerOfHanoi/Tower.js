@@ -3,6 +3,8 @@ import './Tower.css'
 
 const Tower = (props) => {
 
+    const [towerActive, setTowerActive] = useState(false)
+
     const [discCount, setDiscCount] = useState(props.discs.reduce((a, b) => a + b, 0))
 
     const [disc1Present, setDisc1Present] = useState(() => {
@@ -22,6 +24,11 @@ const Tower = (props) => {
     const [disc2Active, setDisc2Active] = useState("");
     const [disc3Active, setDisc3Active] = useState("");
     const [disc4Active, setDisc4Active] = useState("");
+
+    const handleTowerClicked = () => {
+        setTowerActive(true)
+        props.returnTowerClickedInfo(props.id);
+    }
 
     const handleClick1 = () => {
         if (disc1Active === "") {
@@ -73,7 +80,7 @@ const Tower = (props) => {
 
 
     return (
-        <div onClick={() => props.handleClickOnTower(props.id)} className="tower">
+        <div onClick={handleTowerClicked} className="tower">
             <div className="towerContainer">
                 <h3>Tower {props.id ? props.id : null}</h3>
                 <div className="towerSection">
