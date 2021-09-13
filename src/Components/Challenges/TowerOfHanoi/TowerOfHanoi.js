@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Tower from './Tower';
+import TowerDisc from './TowerDisc';
 import './TowerOfHanoi.css'
 
 const TowerOfHanoi = () => {
@@ -29,6 +30,7 @@ const TowerOfHanoi = () => {
                     <div className="instructions">
                         <h3>Goal: Move the discs from the left tower over to the right tower.</h3>
                         <h3>Note: Only one disk can be moved at a time. No disk can be placed on top of the smaller disk.</h3>
+                        <TowerDisc/>
                     </div>
                     
 
