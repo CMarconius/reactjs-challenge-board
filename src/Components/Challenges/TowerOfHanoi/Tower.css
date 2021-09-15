@@ -3,8 +3,7 @@
 }
 
 .tower:hover {
-  box-shadow: 0 0 25px 5px var(--cmarc-blue-1);
-  box-shadow: inset 0 0 25px 5px var(--cmarc-blue-1);
+  box-shadow: 0 0 25px 5px rgba(218, 218, 218, 0.603);
 }
 
 .towerContainer {
