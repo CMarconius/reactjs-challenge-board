@@ -53,9 +53,6 @@ const TowerOfHanoi = () => {
 
     const [towers, setTowers] = useState(() => {
         let arr = [];
-        // arr.push(<Tower returnTowerClickedInfo={returnTowerClickedInfo} id={1} discs={[1,1,1,1]}/>);
-        // arr.push(<Tower returnTowerClickedInfo={returnTowerClickedInfo} id={2} discs={[0,0,0,0]}/>);
-        // arr.push(<Tower returnTowerClickedInfo={returnTowerClickedInfo} id={3} discs={[0,0,0,0]}/>);
 
         arr.push(<Tower discActive={discActive} returnTowerClickedInfo={returnTowerClickedInfo} id={1} discs={[...discs]} />);
 
@@ -69,8 +66,6 @@ const TowerOfHanoi = () => {
         return discActive
     }
 
-    
-    
     return (
         <>
             <div className="towerOfHanoi">
