@@ -10,18 +10,24 @@ const Tower = (props) => {
 
     const [discCount, setDiscCount] = useState(discs.length)
     
+    useEffect(() => {
+    }, [discs]);
 
     const handleTowerClicked = () => {
-        setDiscs([<TowerDisc discClass={"size1"}/>, ...discs])
-        if (!(props.discActive)) {
+        let newDisc = props.checkForActiveDisc()
+        
+        // <TowerDisc discClass={"size3"}/>
+        if (newDisc !== null) {
+            setDiscs(discs => [...discs, newDisc])
+            console.log("NewDisc Is Not Null...")
+        }
+        else if (!(props.discActive)) {
+            console.log("NewDisc Is Null...")
             if (discs.length > 0) {
-                props.returnTowerClickedInfo(discs[0]);
+                props.returnTopDisc(discs[0]);
                 discs.shift()
                 setDiscCount(discs.length)
             }
-        }
-        else {
-            // Add current disc to this tower if its smaller than the top disc
         }
     }
 

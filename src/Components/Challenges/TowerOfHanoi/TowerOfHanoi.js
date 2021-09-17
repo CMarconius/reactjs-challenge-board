@@ -20,7 +20,7 @@ const TowerOfHanoi = () => {
     }, [handleMouseMove]);
 
     useEffect(() => {
-       
+       console.log("discActive Changed to..." + discActive)
     }, [discActive]);
     
 
@@ -36,11 +36,18 @@ const TowerOfHanoi = () => {
         });
     }
 
-    const returnTowerClickedInfo = (clickedDisc) => {
+    const returnTopDisc = (clickedDisc) => {
         // console.log("Tower " + towerId + " clicked!");
         console.log(clickedDisc)
         setDiscActive(true)
         setCurrentDisc(clickedDisc)
+    }
+
+    const checkForActiveDisc = () => {
+        if (discActive) {
+            return {...currentDisc}
+        }
+        else return null
     }
 
     const [discs, setDiscs] = useState(() => {
@@ -54,10 +61,10 @@ const TowerOfHanoi = () => {
     const [towers, setTowers] = useState(() => {
         let arr = [];
 
-        arr.push(<Tower discActive={discActive} returnTowerClickedInfo={returnTowerClickedInfo} id={1} discs={[...discs]} />);
+        arr.push(<Tower discActive={discActive} checkForActiveDisc={checkForActiveDisc} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
 
         for (let i = 2; i <= numberOfTowers; i++) {
-            arr.push(<Tower discActive={discActive} returnTowerClickedInfo={returnTowerClickedInfo} id={i} discs={[]}/>);
+            arr.push(<Tower discActive={discActive} checkForActiveDisc={checkForActiveDisc} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
         }
         return arr;
     })
