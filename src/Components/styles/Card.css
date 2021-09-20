@@ -13,7 +13,7 @@
 }
 
 .card:not(.open):hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   transition-duration: 200ms;
   box-shadow: #155c4f 0px 0px 10px 0px;
   cursor: pointer;

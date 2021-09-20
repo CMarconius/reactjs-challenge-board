@@ -12,42 +12,18 @@ const TowerOfHanoi = () => {
     const [discActive, setDiscActive] = useState(false)
 
     useEffect(() => {
-        window.addEventListener('keydown', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('keydown', handleMouseMove);
-        };
-    }, [handleMouseMove]);
-
-    useEffect(() => {
        console.log("discActive Changed to..." + discActive)
     }, [discActive]);
-    
-
-    function handleMouseMove() {
-        const root = document.documentElement;
-        
-        document.addEventListener('mousemove', evt => {
-            let x = evt.clientX;
-            let y = evt.clientY;
-        
-            root.style.setProperty('--mouse-x', x);
-            root.style.setProperty('--mouse-y', y);
-        });
-    }
 
     const returnTopDisc = (clickedDisc) => {
-        // console.log("Tower " + towerId + " clicked!");
-        console.log(clickedDisc)
         setDiscActive(true)
         setCurrentDisc(clickedDisc)
     }
 
-    const checkForActiveDisc = () => {
+    function checkForActiveDisc() {
         if (discActive) {
             return {...currentDisc}
-        }
-        else return null
+        } else return "No Active Disc"
     }
 
     const [discs, setDiscs] = useState(() => {
@@ -61,10 +37,10 @@ const TowerOfHanoi = () => {
     const [towers, setTowers] = useState(() => {
         let arr = [];
 
-        arr.push(<Tower discActive={discActive} checkForActiveDisc={checkForActiveDisc} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
+        arr.push(<Tower checkForActiveDisc={() => checkForActiveDisc()} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
 
         for (let i = 2; i <= numberOfTowers; i++) {
-            arr.push(<Tower discActive={discActive} checkForActiveDisc={checkForActiveDisc} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
+            arr.push(<Tower checkForActiveDisc={() => checkForActiveDisc()} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
         }
         return arr;
     })

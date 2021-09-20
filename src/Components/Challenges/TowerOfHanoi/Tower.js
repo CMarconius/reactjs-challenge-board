@@ -1,4 +1,6 @@
+import react from 'react'
 import React, { useEffect, useState } from 'react'
+import { isValidElement } from 'react'
 import './Tower.css'
 import TowerDisc from './TowerDisc'
 
@@ -15,13 +17,12 @@ const Tower = (props) => {
 
     const handleTowerClicked = () => {
         let newDisc = props.checkForActiveDisc()
-        
-        // <TowerDisc discClass={"size3"}/>
-        if (newDisc !== null) {
+        console.log(newDisc)
+        if (isValidElement(newDisc)) {
             setDiscs(discs => [...discs, newDisc])
             console.log("NewDisc Is Not Null...")
         }
-        else if (!(props.discActive)) {
+        else {
             console.log("NewDisc Is Null...")
             if (discs.length > 0) {
                 props.returnTopDisc(discs[0]);
