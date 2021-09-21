@@ -12,22 +12,32 @@ const Tower = (props) => {
 
     const [discCount, setDiscCount] = useState(discs.length)
     
+    
+
+    useEffect(() => {
+    }, [props.discActive]);
+
+    useEffect(() => {
+    }, [props.currentDisc]);
+
     useEffect(() => {
     }, [discs]);
 
     const handleTowerClicked = () => {
-        let newDisc = props.checkForActiveDisc()
-        console.log(newDisc)
-        if (isValidElement(newDisc)) {
-            setDiscs(discs => [...discs, newDisc])
-            console.log("NewDisc Is Not Null...")
-        }
-        else {
-            console.log("NewDisc Is Null...")
-            if (discs.length > 0) {
-                props.returnTopDisc(discs[0]);
-                discs.shift()
-                setDiscCount(discs.length)
+        if (!props.discActive) {
+            let newDisc = props.currentDisc
+            console.log(newDisc)
+            if (isValidElement(newDisc)) {
+                setDiscs(discs => [...discs, newDisc])
+                console.log("NewDisc Is Not Null...")
+            }
+            else {
+                console.log("NewDisc Is Null...")
+                if (discs.length > 0) {
+                    props.returnTopDisc(discs[0]);
+                    discs.shift()
+                    setDiscCount(discs.length)
+                }
             }
         }
     }

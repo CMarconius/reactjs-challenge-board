@@ -22,7 +22,7 @@ const TowerOfHanoi = () => {
 
     function checkForActiveDisc() {
         if (discActive) {
-            return {...currentDisc}
+            return currentDisc
         } else return "No Active Disc"
     }
 
@@ -37,10 +37,10 @@ const TowerOfHanoi = () => {
     const [towers, setTowers] = useState(() => {
         let arr = [];
 
-        arr.push(<Tower checkForActiveDisc={() => checkForActiveDisc()} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
+        arr.push(<Tower discActive={discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
 
         for (let i = 2; i <= numberOfTowers; i++) {
-            arr.push(<Tower checkForActiveDisc={() => checkForActiveDisc()} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
+            arr.push(<Tower discActive={discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
         }
         return arr;
     })
