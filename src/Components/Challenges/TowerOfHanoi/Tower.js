@@ -2,7 +2,6 @@ import react from 'react'
 import React, { useEffect, useState } from 'react'
 import { isValidElement } from 'react'
 import './Tower.css'
-import TowerDisc from './TowerDisc'
 
 const Tower = (props) => {
 
@@ -11,33 +10,39 @@ const Tower = (props) => {
     const [discs, setDiscs] = useState(props.discs)
 
     const [discCount, setDiscCount] = useState(discs.length)
+
+    const [discActive, setDiscActive] = useState(props.discActive)
+
+    const [currentDisc, setCurrentDisc] = useState(props.currentDisc)
     
     
 
     useEffect(() => {
+        setDiscActive(props.discActive)
     }, [props.discActive]);
 
     useEffect(() => {
+        setCurrentDisc(props.currentDisc)
     }, [props.currentDisc]);
 
     useEffect(() => {
     }, [discs]);
 
     const handleTowerClicked = () => {
-        if (!props.discActive) {
-            let newDisc = props.currentDisc
+        if (discActive) {
+            let newDisc = currentDisc
             console.log(newDisc)
             if (isValidElement(newDisc)) {
                 setDiscs(discs => [...discs, newDisc])
                 console.log("NewDisc Is Not Null...")
             }
-            else {
-                console.log("NewDisc Is Null...")
-                if (discs.length > 0) {
-                    props.returnTopDisc(discs[0]);
-                    discs.shift()
-                    setDiscCount(discs.length)
-                }
+        }
+        else {
+            console.log("NewDisc Is Null...")
+            if (discs.length > 0) {
+                props.returnTopDisc(discs[0]);
+                discs.shift()
+                setDiscCount(discs.length)
             }
         }
     }
