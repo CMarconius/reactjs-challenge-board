@@ -18,6 +18,12 @@ const Tower = (props) => {
     
 
     useEffect(() => {
+    }, [currentDisc]);
+
+    useEffect(() => {
+    }, [discActive]);
+
+    useEffect(() => {
         setDiscActive(props.discActive)
     }, [props.discActive]);
 
