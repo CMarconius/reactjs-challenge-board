@@ -26,7 +26,7 @@ const TowerOfHanoi = () => {
         } else return "No Active Disc"
     }
 
-    const [discs, setDiscs] = useState(() => {
+    const [tower1Discs, setTower1Discs] = useState(() => {
         let arr = [];
         for (let i = 0; i < numberOfDiscs; i++) {
             arr.push(<TowerDisc discClass={"size" + i}/>)
@@ -34,16 +34,19 @@ const TowerOfHanoi = () => {
         return arr;
     })
 
+    const [tower2Discs, setTower2Discs] = useState([])
+    const [tower3Discs, setTower3Discs] = useState([])
+
     const [towers, setTowers] = useState(() => {
         let arr = [];
 
-        arr.push(<Tower discActive={discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={1} discs={[...discs]}/>)
-
-        for (let i = 2; i <= numberOfTowers; i++) {
-            arr.push(<Tower discActive={discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={i} discs={[]}/>)
-        }
+        arr.push(<Tower discActive={() => discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={1} discs={[...tower1Discs]}/>)
+        arr.push(<Tower discActive={() => discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={2} discs={[...tower2Discs]}/>)
+        arr.push(<Tower discActive={() => discActive} currentDisc={currentDisc} returnTopDisc={returnTopDisc} id={3} discs={[...tower3Discs]}/>)
+        
         return arr;
     })
+
     
     function getDiscActive() {
         return discActive
