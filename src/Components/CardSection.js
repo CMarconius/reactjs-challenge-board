@@ -12,6 +12,7 @@ import Pokedex from './Challenges/Pokedex/Pokedex'
 import { LoadingBoxes } from './Challenges/LoadingBoxes/LoadingBoxes'
 import VowelCount from './Challenges/VowelCounter/VowelCount'
 import TowerOfHanoi from './Challenges/TowerOfHanoi/TowerOfHanoi'
+import TheLastCookBook from './Challenges/TheLastCookBook/TheLastCookBook'
 
 function CardSection() {
 
@@ -64,7 +65,8 @@ function CardSection() {
             <div className="cardsContainer">
 
                 <div className="cardRow">
-                    <Card onClick={() => {activatePopup(<TowerOfHanoi/>, "Tower Of Hanoi", "large")}} challengeName={"Tower Of Hanoi"}/>
+                    <Card onClick={() => {activatePopup(<TheLastCookBook/>, "The Last Cookbook", "medium")}} challengeName={"The Last Cookbook"}/>
+                    {/* <Card onClick={() => {activatePopup(<TowerOfHanoi/>, "Tower Of Hanoi", "large")}} challengeName={"Tower Of Hanoi"}/> */}
                     {/* <Card onClick={() => {activatePopup(<CountdownTimer/>, "Countdown Timer", "large")}} challengeName={"Countdown Timer"}/> */}
                     <Card onClick={() => {activatePopup(<CompoundCalculator/>, "Compound Interest Calculator", "large")}} challengeName={"Compound Interest Calculator"}/>
                     <Card onClick={() => {activatePopup(<Pokedex/>, "Pokedex", "medium", "Pokedex made using pokeapi.co API")}} challengeName={"Pokedex"}/>
