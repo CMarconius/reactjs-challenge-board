@@ -14,10 +14,12 @@ const TheLastCookBook = () => {
 
     const AddIngredient = () => {
         let ingr = currentIngredient.toLowerCase()
-        ingr = ingr.charAt(0).toUpperCase() + ingr.slice(1)
-        if (!myIngredients.includes(ingr)) {
-            setMyIngredients([...myIngredients, ingr]);
-            setCurrentIngredient("")
+        if (ingr !== "") {
+            ingr = ingr.charAt(0).toUpperCase() + ingr.slice(1)
+            if (!myIngredients.includes(ingr)) {
+                setMyIngredients([...myIngredients, ingr]);
+                setCurrentIngredient("")
+            }
         }
     }
 
@@ -28,26 +30,39 @@ const TheLastCookBook = () => {
     return (
         <>
         <CookBook>
-            <h1>The Last Cookbook You Will Ever Need</h1>
+            <CookBookNavBar>
+                <h1>THE LAST COOKBOOK</h1>
+                <HamburgerBox><HamburgerLine/><HamburgerLine/><HamburgerLine/></HamburgerBox>
+            </CookBookNavBar>
 
-            {(cookBookState==="addIngredient") ? ( 
-                <>
-                    <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
-                    <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>Add New Ingredient</Button>
-                    <MyListOfIngredients>
-                        <h2>Here's my List of Ingredients:</h2>
-                        {myIngredients.map(ingredient => {
-                            return <Ingredient>{ingredient}</Ingredient>
-                        })}
-                    </MyListOfIngredients>
-                </>
-            ) : (
-                <>
-                    <h2>Select Recipe</h2>
-                    <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient</Button>
-                </>
-            )
-            }
+            <CookBookContainer>
+                <BookModeSelector>
+                    Viewing Recipes
+                </BookModeSelector>
+
+                {/* {(cookBookState==="addIngredient") ? ( 
+                    <>
+                        <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
+                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>Add New Ingredient</Button>
+                        
+                        
+                        
+                        <MyListOfIngredients>
+                            <h2>Here's my List of Ingredients:</h2>
+                            {myIngredients.map(ingredient => {
+                                return <Ingredient>{ingredient}</Ingredient>
+                            })}
+                        </MyListOfIngredients>
+                    </>
+                ) : (
+                    <>
+                        <h2>Select Recipe</h2>
+                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient</Button>
+                    </>
+                )
+                } */}
+
+            </CookBookContainer>
 
         </CookBook>
         </>
@@ -57,18 +72,67 @@ const TheLastCookBook = () => {
 export default TheLastCookBook
 
 const CookBook = styled.div`
+font-family: 'Cinzel', serif;
     max-width: 100%;
-    background-color: #f0f0f0;
-    margin: 15px;
-    padding: 15px;  
-    border-radius: 20px;
-    border: solid 2px var(--cmarc-blue-1);
+    min-width: 100%;
+    background-color: #335c67ff;
+    color: white;  
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:5px;
     input {
         box-shadow: 0px 0px 4px #888888;
     }
+`
+
+const CookBookNavBar = styled.div`
+    background-color: var(--tlcb-3);
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    h1 {
+        font-size: 15px;
+    }
+`
+
+const HamburgerBox = styled.div`
+    width: 30px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    :hover  {
+        transform: scale(1.1);
+    }
+`
+const HamburgerLine = styled.div`
+    background-color: var(--tlcb-5);
+    min-height: 7px;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+`
+const CookBookContainer = styled.div`
+    min-height: 100vh;
+`
+
+const BookModeSelector = styled.div`
+    margin-top: 20px;
+    max-height: 40px;
+    min-height: 40px;
+    width: 200px;
+    max-width: 400px;
+    min-width: 60%;
+    background-color: var(--tlcb-3);
+    border: solid 3.5px var(--tlcb-5);
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
 `
 
 const MyListOfIngredients = styled.div`
