@@ -3,7 +3,7 @@ import { Button } from '../../Button'
 import styled from 'styled-components'
 
 const TheLastCookBook = () => {
-    const [cookBookState, setCookBookState] = useState("d")
+    const [cookBookState, setCookBookState] = useState("")
 
     const [myIngredients, setMyIngredients] = useState(["Flour", "Beans"])
     const [currentIngredient, setCurrentIngredient] = useState("")
@@ -37,10 +37,10 @@ const TheLastCookBook = () => {
 
             <CookBookContainer>
                 <BookModeSelector>
-                    Viewing Recipes
+                    <h3>Viewing Recipes</h3>
                 </BookModeSelector>
 
-                {/* {(cookBookState==="addIngredient") ? ( 
+                {(cookBookState==="addIngredient") ? ( 
                     <>
                         <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
                         <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>Add New Ingredient</Button>
@@ -60,7 +60,7 @@ const TheLastCookBook = () => {
                         <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient</Button>
                     </>
                 )
-                } */}
+                }
 
             </CookBookContainer>
 
@@ -119,10 +119,15 @@ const HamburgerLine = styled.div`
 `
 const CookBookContainer = styled.div`
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
 `
 
 const BookModeSelector = styled.div`
     margin-top: 20px;
+    margin-bottom: 15px;
     max-height: 40px;
     min-height: 40px;
     width: 200px;
@@ -130,13 +135,15 @@ const BookModeSelector = styled.div`
     min-width: 60%;
     background-color: var(--tlcb-3);
     border: solid 3.5px var(--tlcb-5);
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
 `
 
 const MyListOfIngredients = styled.div`
-    width: 300px;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,8 +151,8 @@ const MyListOfIngredients = styled.div`
     color: black;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 10px;
-    border-radius: 20px;
+    padding: 10px 10px 30px 10px;
+    border-radius: 15px;
     border: solid 2px  var(--tlcb-5);
     background-color: var(--tlcb-1);
     h2 {
