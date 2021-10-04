@@ -113,6 +113,14 @@ const TheLastCookBook = () => {
             <CookBookContainer>
                 <BookModeSelector>
                     <h3>Viewing Recipes</h3>
+
+                    <input list="items"/>
+
+                    <datalist id="items">
+                        <option value="Saved Recipes"/>
+                        <option value="Vegan Recipes"/>
+                        <option value="Add New Recipe"/>
+                    </datalist>
                 </BookModeSelector>
 
                 {(cookBookState==="addIngredient") ? ( 
@@ -269,10 +277,13 @@ const RecipeSection = styled.div`
 `
 const RecipePreviewBox = styled.div`
     width: 120px;
-    height: 120px;
+    height: 150px;
     max-width: 35vw;
     max-height: 35vw;
     border: solid 5px var(--tlcb-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
 
 const RecipePreviewImage = styled.div`
@@ -280,10 +291,15 @@ const RecipePreviewImage = styled.div`
         width: 100%;
         min-width: 100%;
         height: 100%;
+        min-height: 100%;
     }
 `
 
 const RecipePreviewBar = styled.div`
     width: 120px;
     max-width: 35vw;
+    h1 {
+        font-size: 12px;
+        margin: 0px;
+    }
 `
