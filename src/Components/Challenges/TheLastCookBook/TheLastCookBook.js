@@ -112,7 +112,6 @@ const TheLastCookBook = () => {
 
             <CookBookContainer>
                 <BookModeSelector>
-                    <h3>Viewing Recipes</h3>
 
                     <input list="items"/>
 
@@ -156,6 +155,8 @@ const TheLastCookBook = () => {
                                         </RecipePreviewImage>
                                         <RecipePreviewBar>
                                             <h1>{recipe["Recipe Name"]}</h1>
+                                            
+                                            <img src="src/images/CookBookImages/chevron.png"/>
                                         </RecipePreviewBar>
                                     </RecipePreviewBox>
                                 </>
@@ -173,7 +174,7 @@ const TheLastCookBook = () => {
 export default TheLastCookBook
 
 const CookBook = styled.div`
-font-family: 'Cinzel', serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 100%;
     min-width: 100%;
     background-color: #335c67ff;
@@ -277,9 +278,9 @@ const RecipeSection = styled.div`
 `
 const RecipePreviewBox = styled.div`
     width: 120px;
-    height: 150px;
+    height: fit-content;
     max-width: 35vw;
-    max-height: 35vw;
+    max-height: fit-content;
     border: solid 5px var(--tlcb-5);
     display: flex;
     flex-direction: column;
@@ -287,19 +288,32 @@ const RecipePreviewBox = styled.div`
 `
 
 const RecipePreviewImage = styled.div`
+    height: 120px;
+    width: 120px;
+    max-width: 35vw;
+    max-height: 35vw;
     img {
-        width: 100%;
-        min-width: 100%;
-        height: 100%;
-        min-height: 100%;
+        height: 120px;
+        width: 120px;
+    max-width: 35vw;
+    max-height: 35vw;
+        object-fit: cover;
     }
 `
 
 const RecipePreviewBar = styled.div`
     width: 120px;
     max-width: 35vw;
+    height: 50px;
+    background-color: var(--tlcb-3);
     h1 {
-        font-size: 12px;
+        font-size: 11px;
         margin: 0px;
+        font-weight: 200;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        padding-left: 5px;
+        padding-right: 25px;
     }
+    border-top: solid 4px var(--tlcb-5);
 `
