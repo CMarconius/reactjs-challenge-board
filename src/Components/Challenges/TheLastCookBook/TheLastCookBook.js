@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Button } from '../../Button'
 import styled from 'styled-components'
 
+import chevron from "./images/chevron.png"
+
 const TheLastCookBook = () => {
     const [cookBookState, setCookBookState] = useState("")
 
@@ -156,7 +158,7 @@ const TheLastCookBook = () => {
                                         <RecipePreviewBar>
                                             <h1>{recipe["Recipe Name"]}</h1>
                                             
-                                            <img src="src/images/CookBookImages/chevron.png"/>
+                                            <img src={chevron}/>
                                         </RecipePreviewBar>
                                     </RecipePreviewBox>
                                 </>
@@ -306,6 +308,8 @@ const RecipePreviewBar = styled.div`
     max-width: 35vw;
     height: 50px;
     background-color: var(--tlcb-3);
+    display: flex;
+
     h1 {
         font-size: 11px;
         margin: 0px;
@@ -314,6 +318,9 @@ const RecipePreviewBar = styled.div`
         text-align: left;
         padding-left: 5px;
         padding-right: 25px;
+    }
+    img {
+        max-height: 100%;
     }
     border-top: solid 4px var(--tlcb-5);
 `
