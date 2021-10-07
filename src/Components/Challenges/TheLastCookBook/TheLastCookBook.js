@@ -306,21 +306,22 @@ const RecipePreviewImage = styled.div`
 const RecipePreviewBar = styled.div`
     width: 120px;
     max-width: 35vw;
-    height: 50px;
+    height: 40px;
+    min-height: fit-content;
     background-color: var(--tlcb-3);
     display: flex;
-
+    flex: 0 0 0px;
     h1 {
-        font-size: 11px;
+        font-size: 10px;
         margin: 0px;
         font-weight: 200;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: left;
         padding-left: 5px;
-        padding-right: 25px;
+        padding-right: 0px;
     }
     img {
-        max-height: 100%;
+        height: 100%;
     }
     border-top: solid 4px var(--tlcb-5);
 `
