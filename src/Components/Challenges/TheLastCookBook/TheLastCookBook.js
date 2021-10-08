@@ -82,6 +82,43 @@ const TheLastCookBook = () => {
                 "Season with salt and pepper to taste, and enjoy!"
             ],
             "ImageURL" : "https://cdn.pixabay.com/photo/2017/03/17/17/33/potato-soup-2152254_960_720.jpg",
+        },
+        {
+            "Recipe Name" : "Easy Sweet Buckwheat Pancakes",
+            "Description" : "Dairy-free, refined sugar-free and gluten-free, these beauties taste super! Dave makes these regularly for his daughters and they love them. Drizzle over some maple syrup, and serve with some berries, a tablespoon of coconut yogurt, and a teaspoon of almond butter for a yummy start to the day. These can also be enjoyed as a snack during the day",
+            "Serves" : "Makes 4 pancakes |Takes 20 mins | Low FODMAP serving size is 2 pancakes or half this recipe.",
+            "Ingredients" : [
+                "200g of buckwheat flour",
+                "400ml of almond/rice milk",
+                "pinch of salt",
+                "⅓ of an unripe banana (an unripe banana is low FODMAP)",
+                "2 tbsp maple syrup",
+                "1 tsp baking powder",
+                "2 tbsp tahini",
+                "1 tbsp olive oil "
+            ],
+            "Instructions" : [
+                "Blend all ingredients together in a blender or food processor until everything is smooth (if you have neither, use a fork, mash the banana up very well and then mix everything well in a bowl).",
+                "Put a non-stick pan/skillet on a high heat and give it a few minutes to heat up, you want a nice hot pan. Add one teaspoon of oil, move the pan around spreading the oil to cover most ofthe surface. Use a tissue to mop up any extra oil, to minimise extra calories. You just want the tiniest covering of oil so that your pancakes won’t stick to the pan.",
+                "Turn the heat down to medium high and pour in enough pancake mixture to have a thin coating on the surface of the pan. Cook for a few minutes until bubbles start to form on the top and the top starts to dry out and not look moist anymore.",
+                "Using a silicone spatula, turn the pancake and cook on the other side until golden. Then repeat with the remaining batter.",
+                "Serving suggestion: Pour some coconut yogurt (125g max serving size), raspberries (60g max), strawberries (140g max), and maple syrup on top."
+            ],
+            "ImageURL" : "./images/Easy_Sweet_Buckwheat_Pancakes.png",
+        },
+        {
+            "Recipe Name" : "",
+            "Description" : "",
+            "Serves" : "",
+            "Ingredients" : [
+                "",
+                ""
+            ],
+            "Instructions" : [
+                "",
+                ""
+            ],
+            "ImageURL" : "",
         }
     ])
 
@@ -277,6 +314,7 @@ const RecipeSection = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 `
 const RecipePreviewBox = styled.div`
     width: 120px;
@@ -287,6 +325,7 @@ const RecipePreviewBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
 `
 
 const RecipePreviewImage = styled.div`
@@ -322,6 +361,7 @@ const RecipePreviewBar = styled.div`
     }
     img {
         height: 100%;
+        width: 20%;
     }
     border-top: solid 4px var(--tlcb-5);
 `
