@@ -107,6 +107,32 @@ const TheLastCookBook = () => {
             "ImageURL" : "./images/Easy_Sweet_Buckwheat_Pancakes.png",
         },
         {
+            "Recipe Name" : "Quinoa & Flax Pancakes",
+            "Description" : "These are powerful pancakes, and really good after any sort of workout or exercise. They are also super-tasty, packed full of protein, complex carbs and good fats, and have the added benefit of being gluten and dairy-free.",
+            "Serves" : "Makes 10 small pancakes | Takes 20 minutes to make | Low FODMAP Serving size 5 small pancakes",
+            "Ingredients" : [
+                "125g quinoa (uncooked)",
+                "1 tbsp whole flax seeds",
+                "250ml of rice milk",
+                "1 tsp vanilla essence",
+                "¾ of a medium-sized banana (not too ripe)",
+                "2 tbsp maple syrup/agave syrup",
+                "a pinch of salt",
+                "Dash Olive oil"
+            ],
+            "Instructions" : [
+                "In a high-speed blender or coffee grinder, blend the uncooked quinoa and flax together until it reaches a flour like consistency (they do blend in some regular domestic blenders but not all!).",
+                "Add the rest of ingredients and blend together.",
+                "Heat a nonstick-frying pan on high heat for 2 mins, until it gets warm.",
+                "Turn heat down to medium heat and pour a tiny dash of oil, mix around the pan and wipe away with a kitchen paper to remove any extra oil.",
+                "Pour in enough pancake batter to lightly cover the bottom of the pan and spread out evenly in the pan. Allow to cook at medium heat.",
+                "Once the edges start to cook and the centre starts to develop holes or bubbles and it dries out, turn the pancake, we find a silicone spatula the best tool for this.",
+                "Cook the other side until it gets light brown. Repeat with the remaining batter.",
+                "Tip: If the batter starts to get too thick add a little more rice milk to thin it out."
+            ],
+            "ImageURL" : ".images/Quinoa_And_Flax_Pancakes.png",
+        },
+        {
             "Recipe Name" : "",
             "Description" : "",
             "Serves" : "",
