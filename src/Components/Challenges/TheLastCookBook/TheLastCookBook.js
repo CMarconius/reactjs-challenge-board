@@ -133,6 +133,27 @@ const TheLastCookBook = () => {
             "ImageURL" : ".images/Quinoa_And_Flax_Pancakes.png",
         },
         {
+            "Recipe Name" : "Perfect Porridge",
+            "Description" : "We couldn’t write a breakfast section that didn’t champion one of our favourite foods - porridge! Often we will eat porridge for more than 1 meal a day!! This super nourishing meal is not exclusive to breakfast you know!! It can double up for a lazy, hug like supper too! Some people have very bad associations to porridge; maybe you went to boarding school and were force fed a ‘gruel’ like watery paste and that is your association with porridge. Well if so, put this aside and let's start new! We typically make it with half rice milk, half water, so that it rich, sweet and creamy, while being dairy-free and super-wholesome. There are typically two types of porridge oat flakes available, jumbo which are bigger and don’t break down as well as regular oats, they tend to have a bit more bite to them. Regular or standard oat flakes are the norm and if you don’t know which you have been using, chances are they are standard oat flakes. Pinhead oats are also available but we usually find them a bit more hardcore in that you need to soak them overnight and then they still have a bit too much bite to them. However, saying all that, on this course you will be using gluten-free oat flakes, so it is just like regular oat flakes but these are gluten-free. Think of porridge like a blank canvas, it is what you decorate it with that really makes it. It is all a matter of taste and preferences. Here is a simple recipe for perfect porridge.",
+            "Serves" : "Makes 2 small portions | Takes 5 minutes | low FODMAP serving size 1 portion or half this recipe.",
+            "Ingredients" : [
+                "140g Gluten free porridge oats",
+                "330ml water",
+                "330ml rice milk",
+                "(optional) Fresh berries - raspberries (60g max), blueberries (20 berries), strawberries (140g max)",
+                "(optional) Coconut yogurt (125ml max)",
+                "(optional) Maple syrup (2 Tbsp max)",
+                "(optional) Pecan nuts (10 nuts max)",
+                "(optional) Mixed seeds - pumpkin, sunflower, sesame (1 tbsp mixed seeds max)"
+
+            ],
+            "Instructions" : [
+                "Put all ingredients in a pot and put on a medium to high heat",
+                "It is typically sweeter if you cook it slowly on a low heat stirring occasionally (takes 10 -15 minutes). If you don’t have time turn heat up high, stir regularly and it should be done when it starts to bubble (approx 5 minutes)"
+            ],
+            "ImageURL" : ".images/Perfect_Porridge.png",
+        },
+        {
             "Recipe Name" : "",
             "Description" : "",
             "Serves" : "",
