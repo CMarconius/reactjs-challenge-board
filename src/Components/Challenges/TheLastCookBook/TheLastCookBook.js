@@ -154,6 +154,27 @@ const TheLastCookBook = () => {
             "ImageURL" : ".images/Perfect_Porridge.png",
         },
         {
+            "Recipe Name" : "Millet Porridge",
+            "Description" : "A gluten-free and super-wholesome start to the day. Millet is in the same league as quinoa, both super powered grains that are alkaline and great sources of fuel. Use millet flakes to make millet porridge, you will usually get it in most health food stores or on online. It is best soaked overnight, as it cooks quicker and tends to be sweeter. It does have a different taste and texture to normal oat porridge, it is less creamy and has a more 'grain' like taste and texture to it, saying that it is super-wholesome and nourishing. Steve eats it all the time when he is visiting his in-laws in Poland.",
+            "Serves" : "Makes 1 large portion | Takes 15 minutes | Low FODMAP serving size: all of it!",
+            "Ingredients" : [
+                "70g millet rolled flakes",
+                "300ml rice milk",
+                "300ml water",
+                "(optional) Fresh berries - raspberries (60g max), blueberries (20 berries), strawberries (140g max)",
+                "(optional) Coconut yogurt (125ml max)",
+                "(optional) Maple syrup (2 Tbsp max)",
+                "(optional) Pecan nuts (10 nuts max)",
+                "(optional) Mixed seeds - pumpkin, sunflower, sesame (tbsp mixed seeds max)"
+            ],
+            "Instructions" : [
+                "Put all the ingredients in a medium pot on a low heat.",
+                "Slowly cook on a medium heat, stirring occasionally till it starts to bubble and come together (approx 15 minutes).",
+                "If you want it thicker, cook it for longer and if you want it thinner then add more of the rick milk/water."
+            ],
+            "ImageURL" : ".images/Millet_Porridge.png",
+        },
+        {
             "Recipe Name" : "",
             "Description" : "",
             "Serves" : "",
