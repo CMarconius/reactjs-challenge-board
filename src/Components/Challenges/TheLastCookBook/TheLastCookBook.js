@@ -175,6 +175,25 @@ const TheLastCookBook = () => {
             "ImageURL" : ".images/Millet_Porridge.png",
         },
         {
+            "Recipe Name" : "Chia Seed Pudding",
+            "Description" : "The rice milk and banana give this recipe a nice sweetness and the oats give it a bit more fibre and a change of texture. This is a great brekkie if you are on the go, make it in a jar the night before and bring with you to eat on the train or bus. You can also eat this as a snack during the day.",
+            "Serves" : "Takes 5 minutes to make (plus soaking time) |Serves 2 people |Low FODMAP portion: 1.5 servings",
+            "Ingredients" : [
+                "2 tbsp chia seed",
+                "250ml rice/almond milk",
+                "½ an unripe banana",
+                "60g raspberries (approx 30 berries)",
+                "2 tbsp gluten-free oat flakes (porridge oats) - or leave them out altogether!"
+            ],
+            "Instructions" : [
+                "Mash up the banana and the raspberries on a plate until well mashed.",
+                "Put all ingredients into a jar or a large glass, stir well with a fork and then leave to set for 15 minutes or overnight.",
+                "Give it a good whisk with a fork before topping it with garnishes and eating.",
+                "Serve with fresh berries - raspberries (60g max), blueberries (20 berries), strawberries (140g max), Coconut yogurt (125ml max), Maple syrup (2 Tbsp max), toasted Pecan nuts (10 nuts max)."
+            ],
+            "ImageURL" : ".images/Chia_Seed_Pudding.png",
+        },
+        {
             "Recipe Name" : "",
             "Description" : "",
             "Serves" : "",
@@ -417,7 +436,7 @@ const RecipePreviewBar = styled.div`
     min-height: fit-content;
     background-color: var(--tlcb-3);
     display: flex;
-    flex: 0 0 0px;
+    justify-content: space-between;
     h1 {
         font-size: 10px;
         margin: 0px;
