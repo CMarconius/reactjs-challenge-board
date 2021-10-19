@@ -225,6 +225,28 @@
     "ImageURL" : ".images/Coconut_Yogurt_Pots.png"
 },
 {
+    "Recipe Name" : "Homemade Coconut Yogurt",
+    "Description" : "If you haven’t tried coconut yogurt, you are in for a treat, we love it; its really creamy with a sense of decadent richness, and a smooth and tasty finish! Coconut yogurt from a shop can be quite expensive, when you make it yourself it is much cheaper, and you get to try a bit of fermentation. We love this as a treat, it goes great as a snack on apple with a little almond butter (ensure no more than 1 tbsp almond butter per serving) or on top of our gluten-free granola, or check out our coconut yogurt pots in this breakfast section too. We do use a dehydrator in this recipe but you could put them in the hot press instead. After loads of experimentation, this is our favourite coconut yogurt recipe:",
+    "Serves" : "Makes 800ml - approx 8 servings | Takes 30 mins plus fermenting time|Max low FODMAP serving size of coconut yogurt is 125g | ",
+    "Ingredients" : [
+        "2 x 400ml cans coconut milk (for a creamier yogurt use full fat coconut milk)",
+        "2 tablespoons tapioca starch",
+        "4 tablespoons store-bought coconut yogurt / 4 capsules of probiotic culture (must contain one of these strains – Lactobacillus bulgaricus, Streptococcus thermophilus, Bifidobacterium lactis or Lactobacillus acidophilus)",
+        "2 tbsp maple syrup"
+    ],
+    "Instructions" : [
+        "Pour the coconut milk into a saucepan. Whisk until the milk is smooth and uniform.",
+        "Add the maple syrup to the coconut milk. Scoop out roughly 1/3 cup of the coconut milk and transfer to a bowl with the tapioca starch. Whisk this together until the starch is dissolved, then pour back into the pot.",
+        "Warm the coconut milk. Place the pan on the stove over medium heat and warm until the coconut milk starts to simmer. Whisk the milk and turn down the heat to low. Continue cooking on low, whisking occasionally, for 5 to 10 minutes, until the tapioca starch has thickened the mixture.",
+        "Cool the milk: Cool the milk until it's just warm to touch, about 40 degrees Celsius or 100°F.",
+        "Add your culture of choice. Whisk in 4 tablespoons store-bought coconut yogurt gently OR add and the probiotics and mix well",
+        "Pour the coconut milk into the sterilized jar(s) and screw on the lid(s). Place into a dehydrator, warm hot press or pre-heated oven — turn the oven on the lowest temperature possible and leave the door slightly open. Alternatively, use a yogurt maker or place into a dehydrator at 40 degrees or 110°F. Leave for 24 hours without disturbing.",
+        "Chill the yogurt: Place the set yogurt into the fridge and chill for at least 6 hours. The yogurt will become thicker as it chills. After this stage, you might find that the mixture has separated with a yellowish, translucent layer at the bottom and a thicker white layer on top. Stir to recombine or scoop off the top layer for thicker coconut yogurt.",
+        "Keep coconut yogurt refrigerated and use within 2 weeks."
+    ],
+    "ImageURL" : ".images/Homemade_Coconut_Yogurt.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
@@ -236,6 +258,6 @@
         "",
         ""
     ],
-    "ImageURL" : ""
+    "ImageURL" : ".images/.png"
 }
 ]
