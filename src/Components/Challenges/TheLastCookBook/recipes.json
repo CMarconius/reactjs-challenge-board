@@ -247,6 +247,35 @@
     "ImageURL" : ".images/Homemade_Coconut_Yogurt.png"
 },
 {
+    "Recipe Name" : "Strawberry & Almond Gluten-Free Muffins",
+    "Description" : "These are addictive! The first time Steve made these, he ate four by accident, they just kept slipping into his mouth!! These are like almond and oat flapjack muffins, with the sweet and sharpness of the raspberries cutting through. These are well worth making.",
+    "Serves" : "Makes 12 muffins | Takes 15 minutes plus baking and cooling time |low FODMAP max serving size: 2 muffins",
+    "Ingredients" : [
+        "2 tablespoons ground flax",
+        "6 tablespoons water",
+        "80g gluten free white flour/buckwheat flour",
+        "100g gluten-free oats",
+        "140g ground almond",
+        "1 teaspoon baking powder",
+        "1 teaspoon baking soda",
+        "150ml vegetable oil",
+        "150ml maple syrup",
+        "2 teaspoons vanilla essence",
+        "125g of of strawberries (if using frozen make sure they are thawed)",
+        "20g flaked almonds"
+    ],
+    "Instructions" : [
+        "Preheat the oven to 180℃.",
+        "Mix your ground flaxseed and water together in a small bowl and leave to sit to make your ‘flax egg’ while you prepare the other ingredients",
+        "In a large bowl mix together the dry ingredients: flour, oats, ground almond, baking powder and baking soda.",
+        "Add the sunflower oil into the dry ingredients along with the maple syrup, vanilla essence, and flax eggs and mix thoroughly until everything is well mixed.",
+        "Then mix through 15g of the flaked almonds and ¾ of the strawberries (remove the green of the strawberries and slice into small bite sized pieces) and leave the remaining 5g of almonds and the rest of the strawberries to decorate the top later on.",
+        "Get a muffin tray and insert 12 paper muffin cases and pour in the muffin mixture, ensuring to have the same amount in each muffin case. Decorate the top of the muffins with the remaining flaked almonds before putting in the oven.",
+        "Bake in the preheated oven for 25 mins. Once cooked, remove from the oven and leave to cool. Serve with some fresh strawberries on the top"
+    ],
+    "ImageURL" : ".images/Strawberry_Almond_Gluten_Free_Muffins.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
