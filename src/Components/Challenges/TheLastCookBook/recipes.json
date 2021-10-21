@@ -276,6 +276,25 @@
     "ImageURL" : ".images/Strawberry_Almond_Gluten_Free_Muffins.png"
 },
 {
+    "Recipe Name" : "Creamy Coconut Quinoa Porridge",
+    "Description" : "With porridge being our go to comfort food, it was hard for us to try other grains for porridge, we felt a little like we were cheating on our life-long friend, the oat flake! This porridge is a super-tasty alternative to oat porridge that will help you spring out of bed! This recipe is particularly good on the weekend or after training, as it is richer than usual porridge. Really worth trying!",
+    "Serves" : "Serves approx 2 | Takes 20 minutes | Max low FODMAP portion 300g, this recipe makes 450g porridge",
+    "Ingredients" : [
+        "125g quinoa",
+        "300ml rice milk",
+        "150ml/g of full-fat coconut milk",
+        "1 small cinnamon quill",
+        "2 cardamom pods",
+        "1 small star anise (if you have them)",
+        "1/4 a vanilla pod small pinch of salt to taste"
+    ],
+    "Instructions" : [
+        "Put all the ingredients in a pot, put on a high heat and stir regularly. When it boils, turn down to a low-medium heat, put a lid leaving a gap so steam can evaporate, and stir regularly. It should take about 10-15 mins to cook. We usually cook it until just about all the liquid has evaporated and then we turn the heat off and put the lid on and leave it sit for a few minutes to allow the quinoa to puff up and the porridge to get creamy.",
+        "This goes fantastic with some fresh berries (raspberries <60g, blueberries <40g, strawberries <140g, and a drizzle of maple syrup (max 2 tablespoons). Enjoy!"
+    ],
+    "ImageURL" : ".images/Creamy_Coconut_Quinoa_Porridge.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
