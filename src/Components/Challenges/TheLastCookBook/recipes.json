@@ -295,6 +295,24 @@
     "ImageURL" : ".images/Creamy_Coconut_Quinoa_Porridge.png"
 },
 {
+    "Recipe Name" : "Sabrina’s sunday morning chia pudding",
+    "Description" : "This is easy to make, and is lovely and nourishing. Simply prep your fruit while your chia seeds are soaking for 10-15 minutes, giving them a stir occasionally. Sabrina, Dave’s partner, usually soaks her chia seeds with a tablespoon of ground flax in too; these are not essential by any means but nice additions if you have them. If you like it sweet, you can drizzle over 2 tablespoons of maple syrup.",
+    "Serves" : "Serves 2 |Takes approx 15 minutes | Max low FODMAP is 1 portion: or half of this recipe.",
+    "Ingredients" : [
+        "8 tbsp chia seed (70g)",
+        "300ml rice milk/almond milk",
+        "2 tbsp almond butter",
+        "Fruit (per serving)to top with such as: Strawberries <140g, kiwi <2 kiwis, raspberries <60g, blueberries <40g, unripe banana <1",
+        "Optional garnishes: Coconut yoghurt <125ml per serving"
+    ],
+    "Instructions" : [
+        "Put the chia seeds and milk in a bowl and stir with fork for 30 seconds to incorporate all the seeds and the milk and then leave it rest and sit for 10-15 minutes while you prep your fruit.",
+        "Prep your fruit by chopping the kiwis and banana if using into bite size pieces",
+        "Once chia seeds have been soaking for 10-15 minutes or so, use a fork and mix them for approx a minute breaking them up till they reach a nice lose consistency, you may need to add another dash of milk to reach a nice uniform ‘lose’ consistency. Divide into 2 servings. Top the soaked chia seed pudding with your fruit, the almond butter and coconut yoghurt. Arrange everything so that it looks really pretty, take your photo for Instagram (only joking!) and enjoy!"
+    ],
+    "ImageURL" : ".images/Sabrinas_Sunday_Morning_Chia_Pudding.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
