@@ -313,6 +313,27 @@
     "ImageURL" : ".images/Sabrinas_Sunday_Morning_Chia_Pudding.png"
 },
 {
+    "Recipe Name" : "Gluten-free Bread",
+    "Description" : "This recipe was born out of our Happy Heart Course, where participants were looking for a 100% wholemeal gluten-free loaf based on an Irish porridge bread. Simple, tasty and hard to beat, this goes magic with our chia seed jam (in snacks section) or a tablespoon of almond butter.",
+    "Serves" : "Makes approximately 10 slices | Takes 75 minutes to make |Max low FODMAP portion size 1.5 slices",
+    "Ingredients" : [
+        "1 tbsp ground flax/linseed (you can use ground chia seed instead)",
+        "1 x 400g soy yogurt or other non-dairy yogurt of choice",
+        "1 tbsp molasses or maple syrup",
+        "300g gluten-free oat flakes",
+        "2 tsp baking soda",
+        "4 tbsp mixed seeds ½ tsp salt"
+    ],
+    "Instructions" : [
+        "Preheat the oven at 170°C/350°F/Gas Mark 4.",
+        "First step is to make your ‘flax egg’, put the ground flax/linseed in a cup and add 3 tablespoons of water, stir and leave to sit for 5 minutes.",
+        "Place yogurt, flax egg and molasses in a mixing bowl and stir well.",
+        "Next, in a separate bowl, mix the oat flakes, baking soda, mixed seeds and salt. Then add to the yogurt mixture and stir thoroughly. It will be quite a wet batter but don’t worry it will dry out once baked.",
+        "Place in a greased or parchment lined 1 or 2lb loaf tin, and bake at in the preheated oven at 170°C/350°F/Gas Mark 4 for 50 mins."
+    ],
+    "ImageURL" : ".images/Gluten_free_Bread.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
