@@ -334,6 +334,34 @@
     "ImageURL" : ".images/Gluten_free_Bread.png"
 },
 {
+    "Recipe Name" : "Asian Broccoli Salad in a Sweet Smokey Chilli Sauce",
+    "Description" : "Easy simple and super tasty salad with great texture",
+    "Serves" : "Serves 2 as a lunch salad | Takes 20 minutes | Max low FODMAP portion is : 1 portion or half this recipe.",
+    "Ingredients" : [
+        "150g broccoli",
+        "150g green beans",
+        "½ red pepper",
+        "½ pack of beansprouts - approx 130g",
+        "20g sesame seeds",
+        "30g pecan nuts/macadamia nuts",
+        "100g of baby corn",
+        "(Dressing) 25ml tamari (1.5 tbsp)",
+        "(Dressing) ½ Tbsp paprika",
+        "(Dressing) Small pinch cayenne/ground dried chilli powder",
+        "(Dressing) 1.5 Tbsp maple syrup",
+        "(Dressing) 2 tbsp sesame oil",
+        "(Dressing) juice of ½ a lemon"
+    ],
+    "Instructions" : [
+        "Chop the broccoli into small bite size florets. Top and tail the green beans. Finely chop the red pepper into thin long strips removing the seeds. Roughly chop the baby corn.",
+        "Steam the broccoli and the green beans for 3 minutes until just cooked through but not too soft, then transfer to the sink in the colander and run under cold running water. Cut beans in half.",
+        "Toast the sesame seeds and nuts together in a dry frying pan on a medium heat until lightly coloured (approx 5 minutes).",
+        "Add broccoli and all the rest of the salad ingredients into a large bowl",
+        "Mix your salad dressing together and pour over salad. Add the toasted sesame seeds and nuts just before serving. Note: only dress what you are going to eat as once dressed it doesn’t last very well."
+    ],
+    "ImageURL" : ".images/Asian_Broccoli_Salad_in_Sweet_Smokey_Chilli_Sauce.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
