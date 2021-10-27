@@ -362,6 +362,30 @@
     "ImageURL" : ".images/Asian_Broccoli_Salad_in_Sweet_Smokey_Chilli_Sauce.png"
 },
 {
+    "Recipe Name" : "High Protein Quinoa Salad",
+    "Description" : "This delicious salad is super-easy to make and is a great post-gym meal! Packed with colour and texture, it's a bowl full of goodness!",
+    "Serves" : "Serves 2 | Takes 20 minutes | Max low FODMAP portion: 1 portion or half of this recipe.",
+    "Ingredients" : [
+        "150g Quinoa (uncooked) Handful of mixed leaves",
+        "10 cherry tomatoes",
+        "65g pecan nuts/walnuts",
+        "40g frozen edamame beans/frozen peas Small bunch of fresh chive and mint.",
+        "(Dressing) 2 tablespoons tamari",
+        "(Dressing) 2 tablespoons olive oil",
+        "(Dressing) 1.5 tablespoons Lemon juice",
+        "(Dressing) ¼ teaspoon salt",
+        "(Dressing) ¼ teaspoon pepper"
+    ],
+    "Instructions" : [
+        "Cook the quinoa in 300ml water in a pot on a high heat. Bring to the boil with the lid on. Once it boils, move the lid so the steam can escape and simmer till all the water has evaporated.",
+        "Remove from the heat and leave aside with the lid on for 5-10 minutes till the quinoa puffs up. Allow quinoa to cool fully before mixing salad.",
+        "Chop the cherry tomatoes in half and defrost the edamame beans/peas by leaving to sit in a bowl of hot water for 10 minutes. Chop the chives finely or else remove the mint leaves from the stalk and chop finely. Whisk the dressing together in a cup with a fork or with a whisk in a jug.",
+        "Add all salad ingredients for the salad in a large bowl and dress with the dressing.",
+        "Top tip: If you are making this ahead of time, we recommend waiting to dress the veg until just before you serve it, as it will keep better this way."
+    ],
+    "ImageURL" : ".images/High_Protein_Quinoa_Salad.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
