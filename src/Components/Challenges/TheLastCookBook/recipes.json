@@ -386,6 +386,35 @@
     "ImageURL" : ".images/High_Protein_Quinoa_Salad.png"
 },
 {
+    "Recipe Name" : "Broccoli, Parsnip & Ginger Soup",
+    "Description" : "This delicious and comforting soup is a great way to get your greens and is packed with goodness and flavour! It goes great with a slice of gluten-free bread! To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water",
+    "Serves" : "Serves 4 people | Takes approx 40 minutes to make | Max low FODMAP serving size: 1 portion or ¼ of this recipe",
+    "Ingredients" : [
+        "1 small leek or ½ bunch of scallions - green tops only",
+        "1 small carrot",
+        "200g celeriac (¼ of small celeriac)",
+        "1 Tbsp oil",
+        "1.25 litres of veg stock/water (ensure has no onion powder/garlic extract etc.)",
+        "200g of broccoli (1 small head)",
+        "200g parsnip (1 small parsnip)",
+        "1.25 tsp salt",
+        "¼ tsp black pepper",
+        "½ tsp ground cumin",
+        "½ thumb-sized piece of fresh ginger (10g)"
+    ],
+    "Instructions" : [
+        "Roughly chop the greens of the leek or scallion- rinsing the leek greens in cold water to remove any sediment. Chop the carrots, parsnip and celeriac. (No need to peel any of the veg, as lots of the nutrition of the veg is in the skin).",
+        "Roughly chop the whole of the broccoli, both the florets and the stalk.",
+        "Peel and finely chop the ginger.",
+        "Add the oil to a large family-sized pot and put on a high heat. Add the all the veg, the ginger and the salt and cook, stirring regularly for 4 minutes.",
+        "Reduce the heat to medium and put a lid on and sweat the veg for 10 minutes stirring occasionally. Add 1-2 Tbsp of water if the veg sticks to the bottom of the pot.",
+        "Add the veg stock/water, along with the black pepper and the cumin. Put the heat on high bring to the boil and then turn the heat down and simmer for 15 minutes.",
+        "Remove the pot from the heat. Blend until smooth using a stick/immersion blender. If the soup seems a little thick, add a drop of water until it reaches your desired consistency.",
+        "Season with salt and pepper and enjoy!"
+    ],
+    "ImageURL" : ".images/Broccoli_Parsnip_and_Ginger_Soup.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
