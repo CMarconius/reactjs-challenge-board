@@ -415,6 +415,33 @@
     "ImageURL" : ".images/Broccoli_Parsnip_and_Ginger_Soup.png"
 },
 {
+    "Recipe Name" : "Carrot, Coriander and Pecan soup",
+    "Description" : "Simple, smooth and sweet. The pecan nuts give this soup a lovely creamy consistency similar to coconut milk. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water. Leave out the coriander if you don’t like it!",
+    "Serves" : "Serves 4 people | Takes approx 40 minutes to make | Max low FODMAP serving size: 1 portion or ¼ of this recipe",
+    "Ingredients" : [
+        "1.25 Tbsp of oil the green part of 1 leeks (175g)",
+        "6-7 carrots (650g)",
+        "175g celeriac/potato",
+        "1.5 tsp salt",
+        "⅓ tsp black pepper",
+        "½ tsp paprika",
+        "juice of 1 lime",
+        "80g unsalted pecans",
+        "1.25 litres of water/veg stock - (ensure no garlic/onion ingredients)",
+        "½ small bunch of coriander (20g)"
+    ],
+    "Instructions" : [
+        "Finely chop the carrot and celeriac/potato. Finely chop the green of the leek and give it a good wash as there is often sediment hiding there!",
+        "Add 2 tbsp oil to a family sized pot/sauce pan and put on a high heat. Add the green of the leek and cook for 3 mins until leek greens have sweated down, then add carrot and celeriac and the salt and black pepper, and stir.",
+        "Add 2 tbsp of water and a generous pinch of salt to help the veg sweat. Cover with a lid and turn down heat to low to medium heat. Sweat for 15 minutes, stirring occasionally, until the veg are soft.",
+        "Add the paprika, juice of the lime, the pecan nuts, and the veg stock/water. Bring to the boil, then turn the heat down, cover with a lid and simmer for 10 minutes.",
+        "Remove pot from heat and blend until smooth using a stick blender. If the soup seems a little thick, add a little water until it reaches your desired consistency.",
+        "Season with salt and pepper if required to your taste.",
+        "Roughly chop the coriander and use as a garnish just before serving."
+    ],
+    "ImageURL" : ".images/Carrot_Coriander_and_Pecan_soup.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
