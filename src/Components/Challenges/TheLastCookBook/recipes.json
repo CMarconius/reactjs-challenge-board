@@ -442,6 +442,40 @@
     "ImageURL" : ".images/Carrot_Coriander_and_Pecan_soup.png"
 },
 {
+    "Recipe Name" : "Chunky Moroccan Harira Soup",
+    "Description" : "This is a chunky, substantial soup that is like a warm belly hug on a cold day! It really is delicious and well worth making. It freezes well and will last 3 days in the fridge too. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water.",
+    "Serves" : "Serves 4 people | Takes approx 50 minutes to make | Max low FODMAP serving size: 1 portion or ¼ of this recipe",
+    "Ingredients" : [
+        "3 carrots (400g)",
+        "1 ¼ tsp oil",
+        "1 ¼ tsp salt",
+        "175g of a tin of lentils",
+        "65g brown basmati rice (uncooked)",
+        "¾ of a 400g tin of chopped tomatoes",
+        "175g of a tin of cooked chickpeas",
+        "¼ tsp dried cinnamon/ 1 small cinnamon quill",
+        "1 ¼ tsp dried paprika",
+        "¼ tsp turmeric",
+        "Small pinch chilli powder",
+        "¾ tbsp ground cumin",
+        "1 ¼ tsp ground coriander",
+        "½ tsp lemon zest",
+        "juice of ½ a small lemon",
+        "½ tsp ground black pepper",
+        "1 ½ litres of veg stock/water (garlic/onion free)",
+        "Small bunch of fresh parsley"
+    ],
+    "Instructions" : [
+        "Finely chop the carrots. Add the oil to a large to medium family sized pot and put on a medium heat.",
+        "Add the carrot, the salt and stir. Add 2 tbsp of water to help the carrots sweat.",
+        "Cover with a lid and turn down heat to low and sweat for 10 minutes, stirring occasionally.",
+        "Zest the lemon. Drain and rinse the lentils and chickpeas and add along with the rice, the chopped tomatoes,, the cinnamon, paprika, turmeric, the chilli powder, the cumin, the coriander, the lemon zest and lemon juice, the pepper, and the veg stock/water and turn up heat high, stir a few times, bring to the boil and reduce heat to a simmer for 25-30 minutes.",
+        "Taste to see that the rice is properly cooked. If it is not cooked, let the soup simmer away until the rice is done.",
+        "Season with salt and pepper to your palette and add the finely chopped parsley before serving."
+    ],
+    "ImageURL" : ".images/Chunky_Moroccan_Harira_Soup.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
