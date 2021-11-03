@@ -506,17 +506,32 @@
     "ImageURL" : ".images/Irish_Root_Vegetable_Soup.png"
 },
 {
-    "Recipe Name" : "",
-    "Description" : "",
-    "Serves" : "",
+    "Recipe Name" : "Carrot, Coconut, Ginger and Lemongrass Soup",
+    "Description" : "Serve this soup with a drizzle of coconut milk and toasted pumpkin seeds on top, for extra yumminess! If you can't source the lemongrass, just leave it out, it is a nice addition but not essential. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water.",
+    "Serves" : "Serves 4 people | Takes approx 50 minutes to make | Max low FODMAP serving size: 1 portion or ¼ of this recipe",
     "Ingredients" : [
-        "",
-        ""
+        "400g carrots",
+        "¼ of a small celeriac (approx. 200g) (replace with potato if you can not source)",
+        "1.25 tbsp oil",
+        "2 tsp salt small thumb-sized piece fresh ginger",
+        "1 stick of fresh lemongrass (not essential if you can’t find it)",
+        "275ml of 1 tin of coconut milk",
+        "1.5 litres veg stock/water (ensure garlic/onion free)",
+        "1 small bay leaf",
+        "¼ a tsp black pepper",
+        "juice of ½ a lime"
     ],
     "Instructions" : [
-        "",
-        ""
+        "Preheat the oven to 180℃.",
+        "Finely chop the carrots. Peel and finely chop the celeriac.",
+        "Put the carrots and celeriac in an oven tray, coat them well with 1 tablespoons of oil and 2 teaspoons of salt. Bake the veg for 25-30 minutes in the preheated oven or until tender and soft.",
+        "Peel and grate the ginger and bruise the lemongrass with the back of your knife and tie a knot in it (to release its flavours).",
+        "In a large family-size pot, put the coconut milk, veg stock/water, crushed lemongrass, grated ginger, together with the bay leaf and black pepper. Mixing them all together, turn the heat up high. When it starts to boil, reduce the heat to a simmer.",
+        "Once the veg in the oven are baked, add carrot and celeriac to the pot. Cover with a lid and cook gently for 10 minutes, stirring occasionally.",
+        "Remove the pot from the heat, take out the knotted lemongrass and bay leaf, and blend the soup until smooth using an immersion/ stick blender. If it seems a little thick, add a little until it reaches your desired consistency.",
+        "Taste, and season with more salt and pepper if needed.",
+        "Serve with a squeeze of lime in each bowl."
     ],
-    "ImageURL" : ".images/.png"
+    "ImageURL" : ".images/Carrot_Coconut_Ginger_and_Lemongrass_Soup.png"
 }
 ]
