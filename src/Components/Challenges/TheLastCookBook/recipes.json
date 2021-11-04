@@ -533,5 +533,44 @@
         "Serve with a squeeze of lime in each bowl."
     ],
     "ImageURL" : ".images/Carrot_Coconut_Ginger_and_Lemongrass_Soup.png"
+},
+{
+    "Recipe Name" : "Roasted Celeriac & Parsnip Soup",
+    "Description" : "Silky smooth white yumminess! White foods have a bad name but there are still plenty of white veggies out there that are really nutritious! To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water.This soup goes great served with a sprinkle of chilli flakes and some toasted gluten-free pitta breads.",
+    "Serves" : "Serves 4 people | Takes approx 50 minutes to make | Max low FODMAP serving size: 1 portion or ¼ of this recipe",
+    "Ingredients" : [
+        "2 parsnips (350g)",
+        "1.25 tbsp oil",
+        "250g celeriac (¼ of a small celeriac)",
+        "1.25 tsp salt",
+        "120ml white wine",
+        "1.25 litres of veg stock (onion/garlic free) or water",
+        "¼ tsp black pepper",
+        "A few sprigs of fresh thyme leaves or chilli oil to garnish"
+    ],
+    "Instructions" : [
+        "Finely chop the parsnip and celeriac into bite-size pieces.",
+        "Put the oil in a large pot on high heat and heat up for 1 minute.",
+        "Add the finely chopped celeriac, parsnip together with 1 teaspoon of salt and give it a good stir. Add 2 tablespoons of water to stop the veg from sticking.",
+        "Put the lid on the pot and reduce to a medium heat and leave to sweat for 5-10 minutes, stirring occasionally.",
+        "Remove the lid, add the white wine and continue to cook on a reduced heat for a further 5 minutes, stirring occasionally.",
+        "Add the veg stock/water, black pepper, remaining salt and the fresh thyme leaves. Turn the heat up high and bring to the boil. Then reduce to a simmer for further 10 minutes before removing from heat and blending with a immersion/stick blender.",
+        "Garnish with a sprig of thyme or chilli oil of your choice or some chilli flakes for a warming kick!"
+    ],
+    "ImageURL" : ".images/Roasted_Celeriac_And_Parsnip_Soup.png"
+},
+{
+    "Recipe Name" : "",
+    "Description" : "",
+    "Serves" : "",
+    "Ingredients" : [
+        "",
+        ""
+    ],
+    "Instructions" : [
+        "",
+        ""
+    ],
+    "ImageURL" : ".images/.png"
 }
 ]
