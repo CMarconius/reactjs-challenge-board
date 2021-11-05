@@ -560,6 +560,35 @@
     "ImageURL" : ".images/Roasted_Celeriac_And_Parsnip_Soup.png"
 },
 {
+    "Recipe Name" : "Watercress and Roasted Walnut Soup",
+    "Description" : "In terms of nutrition, watercress is tied number 1 on the Aggregate Nutrient Density Index (an index measuring the most nutritious foods - watercress is joint number one, along with kale) making it a total powerhouse!Watercress is great in soups and salads. In soups, we always add it at the end, just before blending, so as not to boil off all its goodness. A lot of traditional watercress soups have butter and cream in them and potatoes, to give it body, ours has none of these. Instead, we have gone for celeriac for body and roasted walnuts to give it a certain flair. This is lovely served with a nice squeeze of lemon and some crumbled roasted walnuts on top. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water",
+    "Serves" : "Serves 4 | Takes 45 minutes to make | Max low FODMAP serving size 1 portion or ¼ of this recipe.",
+    "Ingredients" : [
+        "Green of 2 leeks (approx 200g)",
+        "¼ celeriac (approx 250g)",
+        "2 tbsp oil",
+        "2 tsp salt",
+        "2 litres veg stock/water (onion/garlic free)",
+        "1 bay leaf",
+        "a few sprigs of thyme",
+        "¼ tsp black pepper",
+        "200g fresh watercress",
+        "100g walnuts"
+    ],
+    "Instructions" : [
+        "Peel and finely chop the celeriac. Finely slice the leek greens.",
+        "Pour 2 tablespoons of oil in a large pot on a high heat. Add the leek greens and sweat for 5 minutes, stirring regularly. Then add the celeriac and the salt, giving it a good stir, reduce heat to medium.",
+        "Add 2-4 tablespoons of water to help the veg sweat, put lid on and leave to sweat for further 5 minutes, stirring occasionally.",
+        "Add the veg stock/water (if using water you may need to add more salt at the end), bay leaf, thyme leaves, and black pepper, turn the heat up to high and bring to the boil. Once boiled, reduce heat and simmer for 10 minutes.",
+        "To toast the walnuts, add them to a dry frying pan and heat on a medium heat for approximately 8 minutes, until they start to colour and golden.",
+        "Add ¾ of the walnuts (keeping some for crumbling on top for garnish) in and cook for 2 minutes. Remove from heat, add the watercress and mix right through.",
+        "Using a stick blender, blend, leaving the soup somewhat chunky and not quite uniformly smooth. We usually like this soup still to have plenty of texture from the walnuts and watercress.",
+        "Serve with a nice squeeze of lemon and garnish with the remaining walnuts (roughly chop them). "
+
+    ],
+    "ImageURL" : ".images/Watercress_and_Roasted_Walnut_Soup.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
