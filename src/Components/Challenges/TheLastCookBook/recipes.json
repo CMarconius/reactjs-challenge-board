@@ -589,6 +589,50 @@
     "ImageURL" : ".images/Watercress_and_Roasted_Walnut_Soup.png"
 },
 {
+    "Recipe Name" : "5-minute Miso Soup",
+    "Description" : "This is a really simple miso soup, use whatever type of dried seaweed you have or is available; nori or kombu are more commonly used but dulse, sea spaghetti, arame etc. all work great. Just leave it out if you can’t get any. In terms of miso paste, it doesn’t really matter what type of miso you use, just make sure it is gluten-free. Some have been fermented with barley in them, which will have gluten, yet all have a lovely salty taste. Like all our soups, this will last for about 3 days in the fridge and freezes really well.",
+    "Serves" : "Serves 4 | Takes 5 minutes to make | Max low FODMAP serving size: 2 portions",
+    "Ingredients" : [
+        "1 litre water",
+        "2 ½ cm cube piece grated fresh ginger",
+        "2 tbsp tamari",
+        "4 tsp dried seaweed (arame, kombu)",
+        "½ red chilli",
+        "the greens from 2 scallions/ spring onions",
+        "2-3 tbsp of miso",
+        "(Optional) ½ grated carrot",
+        "(Optional) small handful oyster mushrooms cooked rice noodles"
+    ],
+    "Instructions" : [
+        "Firstly, make your miso base. Blend 1 litre of warm water with the grated ginger and tamari.",
+        "Transfer this water, ginger and tamari mixture into a medium-sized pot and add the dried seaweed (if using any of the optional extras to bulk it out such as mushrooms and grated carrot add them in now too and heat up). Once hot enough (below boiling point), turn the heat off and stir the miso through with a fork.",
+        "Finely slice the scallion greens at an angle and the red chilli after removing the seeds.",
+        "Serve in a bowl with some scallion greens and red chilli on top."
+    ],
+    "ImageURL" : ".images/5_Minute_Miso_Soup.png"
+},
+{
+    "Recipe Name" : "2-minute “Rock-et Star” Salad",
+    "Description" : "A great friend of ours is a brilliant musician and makes versions of this salad before going on stage! It's super-healthy, tasty and quick to make! Perfect for your inner rockstar!",
+    "Serves" : "Serves: 2 | takes 5 minutes | Max low FODMAP serving size: 1 main portion or half of this recipe.",
+    "Ingredients" : [
+        "100g rocket or similar green leaf salad",
+        "(75g rocket is the max per person for it to still be low FODMAP)",
+        "120g raspberries",
+        "80g blueberries",
+        "handful of walnuts or small handful pumpkin seeds",
+        "juice of 1/2 lemon",
+        "2 tbsp olive oil pinch of salt"
+    ],
+    "Instructions" : [
+        "Wash and dry the rocket.",
+        "Get a bowl and put the rocket in.",
+        "Squeeze in the lemon, using your hand as a sieve to catch any pips (or the usual lemon squeezer), and mix through, along with the olive oil, coating the leaves well and season with salt if needed to taste.",
+        "Add in the berries and top with the walnuts/pumpkin seeds. Enjoy!"
+    ],
+    "ImageURL" : ".images/2_minute_Rocket_Star_Salad.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
