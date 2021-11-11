@@ -633,6 +633,41 @@
     "ImageURL" : ".images/2_minute_Rocket_Star_Salad.png"
 },
 {
+    "Recipe Name" : "Thai Rice Noodle and Marinated Tofu Salad",
+    "Description" : "This is a really fresh salad that works well as a dinner or lunch. It takes a little longer than some of the other salads to make but it is well worth the effort. The radicchio makes this salad jump out of the bowl in terms of the contrasting colours of the purple and the greens.",
+    "Serves" : "Serves 2 | Takes 30 mins to make |Max low FODMAP portion: 1 portions or half of this recipe",
+    "Ingredients" : [
+        "250g firm tofu",
+        "1.5 tbsp tamari",
+        "1 Tbsp Maple syrup",
+        "½ a small cucumber",
+        "Small pinch of salt",
+        "½ a head of pak choi",
+        "3 scallions - just the green leaves",
+        "½ bunch of fresh coriander",
+        "¼ head of radicchio",
+        "100g rice noodles",
+        "(Dressing) ½ cm cube of fresh ginger grated",
+        "(Dressing) 1 small fresh chilli zest and juice of 1 lime",
+        "(Dressing) 2.5 tbsp rice wine vinegar",
+        "(Dressing) 1 tbsp maple syrup",
+        "(Dressing) 3 tbsp olive oil",
+        "(Dressing) 1.5 tbsp tamari",
+        "(Dressing) 1 tbsp sesame seeds"
+    ],
+    "Instructions" : [
+        "Preheat the oven to 170C",
+        "Chop the tofu into small cubes. In a bowl, marinate the tofu cubes, with tamari and maple syrup and leave sit for 5 minutes.",
+        "Transfer to a baking tray and bake for 10 minutes in the preheated oven.",
+        "Bring a large pot of water to boil, add a pinch of salt, add rice noodles and cook as per instructions on back of pack, should be soft but not sticky. Strain and cool under running water to stop them sticking together.",
+        "Mix the dressing in a bowl, add the zest and juice of lime, chilli (finely chopped and deseeded if you prefer less heat), rice vinegar, grated ginger, maple and the tamari (for the dressing) and mix together.",
+        "In a large bowl, put the noodles and pour the dressing over the noodles tossing them through it so that it is well mixed through.",
+        "Finely chop the cucumber, pak choi, scallions, radicchio and coriander and add to the dressed noodles along with the tofu and mix well through.",
+        "Sprinkle over some sesame seeds before serving."
+    ],
+    "ImageURL" : ".images/Thai_Rice_Noodle_and_Marinated_Tofu_Salad.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
