@@ -668,6 +668,40 @@
     "ImageURL" : ".images/Thai_Rice_Noodle_and_Marinated_Tofu_Salad.png"
 },
 {
+    "Recipe Name" : "Vietnamese Coconut & Tempeh Curry",
+    "Description" : "This is a deliciously simple curry! Tempeh is a fermented soybean block. We know this is not a very appealing description, but when prepared right, it tastes like sausage or chorizo; meaty and substantial! It is not as readily available as tofu but can be found in most good health stores. Replace with firm tofu if you can’t source tempeh.",
+    "Serves" : "Serves 2 | Takes 35 minutes to make | Max low FODMAP serving size is 1 portion or ½ this recipe.",
+    "Ingredients" : [
+        "125g sweet potato",
+        "175g potatoes",
+        "125g of tempeh (if not available substitute with firm tofu)",
+        "100 ml of full fat coconut milk",
+        "200 ml water",
+        "2 tbsp tamari/soy sauce",
+        "½ a thumb-sized piece of fresh ginger, peeled and finely grated or finely chopped",
+        "Juice of 1 lime",
+        "1 tbsp maple syrup",
+        "1 tbsp curry powder",
+        "½ tsp salt",
+        "½ a small bunch of scallions (green part only)",
+        "¼ head of pak choi,",
+        "½ a bunch of fresh coriander"
+    ],
+    "Instructions" : [
+        "Preheat the oven to 180ºC (350ºF) Gas 4.",
+        "Chop the sweet potato and the normal potatoes into bite-sized pieces (leaving the skin on). Put on a baking tray and in the preheated oven for 25 minutes.",
+        "Put the coconut milk, together with 200ml water, the ginger, lime juice, maple syrup, curry powder and tamari into a blender, and whiz until everything is smooth and homogenous.",
+        "Chop the tempeh into small cubes (around 1.5cm), the smaller they are, the more flavour each piece will have. Put the chopped tempeh into an oven dish and dress with approximately half of the dressing. Mixing the tempeh and the sauce well is important to make sure each piece is full of flavour.",
+        "Put the tempeh into the preheated oven and bake for 20 minutes or until potatoes are done. After 10 minutes, stir the tempeh to ensure that the dressing is well spread.",
+        "Meanwhile, pour in the other half of the dressing in a large sized pan - this will become the sauce of the dish along with any remaining sauce from the baked tempeh dish. Bring to the boil and then reduce to a simmer.",
+        "Once the tempeh and potatoes are done, transfer them to the pan with the simmering sauce and mix well. Finely chop the pak choi, removing the nub at the end and using the full length of it.",
+        "Remove from the heat, taste and season to your taste. Finely slice the spring onion and fresh coriander and sprinkle them over the dish when serving.",
+        "This curry goes great with brown rice.",
+        "Garnish with the flaked almond. Enjoy!!"
+    ],
+    "ImageURL" : ".images/Vietnamese_Coconut_and_Tempeh_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
