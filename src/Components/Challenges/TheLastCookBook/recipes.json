@@ -702,6 +702,43 @@
     "ImageURL" : ".images/Vietnamese_Coconut_and_Tempeh_Curry.png"
 },
 {
+    "Recipe Name" : "Spanish Roasted Veg Paella",
+    "Description" : "This is a very tasty vegetable alternative to the traditional Spanish seafood dish. It’s a really popular recipe on our Happy Heart Course, so it is naturally low in fat and calories and high in nutrition. We cook the vegetables in a rich tomato sauce, and instead of using the traditional white sticky rice; we use a short grain brown rice to keep your gut happy! We have served this dish in our cafes too and usually serve it with some crushed, toasted pecans* and some juicy pitted olives or olive tapenade. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water.",
+    "Serves" : "Serves 2 | Takes 50 minutes to make | Max low FODMAP portion size: 1 portion or half of this total recipe.",
+    "Ingredients" : [
+        "165g short grain brown rice (it has to be short grain to make it sticky)",
+        "425ml veg stock",
+        "⅓ tsp ground turmeric",
+        "¾ Tbsp oil",
+        "1 small leeks - greens only (35g)",
+        "½ small carrot (55g)",
+        "1 red peppers",
+        "¼ courgette (175g max)",
+        "½ tsp salt",
+        "1-2 tbsp red wine",
+        "¾ of 1 tin of chopped tomatoes - 300g",
+        "1 tsp mixed herbs",
+        "¼ tsp ground black pepper",
+        "¼ tsp smoked paprika",
+        "1 tbsp maple syrup",
+        "1 tbsp of tamari",
+        "juice of ½ a lemon",
+        "30g sugar snap peas",
+        "½ a bunch of fresh herb of choice (basil, chive, mint)"
+    ],
+    "Instructions" : [
+        "Put the rice and the veg stock in a pot together. Add the turmeric in and mix it thoroughly through the rice - this will give it a lovely yellow colour. Put the lid on, leaving it slightly ajar and cook on high heat. Once it boils reduce the heat to low, leave the lid ajar and simmer until all the water boils off (this will take about 30-40 minutes).",
+        "In a bowl, grate the carrot. Deseed and chop the peppers along with the courgette into bite-sized pieces. Finely chop the greens of the leeks.",
+        "In a large saucepan on a high heat, add ¾ tbsp oil and add the leek greens, reduce the heat to medium and cook for 3-4 minutes, stirring regularly. Add the grated carrot, the courgette and the peppers, along with salt and cook for further 5 minutes, stirring regularly.",
+        "Add the red wine, chopped tomatoes, mixed herbs, black pepper and the smoked paprika, maple syrup, tamari, lemon juice. Give it a good stir then cook until it boils. Once it has boiled, reduce the heat and simmer for 5 minutes.",
+        "If you find all the liquid is gone and the rice is not cooked, add a little bit more water - preferably boiling water and mix well and cook until the rice is soft.",
+        "In the meantime, chop the sugar snap peas in two and finely chop your fresh herbs.",
+        "Once the rice is cooked (it should be nice and soft and fluffy), add in the tomato and veg sauce, along with the sugar snaps. Give it all a good mix together and cook for a further couple of minutes.",
+        "Taste and season with salt and pepper if it needs it and garnish with the chopped herbs. Enjoy!"
+    ],
+    "ImageURL" : ".images/Spanish_Roasted_Veg_Paella.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
