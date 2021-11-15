@@ -739,6 +739,36 @@
     "ImageURL" : ".images/Spanish_Roasted_Veg_Paella.png"
 },
 {
+    "Recipe Name" : "Veronica’s Potato & Tomato Curry",
+    "Description" : "You can cook this in 25 minutes if needed but if you have the time to cook it slowly, then the flavours really infuse, the sauce thickens, and it’s even nicer!",
+    "Serves" : "Serves 2 | Takes approx 25-40 minutes to make | Max low FODMAP portion: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "1 tbsp oil the green from 1 leek (approx 100g)",
+        "4 whole tomatoes",
+        "½ thumb sized piece of ginger",
+        "100ml water",
+        "½ tsp dried turmeric",
+        "¾ tbsp dried medium curry powder",
+        "2 large potatoes, unpeeled and cut lengthwise into medium sized wedges",
+        "(350g approx.)",
+        "1.5 tsp salt",
+        "Half a small bunch of fresh coriander."
+    ],
+    "Instructions" : [
+        "Finely chop the leek greens and the tomatoes and peel and finely chop the ginger. Chop the potatoes into bite-sized pieces leaving the skin on.",
+        "Put the oil in a family-sized wide bottomed pan over a high heat until the oil and pan heats up.",
+        "When the oil is hot, turn the heat down to a low-medium heat and add the leek greens, ¾ tsp of salt and tomatoes and ginger. Cook for 10 minutes with the lid on, stirring occasionally.",
+        "Fill and boil the kettle.",
+        "Add the turmeric and curry powder into the dish and stir it through well. Simmer for 3 minutes, still on a low/medium heat, standing over pot and stirring frequently. Add a tbsp or two of water if it starts to stick.",
+        "Add the potatoes and the remaining ¾ teaspoon of salt along with the 100ml boiled water to the pan and stir well, so that the potatoes are well coated in the sauce.",
+        "Turn the heat up high until it boils. Then reduce the heat to a simmer for 10-15 minutes. Stir every 5 minutes or so, so that the potatoes are evenly cooked.",
+        "(Depending on the type of potatoes, it might be cooked and good to serve in 25 minutes, however, if you have the time, leaving it simmer for an extra 10-15 minutes which makes it taste even better!)",
+        "Finely chop the coriander and add to the dish a few minutes before serving.",
+        "Taste and add more seasoning if required."
+    ],
+    "ImageURL" : ".images/Veronicas_Potato_and_Tomato_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
