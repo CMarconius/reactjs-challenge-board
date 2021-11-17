@@ -812,6 +812,47 @@
     "ImageURL" : ".images/Thai_Red_Curry.png"
 },
 {
+    "Recipe Name" : "Veg Korma",
+    "Description" : "This is a lovely, simple coconut korma with a rich, well-seasoned sauce. This dish is not spicy and is a hearty crowd-pleaser. It goes great with brown basmati rice/short grain brown rice - 190g is the max serving of cooked rice that is still low FODMAP. We use ‘miso stock’ which is just a home made low FODMAP veg stock where we ",
+    "Serves" : "Serves 2 | Takes 40 minutes | Max Low FODMAP portion is 1 or half this recipe.",
+    "Ingredients" : [
+        "Brown basmati rice to serve",
+        "½ tbsp oil",
+        "2 medium tomatoes",
+        "1 leek - the greens only (approx 100g)",
+        "½ thumb-sized piece of fresh ginger (approx 8g)",
+        "1 small fresh chilli",
+        "½ small courgette, (125g max)",
+        "375g potatoes",
+        "50g green beans",
+        "120g or approx ⅓ of a 400ml tin of coconut milk",
+        "200ml miso stock (200ml hot water mixed with",
+        "½ tbsp of gluten free miso - rice based miso)",
+        "1 tbsp of tamari,",
+        "juice of ½ lemon",
+        "½ tbsp maple syrup",
+        "1 tsp ground dried cumin",
+        "1 tsp ground dried coriander",
+        "½ tsp ground dried turmeric",
+        "2 tsp ground dried medium curry powder",
+        "1 tsp salt",
+        "¼ tsp black pepper",
+        "75g cooked chickpeas",
+        "Half a small bunch of fresh coriander (8g)",
+        "Optional: a couple of (gluten-free) pitta breads to serve"
+    ],
+    "Instructions" : [
+        "If you are serving this dish with rice, cook your rice first.",
+        "Finely chop the green of the leeks and rinse to remove any sediment, peel and finely chop the ginger. Finely chop the chilli, removing the seeds if you don’t like it spicy. Chop the courgette into bite-sized pieces and chop the the potatoes into small bite size pieces so they cook quicker. Finely chop the tomatoes and chop the green beans in two.",
+        "Put the oil into a large wide bottom pan over a high heat for 2 minutes to heat the pan and oil. Reduce the heat to a medium heat and add the leek greens, tomatoes, ginger, chilli and ½ tsp salt. Stir regularly, keeping the lid on and leave to sweat for about 10 minutes. Check regularly and add a little water if the anything starts to stick to the bottom.",
+        "Add the courgette, potatoes and chickpeas and turn the heat up high. Cook for 3 minutes, stirring regularly.",
+        "Next, add the coconut milk, veg stock, tamari, maple syrup, lemon juice, cumin, coriander, turmeric, curry powder, remaining ½ teaspoon of salt and black pepper put the lid back on and bring to the boil, add the green beans and reduce heat and leave to simmer over a low heat for about 5 minutes.",
+        "Check that potatoes are properly cooked before serving.",
+        "Finely chop the full bunch of fresh coriander, stalks and all, and add just before serving. "
+    ],
+    "ImageURL" : ".images/Veg_Korma.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
