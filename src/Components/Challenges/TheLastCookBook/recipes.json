@@ -853,6 +853,45 @@
     "ImageURL" : ".images/Veg_Korma.png"
 },
 {
+    "Recipe Name" : "Sri Lankan Mixed Vegetable and Coconut Curry",
+    "Description" : "This is a fantastic recipe. It has a lovely full flavour to it and is one of people's favourite recipes from our first book. We have adapted it to make it low FODMAP- friendly.",
+    "Serves" : "Serves 2 | Takes 40 minutes to make |Max low FODMAP serving size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "1 small leek - the green only - 40g",
+        "2 small red peppers - 150g",
+        "150g aubergine",
+        "1-2 medium carrots - 150g max",
+        "¾ tbsp olive oil",
+        "1 tsp salt",
+        "1.5 tbsp tamari",
+        "150g broccoli, florets",
+        "1 tsp ground coriander",
+        "1 tsp ground cumin",
+        "½ tsp ground fennel",
+        "¼ tsp black pepper",
+        "Small thumb-sized piece of fresh ginger 8g",
+        "½ a small fresh chilli,",
+        "½ tsp ground turmeric",
+        "½ tsp ground ginger",
+        "½ of 1 tin of chopped tomatoes (200g)",
+        "120 g or ⅓ of a 400ml tin of coconut milk",
+        "juice of ½ a small lemon",
+        "¾ Tbsp of maple syrup",
+        "50g baby spinach, washed thoroughly",
+        "Half small bunch of fresh coriander"
+    ],
+    "Instructions" : [
+        "Finely chop the aubergine into small pieces, do the same with the peppers and the leek green (rinse the leek greens to remove any sediment) Finely slice the carrots into thin rounds and chop the broccoli into small bite-sized florets. Peel and finely chop the ginger and finely slice the chilli (removing the seeds if you don’t like spice).",
+        "In a large wide-bottomed pan, add 1.5 tablespoons of oil and put on a high heat. Once the pan is hot add the leek greens, the ginger, the chilli, the aubergine, the carrots, the peppers and salt and cook stirring occasionally for 3 minutes.",
+        "Add the tamari and 3 tablespoons of water and stir well, put the lid on the pan/pot, reduce the heat to medium and leave the veg to sweat for approx 8 minutes stirring occasionally.",
+        "Bring a pot of water to the boil and blanch the broccoli florets for 30 seconds, then drain them and run them under cold water until they are cool.",
+        "Add the tin of tomatoes, coconut milk, the remaining 1 tsp of salt, lemon juice and maple syrup, and spices. When it boils, add the broccoli and the spinach, reduce the heat and simmer for 5-10 minutes or until sauce begins to thicken slightly and the veg is cooked.",
+        "Chop the coriander finely (stalks as well as leaves) and add into the dish before serving. Taste and season with more salt and black pepper if needed.",
+        "Enjoy!!"
+    ],
+    "ImageURL" : ".images/Sri_Lankan_Mixed_Vegetable_and_Coconut_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
