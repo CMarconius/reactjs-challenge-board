@@ -892,6 +892,48 @@
     "ImageURL" : ".images/Sri_Lankan_Mixed_Vegetable_and_Coconut_Curry.png"
 },
 {
+    "Recipe Name" : "Vietnamese Almond, Sweet Potato, Aubergine and Lime Curry",
+    "Description" : "Vietnamese food is considered one of the healthiest types of food in the world, as it is full of fresh veg, spices, and herbs. This is a really colourful almond-based curry using almond butter. This dish goes very well served with short grain brown rice.",
+    "Serves" : "Serves 2 | Takes 45 minutes to make | Max low FODMAP portion size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "150g sweet potato",
+        "150g aubergine",
+        "1 red pepper (approx 150g)",
+        "1.5 Tbsp oil",
+        "3 Tbsp of tamari",
+        "The green of 1 leek (approx 100g)",
+        "1 small red chilli",
+        "½ thumb-sized piece of fresh ginger - 8g",
+        "1 stick of lemongrass",
+        "2 Tbsp almond butter",
+        "200 ml of water",
+        "120g or ⅓ of a 400ml tin of coconut milk",
+        "juice of 1 lime",
+        "1 tbsp of maple syrup",
+        "½ tsp ground dried turmeric",
+        "½ tsp ground dried paprika",
+        "½ tsp ground dried coriander",
+        "½ tbsp ground cumin",
+        "1 tsp salt",
+        "¼ tsp black pepper",
+        "The green tops from ½ bunch of scallions/ spring onions",
+        "½ pack of bean sprouts (115g)"
+    ],
+    "Instructions" : [
+        "Preheat the oven to 180ºC (350ºF Gas Mark 4).",
+        "Chop the sweet potato, aubergine, as well as the peppers into large bite-sized pieces, you will be roasting them so they will shrink slightly.",
+        "Add all the prepped veg into a large mixing bowl, add 1 tbsp of the oil together with 1 tbsp of the tamari and mix well. Transfer the mixed vegetables onto a baking tray (or 2 if needed) and spread out evenly. Roast in the preheated oven for 25 minutes.",
+        "Peel and finely chop the ginger, finely slice the chilli (removing the seeds if you don’t like it hot) and leek greens (making sure to rinse to remove any sediment) Using the back of your knife, bruise the lemongrass stalk and tie it in a knot.",
+        "Put the remaining ½ tbsp of oil into a large wide bottomed pant over low/medium heat and give it 2 minutes for the oil and pan to heat up. Add the leek greens and ½ tsp of the salt, cook for 3 minutes then add the chilli, ginger and the lemongrass. Sweat these over a low heat for 5-10 minutes with the lid on, stirring occasionally.",
+        "Into the blender, add the almond butter, water, coconut milk, juice of the lime, the remaining 2 tbsp of tamari, maple syrup, turmeric, paprika, coriander, cumin, salt and black pepper. Blend until smooth and add to the pan. Bring to the boil and then reduce the heat to a simmer for 10 minutes.",
+        "In the meantime, slice the spring onion green tops into small rounds and rinse the bean sprouts (these will be added just before serving for colour and texture).",
+        "As soon as the roasted veg is ready, remove them from oven and add them to the pan. Cook everything for further 3 minutes.",
+        "Add the spring onions and bean sprouts just before serving.",
+        "Note: Do not add the bean sprouts too early as they go soft and limp, and lose their crunch very quickly in heat."
+    ],
+    "ImageURL" : ".images/Vietnamese_Almond_Sweet_Potato_Aubergine_and_Lime_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
