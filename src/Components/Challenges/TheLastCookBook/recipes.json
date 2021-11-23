@@ -934,6 +934,42 @@
     "ImageURL" : ".images/Vietnamese_Almond_Sweet_Potato_Aubergine_and_Lime_Curry.png"
 },
 {
+    "Recipe Name" : "Spaghetti Bolognese",
+    "Description" : "A lovely quick take on the traditional Italian pasta dish. It's quick to make and tastes amazing too! Nutritional yeast is a 'cheesy' flavoured condiment that is available in all good health food stores. It brings a 'cheesy' taste to this dish, without any of the saturated fat. It's worth having in your press. If you can’t source oyster mushrooms replace with aubergine, just ensure to cook it till it is soft, it will take an extra 5 minutes than the oyster mushrooms.",
+    "Serves" : "Serves 2 | Takes 20 minutes to make | Max low FODMAP serving size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "200g gluten-free spaghetti",
+        "1 tablespoons olive oil",
+        "1 tsp salt",
+        "1 small leek - the greens only - approx",
+        "100g",
+        "1 medium carrot (150g max)",
+        "1 small red chilli",
+        "150g oyster mushrooms - (150g max)",
+        "1 tbsp tamari",
+        "100g fresh cherry tomatoes",
+        "200g fresh tomatoes",
+        "80g of tinned cooked lentils",
+        "90ml red wine",
+        "180g of a 400g tin chopped tomatoes - (180g max)",
+        "salt and pepper to taste",
+        "To serve:",
+        "(To Serve) Nutritional yeast",
+        "(To Serve) Small bunch fresh basil",
+        "(To Serve) salt and pepper"
+    ],
+    "Instructions" : [
+        "Cook the gluten-free spaghetti as per the instructions on the back of the pack. Once cooked, drain and rinse in cold water to stop it sticking together.",
+        "Finely chop the greens from the leek and rinse to remove any sediment. Grate the carrot, and finely slice the chilli (removing the seeds if you don’t like it hot) into small pieces. Finely chop the tomatoes and cut the cherry tomatoes in half. Drain and rinse the cooked lentils. Finely chop the oyster mushrooms.",
+        "Put 1 tbsp of oil in a wide bottomed pan over high heat, once the pan heats up, add the leek, chilli and grated carrot and ½ tsp of the salt, reduce the heat to medium and cook for 3 mins stirring regularly.",
+        "Add the oyster mushrooms and cook for 3 minutes stirring regularly. Add the tamari and cook for a further minute.",
+        "Next, add all the fresh tomatoes, the other ½ tsp of salt, stir well, add the drained and rinsed lentils and the red wine and cook for a further 3-4 minutes.",
+        "Add the tin of chopped tomatoes and bring to the boil. Once it boils, reduce to a simmer and add the drained and rinsed pasta. Stir it well, mixing everything thoroughly.",
+        "Pluck the basil leaves from their stalks and set aside, chop the basil stalk finely and add into the pot. Garnish with the basil leaves and serve with nutritional yeast. Enjoy!"
+    ],
+    "ImageURL" : ".images/Spaghetti_Bolognese.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
