@@ -970,6 +970,45 @@
     "ImageURL" : ".images/Spaghetti_Bolognese.png"
 },
 {
+    "Recipe Name" : "Ginger and Sesame Pad Thai",
+    "Description" : "A simple and super-tasty dinner that really delivers on flavour! Use buckwheat or brown rice noodles. Use low fat coconut milk if you want the dish to be lower in fat. If you can’t source oyster mushrooms replace with aubergine and cook for 5 minutes longer to ensure the aubergine is soft, tender and melt in your mouth in terms of texture!",
+    "Serves" : "Serves 2 | Takes 15-20 minutes to make | Max low FODMAP portion size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "150g buckwheat or brown rice",
+        "noodles (2 nests)",
+        "½ big thumb-sized piece of ginger (8g)",
+        "1 small red chilli (medium heat)",
+        "½ bunch of scallions/ spring onions -",
+        "green parts only",
+        "1 red pepper",
+        "1 small carrot",
+        "75g oyster mushrooms/aubergine",
+        "½ head of pak choi/50g baby spinach",
+        "¾ tbsp oil",
+        "(For Dressing) 125ml coconut milk",
+        "(For Dressing) juice of 1 lime",
+        "(For Dressing) 2 tbsp tamari",
+        "(For Dressing) ½ tbsp maple syrup",
+        "(To Garnish) a small bunch of fresh coriander/basil",
+        "(To Garnish) 1-2 tbsp sesame seeds",
+        "(To Garnish) pickled ginger",
+        "(To Garnish) wedges of lime"
+    ],
+    "Instructions" : [
+        "Put the noodles in a pot of boiling water and cook as per instructions on the back of the packet (usually takes 4-5 minutes). Remove from heat, drain and rinse with cold water in a colander over the sink, this will stop them sticking together.",
+        "It's best to prep all the veg first, as this is a fast cooking dish cooked on a high heat in about 10 minutes.",
+        "Peel and finely chop the ginger. Remove the end off the chilli and finely slice (removing the seeds if you prefer less heat). Chop the white part off the scallions, remove any limp outer leaves and finely chop the green parts. De-seed and finely chop the peppers and grate the carrot. Finely chop the mushrooms or aubergine. Remove the nub at the end of the pak choi and finely chop.",
+        "Put ¾ tablespoons of oil into a non-stick wide bottomed pan (ideally a wok) on a high heat. Once the pan is hot, add the ginger and chilli, and cook for 1 minute, stirring regularly.",
+        "Add the peppers, mushrooms, scallions and the grated carrot with ½ tsp salt and cook for 5 minutes, stirring as it cooks (if using aubergine cook for a further 4-5 minutes, if it is sticking to the pan add 1-2 tbsp of water and continue to stir.",
+        "In a cup, mix together the dressing ingredients, using a fork (do not worry if it stays a bit lumpy and the coconut milk does not break up completely, it will do once it's added to the pan).",
+        "Add the dressing in to the pan and stir through thoroughly, so that it coats all the veg well. Cook for another 5 minutes.",
+        "Next, add the noodles and cook for another few minutes. Then add the pak choi and cook for another minute.",
+        "Remove from the heat. Roughly chop the fresh coriander or basil and use them as a garnish for each serving together with sprinkles of sesame seeds.",
+        "It's nice served with some pickled ginger and a wedge of lime on each serving."
+    ],
+    "ImageURL" : ".images/Ginger_and_Sesame_Pad_Thai.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
