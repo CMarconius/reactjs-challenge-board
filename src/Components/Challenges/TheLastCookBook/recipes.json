@@ -1009,6 +1009,48 @@
     "ImageURL" : ".images/Ginger_and_Sesame_Pad_Thai.png"
 },
 {
+    "Recipe Name" : "Easy Indian Biryani-Style Dinner",
+    "Description" : "This is our take on the famous Indian feast food. Biryani is typically baked in the oven for a few hours, however, ours is a simpler one-pot wonder, where the rice is cooked in coconut milk with lots of spices and seeds. It’s a lovely, wholesome dinner and we have included a simple mint raita yogurt dip to serve with it. This is lovely served with toasted (gluten-free) pittas, a spoonful of pickle (if you have any), and the mint raita. To make an easy veg stock mix 5 tablespoons of gluten free miso paste with 2 litres of boiling water",
+    "Serves" : "Serves 2| Takes 1 hour to make | Max low FODMAP portion size: 1 portion or half this recipe. ",
+    "Ingredients" : [
+        "2 medium tomatoes (approx 200g)",
+        "1 leek - the greens only (100g)",
+        "1-2 medium carrots, (150g max)",
+        "8g (½ thumb size) fresh ginger",
+        "1 small fresh chilli",
+        "1 tbsp oil",
+        "1 tsp salt",
+        "1 tbsp cumin seeds",
+        "¾ tsp turmeric powder",
+        "1 tsp curry powder",
+        "¼ tsp ground cardamom",
+        "¼ tsp ground cinnamon",
+        "1 bay leaf",
+        "180ml of 1 tin of coconut milk",
+        "200g frozen edamame beans or green beans",
+        "180g brown basmati rice",
+        "650ml veg stock (garlic and onion free)",
+        "25g currants",
+        "100g of 1 tin of butter beans",
+        "(To serve) seeds from ½ pomegranate (125g in total)",
+        "(To serve) small bunch fresh coriander",
+        "(Mint Raita Dip) 10g mint (small bunch)",
+        "(Mint Raita Dip) 125ml coconut yoghurt of your choice",
+        "(Mint Raita Dip) 1 tbsp maple syrup",
+        "(Mint Raita Dip) juice of ½ lime"
+    ],
+    "Instructions" : [
+        "Finely chop the tomato and the green top of the leek into rounds, rinsing the leek greens to remove any sediment. . Peel and grate the ginger. Finely chop the red chilli - removing the seeds if you prefer less heat. Finely slice the carrots into rounds. Put the frozen edamame beans in a bowl with warm water and leave to thaw. If you are using green beans instead, finely chop them.",
+        "Put 1 tablespoons of oil in a large pot on high heat until it gets hot and then reduce to a medium heat. Add the sliced leek, tomato, chopped chilli, grated ginger together with the cumin seeds and ½ tsp of salt, stir occasionally. Cook for 3-5 minutes.",
+        "Add the turmeric, curry powder, cardamom, cinnamon and bay leaves and stir it through for a minute. Now add the coconut milk and mix it right through and cook for a further 3 minutes.",
+        "Add the rice, veg stock, carrots, currants and remaining ½ tsp of salt into the pot, put the lid on, bring to the boil and then reduce to a simmer. Leave the lid slightly ajar, to allow steam to evaporate and cook, until just about all the liquid has evaporated from the bottom of the pot.",
+        "Rinse the butter beans well and add into the pot along with edamame/green beans and heat for further 3 minutes. Taste and season with a pinch of salt and pepper to your liking, if needed.",
+        "For the mint raita, finely chop the mint. In bowl, mix all the ingredients for raita together.",
+        "Once your dish is ready, roughly chop the fresh coriander and serve with a sprinkling of pomegranate seeds on top of each bowl. Serve the raita on the side."
+    ],
+    "ImageURL" : ".images/Easy_Indian_Biryani_Style_Dinner.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
