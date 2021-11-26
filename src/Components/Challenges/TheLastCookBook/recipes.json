@@ -1051,6 +1051,41 @@
     "ImageURL" : ".images/Easy_Indian_Biryani_Style_Dinner.png"
 },
 {
+    "Recipe Name" : "Japanese Food Bowl",
+    "Description" : "Dave went to LA a few years ago and he ate in a few really nice places. Pretty bowls of food were all the rage over there! This dish was inspired from a really nice place in Venice Beach that served simple, elegant Japanese-style food in bowls. The red cabbage sauerkraut is really worth seeking out, its red colour sets this whole dish off and its sharp taste really adds to the dish.",
+    "Serves" : "Serves 2 | Takes 30 - 40 minutes to make | Max low FODMAP portion size: 1 or half this recipe.",
+    "Ingredients" : [
+        "200g cooked brown rice (usually rice doubles -triples in size so approx 75g will give you at least 200g cooked)",
+        "(Salad) 1 Tbsp dried arame seaweed",
+        "(Salad) 2 small carrots (120g)",
+        "(Salad) juice of ½ a small lemon",
+        "(Salad) ½ bunch of chives",
+        "(Salad Dressing) ½ tbsp rice vinegar/(use apple cider vinegar or any white vinegar if dont have this)",
+        "(Salad Dressing) 1 tbsp sesame oil",
+        "(Salad Dressing) ½ tbsp tamari",
+        "(Tempeh) 150g of a block of tempeh",
+        "(Tempeh) ½ head of pak choi",
+        "(Tempeh) 50g baby spinach",
+        "(Tempeh Sauce) 2 tbsp of tamari",
+        "(Tempeh Sauce) 1 tbsp of sesame oil",
+        "(Tempeh Sauce) 1.5 tbsp of maple syrup",
+        "(Tempeh Sauce) ½ thumb-sized piece of ginger - 8g - freshly grated",
+        "(To serve) red cabbage sauerkraut"
+    ],
+    "Instructions" : [
+        "Cook your rice first, according to pack instructions.",
+        "For the salad, soak the arame seaweed for 10 minutes in a bowl with cold water to rehydrate. Grate or ribbon the carrots (using a potato peeler) and pour the lemon juice through to stop them from oxidizing. Finely slice the chives.",
+        "In a small bowl, with a fork whisk all the ingredients for the salad dressing together.",
+        "Slice your block of tempeh into small cubes (1.5cm squared cubes). Finely chop the pak choi into small pieces.",
+        "Put all the ingredients for the tempeh sauce in a bowl and mix well.",
+        "Heat a large pan on high heat. Once hot, add the tempeh and half of the tempeh sauce, reduce the heat to medium and cook continuously, stirring for 3 minutes. Then add the rest of the sauce and cook for further 2 minutes.",
+        "Add the chopped pak choi and cook for 2 minutes. Finally add the spinach and wilt it by stirring it in for a further minute. Remove from heat and leave to sit.",
+        "Dress your salad when you are ready to serve it, mix the carrot, drained seaweed, chives, and dressing, coating the carrot well.",
+        "Once the brown rice is cooked, serve a portion of brown rice on each plate/bowl, along with some tempeh and greens, some salad and if you have some red cabbage sauerkraut this really sets the whole dish off!"
+    ],
+    "ImageURL" : ".images/Japanese_Food_Bowl.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
