@@ -1086,6 +1086,38 @@
     "ImageURL" : ".images/Japanese_Food_Bowl.png"
 },
 {
+    "Recipe Name" : "Pan-fried Tofu with Steamed Greens and Quinoa",
+    "Description" : "A lovely, simple dinner that is really nourishing and wholesome. This is one of our good friend's staple dinners that we have eaten many a mid-week night around his stove. This dish is also nice served with a healthy sprinkling of nutritional yeast. To save time, you can steam the greens in the steam that comes off the quinoa as it boils. If you have a steamer, cook the quinoa or millet in the bottom of the steamer and steam the greens in the top.",
+    "Serves" : "Serves 2 | Takes 20 mins to make | Max low FODMAP serving size is 1 portion or half of this recipe",
+    "Ingredients" : [
+        "100g quinoa",
+        "225 ml water for quinoa",
+        "100g of spinach/kale/ chard/ york cabbage",
+        "200g of a block of firm tofu",
+        "1.5cm cube ginger (peeled) 8g",
+        "1 small red chilli",
+        "100g of fresh tomatoes",
+        "1 tbsp oil",
+        "15g sesame seeds",
+        "2 tbsp tamari",
+        "½ tbsp sesame oil (use any oil if do not have)",
+        "juice of ½ a lime"
+    ],
+    "Instructions" : [
+        "Put the quinoa on to boil - 100g quinoa to 225 ml of water. Add a small pinch of salt and bring to the boil, then reduce the heat so it is simmering nicely.",
+        "Once nearly all the water has evaporated, remove from the heat, put the lid on and leave to sit for 10 minutes, it will continue to steam in its own heat and fluff up.",
+        "Wash your greens, roughly chop them into small bite-sized bits and put them in your steamer and steam for 3 mins or until they are soft but not overly cooked. If you don’t have a steamer, once your quinoa is nearly cooked add the greens on top and leave to cook in the steam with the lid on for 3 minutes instead!",
+        "Chop the tofu into ½ cm square cubes. After peeling the ginger and deseeding the chilli (leave the seeds in if you like it hot) finely chop them. Chop the tomatoes into bite-sized pieces.",
+        "Put a medium-sized pan on high heat and add in 1 tablespoons of oil and 1/2 tablespoon of the sesame oil. Once the oil is hot, add in the ginger and chilli and fry on high heat for 2 mins.",
+        "Reduce the heat to medium and add the cubed tofu and sesame seeds and fry for a further 5 mins, stirring regularly until they start to brown on each side.",
+        "Next, add in the tamari, the pan should make a loud frying noise. Mix the tofu well so that each piece of tofu is well coated until the tamari is all absorbed. .",
+        "Add your steamed greens into the pan, along with the tomatoes and the lime juice. Mix through, continuing to stir regularly and cook for a further 3-4 mins.",
+        "By now, the quinoa should be ready. Ideally, serve this all together in a bowl, with the quinoa on the bottom and the tofu, spinach/kale and sesame mix on the top.",
+        "Serving suggestion: sprinkle some nutritional yeast on top for a cheesy flavour."
+    ],
+    "ImageURL" : ".images/Pan_fried_Tofu_with_Steamed_Greens_and_Quinoa.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
