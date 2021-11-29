@@ -1118,6 +1118,43 @@
     "ImageURL" : ".images/Pan_fried_Tofu_with_Steamed_Greens_and_Quinoa.png"
 },
 {
+    "Recipe Name" : "Thai Massaman Curry",
+    "Description" : "This is our tasty take on the Thai classic. You will need a blender to make your paste, a standard blender works fine. This dish goes great served with brown rice or rice/buckwheat noodles. Garnish with toasted sesame seeds, fresh coriander and chilli flakes. To make an easy veg stock simply add 170ml of water to ½ tbsp of gluten free miso paste.",
+    "Serves" : "Serves 2 | Takes 20 mins to make | Max low FODMAP serving size is 1 portion or half of this recipe.",
+    "Ingredients" : [
+        "150g of a block firm tofu/tempeh or 150g oyster mushrooms",
+        "¼ bunch scallions/ spring onions - green parts only - approx 35g",
+        "1 red pepper",
+        "½ head of pak choi",
+        "1 tbsp oil",
+        "1.5 tbsp tamari",
+        "(Paste/Sauce) small thumb-size piece of ginger - approx 8g",
+        "(Paste/Sauce) ½ stalk of lemongrass (omit if you can't get it)",
+        "(Paste/Sauce) 1 small red chilli",
+        "(Paste/Sauce) 175ml veg stock (onion and garlic free)",
+        "(Paste/Sauce) 125ml of a tin of coconut milk",
+        "(Paste/Sauce) ½ tbsp maple syrup",
+        "(Paste/Sauce) ¼ tbsp almond butter",
+        "(Paste/Sauce) ½ tsp cumin seeds",
+        "(Paste/Sauce) ½ tsp coriander seeds",
+        "(Paste/Sauce) ½ tsp ground cinnamon",
+        "(Paste/Sauce) juice of ½ a small lemon",
+        "(Paste/Sauce) ½ tbsp oil",
+        "(Topping) sesame seeds",
+        "(Topping) 2 scallions - greens only - sliced",
+        "(Topping) A few fresh coriander leaves",
+        "(Topping) ½ a small red chilli"
+    ],
+    "Instructions" : [
+        "To make the paste/sauce, Start by peeling the ginger. The de-seed the chilli - leaving the seeds in if you like it hot, add to the blender and use the remaining chili for garnish. Remove the outer leaves of the lemongrass, discard the dried top third and the bottom nub off and roughly chop the fresh middle piece. Put all the ingredients for the paste into a blender (if you don’t have a high-speed blender, best to finely chop the ginger and lemongrass before adding) and blend till smooth.",
+        "(Curry Step 1) Finely chop the tempeh/mushrooms into small pieces. Finely chop the greens of the scallions (removing and discarding the white parts -they are high FODMAP) and finely chop the peppers. Chop the nub off the end of the pak choi and chop into bite-sized pieces.",
+        "(Curry Step 2) Put the oil in a large pan over high heat. When the oil is hot, add the chopped tempeh or oyster mushrooms, reduce the heat to medium and cook for 4 minutes, stirring occasionally. Add the tamari and cook for further 2 minutes until the tamari is absorbed, stirring occasionally.",
+        "(Curry Step 3) Add the scallion greens and peppers into the pan together with 6-8 tablespoons of the paste/sauce and cook for 5 minutes. Add the rest of the paste and the pak choi, and stir well. When it boils, remove from the heat.",
+        "(Curry Step 4) Finely slice the remaining red chilli (de-seed the chilli or leave the seeds in if you like it hot). Serve with a portion of your Low fod map grain of choice. Garnish each serving with some sesame seeds, sliced chillies and scallions/fresh coriander. Enjoy!"
+    ],
+    "ImageURL" : ".images/Thai_Massaman_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
