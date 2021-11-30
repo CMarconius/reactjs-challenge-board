@@ -1155,6 +1155,45 @@
     "ImageURL" : ".images/Thai_Massaman_Curry.png"
 },
 {
+    "Recipe Name" : "15-minute Thai Green Curry Noodle Bowl",
+    "Description" : "We have taken a quick easy Thai green curry and turned it into a super-tasty noodle bowl! Try to buy buckwheat or brown rice noodles, as they are much higher in fibre and more nutritious and gluten free and low FODMAP. To make an easy veg stock mix 1/3 tbsp miso paste with 150ml of warm water.",
+    "Serves" : "Serves 2 | Takes 15 minutes to make | Max low FODMAP serving size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "200g brown rice noodles/buckwheat noodles",
+        "1 thumb-size piece of ginger 15g",
+        "1 red chilli",
+        "1 red pepper",
+        "120g courgette",
+        "A bunch of scallions (green part only)",
+        "90g frozen Edamame beans (180g max for 2 portions)",
+        "1.5 tbsp of oil",
+        "1 tsp of salt",
+        "3 tbsp tamari",
+        "120g coconut milk",
+        "3 tbsp almond butter",
+        "150ml warm veg stock (no onion/garlic)",
+        "1 tbsp maple syrup",
+        "juice of 1 lime",
+        "2 tsp ground cumin",
+        "1 tbsp ground coriander",
+        "1 small bunch fresh basil",
+        "(Garnish) Toasted sesame seeds",
+        "(Garnish) Beansprouts",
+        "(Garnish) Chilli flakes"
+    ],
+    "Instructions" : [
+        "Put a small pot of boiling water on a high heat and add the noodles and cook as per instructions on the back of the pack. Drain and rinse noodles in cold water (this will stop them sticking together) in a colander once done and set aside.",
+        "Peel and finely chop the ginger. De-seed and finely slice the chilli (leave the seeds in if you like it spicy). De-seed and finely chop the red pepper along with the courgette. Finely slice the scallion greens into small, thin pieces. Soak frozen edamame in warm water and allow to sit for 5 minutes and then drain and leave aside.",
+        "In a bowl, mix together the almond butter and heated veg stock with a fork. Then add the coconut milk, tamari, maple syrup, the juice of the lime, ground cumin and ground coriander and whisk well. Transfer to a medium size pot and put on a medium heat and cook for 3-5 minutes, until it boils. Remove from the heat.",
+        "Put a wide-bottomed pan (a wok is ideal) on a high heat and add the oil. Once the pan is hot, add the ginger and chilli and cook for 1.5 minute, stirring regularly.",
+        "Add the courgette, scallion tops (leave some behind for garnish), red pepper and the salt and cook for further 3-5 minutes stirring regularly. Now you can add your edamame, coconut milk, almond butter, and spice mixture. Bring this back up to a gentle boil for 3 minutes and then remove from the heat",
+        "Remove the basil leaves from the stalk and set aside for the garnish. Finely chop the stalks and mix through the curry.",
+        "Put some noodles in the bottom of each bowl and top with the curry. Roughly chop the basil leaves to garnish each serving, along with some toasted sesame seeds and some chilli flakes.",
+        "This also looks great with a few thin slices of red chilli/bean sprouts on top."
+    ],
+    "ImageURL" : ".images/15_minute_Thai_Green_Curry_Noodle_Bowl.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
