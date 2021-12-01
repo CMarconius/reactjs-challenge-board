@@ -104,7 +104,7 @@ const TheLastCookBook = () => {
 export default TheLastCookBook
 
 const CookBook = styled.div`
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 100%;
     min-width: 100%;
     background-color: #335c67ff;

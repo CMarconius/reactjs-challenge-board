@@ -1194,6 +1194,42 @@
     "ImageURL" : ".images/15_minute_Thai_Green_Curry_Noodle_Bowl.png"
 },
 {
+    "Recipe Name" : "15-minute Singapore Noodles",
+    "Description" : "This is a simple noodle dish that's packed with flavour. We prefer rice noodles as buckwheat can be a little heavier. The sesame oil and pecan nuts really give this simple dish extra dimension.",
+    "Serves" : "Serves 2 | Takes 25 minutes to make | Max low FODMAP serving is 1 portion or half this recipe.",
+    "Ingredients" : [
+        "100g brown rice noodles/buckwheat noodles",
+        "150g of tempeh/firm tofu (or replace with 175g oyster mushrooms instead)",
+        "1 red pepper",
+        "75g green beans",
+        "½ bunch of scallions - green part only",
+        "½ thumb-sized piece of fresh ginger - 8g",
+        "1 red chilli",
+        "½ tbsp sesame oil (or sunflower oil)",
+        "3/4 tbsp of olive oil",
+        "1 small carrot (50g)",
+        "1 tsp salt",
+        "2 tbsp tamari",
+        "½ tbsp curry powder",
+        "50 ml of hot water",
+        "Juice of 1 lime",
+        "½ a small bunch of coriander",
+        "(Garnish) 35g toasted pecans"
+    ],
+    "Instructions" : [
+        "Put the noodle nests into a pot of boiling water and cook as per instructions on back of pack. Remove and rinse under cold water in a colander and set aside.",
+        "Finely slice the block of tofu/tempeh/mushrooms into small cubes approx 1-1.5cm each side. Finely slice the peppers and chop the green beans in two. Finely slice the scallion greens.",
+        "Peel and finely chop the ginger and finely chop the chilli.",
+        "Add 1/2 tbsp of the sesame oil and 3/4 tbsp of olive oil into a large non stick wide bottomed pan (large wok works great) and put on a high heat. Once heated up, add the chopped tempeh/tofu/mushrooms along with the chopped ginger and chilli. Cook on a high heat for about 5-8 minutes stirring occasionally until it start to brown on each side.",
+        "Grate the carrot and add to the pan along with the tamari, the salt, the chopped scallion greens, the green beans and chopped peppers and cook for 4 minutes.",
+        "Add the curry powder, the 100 ml of boiling water, stir well and allow simmer for 2 minutes.",
+        "Now add the cooked noodles, the juice of the limes, and incorporate everything together mixing well and cook for a further 2 minutes.",
+        "Remove from heat.",
+        "Finely chop the coriander and garnish with this, along with the pecan nuts."
+    ],
+    "ImageURL" : ".images/15_Minute_Singapore_Noodles.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
