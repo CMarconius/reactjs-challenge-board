@@ -1230,6 +1230,43 @@
     "ImageURL" : ".images/15_Minute_Singapore_Noodles.png"
 },
 {
+    "Recipe Name" : "Easy Quinoa, Steamed Veg and Caramelised Pecan Dinner",
+    "Description" : "This is a really tasty easy dinner. The caramelised pecans top the dish off really well, and they will leave you hunting through your bowl looking for more! This dish works great with whatever veg you have, so don’t feel restricted to the veg we have used (just be careful not to swap to high FODMAP ingredients). Some fresh herbs make a great garnish, if you have any in the fridge or growing in the garden. To make an easy veg stock mix 1 tablespoons of gluten free miso paste with 400ml of boiling water to make a ‘miso stock’.",
+    "Serves" : "Serves 2 | Takes 20-25 mins | Max low FODMAP portion size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "1 medium to large tomato - 180g or 180g of tinned tomatoes",
+        "1 leek - the greens only - 100g",
+        "½ thumb-sized piece of ginger",
+        "1 small sweet potato -150g max",
+        "½ red pepper",
+        "1-2 carrots 150g max",
+        "1 tbsp oil",
+        "1 tsp of salt",
+        "½ tsp turmeric",
+        "1 tsp curry powder",
+        "140g quinoa",
+        "400ml veg stock/’miso stock’/water",
+        "1 bay leaf",
+        "juice of half a small lemon",
+        "(Topping) handful of pecan nuts 40g",
+        "(Topping) 1 tbsp tamari",
+        "(Topping) 1.5 tsp maple syrup"
+    ],
+    "Instructions" : [
+        "Finely chop the leek greens and the tomatoes. Peel and finely slice the ginger.",
+        "Finely chop the sweet potato and carrots and slice the red pepper into long thin strips.",
+        "On a high heat, put 1 tbsp of oil into a large wide bottomed pan. Once oil is hot add the prepared leek, tomatoes, and ginger, and the salt and cook for 5 minutes, stirring regularly to stop the veg sticking to the bottom.",
+        "Then add the turmeric and curry powder, and mix through the veg. Add the quinoa, veg stock/water (if using water you will have to season with more salt at the end), sweet potato, carrots and the bay leaves. Bring to the boil.",
+        "Once it boils, reduce heat to a simmer, put the lid on, leaving slightly ajar to let the steam out. When the water level drops below the top of cooking quinoa (about 10 minutes in), add the red pepper. Simmer until just about all the water has evaporated (approximately 15-20 minutes total).",
+        "Turn the heat off, put the lid on and leave to sit for about 5 minutes, this will puff up the quinoa and make it nice and fluffy.",
+        "In the meantime, roughly chop the pecans. Heat another small pan for the topping on a medium/high heat and put the pecans into it along with the tamari and the maple syrup. Stir continuously for 4 minutes or until pecans start to get golden colour and the liquid starts to dry up.",
+        "Watch this very carefully as it will overcook and burn easily.",
+        "Mix the veg well through the dish, squeeze the lemon juice through it, and serve each portion with some of the caramelised pecans on top. Taste and season with more salt and black pepper if you think it needs it.",
+        "Chilli flakes will also go great sprinkled on top if you like a bit of heat!"
+    ],
+    "ImageURL" : ".images/Easy_Quinoa_Steamed_Veg_and_Caramelised_Pecan_Dinner.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
