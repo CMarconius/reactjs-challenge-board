@@ -1267,6 +1267,39 @@
     "ImageURL" : ".images/Easy_Quinoa_Steamed_Veg_and_Caramelised_Pecan_Dinner.png"
 },
 {
+    "Recipe Name" : "15-minute Indonesian Satay",
+    "Description" : "A lovely rich, creamy, fresh and nutty dish, with the addition of some crunchy veg and the fresh coriander - all cooked in 15 minutes! We used courgette and peppers and tinned chickpeas here but replace with any of your favourite fast cooking veg such as oyster mushrooms, scallion/spring onion greens etc (just ensure they are low FODMAP - and check the course intro section to clarify the correct amounts).",
+    "Serves" : "Serves 2 | Takes 10 minutes to make | Max low FODMAP portion size: 1 or half this recipe. ",
+    "Ingredients" : [
+        "½ thumb-sized piece of ginger",
+        "½ bunch of scallions -green part only",
+        "1 small red chilli",
+        "120g courgette",
+        "1 red pepper",
+        "80g of tinned cooked chickpeas",
+        "½ tbsp oil",
+        "1 tbsp tamari",
+        "2 tbsp peanut butter/almond butter (30g)",
+        "1 tbsp apple cider vinegar",
+        "175ml warm water",
+        "1 tbsp maple syrup",
+        "salt (to taste)",
+        "ground black pepper (to taste)",
+        "(To serve/garnish) ½ small bunch of fresh coriander or basil",
+        "(To serve/garnish) 1/2 pack of bean sprouts to serve",
+        "(To serve/garnish) 1 Tbsp of toasted sesame seeds"
+    ],
+    "Instructions" : [
+        "Peel and finely chop the ginger. Chop the white parts off the scallions and discard (or freeze for another time) finely slice the green tops. De-seed and finely slice the chilli (leave the seeds in if you like it spicy). Finely chop the courgette; de-seed and finely chop the red pepper. Drain the chickpeas and rinse thoroughly.",
+        "Add 1 tablespoon of oil to a medium saucepan (we love to use wide bottomed pans as there is more surface area to brown your veg) and once the pan is hot, add the prepared ginger, chilli and scallions, and cook for 1.5 minutes on a high heat, stirring often.",
+        "Next, add the chopped courgette and pepper, and cook for a further minute. Add the tamari and cook for another 3-5 minutes and turn the heat down to medium.",
+        "Put the peanut/almond butter, apple cider vinegar, maple syrup and 150ml of the warm water into a blender and blend until smooth (alternatively whisk together using a fork) and add to the pan.",
+        "Slowly add in the remaining 25ml of water, along with the drained and rinsed chickpeas and turn the heat back up to high. Bring to the boil. Remove from the heat and season with salt and pepper to your taste.",
+        "Garnish each serving with some roughly chopped fresh coriander or basil and bean sprouts on top. If you have any toasted pecan nut/sesame seeds these go great as garnish, too."
+    ],
+    "ImageURL" : ".images/15_Minute_Indonesian_Satay.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
