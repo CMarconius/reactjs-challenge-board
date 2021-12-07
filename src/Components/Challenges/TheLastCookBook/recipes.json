@@ -1300,6 +1300,36 @@
     "ImageURL" : ".images/15_Minute_Indonesian_Satay.png"
 },
 {
+    "Recipe Name" : "15-minute Teriyaki Noodles",
+    "Description" : "Our take on Teriyaki noodles. A tasty and quick dinner that is really flavoursome and easy to make. Worth having a punt at! We use buckwheat or brown rice noodles. If you can’t source oyster mushrooms replace with aubergine (eggplant) just ensure to cook for a further 4-5 minutes till it becomes soft and gooey and start to break up.",
+    "Serves" : "Serves 2 | Takes 15 minutes to make | Max low FODMAP serving size: 1 portions or half this recipe.",
+    "Ingredients" : [
+        "150g buckwheat/brown rice noodles",
+        "a thumb-size piece of ginger",
+        "3 scallions - green part only",
+        "½ a red chilli",
+        "150g oyster mushrooms/Aubergine",
+        "1 red pepper",
+        "1 head of pak choi - 170g max",
+        "2 tbsp oil",
+        "4 tbsp tamari",
+        "1 tbsp maple syrup",
+        "juice of 2 limes",
+        "(Ideas to Garnish) sesame seeds",
+        "(Ideas to Garnish) chilli flakes",
+        "(Ideas to Garnish) fresh coriander"
+    ],
+    "Instructions" : [
+        "Bring a small pot of water to the boil and cook the noodles in this as per instructions on the back of the packet, then drain and rinse in cold water so your noodles do not stick together. Set aside.",
+        "Peel and finely chop the ginger. Finely slice the scallion greens, chop the end off the chilli and finely chop removing the seeds, if you don’t like it spicy. Chop the mushrooms (or aubergine if replacing) up nice and small, de-seed and finely chop the red pepper and chop the pak choi finely.",
+        "Pour the oil into a wok/large frying pan on a high heat. Once the pan is hot, add the ginger, chilli and scallions, and cook for 2 minutes, stirring regularly. Then add the mushrooms (or aubergine - just ensure to cook for an extra 4-5 minutes) and cook for another minute.",
+        "While these are cooking, prepare your sauce by mixing the tamari, maple syrup and lime juice together in a bowl. Add half of the sauce to the pan along with the peppers and pak choi and cook for 2 minutes.",
+        "Add the drained noodles to the pan, along with the remaining sauce and cook for further 2-3 minutes.",
+        "Remove from the heat, plate up and finish by topping each serving with chilli flakes, sesame seeds, and chopped fresh coriander."
+    ],
+    "ImageURL" : ".images/15_Minute_Teriyaki_Noodles.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
