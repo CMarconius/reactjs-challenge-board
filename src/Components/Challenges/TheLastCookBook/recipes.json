@@ -1330,6 +1330,40 @@
     "ImageURL" : ".images/15_Minute_Teriyaki_Noodles.png"
 },
 {
+    "Recipe Name" : "Easy Japanese Veg & Noodle Ramen",
+    "Description" : "Ramen is the most popular dish in Japan nowadays. It's a fresh tasting dish that's simple to whip up. It's perfect for a nourishing mid-week dinner. To make an easy veg stock mix 2.5 tablespoons of gluten free miso paste with 1 litre of boiling water. Replace the oyster mushrooms with aubergine if you cannot source them.",
+    "Serves" : "Serves 2 | Takes 20 minutes to make | max low FODMAP portion: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "1 litre veg stock (garlic and onion free)",
+        "2.5 tbsp tamari",
+        "½ thumb-sized piece of fresh ginger - grated",
+        "juice of 1 lime",
+        "1 tbsp maple syrup",
+        "100g of rice noodles - approx 2 nests",
+        "150g oyster mushrooms or aubergine",
+        "1-2 tbsp water",
+        "(Toppings) 1 small red chilli",
+        "(Toppings) 2 scallions - green parts only",
+        "(Toppings) 1 medium carrot",
+        "(Toppings) ½ pack of bean sprouts - 100g",
+        "(Toppings) sesame seeds to top",
+        "(Toppings) sauerkraut (red cabbage type only)"
+    ],
+    "Instructions" : [
+        "To prepare the broth, first put the veg stock and 1 tbsp tamari together with the grated ginger, the juice of 1 lime and 1 tbsp of maple syrup into a suitable sized pan and bring to the boil.",
+        "Tear/chop the mushrooms into bite-sized pieces (or aubergine if substituting).",
+        "Put a pan on a high heat, add 1 tablespoon of oil and add the mushrooms. Cook for 2-3 minutes (if replacing with aubergine cook for an extra 4-5 mins).",
+        "Mix 1.5 tbsp tamari, the 1-2 tbsp water, juice of 1 lime and the 1 tbsp maple syrup in a bowl and add to the mushrooms. Cook for 2 minutes or until most of the sauce has been absorbed.",
+        "Once your broth (veg stock with other bits) is boiling, reduce to a simmer and add the noodles and cook as per instructions on back of packet.",
+        "In the meantime, you can start preparing the toppings: de-seed and finely chop the red chilli, together with the scallion greens. Grate the carrot and wash your bean sprouts in a colander.",
+        "Once noodles are cooked, spoon them out with a slotted spoon or tongs, dividing between 2 deep bowls. Ladle out the broth and pour equal amounts into each bowl, so that the noodles are just covered.",
+        "Now, layer your ramen with the toppings: bean sprouts and the grated carrot on each side of each bowl, topped with the chopped scallions and chilli in the centre.",
+        "Finally, add the mushrooms (or aubergines) right in the centre and sprinkle with some sesame seeds and serve. Enjoy!",
+        "Tip: To take your ramen to the next level, add 1 tsp of dried seaweed (eg."
+    ],
+    "ImageURL" : ".images/Easy_Japanese_Veg_and_Noodle_Ramen.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
