@@ -1364,6 +1364,37 @@
     "ImageURL" : ".images/Easy_Japanese_Veg_and_Noodle_Ramen.png"
 },
 {
+    "Recipe Name" : "Spinach and Butterbean Curry",
+    "Description" : "This is a simple and delicious butterbean curry that is quick to make! Garnish with some sesame seeds for an extra hit of flavour! If you can’t source the oyster mushrooms replace with aubergine (eggplant) just ensure to cook it till it becomes soft and gooey and start to break up which usually takes an extra approx 4 mins than the mushrooms.",
+    "Serves" : "Serves 2 | Takes 10-15 minutes to make | Max low FODMAP portion : 1 portion or half this recipe",
+    "Ingredients" : [
+        "70g of tinned cooked butter beans",
+        "50g green beans",
+        "½ tbsp oil",
+        "100g oyster mushrooms",
+        "1 tbsp tamari",
+        "½ bunch scallions (green part only)",
+        "1 small red chilli",
+        "½ thumb-sized piece of ginger",
+        "50g baby spinach",
+        "¾ tbsp curry powder",
+        "½ tsp ground cumin",
+        "80 ml coconut milk",
+        "75 ml water",
+        "200g of a tin of chopped tomatoes",
+        "juice of ½ lime",
+        "salt and pepper to taste"
+    ],
+    "Instructions" : [
+        "Peel and finely chop the ginger. Finely chop the scallion greens and the chilli (removing the seeds if you don’t like spice), removing the white parts. Finely chop the oyster mushrooms and chop the green beans in half. Drain and rinse the butterbeans.",
+        "Put a large pan on a high heat, add 1/2 tablespoon of oil and leave to heat up. Add the ginger, chilli and the scallion greens and cook for 1-2 minutes stirring.",
+        "Add the mushrooms and the green beans and cook for 3 further minutes (if substituting aubergine, cook for an extra 4-5 mins).",
+        "Add 1 tablespoon of tamari and cook for a further minute. Add all the remaining ingredients to the pan and bring to the boil.",
+        "Once boiled remove from the heat and taste and see if it needs any further seasoning."
+    ],
+    "ImageURL" : ".images/Spinach_and_Butterbean_Curry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
