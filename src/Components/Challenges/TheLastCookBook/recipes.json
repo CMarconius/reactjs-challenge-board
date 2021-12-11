@@ -1426,6 +1426,31 @@
     "ImageURL" : ".images/Chickpea_Aubergine_and_Oyster_Mushroom_Curry.png"
 },
 {
+    "Recipe Name" : "Courgette fritters",
+    "Description" : "These are easy to make and very tasty, the portion size is quite small, so they work best alongside something like a decent salad or some quinoa/brown rice. The low FODMAP hummus goes really well with these. Gram flour is chickpea flour and is usually available online or from most health food stores.",
+    "Serves" : "Serves 2 people (approx 6 fritters)|Takes 15 minutes to make | Max low FODMAP portion size: 1 portion or half this recipe - 3 fritters each",
+    "Ingredients" : [
+        "150g courgettes",
+        "½ a small red chilli",
+        "3 scallions/spring onions green tops only",
+        "70g of tinned butter beans - 35g per portion",
+        "small bunch of fresh mint/coriander - 10g",
+        "juice of ½ a small lemon",
+        "1 tsp lemon zest",
+        "4.5 tbsp gram flour",
+        "¼ tsp salt",
+        "¼ tsp black pepper"
+    ],
+    "Instructions" : [
+        "Grate the courgettes into a colander, sprinkle them with a pinch of salt, squeeze in your hands for 30 seconds or so and leave to sit in the colander for about 10 minutes. This is to help the courgettes lose moisture which makes the fritters easier to hold their shape.",
+        "In the meantime, finely chop the chilli (remove the seeds if you don’t like it spicy) and finely chop the scallions greens/spring onion greens. Drain and rinse the tinned butter beans. Finely chop the mint/coriander leaves too.",
+        "After leaving the courgettes to sit for 10 mins, using your hands, squeeze all the juice out of the courgettes and discard the liquid, place the courgettes in a large bowl.",
+        "Add all the remaining ingredients into the bowl and mix thoroughly mashing all the ingredients together. Use a potato masher/fork, if you don’t like to use your hands, to mash. Using your hands, take the equivalent of 2 tablespoons of the batter and roll them into small fritters (disk shape).",
+        "Put a non-stick pan on a high heat. Add 2 tablespoons of oil and leave to heat up. Once hot add the fritters and cook for a few minutes on each side till they go golden brown (approx 2 minutes on each side). Repeat until they are all cooked and lastly, enjoy!"
+    ],
+    "ImageURL" : ".images/Courgette_Fritters.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
