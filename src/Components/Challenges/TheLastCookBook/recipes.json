@@ -1451,6 +1451,43 @@
     "ImageURL" : ".images/Courgette_Fritters.png"
 },
 {
+    "Recipe Name" : "Creamy broccoli pasta bake",
+    "Description" : "Here we use Gluten-free pasta and, more importantly make a delicious creamy gluten-free bechamel sauce. This is a delicious mushrooms and broccoli pasta bake that all the family will enjoy.",
+    "Serves" : "Serves 5 people | Takes 45 minutes | Max low FODMAP serving size: 1 portion",
+    "Ingredients" : [
+        "1 tbsp olive oil",
+        "200g dried GF tube style pasta (penne)",
+        "1 bunch of scallions - greens only",
+        "110g leek greens only",
+        "200g oyster mushrooms",
+        "250g Broccoli florets",
+        "2 tbsp tamari",
+        "4 tbsp water",
+        "1 tsp salt",
+        "(Bechamel Sauce) 5 tbsp olive oil",
+        "(Bechamel Sauce) 5 tbsp white GF flour (eg. Rice flour)",
+        "(Bechamel Sauce) 1 Litre almond/rice milk",
+        "(Bechamel Sauce) 1 tsp of salt",
+        "(Bechamel Sauce) ½ tsp black pepper",
+        "(Bechamel Sauce) 4 tbsp Nutritional yeast",
+        "(Bechamel Sauce) Pinch nutmeg",
+        "(Bechamel Sauce) Bay leaf",
+        "(Topping) 40g GF Breadcrumbs - blend old GF bread",
+        "(Topping) to make your own",
+        "(Topping) 1 tbsp flaked almonds",
+        "(Topping) 1 tbsp oil & Pinch of salt and pepper"
+    ],
+    "Instructions" : [
+        "Preheat oven to 180C",
+        "Cook pasta according to pack instructions. Drain and rinse in the sink under cold water to stop the pasta cooking and sticking together. Chop the greens part of the scallions and leeks, finely chop the mushrooms and cut the broccoli into small bite size florets.",
+        "To make the bechemel sauce - In a non stick pot add the oil, once hot add the rice flour and whisk for 2 minutes stirring continuously until golden. Add the milk slowly to the flour and oil mixture (roux) whisking continuously. Add the seasoning and remaining ingredients for the bechamel. Bring it to the boil and reduce to a simmer, whisking often. Once it has reached a nice creamy texture, remove the Bay leaf from the sauce, remove from the heat, taste and season if needed.",
+        "For the veg, heat 1 tbsp of oil in a large non stick pan over a high heat, add the scallion and leek greens with a good pinch of salt, reduce to medium and cook for 3-4 minutes until the greens are softened, add the mushroom and cook for 5 minutes until the mushrooms are reduced. Add the broccoli florets and water, bring to a simmer then reduce heat, cover tightly and steam until broccoli is just cooked, this will take approx 5-7 minutes.",
+        "Mix the pasta, bechamel and cooked veg mixture, transfer to an oven proof dish, smoothing out the surface. Mix all the topping ingredients together and scatter over the pasta bake.",
+        "Pop in the oven for 20 minutes or until the sauce is bubbling and the top turns golden."
+    ],
+    "ImageURL" : ".images/Creamy_Broccoli_Pasta_Bake.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
