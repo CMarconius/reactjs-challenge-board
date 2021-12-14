@@ -1488,6 +1488,45 @@
     "ImageURL" : ".images/Creamy_Broccoli_Pasta_Bake.png"
 },
 {
+    "Recipe Name" : "Tikka Masala",
+    "Description" : "A creamy tomato anglo-Indian curry that is quick and easy to make. To make an easy veg stock mix ¾ tsp gluten free miso paste with 100ml of water.",
+    "Serves" : "Serves 2 people | Takes 15 minutes | Max low FODMAP serving size: 1 portion or half this recipe",
+    "Ingredients" : [
+        "½ tbsp oil",
+        "1 tbsp cumin seeds",
+        "1 tbsp coriander seeds",
+        "150g leek greens",
+        "100ml gluten-free low fodmap veg stock",
+        "3 scallion (greens only)",
+        "200g Potatoes",
+        "150g Broccoli florets",
+        "4 cherry tomatoes - halved",
+        "200g - half a 400g tin coconut milk",
+        "(Paste) ½ thumb-sized piece of ginger",
+        "(Paste) 1 small red chilli - deseeded",
+        "(Paste) 10g fresh coriander",
+        "(Paste) ½ tsp garam masala",
+        "(Paste) ¼ tsp smoked paprika",
+        "(Paste) ½ tsp salt",
+        "(Paste) 200g - half a 400g tin chopped tomatoes ",
+        "(Gomasio) 25g toasted sesame seeds",
+        "(Gomasio) ½ tsp salt",
+        "(Garnish) ½ Tbsp toasted almonds/ ½ Tbsp",
+        "(Garnish) Coconut yogurt"
+    ],
+    "Instructions" : [
+        "Boil a kettle and add to a medium-size pot and put on a high heat.",
+        "Cut the potatoes into very small bite-size pieces add to boiling water, cover and simmer for 10 minutes or until cooked through (you can skip this step and use leftover cooked potatoes here, if you have them).",
+        "Cut the leek greens into very thin half circles and rinse thoroughly in a colander to remove all the sediment and drain.",
+        "De-stalk the broccoli florets and cut into even sized pieces, cut the cherry tomatoes in half, finely slice the scallion greens.",
+        "Put a large non-stick pan heat on a medium/high heat, add the cumin and coriander seeds and reduce heat, stirring occasionally for 2 mins. Then add the spices to a blender with all the other paste ingredients and blend until smooth, except for the coriander, just add the stalks to the paste and keep the leaves to garnish.",
+        "In the same large non-stick pan heat ½ tbsp of oil to a high heat, add the scallion and leek greens, stir and cook for 1-2 minutes, add the broccoli, and drain the potatoes and add to the pan, cook for 2 minutes then add the paste, cherry tomatoes, the tin of coconut milk and the veg stock and cook for 3-4 mins, stirring regularly. Taste and adjust the seasoning to your pallet",
+        "To make the Gomasio crush the sesame seeds and salt in a pestle and mortar or just put into a ziploc bag and crush with a rolling pin.",
+        "Serve with brown rice and the Gomasio, toasted almonds, coriander leaves, or coconut yogurt as garnish."
+    ],
+    "ImageURL" : ".images/Tikka_Masala.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
