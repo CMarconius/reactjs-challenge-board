@@ -1527,6 +1527,40 @@
     "ImageURL" : ".images/Tikka_Masala.png"
 },
 {
+    "Recipe Name" : "Greek Summer Stew",
+    "Description" : "A tasty tomato based chickpea stew with olive and lemon flavours. To make an easy veg stock that’s gluten free and low fodmap simply mix 1 tsp of gluten free miso paste with 150ml of water and mix well.",
+    "Serves" : "Serves 2 people | Takes 15 minutes | Max low FODMAP serving size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "1 tbsp oil",
+        "1 large leek - green part only - 100g",
+        "½ thumb size piece of ginger",
+        "1 small red chilli - deseeded",
+        "½ small carrot - grated",
+        "2-3 scallions - greens only",
+        "5 pitted kalamata olives chopped",
+        "1 Bay leaf",
+        "120g cooked chickpeas - half a 240g tin - drained",
+        "200g - half a 400g tin chopped tomatoes",
+        "150g fresh tomato - chopped",
+        "½ lemon",
+        "½ a bunch parsley",
+        "1 tsp salt",
+        "¼ tsp pepper",
+        "150 ml gluten-free low fodmap veg stock/miso stock",
+        "½ tbsp maple syrup"
+    ],
+    "Instructions" : [
+        "Cut the leek greens into very thin half circles and rinse thoroughly in a colander to remove all the sediment and drain.",
+        "Finely chop the scallion greens, ginger (peel it first) and the de-seeded chilli, grate the carrot and drain and rinse the chickpeas. Chop the pitted olives and the fresh tomatoes.",
+        "In a medium-size non-stick pan heat 1 tbsp of oil on a high heat, add the leek greens,scallion greens, ginger and chilli and reduce heat to medium, cook for 2-3 mins stirring regularly until the greens reduce.",
+        "Add the grated carrot, the olives, the chopped fresh tomatoes and stir, mixing well. Then add the tin of chopped tomatoes, veg stock, maple syrup, bay leaf, salt and pepper.",
+        "Bring to a boil and reduce to a simmer, add the drained chickpeas and the lemon cut into 2 pieces and cook for 5 mins stirring regularly.",
+        "Mix well and serve when heated through with the parsley roughly chopped and mixed through.",
+        "Serve with brown rice or quinoa (you could use the pre-cooked versions available vac-packed in most supermarkets)"
+    ],
+    "ImageURL" : ".images/Greek_Summer_Stew.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
