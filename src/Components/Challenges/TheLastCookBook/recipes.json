@@ -1561,6 +1561,37 @@
     "ImageURL" : ".images/Greek_Summer_Stew.png"
 },
 {
+    "Recipe Name" : "Low Fodmap Burger",
+    "Description" : "A tasty, easy to make wholefood burger, great served with the low fodmap hummus, sliced tomato and some gherkins on a gluten free bun or without! (If using mustard just ensure there is no onion/garlic.)",
+    "Serves" : "Serves 2 (2 x 140g burgers) | Takes 15 minutes | Max low FODMAP serving size: 1 portion or half this recipe",
+    "Ingredients" : [
+        "100g of cooked Chickpeas",
+        "70g cooked quinoa.",
+        "1 tbsp nutritional yeast",
+        "Binder:1 medium leek - greens only - 80g",
+        "1 tbsp oil",
+        "¼ thumb size piece of ginger",
+        "½ small red chilli - deseeded",
+        "40g oyster mushrooms",
+        "1 tbsp tamari",
+        "¾ Flax egg",
+        "1 tbsp Rice flour"
+    ],
+    "Instructions" : [
+        "If you need to cook the quinoa, boil a kettle and cook the quinoa (approx 35 g uncooked) by adding double the volume of boiling water and cook with a lid slightly ajar till the water has evaporated. Turn the heat off, put a lid on and leave to sit and cool.",
+        "To make the flax egg, soak ¾ tbsp of ground flax seeds with 2 tbsp of water, mix well and set aside for 5 mins or until you are mixing the burgers.",
+        "Cut the leek greens into very thin half circles and rinse thoroughly in a colander to remove all the sediment and drain.",
+        "Chop finely the ginger and the de-seeded chilli, chop the oyster mushrooms into small bite size pieces.",
+        "Drain and rinse the chickpeas and mash in a medium size bowl. You are going to mix the burger in the same bowl.",
+        "In a medium-size non stick pan heat 1 tbsp of oil on a high heat, add the leek greens, ginger and chilli and reduce heat to medium, cook, stirring for approx 3 mins until the greens reduce.",
+        "Add the mushrooms and cook for a further 4 minutes, add the tamari coating all the veg well, cooking for another minute until the tamari has been absorbed or evaporated. Remove from the heat and allow to cool.",
+        "In the bowl with the mashed chickpeas, the cooked quinoa, the mushroom ginger mixture, the nutritional yeast, the flax egg. Mix well, then add the rice flour, mix until everything has been incorporated, then shape into 2 burgers.",
+        "Clean out the pan and heat 1 tbsp of oil on a high heat, add the burgers at and reduce heat to medium. Cook for approx 2-3 minutes on each side until golden brown and heated through.",
+        "Serve with toppings like mustard, lettuce, tomatoes, our low fodmap hummus, on a gluten-free bun or lettuce cup."
+    ],
+    "ImageURL" : ".images/Low_Fodmap_Burger.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
