@@ -1592,6 +1592,42 @@
     "ImageURL" : ".images/Low_Fodmap_Burger.png"
 },
 {
+    "Recipe Name" : "Pesto Pasta",
+    "Description" : "A really tasty easy to make pesto pasta that is a crowd pleaser. We make a low fat pesto by using half water/half oil so that it is lower in calories. The below recipe is for a small quantity of pesto which may not blend in your food processor, instead chop finely and grind in a pestle and mortar",
+    "Serves" : "Serves 2 people | Takes 15 minutes | Max low FODMAP serving size: 1 portion or half this recipe.",
+    "Ingredients" : [
+        "(Pesto) 2 tbsp olive oil - 15g",
+        "(Pesto) 15 ml water",
+        "(Pesto) 12g basil",
+        "(Pesto) 15g Leek greens",
+        "(Pesto) 25g almonds",
+        "(Pesto) 10g pumpkin seeds",
+        "(Pesto) Very small pinch Chilli powder - to taste",
+        "(Pesto) Juice ½ small lemon",
+        "(Pesto) ¼ tsp salt",
+        "(Veg) 1 small leek - green part only",
+        "(Veg) ½ small courgette",
+        "(Veg) 45g green beans",
+        "(Veg) 40g baby spinach",
+        "(Veg) ¼ tsp salt",
+        "(Veg) ½ tbsp olive oil",
+        "(Veg) 65g cherry tomatoes halved",
+        "(Serve With) 2 portions of brown rice pasta or even brown rice noodles work well too"
+    ],
+    "Instructions" : [
+        "Boil a kettle and add to a medium-size pot on high heat, bring to the boil, add salt and add the noodles or pasta, stirring with tongs to ensure they do not stick together and cook as per times on the back of the pack.",
+        "When cooked remove from water into a colander, run under cold water to stop the noodles or pasta sticking together and stop them cooking. Save some of the cooking water for the pesto sauce.",
+        "Cut the leek greens into very thin half circles and rinse thoroughly in a colander to remove all the sediment and drain.",
+        "Remove the basil leaves from the stalks discarding the stalks. Add the basil leaves to a blender or food processor along with all the other pesto ingredients and blend until smooth or use a pestle and mortar.",
+        "Cut the courgettes into small bite-size pieces and the green beans into thirds.",
+        "Heat ½ tbsp of oil in a medium, wide nonstick pan, add the courgette, the leek and green beans, a pinch of salt, mix well and cook for 4-5 minutes, then add the spinach and cherry tomatoes, saute for a further 2-3 minutes until the spinach has wilted.",
+        "Now add the drained rinsed noodles/pasta to the pan with half the pesto and a ladle of the noodle/pasta water to help coat the noodles and spread the pesto. Add the rest of the pesto and 2-3 Tbsps of pasta water.",
+        "Cooked till heated through.",
+        "Serve and enjoy!"
+    ],
+    "ImageURL" : ".images/Pesto_Pasta.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
