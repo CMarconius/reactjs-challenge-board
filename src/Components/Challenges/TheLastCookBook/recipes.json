@@ -1628,6 +1628,40 @@
     "ImageURL" : ".images/Pesto_Pasta.png"
 },
 {
+    "Recipe Name" : "15-minute Green Protein Stir Fry",
+    "Description" : "We usually serve this with quinoa as it takes 10 minutes to make or else use the pre-cooked vac-pac brown rice/quinoa that you can buy in most supermarkets. To make an easy veg stock mix 1 tablespoons of gluten free miso paste with 500ml of boiling water or equivalent ratio to make less.",
+    "Serves" : "Serves 2 people | Takes 15 minutes | Max low FODMAP serving size: 1 portion or half this recipe",
+    "Ingredients" : [
+        "(Paste) ¼ thumb-size ginger",
+        "(Paste) 1 small leek - greens only - 40g",
+        "(Paste) ½ small red chilli - deseeded",
+        "(Paste) ¾ tbsp Tahini",
+        "(Paste) ¾ tbsp Tamari to taste",
+        "(Paste) 40ml veg stock (Gluten-free low fodmapsee intro for an easy one to make)",
+        "(Paste) 40ml water (you can add a little more water if you prefer a looser sauce)",
+        "(Tofu and Veg) 80g tofu/tempeh",
+        "(Tofu and Veg) 1/2 tbsp tamari",
+        "(Tofu and Veg) 2 scallions - greens only",
+        "(Tofu and Veg) 60g oyster mushrooms",
+        "(Tofu and Veg) 40g spinach",
+        "(Tofu and Veg) 20g Sugar snap peas",
+        "(Tofu and Veg) Juice of ½ small lemon",
+        "(Tofu and Veg) 1 tbsp oil",
+        "(Garnish) 4 cherry tomatoes",
+        "(Garnish) ½ Tbsp Sesame seeds"
+    ],
+    "Instructions" : [
+        "If you are serving this with quinoa/brown rice - prepare this first.",
+        "Cut the leek greens into thin half circles and rinse thoroughly in a colander to remove all the sediment and drain.",
+        "Add all the paste ingredients to a blender or food processor and blend until smooth",
+        "Cut the firm tofu/tempeh, scallion greens, mushrooms and sugar snap peas into small bite size pieces.",
+        "Heat ½ tbsp of oil in a medium size non stick wide pan on a high heat, add the tofu/tempeh, cook the tofu/tempeh stirring regularly until it starts to brown, approx 4 minutes, then add the 1/2 tbsp of tamari, coating all the tofu/tempeh. Remove from the pan and set aside.",
+        "Heat ½ tbsp of oil in the same pan to a high heat, add the scallion greens, mushrooms and reduce to a medium heat, cooking for 3-4 minutes. Add the paste, mixing well and bring to a low simmer, add the lemon juice, 40ml of water, spinach and sugar snaps, cook for another few minutes and add the cooked tofu/tempeh. Taste and adjust the seasoning to your liking.",
+        "Serve with cooked brown rice, rice noodles or cooked quinoa, garnish with cherry tomatoes, toasted almonds or sesame seeds."
+    ],
+    "ImageURL" : ".images/15_Minute_Green_Protein_Stir_Fry.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
