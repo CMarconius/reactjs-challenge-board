@@ -1705,6 +1705,30 @@
     "ImageURL" : ".images/Low_Fodmap_Aubergine_Parmigiana.png"
 },
 {
+    "Recipe Name" : "Energy balls",
+    "Description" : "Steve’s son Theo, is officially the energy ball monster who could nearly eat his weight in energy balls!! Not quite but he loves them and Steve is happy for him to eat a few at a go as they are wholefood, nutritious and packed full of fibre so the perfect healthy treat! These are easy to make nut free too (if you are allergic or for kids lunch snacks if their school is nut free), simply leave out the pecan nuts and replace with equal parts sunflower seeds.",
+    "Serves" : "Makes approx 15-20 balls. | Takes 20 minutes | Max low FODMAP serving size: 2 balls",
+    "Ingredients" : [
+        "130g of raisins",
+        "100ml almond/rice milk",
+        "100g gluten-free oat flakes",
+        "60g of sunflower seeds",
+        "50g pecan nuts",
+        "2 tbsp maple syrup",
+        "2 tbsp of cocoa powder",
+        "Zest of 1 orange / 2 drops of mint oil / 2 tsp ground coffee",
+        "50g of desiccated coconut"
+    ],
+    "Instructions" : [        
+        "Soak the raisins in the milk.",
+        "In a food processor, blend the sunflower seeds and the pecan until they form a breadcrumb-like consistency.",
+        "Next, add the oats, the soaked raisins (including the nut milk), maple syrup and 2 tbsp of cocoa powder. Then add in the zest of 1 orange, alternatively you could use mint oil or ground coffee instead to give a different flavour.",
+        "Blend all the ingredients until you reach a smooth texture, which could take up to 2 mins.",
+        "Roll the mixture into small balls and finally coat in the dessicated coconut."
+    ],
+    "ImageURL" : ".images/Energy_Balls.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
