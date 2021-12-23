@@ -1729,6 +1729,29 @@
     "ImageURL" : ".images/Energy_Balls.png"
 },
 {
+    "Recipe Name" : "Power Balls",
+    "Description" : "These take just 10 minutes to make and are great for children and adults alike! They are a great quick and filling snack with the added benefit of 2 different flavours. If you do not have any of the ingredients for one type just make more of the others.. If you don’t have all the additional ingredients (those in addition to the base) simply add 1 tbsp cocoa powder and 1 tbsp maple syrup.",
+    "Serves" : "Makes 15 balls (approx 4-5 of each type)| Takes 15 minutes to make | Max low FODMAP Serving portion: 2 balls",
+    "Ingredients" : [
+        "(Original) 100g pecan nuts",
+        "(Original) 90g raisins",
+        "(Original) pinch of salt",
+        "(Original) 2 tbsp coconut oil",
+        "(Original) 1 teaspoon of water",
+        "(Green Mint) 1/2 tsp of spirulina",
+        "(Green Mint) 3 drops from mint oil",
+        "(Mocha) 1.5 tsp of ground coffee",
+        "(Mocha) 1.5 tsp of cocoa powder"
+    ],
+    "Instructions" : [
+        "Start by making your base. Put all the ingredients of the base into the food processor except the water and coconut oil and blend until smooth-ish.",
+        "Melt the coconut oil by putting in a pot on a medium heat, add into the food processor together with the water and blend until smooth.",
+        "Divide the mixture into 2 parts and put each portion in a separate bowl. In the first of the bowls, add the ingredients for green mint ball and mix using a hand until it becomes 1 solid colour (less than 1 minute). Roll these into 7 balls or 8 smaller balls.",
+        "Repeat the process for the mocha balls by adding the coffee and cocoa powder to the second bowl and mix by hand until it comes together into a uniform dark brown colour. Roll this into another 7 to 8 balls."
+    ],
+    "ImageURL" : ".images/Power_Balls.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
