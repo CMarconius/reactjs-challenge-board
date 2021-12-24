@@ -1752,6 +1752,34 @@
     "ImageURL" : ".images/Power_Balls.png"
 },
 {
+    "Recipe Name" : "Maple and Seed Flapjacks",
+    "Description" : "These flapjack bars make a tasty and healthy snack on the go that is packed with fibre and taste! To ensure they stay together, make sure to compact them well and ensure that you leave them to cool completely.",
+    "Serves" : "Makes 12 flapjacks | Takes 1 hour including baking time, 20 mins prep | Max low FODMAP portion: 1-2 flapjacks",
+    "Ingredients" : [
+        "250g of gluten-free oats",
+        "60g of ground flax seeds/ flax meal",
+        "160 ml of coconut oil (145g)",
+        "40g ground almond",
+        "150ml maple syrup (160g)",
+        "40g of desiccated coconut",
+        "40g of pumpkin seeds",
+        "40g of sunflower seeds",
+        "40g of sesame seeds",
+        "40g raisins",
+        "Pinch of salt"
+    ],
+    "Instructions" : [        
+        "In a bowl mix the oats with the oil first, coating the oats with oil.",
+        "Add all remaining ingredients together and mix well.",
+        "Line a standard flapjack tray with baking parchment.",
+        "Roll out the mix on a flat baking tray, making sure it is around 2.5 cm or 1 inch thick. Ensure to compact it well so that it stays together once baked.",
+        "Bake at 140 degree of 35-40 minutes.",
+        "Leave to cool before cutting as this help it firm up.",
+        "If some of them start to break up, you could eat them as a granola with some rice milk and berries!"
+    ],
+    "ImageURL" : ".images/Maple_and_Seed_Flapjacks.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
