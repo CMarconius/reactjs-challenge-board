@@ -1780,6 +1780,26 @@
     "ImageURL" : ".images/Maple_and_Seed_Flapjacks.png"
 },
 {
+    "Recipe Name" : "Healthier Hot Chocolate",
+    "Description" : "Like a warm belly hug, this hot chocolate is perfect on a cold winter's evening or simply when you just need it! The orange zest works great to elevate it and give it another dimension (but if you’re a mint lover rather than orange choc lover, then it’s worth seeking out some mint oil).",
+    "Serves" : "Makes about 400ml (1-2 people) | Take 5 mins to make | 1 portion (200ml)",
+    "Ingredients" : [
+        "300ml rice milk/almond milk",
+        "2 tbsp cacao powder",
+        "1 tsp vanilla essence",
+        "2 tbsp maple syrup",
+        "1 tbsp smooth almond butter (use chunky if your prefer chunks!)",
+        "zest of ½ an orange or ½ teaspoon mint oil (optional)",
+        "tiny pinch of salt"
+    ],
+    "Instructions" : [        
+        "Place a saucepan on a medium heat and add the milk.",
+        "Slowly add the remainder of the ingredients (cacao powder, vanilla essence, liquid sweetener, almond butter, salt and optional orange zest/mint oil) and stir well.",
+        "Heat the chocolate liquid up, stirring continuously, using a whisk until the mixture is smooth and creamy and at the temperature you would like."
+    ],
+    "ImageURL" : ".images/Healthier_Hot_Chocolate.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
