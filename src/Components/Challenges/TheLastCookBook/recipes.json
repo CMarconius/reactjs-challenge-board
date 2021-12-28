@@ -1800,6 +1800,33 @@
     "ImageURL" : ".images/Healthier_Hot_Chocolate.png"
 },
 {
+    "Recipe Name" : "Choc Jaffa Balls",
+    "Description" : "Light and chocolatey, these make a great treat and are perfect for that mid-afternoon slump when you are looking for something sweet. Lovely on their own or even spread on toast!",
+    "Serves" : "Makes approximately 25 balls | Takes 20 Minutes to make | Max low FODMAP portion size: 2 balls",
+    "Ingredients" : [
+        "150g raisins",
+        "75ml rice milk",
+        "80g gluten-free oats",
+        "120g brazil nuts/pecan nuts",
+        "2 tablespoons cacao powder",
+        "zest of ½ an orange",
+        "(Coating Option) 50g desiccated coconut",
+        "(Coating Option) 100g dark chocolate",
+        "(Coating Option) 25g desiccated coconut +zest of ½ an orange + 1 tablespoon freeze dried",
+        "(Coating Option) raspberry powder (to give a bright pink pop of colour)"
+    ],
+    "Instructions" : [
+        "Chop the raisins roughly and soak in the rice milk for a few minutes, ensuring to mix the raisins around so that they are all submerged in the rice milk.",
+        "Pulse the oats and the nuts in a food processor for 30 seconds. Add the soaked raisins with the rice milk and add the cocoa powder and the zest of ½ an orange. Blend all the ingredients until the mix has a smooth texture, this could take up to 2 minutes.",
+        "Roll into small balls (about the size of a small brussel sprout) and coat in your favourite coating.",
+        "For the chocolate coating, simply melt the dark chocolate (in a water bath/bain marie or microwave) and dip the balls in and leave to cool.",
+        "For the freeze dried raspberry, orange zest and desiccated coconut coating, simply mix all these in a bowl and cover each ball.",
+        "Alternatively, for the desiccated coconut coating, simply roll each ball in desiccated coconut.",
+        "These should last up to a month in the fridge."
+    ],
+    "ImageURL" : ".images/Choc_Jaffa_Balls.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
