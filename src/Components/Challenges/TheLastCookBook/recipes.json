@@ -1827,6 +1827,29 @@
     "ImageURL" : ".images/Choc_Jaffa_Balls.png"
 },
 {
+    "Recipe Name" : "5-minute Chia Jam",
+    "Description" : "Exactly like it says in the title, with the benefit of no refined sugar. Here we use chia seeds to thicken the jam. Ground chia seeds will help to set the jam even better. If you are using frozen berries you will need to cook them for longer or else just let them thaw in the fridge prior to making. This is great spread on gluten-free bread, or even served on top of a bowl of porridge.",
+    "Serves" : "Makes 400-500ml | Servings: 10 | Max low FODMAP portion: 100g",
+    "Ingredients" : [
+        "125g of Strawberries",
+        "60g of Raspberries",
+        "40g of Blueberries",
+        "100ml cranberry juice",
+        "100ml maple syrup",
+        "5 tbsp of ground chia seeds"
+    ],
+    "Instructions" : [
+        "Put a pan on a high heat and add all ingredients.",
+        "Bring to the boil and allow to reduce for a few minutes stirring occasionally so it doesn't stick.",
+        "The jam is ready when it starts to turn a monotone colour.",
+        "You can use the back of a wooden spoon to encourage/help the fruit to break down.",
+        "If you want a smoother texture, simply blend with an immersion/stick blender or in a food processor/blender.",
+        "Leave to cool and solidify.",
+        "Lasts for a week in the fridge"
+    ],
+    "ImageURL" : ".images/5_Minute_Chia_Jam.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
