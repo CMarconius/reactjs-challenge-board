@@ -1850,17 +1850,20 @@
     "ImageURL" : ".images/5_Minute_Chia_Jam.png"
 },
 {
-    "Recipe Name" : "",
-    "Description" : "",
-    "Serves" : "",
+    "Recipe Name" : "Happy Gut Trail Mix",
+    "Description" : "Trail mix is the perfect quick and easy on the go snack to keep you going. It's great to make for when you are travelling too. Simply mix these in a bowl or bag and enjoy! You can make extra of this mix and store in an air-tight jar too!",
+    "Serves" : "Makes 300g - 5 portions | Takes 5 minutes | Max low FODMAP portion 1 portion (⅕ of total recipe)",
     "Ingredients" : [
-        "",
-        ""
+        "2 tbsp almonds",
+        "4 tbsp pecans",
+        "4 tbsp sunflower seeds",
+        "4 tbsp pumpkin seeds",
+        "5 tbsp raisins",
+        "5 tbsp dried cranberries"
     ],
     "Instructions" : [
-        "",
-        ""
+        "Simply mix in a bowl or bag and enjoy!"
     ],
-    "ImageURL" : ".images/.png"
+    "ImageURL" : ".images/Happy_Gut_Trail_Mix.png"
 }
 ]
