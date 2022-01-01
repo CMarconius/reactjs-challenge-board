@@ -1865,5 +1865,41 @@
         "Simply mix in a bowl or bag and enjoy!"
     ],
     "ImageURL" : ".images/Happy_Gut_Trail_Mix.png"
+},
+{
+    "Recipe Name" : "Kale Crisps",
+    "Description" : "Kale chips are a super-nutritious and tasty snack, they are next level potato chips! The recipe below is for spicy kale chips, if you don’t like it spicy, simply leave out the spices and just add a generous pinch of sea salt instead.",
+    "Serves" : "Makes about 50g | Takes 25 minutes | Max low FODMAP portion 2 portions",
+    "Ingredients" : [
+        "1 head of kale (approx 100g stalks removed)",
+        "2 tbsp olive oil",
+        "½ tsp paprika",
+        "½ tsp cayenne pepper",
+        "generous sprinkle of salt"
+    ],
+    "Instructions" : [
+        "Preheat the oven to 100C",
+        "Remove the kale leaves from the thick central stalks. Give them a thorough wash and dry.",
+        "Add the olive oil and massage it right through all of the kale, ensuring to coat each leaf. Add the spices and mix right the way through ensuring to be evenly spread.",
+        "Lay out the leaves on a baking tray and put them in the oven, ensuring their well spread out.",
+        "Bake in oven for 15-20 minutes, until nice and crispy.",
+        "Half way through cooking time, take out the kale and give it a good mix around to ensure your chips are all crisping up evenly.",
+        "Leave chips to cool for 3 minutes. These are best eaten when they are fresh out of the oven but they can be stored in an air-tight container for 2-3 days."
+    ],
+    "ImageURL" : ".images/Kale_Crisps.png"
+},
+{
+    "Recipe Name" : "",
+    "Description" : "",
+    "Serves" : "",
+    "Ingredients" : [
+        "",
+        ""
+    ],
+    "Instructions" : [
+        "",
+        ""
+    ],
+    "ImageURL" : ".images/.png"
 }
 ]
