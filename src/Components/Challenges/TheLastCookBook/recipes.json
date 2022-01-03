@@ -1706,7 +1706,7 @@
 },
 {
     "Recipe Name" : "Energy balls",
-    "Description" : "Steve’s son Theo, is officially the energy ball monster who could nearly eat his weight in energy balls!! Not quite but he loves them and Steve is happy for him to eat a few at a go as they are wholefood, nutritious and packed full of fibre so the perfect healthy treat! These are easy to make nut free too (if you are allergic or for kids lunch snacks if their school is nut free), simply leave out the pecan nuts and replace with equal parts sunflower seeds.",
+    "Description" : "Steve's son Theo, is officially the energy ball monster who could nearly eat his weight in energy balls!! Not quite but he loves them and Steve is happy for him to eat a few at a go as they are wholefood, nutritious and packed full of fibre so the perfect healthy treat! These are easy to make nut free too (if you are allergic or for kids lunch snacks if their school is nut free), simply leave out the pecan nuts and replace with equal parts sunflower seeds.",
     "Serves" : "Makes approx 15-20 balls. | Takes 20 minutes | Max low FODMAP serving size: 2 balls",
     "Ingredients" : [
         "130g of raisins",
@@ -1730,7 +1730,7 @@
 },
 {
     "Recipe Name" : "Power Balls",
-    "Description" : "These take just 10 minutes to make and are great for children and adults alike! They are a great quick and filling snack with the added benefit of 2 different flavours. If you do not have any of the ingredients for one type just make more of the others.. If you don’t have all the additional ingredients (those in addition to the base) simply add 1 tbsp cocoa powder and 1 tbsp maple syrup.",
+    "Description" : "These take just 10 minutes to make and are great for children and adults alike! They are a great quick and filling snack with the added benefit of 2 different flavours. If you do not have any of the ingredients for one type just make more of the others.. If you don't have all the additional ingredients (those in addition to the base) simply add 1 tbsp cocoa powder and 1 tbsp maple syrup.",
     "Serves" : "Makes 15 balls (approx 4-5 of each type)| Takes 15 minutes to make | Max low FODMAP Serving portion: 2 balls",
     "Ingredients" : [
         "(Original) 100g pecan nuts",
@@ -1781,7 +1781,7 @@
 },
 {
     "Recipe Name" : "Healthier Hot Chocolate",
-    "Description" : "Like a warm belly hug, this hot chocolate is perfect on a cold winter's evening or simply when you just need it! The orange zest works great to elevate it and give it another dimension (but if you’re a mint lover rather than orange choc lover, then it’s worth seeking out some mint oil).",
+    "Description" : "Like a warm belly hug, this hot chocolate is perfect on a cold winter's evening or simply when you just need it! The orange zest works great to elevate it and give it another dimension (but if you're a mint lover rather than orange choc lover, then it's worth seeking out some mint oil).",
     "Serves" : "Makes about 400ml (1-2 people) | Take 5 mins to make | 1 portion (200ml)",
     "Ingredients" : [
         "300ml rice milk/almond milk",
@@ -1868,7 +1868,7 @@
 },
 {
     "Recipe Name" : "Kale Crisps",
-    "Description" : "Kale chips are a super-nutritious and tasty snack, they are next level potato chips! The recipe below is for spicy kale chips, if you don’t like it spicy, simply leave out the spices and just add a generous pinch of sea salt instead.",
+    "Description" : "Kale chips are a super-nutritious and tasty snack, they are next level potato chips! The recipe below is for spicy kale chips, if you don't like it spicy, simply leave out the spices and just add a generous pinch of sea salt instead.",
     "Serves" : "Makes about 50g | Takes 25 minutes | Max low FODMAP portion 2 portions",
     "Ingredients" : [
         "1 head of kale (approx 100g stalks removed)",
@@ -1887,6 +1887,24 @@
         "Leave chips to cool for 3 minutes. These are best eaten when they are fresh out of the oven but they can be stored in an air-tight container for 2-3 days."
     ],
     "ImageURL" : ".images/Kale_Crisps.png"
+},
+{
+    "Recipe Name" : "Low fodmap green smoothie",
+    "Description" : " Smoothies are quite different to juices in that they contain their fibre meaning they can function as a light meal or snack. This is a brilliant way of getting more veg in and, most importantly, green veg into you or kids. By using frozen strawberries the taste is less strong, as our taste buds don't taste as much when food is very cold and it's easier to drink more greens. The walnuts can add a slight bitter taste so leave them out if you prefer a sweeter tasting smoothie.",
+    "Serves" : "Serves 2 people | Takes 5 minutes to make | Max low FODMAP portion: 1 portion (½ of the recipe)",
+    "Ingredients" : [
+        "75g baby spinach",
+        "1 kiwi",
+        "400ml almond/rice milk (200g per individual serving)",
+        "30g walnuts",
+        "1 banana unripe slightly on the greenish side",
+        "100g frozen strawberries",
+        "Juice of 1/2 a lime"
+    ],
+    "Instructions" : [
+        "Peel the kiwi and the banana. Add all ingredients to the blender and blend until smooth. Garnish with cacao nibs and enjoy!"
+    ],
+    "ImageURL" : ".images/Low_Fodmap_Green_Smoothie.png"
 },
 {
     "Recipe Name" : "",
