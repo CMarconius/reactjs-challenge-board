@@ -1907,6 +1907,28 @@
     "ImageURL" : ".images/Low_Fodmap_Green_Smoothie.png"
 },
 {
+    "Recipe Name" : "Low Fodmap Hummus",
+    "Description" : "This is a really tasty basic low FODMAP hummus. It doesn't have any garlic in it, as garlic is high in fructans, and, therefore, is a high-FODMAP food. This goes great on top of toasted gluten-free pittas, rice cakes, or our gluten-free porridge bread (recipe in lunch section also). Make sure to adjust the seasoning as you see fit by adding more lemon, cumin, chilli, salt/pepper etc until it becomes the perfect hummus for you! This will last 3-4 days in the fridge in a container and it does freeze well also.",
+    "Serves" : "Makes 350g approx 6-7 portions| Takes 10 minutes to make | max low FODMAP serving: 40g",
+    "Ingredients" : [
+        "230g tinned chickpeas (1 x 400g tin of chickpeas is usually net 230g)",
+        "Juice of 1 lemon juice (30g)",
+        "45g light tahini (2 tablespoons)",
+        "3/4 tsp salt",
+        "a pinch of freshly ground black pepper",
+        "½ tsp ground cumin",
+        "pinch of chilli flakes (optional - if you like it hot)",
+        "9 tbsp water"
+    ],
+    "Instructions" : [
+        "Drain and rinse the chickpeas thoroughly and add them into a food processor together with the rest of the ingredients and blend for about 3 minutes, until pretty smooth.",
+        "In spite of it not having any garlic, it is a really tasty recipe. Taste and season with more salt and pepper if you think it needs it and as there is no garlic maybe try the chilli flakes if you like a little spice!",
+        "If the hummus is a little thick just add an extra tablespoon of water and blend and repeat until you reach your desired texture",
+        "If you do want it to be a little richer just add 1 tbsp of olive oil and blend again for a richer more indulgent hummus."
+    ],
+    "ImageURL" : ".images/Low_Fodmap_Hummus.png"
+},
+{
     "Recipe Name" : "",
     "Description" : "",
     "Serves" : "",
