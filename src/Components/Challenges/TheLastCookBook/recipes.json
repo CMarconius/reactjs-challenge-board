@@ -1884,17 +1884,32 @@
     "ImageURL" : ".images/Banana_Bread.png"
 },
 {
-    "Recipe Name" : "",
-    "Description" : "",
-    "Serves" : "",
+    "Recipe Name" : "Easy Rhubarb & Berry Crumble",
+    "Description" : "This crumble recipe is dairy, gluten, and refined sugar-free and it is super-tasty too! Be careful, if you start trying it, you might end up eating half of it in one go! If you are making this when rhubarb is out of season, feel free to use whatever fruit is in season and Low FODMAP,",
+    "Serves" : "Serves 7 | Takes about an hour | Max low FODMAP portion: 1 portion",
     "Ingredients" : [
-        "",
-        ""
+        "(Stewed fruit) 800g rhubarb",
+        "(Stewed fruit) 200g raspberries/strawberries",
+        "(Stewed fruit) 5 tbsp maple syrup",
+        "(Stewed fruit) 2 tsp ground cinnamon",
+        "(Stewed fruit) 1 tsp ground ginger",
+        "(Stewed fruit) 4 tbsp water",
+        "(Crumble) 150g gluten-free oats",
+        "(Crumble) 50g ground almond",
+        "(Crumble) 3 tbsp pumpkin seed",
+        "(Crumble) 3 tbsp sunflower seeds",
+        "(Crumble) 75ml sunflower oil/coconut oil (5 tbsp)",
+        "(Crumble) 90ml maple syrup"
     ],
     "Instructions" : [
-        "",
-        ""
+        "Cut the rhubarb into bite-sized pieces and put into a pot, together with the berries and the other stewed fruit ingredients.",
+        "Bring the fruit mixture to the boil and then reduce to a simmer. Stirring occasionally, stew the fruit for about 20 mins or until all the fruit has properly broken down.",
+        "In the meantime, preheat the oven at 170℃.",
+        "If using coconut oil for the crumble, melt it first by heating up in a pan on a medium heat. Thoroughly mix all the ingredients for the crumble together in a bowl including the oil.",
+        "Once the fruit is stewed down, add it to your crumble dish and spread it out evenly (we used a 30cm square eramic dish).",
+        "Spread the crumble top evenly over the fruit and put in the preheated oven for about 25 mins at 170℃ or until the top of the crumble starts to go golden.",
+        "Enjoy served warm with some coconut yoghurt!"
     ],
-    "ImageURL" : ".images/.png"
+    "ImageURL" : ".images/Easy_Rhubarb_and_Berry_Crumble.png"
 }
 ]
