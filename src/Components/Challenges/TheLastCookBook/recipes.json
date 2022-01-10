@@ -23,7 +23,7 @@
         "Using a silicone spatula, turn the pancake and cook on the other side until golden. Then repeat with the remaining batter.",
         "Serving suggestion: Pour some coconut yogurt (125g max serving size), raspberries (60g max), strawberries (140g max), and maple syrup on top."
     ],
-    "ImageURL" : "./images/Easy_Sweet_Buckwheat_Pancakes.png"
+    "ImageURL" : "./Easy_Sweet_Buckwheat_Pancakes.png"
 },
 {
     "Recipe Name" : "Quinoa & Flax Pancakes",
@@ -53,7 +53,7 @@
         "Cook the other side until it gets light brown. Repeat with the remaining batter.",
         "Tip: If the batter starts to get too thick add a little more rice milk to thin it out."
     ],
-    "ImageURL" : ".images/Quinoa_And_Flax_Pancakes.png"
+    "ImageURL" : "./Quinoa_And_Flax_Pancakes.png"
 },
 {
     "Recipe Name" : "Perfect Porridge",
@@ -77,7 +77,7 @@
         "Put all ingredients in a pot and put on a medium to high heat",
         "It is typically sweeter if you cook it slowly on a low heat stirring occasionally (takes 10 -15 minutes). If you don't have time turn heat up high, stir regularly and it should be done when it starts to bubble (approx 5 minutes)"
     ],
-    "ImageURL" : ".images/Perfect_Porridge.png"
+    "ImageURL" : "./Perfect_Porridge.png"
 },
 {
     "Recipe Name" : "Millet Porridge",
@@ -102,7 +102,7 @@
         "Slowly cook on a medium heat, stirring occasionally till it starts to bubble and come together (approx 15 minutes).",
         "If you want it thicker, cook it for longer and if you want it thinner then add more of the rick milk/water."
     ],
-    "ImageURL" : ".images/Millet_Porridge.png"
+    "ImageURL" : "./Millet_Porridge.png"
 },
 {
     "Recipe Name" : "Chia Seed Pudding",
@@ -125,7 +125,7 @@
         "Give it a good whisk with a fork before topping it with garnishes and eating.",
         "Serve with fresh berries - raspberries (60g max), blueberries (20 berries), strawberries (140g max), Coconut yogurt (125ml max), Maple syrup (2 Tbsp max), toasted Pecan nuts (10 nuts max)."
     ],
-    "ImageURL" : ".images/Chia_Seed_Pudding.png"
+    "ImageURL" : "./Chia_Seed_Pudding.png"
 },
 {
     "Recipe Name" : "5-minute 1-pan Gluten-free Granola",
@@ -156,7 +156,7 @@
         "Some extra toppings: cacao nibs and raisins",
         "Serve with: rice/almond milk or coconut yogurt with some berries or use as a topping on top of porridge."
     ],
-    "ImageURL" : ".images/5_minute_1_Pan_Gluten_Free_Granola.png"
+    "ImageURL" : "./5_minute_1_Pan_Gluten_Free_Granola.png"
 },
 {
     "Recipe Name" : "Coconut Yogurt Pots",
@@ -178,7 +178,7 @@
         "Heat a pan on a medium to high heat and add a handful of pecans (35g) and toast in the pan until they start to colour, (approx 5 minutes), taking care not to let them burn. Then remove from the heat, transfer into a bowl and add 1 tablespoon of maple syrup. Mix through.",
         "Now add in your yogurt up 3/4 way up your jar/glass. Finally, top it with the maple-toasted pecans."
     ],
-    "ImageURL" : ".images/Coconut_Yogurt_Pots.png"
+    "ImageURL" : "./Coconut_Yogurt_Pots.png"
 },
 {
     "Recipe Name" : "Homemade Coconut Yogurt",
@@ -204,7 +204,7 @@
         "Chill the yogurt: Place the set yogurt into the fridge and chill for at least 6 hours. The yogurt will become thicker as it chills. After this stage, you might find that the mixture has separated with a yellowish, translucent layer at the bottom and a thicker white layer on top. Stir to recombine or scoop off the top layer for thicker coconut yogurt.",
         "Keep coconut yogurt refrigerated and use within 2 weeks."
     ],
-    "ImageURL" : ".images/Homemade_Coconut_Yogurt.png"
+    "ImageURL" : "./Homemade_Coconut_Yogurt.png"
 },
 {
     "Recipe Name" : "Strawberry & Almond Gluten-Free Muffins",
@@ -237,7 +237,7 @@
         "Get a muffin tray and insert 12 paper muffin cases and pour in the muffin mixture, ensuring to have the same amount in each muffin case. Decorate the top of the muffins with the remaining flaked almonds before putting in the oven.",
         "Bake in the preheated oven for 25 mins. Once cooked, remove from the oven and leave to cool. Serve with some fresh strawberries on the top"
     ],
-    "ImageURL" : ".images/Strawberry_Almond_Gluten_Free_Muffins.png"
+    "ImageURL" : "./Strawberry_Almond_Gluten_Free_Muffins.png"
 },
 {
     "Recipe Name" : "Creamy Coconut Quinoa Porridge",
@@ -260,7 +260,7 @@
         "Put all the ingredients in a pot, put on a high heat and stir regularly. When it boils, turn down to a low-medium heat, put a lid leaving a gap so steam can evaporate, and stir regularly. It should take about 10-15 mins to cook. We usually cook it until just about all the liquid has evaporated and then we turn the heat off and put the lid on and leave it sit for a few minutes to allow the quinoa to puff up and the porridge to get creamy.",
         "This goes fantastic with some fresh berries (raspberries <60g, blueberries <40g, strawberries <140g, and a drizzle of maple syrup (max 2 tablespoons). Enjoy!"
     ],
-    "ImageURL" : ".images/Creamy_Coconut_Quinoa_Porridge.png"
+    "ImageURL" : "./Creamy_Coconut_Quinoa_Porridge.png"
 },
 {
     "Recipe Name" : "Sabrina's sunday morning chia pudding",
@@ -282,7 +282,7 @@
         "Prep your fruit by chopping the kiwis and banana if using into bite size pieces",
         "Once chia seeds have been soaking for 10-15 minutes or so, use a fork and mix them for approx a minute breaking them up till they reach a nice lose consistency, you may need to add another dash of milk to reach a nice uniform 'lose' consistency. Divide into 2 servings. Top the soaked chia seed pudding with your fruit, the almond butter and coconut yoghurt. Arrange everything so that it looks really pretty, take your photo for Instagram (only joking!) and enjoy!"
     ],
-    "ImageURL" : ".images/Sabrinas_Sunday_Morning_Chia_Pudding.png"
+    "ImageURL" : "./Sabrinas_Sunday_Morning_Chia_Pudding.png"
 },
 {
     "Recipe Name" : "Gluten-free Bread",
@@ -307,7 +307,7 @@
         "Next, in a separate bowl, mix the oat flakes, baking soda, mixed seeds and salt. Then add to the yogurt mixture and stir thoroughly. It will be quite a wet batter but don't worry it will dry out once baked.",
         "Place in a greased or parchment lined 1 or 2lb loaf tin, and bake at in the preheated oven at 170°C/350°F/Gas Mark 4 for 50 mins."
     ],
-    "ImageURL" : ".images/Gluten_free_Bread.png"
+    "ImageURL" : "./Gluten_free_Bread.png"
 },
 {
     "Recipe Name" : "Asian Broccoli Salad in a Sweet Smokey Chilli Sauce",
@@ -339,7 +339,7 @@
         "Add broccoli and all the rest of the salad ingredients into a large bowl",
         "Mix your salad dressing together and pour over salad. Add the toasted sesame seeds and nuts just before serving. Note: only dress what you are going to eat as once dressed it doesn't last very well."
     ],
-    "ImageURL" : ".images/Asian_Broccoli_Salad_in_Sweet_Smokey_Chilli_Sauce.png"
+    "ImageURL" : "./Asian_Broccoli_Salad_in_Sweet_Smokey_Chilli_Sauce.png"
 },
 {
     "Recipe Name" : "High Protein Quinoa Salad",
@@ -367,7 +367,7 @@
         "Add all salad ingredients for the salad in a large bowl and dress with the dressing.",
         "Top tip: If you are making this ahead of time, we recommend waiting to dress the veg until just before you serve it, as it will keep better this way."
     ],
-    "ImageURL" : ".images/High_Protein_Quinoa_Salad.png"
+    "ImageURL" : "./High_Protein_Quinoa_Salad.png"
 },
 {
     "Recipe Name" : "Broccoli, Parsnip & Ginger Soup",
@@ -400,7 +400,7 @@
         "Remove the pot from the heat. Blend until smooth using a stick/immersion blender. If the soup seems a little thick, add a drop of water until it reaches your desired consistency.",
         "Season with salt and pepper and enjoy!"
     ],
-    "ImageURL" : ".images/Broccoli_Parsnip_and_Ginger_Soup.png"
+    "ImageURL" : "./Broccoli_Parsnip_and_Ginger_Soup.png"
 },
 {
     "Recipe Name" : "Carrot, Coriander and Pecan soup",
@@ -431,7 +431,7 @@
         "Season with salt and pepper if required to your taste.",
         "Roughly chop the coriander and use as a garnish just before serving."
     ],
-    "ImageURL" : ".images/Carrot_Coriander_and_Pecan_soup.png"
+    "ImageURL" : "./Carrot_Coriander_and_Pecan_soup.png"
 },
 {
     "Recipe Name" : "Chunky Moroccan Harira Soup",
@@ -469,7 +469,7 @@
         "Taste to see that the rice is properly cooked. If it is not cooked, let the soup simmer away until the rice is done.",
         "Season with salt and pepper to your palette and add the finely chopped parsley before serving."
     ],
-    "ImageURL" : ".images/Chunky_Moroccan_Harira_Soup.png"
+    "ImageURL" : "./Chunky_Moroccan_Harira_Soup.png"
 },
 {
     "Recipe Name" : "Irish Root Vegetable Soup",
@@ -503,7 +503,7 @@
         "Remove the pot from the heat, remove the bay leaf and blend the mixture until smooth, using a stick blender. If the soup seems a little thick, add a little of water until it reaches your desired consistency.",
         "Season with salt and pepper to taste, and enjoy!"
     ],
-    "ImageURL" : ".images/Irish_Root_Vegetable_Soup.png"
+    "ImageURL" : "./Irish_Root_Vegetable_Soup.png"
 },
 {
     "Recipe Name" : "Carrot, Coconut, Ginger and Lemongrass Soup",
@@ -536,7 +536,7 @@
         "Taste, and season with more salt and pepper if needed.",
         "Serve with a squeeze of lime in each bowl."
     ],
-    "ImageURL" : ".images/Carrot_Coconut_Ginger_and_Lemongrass_Soup.png"
+    "ImageURL" : "./Carrot_Coconut_Ginger_and_Lemongrass_Soup.png"
 },
 {
     "Recipe Name" : "Roasted Celeriac & Parsnip Soup",
@@ -565,7 +565,7 @@
         "Add the veg stock/water, black pepper, remaining salt and the fresh thyme leaves. Turn the heat up high and bring to the boil. Then reduce to a simmer for further 10 minutes before removing from heat and blending with a immersion/stick blender.",
         "Garnish with a sprig of thyme or chilli oil of your choice or some chilli flakes for a warming kick!"
     ],
-    "ImageURL" : ".images/Roasted_Celeriac_And_Parsnip_Soup.png"
+    "ImageURL" : "./Roasted_Celeriac_And_Parsnip_Soup.png"
 },
 {
     "Recipe Name" : "Watercress and Roasted Walnut Soup",
@@ -598,7 +598,7 @@
         "Serve with a nice squeeze of lemon and garnish with the remaining walnuts (roughly chop them). "
 
     ],
-    "ImageURL" : ".images/Watercress_and_Roasted_Walnut_Soup.png"
+    "ImageURL" : "./Watercress_and_Roasted_Walnut_Soup.png"
 },
 {
     "Recipe Name" : "5-minute Miso Soup",
@@ -625,7 +625,7 @@
         "Finely slice the scallion greens at an angle and the red chilli after removing the seeds.",
         "Serve in a bowl with some scallion greens and red chilli on top."
     ],
-    "ImageURL" : ".images/5_Minute_Miso_Soup.png"
+    "ImageURL" : "./5_Minute_Miso_Soup.png"
 },
 {
     "Recipe Name" : "2-minute “Rock-et Star” Salad",
@@ -650,7 +650,7 @@
         "Squeeze in the lemon, using your hand as a sieve to catch any pips (or the usual lemon squeezer), and mix through, along with the olive oil, coating the leaves well and season with salt if needed to taste.",
         "Add in the berries and top with the walnuts/pumpkin seeds. Enjoy!"
     ],
-    "ImageURL" : ".images/2_minute_Rocket_Star_Salad.png"
+    "ImageURL" : "./2_minute_Rocket_Star_Salad.png"
 },
 {
     "Recipe Name" : "Thai Rice Noodle and Marinated Tofu Salad",
@@ -689,7 +689,7 @@
         "Finely chop the cucumber, pak choi, scallions, radicchio and coriander and add to the dressed noodles along with the tofu and mix well through.",
         "Sprinkle over some sesame seeds before serving."
     ],
-    "ImageURL" : ".images/Thai_Rice_Noodle_and_Marinated_Tofu_Salad.png"
+    "ImageURL" : "./Thai_Rice_Noodle_and_Marinated_Tofu_Salad.png"
 },
 {
     "Recipe Name" : "Vietnamese Coconut & Tempeh Curry",
@@ -727,7 +727,7 @@
         "This curry goes great with brown rice.",
         "Garnish with the flaked almond. Enjoy!!"
     ],
-    "ImageURL" : ".images/Vietnamese_Coconut_and_Tempeh_Curry.png"
+    "ImageURL" : "./Vietnamese_Coconut_and_Tempeh_Curry.png"
 },
 {
     "Recipe Name" : "Spanish Roasted Veg Paella",
@@ -768,7 +768,7 @@
         "Once the rice is cooked (it should be nice and soft and fluffy), add in the tomato and veg sauce, along with the sugar snaps. Give it all a good mix together and cook for a further couple of minutes.",
         "Taste and season with salt and pepper if it needs it and garnish with the chopped herbs. Enjoy!"
     ],
-    "ImageURL" : ".images/Spanish_Roasted_Veg_Paella.png"
+    "ImageURL" : "./Spanish_Roasted_Veg_Paella.png"
 },
 {
     "Recipe Name" : "Veronica's Potato & Tomato Curry",
@@ -802,7 +802,7 @@
         "Finely chop the coriander and add to the dish a few minutes before serving.",
         "Taste and add more seasoning if required."
     ],
-    "ImageURL" : ".images/Veronicas_Potato_and_Tomato_Curry.png"
+    "ImageURL" : "./Veronicas_Potato_and_Tomato_Curry.png"
 },
 {
     "Recipe Name" : "Thai Red Curry",
@@ -849,7 +849,7 @@
         "Remove the lemongrass stalk.",
         "Pluck the basil leaves from the stalks and add them as a garnish just before serving."
     ],
-    "ImageURL" : ".images/Thai_Red_Curry.png"
+    "ImageURL" : "./Thai_Red_Curry.png"
 },
 {
     "Recipe Name" : "Veg Korma",
@@ -894,7 +894,7 @@
         "Check that potatoes are properly cooked before serving.",
         "Finely chop the full bunch of fresh coriander, stalks and all, and add just before serving. "
     ],
-    "ImageURL" : ".images/Veg_Korma.png"
+    "ImageURL" : "./Veg_Korma.png"
 },
 {
     "Recipe Name" : "Sri Lankan Mixed Vegetable and Coconut Curry",
@@ -937,7 +937,7 @@
         "Chop the coriander finely (stalks as well as leaves) and add into the dish before serving. Taste and season with more salt and black pepper if needed.",
         "Enjoy!!"
     ],
-    "ImageURL" : ".images/Sri_Lankan_Mixed_Vegetable_and_Coconut_Curry.png"
+    "ImageURL" : "./Sri_Lankan_Mixed_Vegetable_and_Coconut_Curry.png"
 },
 {
     "Recipe Name" : "Vietnamese Almond, Sweet Potato, Aubergine and Lime Curry",
@@ -983,7 +983,7 @@
         "Add the spring onions and bean sprouts just before serving.",
         "Note: Do not add the bean sprouts too early as they go soft and limp, and lose their crunch very quickly in heat."
     ],
-    "ImageURL" : ".images/Vietnamese_Almond_Sweet_Potato_Aubergine_and_Lime_Curry.png"
+    "ImageURL" : "./Vietnamese_Almond_Sweet_Potato_Aubergine_and_Lime_Curry.png"
 },
 {
     "Recipe Name" : "Spaghetti Bolognese",
@@ -1023,7 +1023,7 @@
         "Add the tin of chopped tomatoes and bring to the boil. Once it boils, reduce to a simmer and add the drained and rinsed pasta. Stir it well, mixing everything thoroughly.",
         "Pluck the basil leaves from their stalks and set aside, chop the basil stalk finely and add into the pot. Garnish with the basil leaves and serve with nutritional yeast. Enjoy!"
     ],
-    "ImageURL" : ".images/Spaghetti_Bolognese.png"
+    "ImageURL" : "./Spaghetti_Bolognese.png"
 },
 {
     "Recipe Name" : "Ginger and Sesame Pad Thai",
@@ -1066,7 +1066,7 @@
         "Remove from the heat. Roughly chop the fresh coriander or basil and use them as a garnish for each serving together with sprinkles of sesame seeds.",
         "It's nice served with some pickled ginger and a wedge of lime on each serving."
     ],
-    "ImageURL" : ".images/Ginger_and_Sesame_Pad_Thai.png"
+    "ImageURL" : "./Ginger_and_Sesame_Pad_Thai.png"
 },
 {
     "Recipe Name" : "Easy Indian Biryani-Style Dinner",
@@ -1112,7 +1112,7 @@
         "For the mint raita, finely chop the mint. In bowl, mix all the ingredients for raita together.",
         "Once your dish is ready, roughly chop the fresh coriander and serve with a sprinkling of pomegranate seeds on top of each bowl. Serve the raita on the side."
     ],
-    "ImageURL" : ".images/Easy_Indian_Biryani_Style_Dinner.png"
+    "ImageURL" : "./Easy_Indian_Biryani_Style_Dinner.png"
 },
 {
     "Recipe Name" : "Japanese Food Bowl",
@@ -1151,7 +1151,7 @@
         "Dress your salad when you are ready to serve it, mix the carrot, drained seaweed, chives, and dressing, coating the carrot well.",
         "Once the brown rice is cooked, serve a portion of brown rice on each plate/bowl, along with some tempeh and greens, some salad and if you have some red cabbage sauerkraut this really sets the whole dish off!"
     ],
-    "ImageURL" : ".images/Japanese_Food_Bowl.png"
+    "ImageURL" : "./Japanese_Food_Bowl.png"
 },
 {
     "Recipe Name" : "Pan-fried Tofu with Steamed Greens and Quinoa",
@@ -1187,7 +1187,7 @@
         "By now, the quinoa should be ready. Ideally, serve this all together in a bowl, with the quinoa on the bottom and the tofu, spinach/kale and sesame mix on the top.",
         "Serving suggestion: sprinkle some nutritional yeast on top for a cheesy flavour."
     ],
-    "ImageURL" : ".images/Pan_fried_Tofu_with_Steamed_Greens_and_Quinoa.png"
+    "ImageURL" : "./Pan_fried_Tofu_with_Steamed_Greens_and_Quinoa.png"
 },
 {
     "Recipe Name" : "Thai Massaman Curry",
@@ -1228,7 +1228,7 @@
         "(Curry Step 3) Add the scallion greens and peppers into the pan together with 6-8 tablespoons of the paste/sauce and cook for 5 minutes. Add the rest of the paste and the pak choi, and stir well. When it boils, remove from the heat.",
         "(Curry Step 4) Finely slice the remaining red chilli (de-seed the chilli or leave the seeds in if you like it hot). Serve with a portion of your Low fod map grain of choice. Garnish each serving with some sesame seeds, sliced chillies and scallions/fresh coriander. Enjoy!"
     ],
-    "ImageURL" : ".images/Thai_Massaman_Curry.png"
+    "ImageURL" : "./Thai_Massaman_Curry.png"
 },
 {
     "Recipe Name" : "15-minute Thai Green Curry Noodle Bowl",
@@ -1271,7 +1271,7 @@
         "Put some noodles in the bottom of each bowl and top with the curry. Roughly chop the basil leaves to garnish each serving, along with some toasted sesame seeds and some chilli flakes.",
         "This also looks great with a few thin slices of red chilli/bean sprouts on top."
     ],
-    "ImageURL" : ".images/15_minute_Thai_Green_Curry_Noodle_Bowl.png"
+    "ImageURL" : "./15_minute_Thai_Green_Curry_Noodle_Bowl.png"
 },
 {
     "Recipe Name" : "15-minute Singapore Noodles",
@@ -1311,7 +1311,7 @@
         "Remove from heat.",
         "Finely chop the coriander and garnish with this, along with the pecan nuts."
     ],
-    "ImageURL" : ".images/15_Minute_Singapore_Noodles.png"
+    "ImageURL" : "./15_Minute_Singapore_Noodles.png"
 },
 {
     "Recipe Name" : "Easy Quinoa, Steamed Veg and Caramelised Pecan Dinner",
@@ -1352,7 +1352,7 @@
         "Mix the veg well through the dish, squeeze the lemon juice through it, and serve each portion with some of the caramelised pecans on top. Taste and season with more salt and black pepper if you think it needs it.",
         "Chilli flakes will also go great sprinkled on top if you like a bit of heat!"
     ],
-    "ImageURL" : ".images/Easy_Quinoa_Steamed_Veg_and_Caramelised_Pecan_Dinner.png"
+    "ImageURL" : "./Easy_Quinoa_Steamed_Veg_and_Caramelised_Pecan_Dinner.png"
 },
 {
     "Recipe Name" : "15-minute Indonesian Satay",
@@ -1389,7 +1389,7 @@
         "Slowly add in the remaining 25ml of water, along with the drained and rinsed chickpeas and turn the heat back up to high. Bring to the boil. Remove from the heat and season with salt and pepper to your taste.",
         "Garnish each serving with some roughly chopped fresh coriander or basil and bean sprouts on top. If you have any toasted pecan nut/sesame seeds these go great as garnish, too."
     ],
-    "ImageURL" : ".images/15_Minute_Indonesian_Satay.png"
+    "ImageURL" : "./15_Minute_Indonesian_Satay.png"
 },
 {
     "Recipe Name" : "15-minute Teriyaki Noodles",
@@ -1423,7 +1423,7 @@
         "Add the drained noodles to the pan, along with the remaining sauce and cook for further 2-3 minutes.",
         "Remove from the heat, plate up and finish by topping each serving with chilli flakes, sesame seeds, and chopped fresh coriander."
     ],
-    "ImageURL" : ".images/15_Minute_Teriyaki_Noodles.png"
+    "ImageURL" : "./15_Minute_Teriyaki_Noodles.png"
 },
 {
     "Recipe Name" : "Easy Japanese Veg & Noodle Ramen",
@@ -1461,7 +1461,7 @@
         "Finally, add the mushrooms (or aubergines) right in the centre and sprinkle with some sesame seeds and serve. Enjoy!",
         "Tip: To take your ramen to the next level, add 1 tsp of dried seaweed (eg."
     ],
-    "ImageURL" : ".images/Easy_Japanese_Veg_and_Noodle_Ramen.png"
+    "ImageURL" : "./Easy_Japanese_Veg_and_Noodle_Ramen.png"
 },
 {
     "Recipe Name" : "Spinach and Butterbean Curry",
@@ -1496,7 +1496,7 @@
         "Add 1 tablespoon of tamari and cook for a further minute. Add all the remaining ingredients to the pan and bring to the boil.",
         "Once boiled remove from the heat and taste and see if it needs any further seasoning."
     ],
-    "ImageURL" : ".images/Spinach_and_Butterbean_Curry.png"
+    "ImageURL" : "./Spinach_and_Butterbean_Curry.png"
 },
 {
     "Recipe Name" : "Chickpea, Aubergine & Oyster Mushroom Curry",
@@ -1531,7 +1531,7 @@
         "Then add all the remaining ingredients into the pan and cook for 5 minutes, when it boils, then reduce to a simmer.",
         "Remove from the heat, taste and adjust the seasoning to your pallet. Garnish each serving with some chopped coriander/basil/chives and if you like it spicy, additional chilli flakes go great as a topping, too. Enjoy."
     ],
-    "ImageURL" : ".images/Chickpea_Aubergine_and_Oyster_Mushroom_Curry.png"
+    "ImageURL" : "./Chickpea_Aubergine_and_Oyster_Mushroom_Curry.png"
 },
 {
     "Recipe Name" : "Courgette fritters",
@@ -1560,7 +1560,7 @@
         "Add all the remaining ingredients into the bowl and mix thoroughly mashing all the ingredients together. Use a potato masher/fork, if you don't like to use your hands, to mash. Using your hands, take the equivalent of 2 tablespoons of the batter and roll them into small fritters (disk shape).",
         "Put a non-stick pan on a high heat. Add 2 tablespoons of oil and leave to heat up. Once hot add the fritters and cook for a few minutes on each side till they go golden brown (approx 2 minutes on each side). Repeat until they are all cooked and lastly, enjoy!"
     ],
-    "ImageURL" : ".images/Courgette_Fritters.png"
+    "ImageURL" : "./Courgette_Fritters.png"
 },
 {
     "Recipe Name" : "Creamy broccoli pasta bake",
@@ -1601,7 +1601,7 @@
         "Mix the pasta, bechamel and cooked veg mixture, transfer to an oven proof dish, smoothing out the surface. Mix all the topping ingredients together and scatter over the pasta bake.",
         "Pop in the oven for 20 minutes or until the sauce is bubbling and the top turns golden."
     ],
-    "ImageURL" : ".images/Creamy_Broccoli_Pasta_Bake.png"
+    "ImageURL" : "./Creamy_Broccoli_Pasta_Bake.png"
 },
 {
     "Recipe Name" : "Tikka Masala",
@@ -1644,7 +1644,7 @@
         "To make the Gomasio crush the sesame seeds and salt in a pestle and mortar or just put into a ziploc bag and crush with a rolling pin.",
         "Serve with brown rice and the Gomasio, toasted almonds, coriander leaves, or coconut yogurt as garnish."
     ],
-    "ImageURL" : ".images/Tikka_Masala.png"
+    "ImageURL" : "./Tikka_Masala.png"
 },
 {
     "Recipe Name" : "Greek Summer Stew",
@@ -1682,7 +1682,7 @@
         "Mix well and serve when heated through with the parsley roughly chopped and mixed through.",
         "Serve with brown rice or quinoa (you could use the pre-cooked versions available vac-packed in most supermarkets)"
     ],
-    "ImageURL" : ".images/Greek_Summer_Stew.png"
+    "ImageURL" : "./Greek_Summer_Stew.png"
 },
 {
     "Recipe Name" : "Low Fodmap Burger",
@@ -1717,7 +1717,7 @@
         "Clean out the pan and heat 1 tbsp of oil on a high heat, add the burgers at and reduce heat to medium. Cook for approx 2-3 minutes on each side until golden brown and heated through.",
         "Serve with toppings like mustard, lettuce, tomatoes, our low fodmap hummus, on a gluten-free bun or lettuce cup."
     ],
-    "ImageURL" : ".images/Low_Fodmap_Burger.png"
+    "ImageURL" : "./Low_Fodmap_Burger.png"
 },
 {
     "Recipe Name" : "Pesto Pasta",
@@ -1757,7 +1757,7 @@
         "Cooked till heated through.",
         "Serve and enjoy!"
     ],
-    "ImageURL" : ".images/Pesto_Pasta.png"
+    "ImageURL" : "./Pesto_Pasta.png"
 },
 {
     "Recipe Name" : "15-minute Green Protein Stir Fry",
@@ -1795,7 +1795,7 @@
         "Heat ½ tbsp of oil in the same pan to a high heat, add the scallion greens, mushrooms and reduce to a medium heat, cooking for 3-4 minutes. Add the paste, mixing well and bring to a low simmer, add the lemon juice, 40ml of water, spinach and sugar snaps, cook for another few minutes and add the cooked tofu/tempeh. Taste and adjust the seasoning to your liking.",
         "Serve with cooked brown rice, rice noodles or cooked quinoa, garnish with cherry tomatoes, toasted almonds or sesame seeds."
     ],
-    "ImageURL" : ".images/15_Minute_Green_Protein_Stir_Fry.png"
+    "ImageURL" : "./15_Minute_Green_Protein_Stir_Fry.png"
 },
 {
     "Recipe Name" : "Low Fodmap Aubergine Parmigiana",
@@ -1842,7 +1842,7 @@
         "To assemble; Remove the basil leaves from the stalks. Spread ⅓ of the bechamel on the bottom of your casserole dish, next top with a full layer using all the baked sweet potatoes. Top this with all the tomato sauce, then a sprinkle a decent layer of fresh basil leaves, leaving some aside for garnish. Then layer on all the aubergines spreading out to cover the top well, then layer on the remaining bechamel and spread it out. Mix the breadcrumbs with oil, salt and pepper and sprinkle the breadcrumbs evenly over the dish.",
         "Bake in the oven for 20 minutes until bubbling and the breadcrumbs are golden brown, garnish with some fresh basil leaves, serve and enjoy!"
     ],
-    "ImageURL" : ".images/Low_Fodmap_Aubergine_Parmigiana.png"
+    "ImageURL" : "./Low_Fodmap_Aubergine_Parmigiana.png"
 },
 {
     "Recipe Name" : "Energy balls",
@@ -1870,7 +1870,7 @@
         "Blend all the ingredients until you reach a smooth texture, which could take up to 2 mins.",
         "Roll the mixture into small balls and finally coat in the dessicated coconut."
     ],
-    "ImageURL" : ".images/Energy_Balls.png"
+    "ImageURL" : "./Energy_Balls.png"
 },
 {
     "Recipe Name" : "Power Balls",
@@ -1897,7 +1897,7 @@
         "Divide the mixture into 2 parts and put each portion in a separate bowl. In the first of the bowls, add the ingredients for green mint ball and mix using a hand until it becomes 1 solid colour (less than 1 minute). Roll these into 7 balls or 8 smaller balls.",
         "Repeat the process for the mocha balls by adding the coffee and cocoa powder to the second bowl and mix by hand until it comes together into a uniform dark brown colour. Roll this into another 7 to 8 balls."
     ],
-    "ImageURL" : ".images/Power_Balls.png"
+    "ImageURL" : "./Power_Balls.png"
 },
 {
     "Recipe Name" : "Maple and Seed Flapjacks",
@@ -1929,7 +1929,7 @@
         "Leave to cool before cutting as this help it firm up.",
         "If some of them start to break up, you could eat them as a granola with some rice milk and berries!"
     ],
-    "ImageURL" : ".images/Maple_and_Seed_Flapjacks.png"
+    "ImageURL" : "./Maple_and_Seed_Flapjacks.png"
 },
 {
     "Recipe Name" : "Healthier Hot Chocolate",
@@ -1953,7 +1953,7 @@
         "Slowly add the remainder of the ingredients (cacao powder, vanilla essence, liquid sweetener, almond butter, salt and optional orange zest/mint oil) and stir well.",
         "Heat the chocolate liquid up, stirring continuously, using a whisk until the mixture is smooth and creamy and at the temperature you would like."
     ],
-    "ImageURL" : ".images/Healthier_Hot_Chocolate.png"
+    "ImageURL" : "./Healthier_Hot_Chocolate.png"
 },
 {
     "Recipe Name" : "Choc Jaffa Balls",
@@ -1984,7 +1984,7 @@
         "Alternatively, for the desiccated coconut coating, simply roll each ball in desiccated coconut.",
         "These should last up to a month in the fridge."
     ],
-    "ImageURL" : ".images/Choc_Jaffa_Balls.png"
+    "ImageURL" : "./Choc_Jaffa_Balls.png"
 },
 {
     "Recipe Name" : "5-minute Chia Jam",
@@ -2011,7 +2011,7 @@
         "Leave to cool and solidify.",
         "Lasts for a week in the fridge"
     ],
-    "ImageURL" : ".images/5_Minute_Chia_Jam.png"
+    "ImageURL" : "./5_Minute_Chia_Jam.png"
 },
 {
     "Recipe Name" : "Happy Gut Trail Mix",
@@ -2032,7 +2032,7 @@
     "Instructions" : [
         "Simply mix in a bowl or bag and enjoy!"
     ],
-    "ImageURL" : ".images/Happy_Gut_Trail_Mix.png"
+    "ImageURL" : "./Happy_Gut_Trail_Mix.png"
 },
 {
     "Recipe Name" : "Kale Crisps",
@@ -2058,7 +2058,7 @@
         "Half way through cooking time, take out the kale and give it a good mix around to ensure your chips are all crisping up evenly.",
         "Leave chips to cool for 3 minutes. These are best eaten when they are fresh out of the oven but they can be stored in an air-tight container for 2-3 days."
     ],
-    "ImageURL" : ".images/Kale_Crisps.png"
+    "ImageURL" : "./Kale_Crisps.png"
 },
 {
     "Recipe Name" : "Low fodmap green smoothie",
@@ -2080,7 +2080,7 @@
     "Instructions" : [
         "Peel the kiwi and the banana. Add all ingredients to the blender and blend until smooth. Garnish with cacao nibs and enjoy!"
     ],
-    "ImageURL" : ".images/Low_Fodmap_Green_Smoothie.png"
+    "ImageURL" : "./Low_Fodmap_Green_Smoothie.png"
 },
 {
     "Recipe Name" : "Low Fodmap Hummus",
@@ -2106,7 +2106,7 @@
         "If the hummus is a little thick just add an extra tablespoon of water and blend and repeat until you reach your desired texture",
         "If you do want it to be a little richer just add 1 tbsp of olive oil and blend again for a richer more indulgent hummus."
     ],
-    "ImageURL" : ".images/Low_Fodmap_Hummus.png"
+    "ImageURL" : "./Low_Fodmap_Hummus.png"
 },
 {
     "Recipe Name" : "Banana Bread",
@@ -2137,7 +2137,7 @@
         "Bake in the preheated oven for 50 minutes, until a knife inserted in the centre comes out dry. Allow to cool on a wire rack before slicing.",
         "We like to eat it with some chia jam spread on a slice to add a nice bit of moisture to the banana cake!"
     ],
-    "ImageURL" : ".images/Banana_Bread.png"
+    "ImageURL" : "./Banana_Bread.png"
 },
 {
     "Recipe Name" : "Easy Rhubarb & Berry Crumble",
@@ -2170,6 +2170,6 @@
         "Spread the crumble top evenly over the fruit and put in the preheated oven for about 25 mins at 170℃ or until the top of the crumble starts to go golden.",
         "Enjoy served warm with some coconut yoghurt!"
     ],
-    "ImageURL" : ".images/Easy_Rhubarb_and_Berry_Crumble.png"
+    "ImageURL" : "./Easy_Rhubarb_and_Berry_Crumble.png"
 }
 ]
