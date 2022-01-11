@@ -61,7 +61,7 @@ const TheLastCookBook = () => {
                         
                         
                         <MyListOfIngredients>
-                            <h2>Here's my List of Ingredients:</h2>
+                            <h2>List of Ingredients:</h2>
                             {myIngredients.map(ingredient => {
                                 return <Ingredient>{ingredient}</Ingredient>
                             })}
@@ -184,6 +184,7 @@ const MyListOfIngredients = styled.div`
     color: black;
     margin-left: auto;
     margin-right: auto;
+    margin: 0px auto 20px auto;
     padding: 10px 10px 30px 10px;
     border-radius: 15px;
     border: solid 2px  var(--tlcb-5);
@@ -218,6 +219,11 @@ const RecipePreviewBox = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+    :hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 6px 1px var(--cmarc-blue-2);
+    }
+    
 `
 
 const RecipePreviewImage = styled.div`
