@@ -38,7 +38,11 @@ const TheLastCookBook = () => {
         <CookBook>
             <CookBookNavBar>
                 <h1>THE LAST COOKBOOK</h1>
-                <HamburgerBox><HamburgerLine/><HamburgerLine/><HamburgerLine/></HamburgerBox>
+                <HamburgerBox>
+                    <HamburgerLine/>
+                    <HamburgerLine/>
+                    <HamburgerLine/>
+                </HamburgerBox>
             </CookBookNavBar>
 
             <CookBookContainer>
@@ -141,6 +145,8 @@ const HamburgerBox = styled.div`
     justify-content: center;
     :hover  {
         transform: scale(1.1);
+        transform: rotate(90deg);
+        transition: 0.2s;
     }
 `
 const HamburgerLine = styled.div`
@@ -188,7 +194,7 @@ const MyListOfIngredients = styled.div`
     padding: 10px 10px 30px 10px;
     border-radius: 15px;
     border: solid 2px  var(--tlcb-5);
-    background-color: var(--tlcb-1);
+    background-color: var(--tlcb-3);
     h2 {
         border-bottom: solid 1px var(--tlcb-2);
         margin-bottom: 10px;
