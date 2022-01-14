@@ -176,9 +176,18 @@ const BookModeSelector = styled.div`
     border: solid 3.5px var(--tlcb-5);
     font-size: 15px;
     text-align: left;
-    padding-left: 10px;
+    padding: 1px 4px;
     display: flex;
     align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    input {
+        width: 100%;
+        background-color: rgba(170, 170, 170, 0.5);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
 `
 
 const MyListOfIngredients = styled.div`
@@ -198,6 +207,9 @@ const MyListOfIngredients = styled.div`
     h2 {
         border-bottom: solid 1px var(--tlcb-2);
         margin-bottom: 10px;
+    }
+    input{
+        opacity: 100;
     }
 `
 
