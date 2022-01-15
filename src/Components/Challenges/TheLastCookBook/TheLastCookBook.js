@@ -8,7 +8,7 @@ import recipeData from "./recipes.json"
 const TheLastCookBook = () => {
     const [cookBookState, setCookBookState] = useState("")
 
-    const [myIngredients, setMyIngredients] = useState(["Flour", "Beans"])
+    const [myIngredients, setMyIngredients] = useState([])
     const [currentIngredient, setCurrentIngredient] = useState("")
 
     const [savedRecipes, setSavedRecipes] = useState(recipeData)
@@ -65,7 +65,7 @@ const TheLastCookBook = () => {
                         
                         
                         <MyListOfIngredients>
-                            <h2>List of Ingredients:</h2>
+                            <h2>My Ingredients:</h2>
                             {myIngredients.map(ingredient => {
                                 return <Ingredient>{ingredient}</Ingredient>
                             })}
@@ -82,6 +82,7 @@ const TheLastCookBook = () => {
 
                 <RecipeSection>
                         {savedRecipes.map((recipe) => {
+                            console.log(recipe.Ingredients)
                             return (
                                 <>
                                     <RecipePreviewBox>
@@ -144,9 +145,8 @@ const HamburgerBox = styled.div`
     flex-direction: column;
     justify-content: center;
     :hover  {
-        transform: scale(1.1);
         transform: rotate(90deg);
-        transition: 0.2s;
+        transition: 0.3s;
     }
 `
 const HamburgerLine = styled.div`
@@ -207,9 +207,6 @@ const MyListOfIngredients = styled.div`
     h2 {
         border-bottom: solid 1px var(--tlcb-2);
         margin-bottom: 10px;
-    }
-    input{
-        opacity: 100;
     }
 `
 
