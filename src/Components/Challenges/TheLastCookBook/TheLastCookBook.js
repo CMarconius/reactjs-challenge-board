@@ -82,21 +82,32 @@ const TheLastCookBook = () => {
 
                 <RecipeSection>
                         {savedRecipes.map((recipe) => {
-                            console.log(recipe.Ingredients)
-                            return (
-                                <>
-                                    <RecipePreviewBox>
-                                        <RecipePreviewImage>
-                                            <img src={images(recipe["ImageURL"]).default}/>
-                                        </RecipePreviewImage>
-                                        <RecipePreviewBar>
-                                            <h1>{recipe["Recipe Name"]}</h1>
-                                            
-                                            <img src={chevron}/>
-                                        </RecipePreviewBar>
-                                    </RecipePreviewBox>
-                                </>
-                            )
+                            let displayed = false;
+                            let currentIngredients = recipe.Ingredients;
+                            
+                            currentIngredients.forEach((x)=>{
+                                myIngredients.map((y)=>{
+                                    if (y.includes(x)){
+                                        displayed=true;
+                                    }
+                                })
+                            })
+                            if (displayed === true) {
+                                return (
+                                    <>
+                                        <RecipePreviewBox>
+                                            <RecipePreviewImage>
+                                                <img src={images(recipe["ImageURL"]).default}/>
+                                            </RecipePreviewImage>
+                                            <RecipePreviewBar>
+                                                <h1>{recipe["Recipe Name"]}</h1>
+                                                
+                                                <img src={chevron}/>
+                                            </RecipePreviewBar>
+                                        </RecipePreviewBox>
+                                    </>
+                                )
+                            }
                         })}
                 </RecipeSection>
 
