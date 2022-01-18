@@ -8,7 +8,7 @@ import recipeData from "./recipes.json"
 const TheLastCookBook = () => {
     const [cookBookState, setCookBookState] = useState("")
 
-    const [myIngredients, setMyIngredients] = useState([])
+    const [myIngredients, setMyIngredients] = useState(["Tomatoes"])
     const [currentIngredient, setCurrentIngredient] = useState("")
 
     const [savedRecipes, setSavedRecipes] = useState(recipeData)
@@ -84,15 +84,14 @@ const TheLastCookBook = () => {
                         {savedRecipes.map((recipe) => {
                             let displayed = false;
                             let currentIngredients = recipe.Ingredients;
-                            
                             currentIngredients.forEach((x)=>{
-                                myIngredients.map((y)=>{
-                                    if (y.includes(x)){
+                                for(let i=0;i<myIngredients.length;i++) {
+                                    if (x.includes(myIngredients[i])){
                                         displayed=true;
                                     }
-                                })
+                                }
                             })
-                            if (displayed === true) {
+                            if (myIngredients.length == 0 || displayed === true) {
                                 return (
                                     <>
                                         <RecipePreviewBox>
