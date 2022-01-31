@@ -8,7 +8,7 @@ import recipeData from "./recipes.json"
 const TheLastCookBook = () => {
     const [cookBookState, setCookBookState] = useState("")
 
-    const [myIngredients, setMyIngredients] = useState(["Tomatoes"])
+    const [myIngredients, setMyIngredients] = useState([])
     const [currentIngredient, setCurrentIngredient] = useState("")
 
     const [savedRecipes, setSavedRecipes] = useState(recipeData)
@@ -86,7 +86,7 @@ const TheLastCookBook = () => {
                             let currentIngredients = recipe.Ingredients;
                             currentIngredients.forEach((x)=>{
                                 for(let i=0;i<myIngredients.length;i++) {
-                                    if (x.includes(myIngredients[i])){
+                                    if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
                                         displayed=true;
                                     }
                                 }
