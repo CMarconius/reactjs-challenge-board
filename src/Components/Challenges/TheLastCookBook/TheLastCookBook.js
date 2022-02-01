@@ -82,15 +82,21 @@ const TheLastCookBook = () => {
 
                 <RecipeSection>
                         {savedRecipes.map((recipe) => {
-                            let displayed = false;
+                            let displayed = true;
                             let currentIngredients = recipe.Ingredients;
-                            currentIngredients.forEach((x)=>{
-                                for(let i=0;i<myIngredients.length;i++) {
+                            
+                            for(let i=0;i<myIngredients.length;i++) {
+                                let found = false;
+                                currentIngredients.forEach((x)=>{
                                     if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
-                                        displayed=true;
+                                        found=true;
                                     }
+                                })
+                                if(!found) {
+                                    displayed = false;
                                 }
-                            })
+                            }
+                            
                             if (myIngredients.length == 0 || displayed === true) {
                                 return (
                                     <>
