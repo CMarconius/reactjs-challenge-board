@@ -29,6 +29,15 @@ const TheLastCookBook = () => {
         }
     }
 
+    const RemoveIngredient = (ingredient) => {
+        let tempArray = myIngredients
+        var index = tempArray.indexOf(ingredient)
+        if (index !== -1) {
+            tempArray.splice(index, 1);
+            setCurrentIngredient(tempArray)
+        }
+    }
+
     useEffect(() => {
     }, [myIngredients]);
 
@@ -67,7 +76,7 @@ const TheLastCookBook = () => {
                         <MyListOfIngredients>
                             <h2>My Ingredients:</h2>
                             {myIngredients.map(ingredient => {
-                                return <Ingredient>{ingredient}</Ingredient>
+                                return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
                             })}
                         </MyListOfIngredients>
                     </>
@@ -221,16 +230,20 @@ const MyListOfIngredients = styled.div`
     border: solid 2px  var(--tlcb-5);
     background-color: var(--tlcb-3);
     h2 {
-        border-bottom: solid 1px var(--tlcb-2);
+        border-bottom: solid 2px var(--tlcb-2);
         margin-bottom: 10px;
     }
 `
 
 const Ingredient = styled.li`
     font-weight: 700;
-    border-bottom: dotted 3px var(--tlcb-2);
+    border-bottom: solid 1px var(--tlcb-2);
     width: 60%;
     margin-bottom: 5px;
+    :hover {
+        text-decoration: line-through;
+        color: #9e2a2bff;
+    }
 `
 
 const RecipeSection = styled.div`
