@@ -30,11 +30,11 @@ const TheLastCookBook = () => {
     }
 
     const RemoveIngredient = (ingredient) => {
-        let tempArray = myIngredients
+        let tempArray = [...myIngredients]
         var index = tempArray.indexOf(ingredient)
         if (index !== -1) {
             tempArray.splice(index, 1);
-            setCurrentIngredient(tempArray)
+            setMyIngredients([...tempArray])
         }
     }
 
