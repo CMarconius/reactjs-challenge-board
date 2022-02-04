@@ -69,12 +69,12 @@ const TheLastCookBook = () => {
                 {(cookBookState==="addIngredient") ? ( 
                     <>
                         <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
-                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>Add New Ingredient</Button>
+                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
                         
                         
                         
                         <MyListOfIngredients>
-                            <h2>My Ingredients:</h2>
+                            <h2>MY INGREDIENTS:</h2>
                             {myIngredients.map(ingredient => {
                                 return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
                             })}
@@ -171,7 +171,8 @@ const HamburgerBox = styled.div`
     justify-content: center;
     :hover  {
         transform: rotate(90deg);
-        transition: 0.3s;
+        transition: 0.4s;
+        cursor: pointer;
     }
 `
 const HamburgerLine = styled.div`
@@ -216,7 +217,7 @@ const BookModeSelector = styled.div`
 `
 
 const MyListOfIngredients = styled.div`
-    max-width: 70%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,12 +227,13 @@ const MyListOfIngredients = styled.div`
     margin-right: auto;
     margin: 0px auto 20px auto;
     padding: 10px 10px 30px 10px;
-    border-radius: 15px;
+    border-radius: 0px;
     border: solid 2px  var(--tlcb-5);
     background-color: var(--tlcb-3);
     h2 {
         border-bottom: solid 2px var(--tlcb-2);
         margin-bottom: 10px;
+        font-size: 15px;
     }
 `
 
