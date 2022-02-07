@@ -74,10 +74,18 @@ const TheLastCookBook = () => {
                         
                         
                         <MyListOfIngredients>
-                            <h2>MY INGREDIENTS:</h2>
-                            {myIngredients.map(ingredient => {
-                                return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
-                            })}
+                            <>
+                                <h2>MY INGREDIENTS:</h2>
+                                {myIngredients.map(ingredient => {
+                                    return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
+                                })}
+
+                                
+                                <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>
+
+                                    
+                                
+                            </>
                         </MyListOfIngredients>
                     </>
                 ) : (
@@ -226,7 +234,7 @@ const MyListOfIngredients = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin: 0px auto 20px auto;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 8px 10px;
     border-radius: 0px;
     border: solid 2px  var(--tlcb-5);
     background-color: var(--tlcb-3);
@@ -234,6 +242,10 @@ const MyListOfIngredients = styled.div`
         border-bottom: solid 2px var(--tlcb-2);
         margin-bottom: 10px;
         font-size: 15px;
+    }
+    h5 {
+        line-height: 15px;
+        font-size: 9px;
     }
 `
 
