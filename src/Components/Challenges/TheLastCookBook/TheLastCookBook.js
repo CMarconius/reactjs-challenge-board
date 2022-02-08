@@ -79,9 +79,9 @@ const TheLastCookBook = () => {
                                 {myIngredients.map(ingredient => {
                                     return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
                                 })}
-
                                 
-                                <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>
+                                {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
+                                
 
                                     
                                 
@@ -246,6 +246,8 @@ const MyListOfIngredients = styled.div`
     h5 {
         line-height: 15px;
         font-size: 9px;
+        color: var(--mediumblu);
+        padding-top: 10px;
     }
 `
 
