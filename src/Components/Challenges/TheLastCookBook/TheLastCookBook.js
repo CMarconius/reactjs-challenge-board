@@ -68,18 +68,19 @@ const TheLastCookBook = () => {
 
                 {(cookBookState==="addIngredient") ? ( 
                     <>
-                        <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
-                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
                         
                         
                         
                         <MyListOfIngredients>
                             <>
                                 <h2>MY INGREDIENTS:</h2>
+                                
                                 {myIngredients.map(ingredient => {
                                     return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
                                 })}
                                 
+                                <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
+                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
                                 {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
                                 
 
@@ -90,8 +91,8 @@ const TheLastCookBook = () => {
                     </>
                 ) : (
                     <>
+                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient <i class="fa fa-filter"></i></Button>
                         <h2>Select Recipe</h2>
-                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient</Button>
                     </>
                 )
                 }
@@ -196,6 +197,13 @@ const CookBookContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+    i {
+        font-size: 20px;
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 `
 
 const BookModeSelector = styled.div`
@@ -241,13 +249,19 @@ const MyListOfIngredients = styled.div`
     h2 {
         border-bottom: solid 2px var(--tlcb-2);
         margin-bottom: 10px;
-        font-size: 15px;
+        font-size: 16px;
     }
     h5 {
         line-height: 15px;
         font-size: 9px;
         color: var(--mediumblu);
-        padding-top: 10px;
+    }
+    input {
+        margin-top: 20px;
+    }
+    Button {
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 `
 
@@ -256,9 +270,11 @@ const Ingredient = styled.li`
     border-bottom: solid 1px var(--tlcb-2);
     width: 60%;
     margin-bottom: 5px;
+    color: var(--cmarc-blue-3);
     :hover {
         text-decoration: line-through;
         color: #9e2a2bff;
+        cursor: pointer;
     }
 `
 
