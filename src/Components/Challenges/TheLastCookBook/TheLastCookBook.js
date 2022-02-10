@@ -70,24 +70,28 @@ const TheLastCookBook = () => {
                     <>
                         
                         
-                        
-                        <MyListOfIngredients>
-                            <>
-                                <h2>MY INGREDIENTS:</h2>
-                                
-                                {myIngredients.map(ingredient => {
-                                    return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
-                                })}
-                                
-                                <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
-                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
-                                {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
-                                
-
+                        <FilterSection>
+                            <MyListOfIngredients>
+                                <>
+                                    <h2>MY INGREDIENTS:</h2>
                                     
-                                
-                            </>
-                        </MyListOfIngredients>
+                                    {myIngredients.map(ingredient => {
+                                        return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
+                                    })}
+                                    
+                                    <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
+                                    <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
+                                    {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
+                                    
+
+                                        
+                                    
+                                </>
+                            </MyListOfIngredients>
+                            
+                            <h2>FILTERED RECIPES</h2>
+
+                        </FilterSection>
                     </>
                 ) : (
                     <>
@@ -229,6 +233,12 @@ const BookModeSelector = styled.div`
         color: white;
         font-weight: bold;
         font-size: 15px;
+    }
+`
+
+const FilterSection = styled.div`
+    h2 {
+        font-size: 20px;
     }
 `
 
