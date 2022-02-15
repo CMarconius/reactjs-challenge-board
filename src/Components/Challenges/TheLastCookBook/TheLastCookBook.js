@@ -73,6 +73,7 @@ const TheLastCookBook = () => {
                         <FilterSection>
                             <MyListOfIngredients>
                                 <>
+                                    <CloseWindow onClick={() => setCookBookState("")}><h2>Close</h2></CloseWindow>
                                     <h2>MY INGREDIENTS:</h2>
                                     
                                     {myIngredients.map(ingredient => {
@@ -348,4 +349,28 @@ const RecipePreviewBar = styled.div`
         width: 20%;
     }
     border-top: solid 4px var(--tlcb-5);
+`
+
+const CloseWindow = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+    h2 {
+        font-size: 10px;
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px 5px;
+        border: solid 1px white;
+        border-radius: 10px;
+        font-weight: normal;
+        background-color: var(--cmarc-blue-1);
+        color: white;
+        :hover {
+            cursor: pointer;
+            background-color: white;
+            color: var(--cmarc-blue-3);
+        }
+    }
 `
