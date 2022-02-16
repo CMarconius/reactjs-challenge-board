@@ -73,7 +73,7 @@ const TheLastCookBook = () => {
                         <FilterSection>
                             <MyListOfIngredients>
                                 <>
-                                    <CloseWindow onClick={() => setCookBookState("")}><h2>Close</h2></CloseWindow>
+                                    <CloseWindow><h2 onClick={() => setCookBookState("")}>Close</h2></CloseWindow>
                                     <h2>MY INGREDIENTS:</h2>
                                     
                                     {myIngredients.map(ingredient => {
@@ -85,8 +85,6 @@ const TheLastCookBook = () => {
                                     {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
                                     
 
-                                        
-                                    
                                 </>
                             </MyListOfIngredients>
                             
@@ -96,7 +94,7 @@ const TheLastCookBook = () => {
                     </>
                 ) : (
                     <>
-                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredient <i class="fa fa-filter"></i></Button>
+                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
                         <h2>Select Recipe</h2>
                     </>
                 )
@@ -120,7 +118,7 @@ const TheLastCookBook = () => {
                                 }
                             }
                             
-                            if (myIngredients.length == 0 || displayed === true) {
+                            if (myIngredients.length == 0 || displayed === true || cookBookState==="") {
                                 return (
                                     <>
                                         <RecipePreviewBox>
