@@ -7,6 +7,7 @@ import recipeData from "./recipes.json"
 
 const TheLastCookBook = () => {
     const [cookBookState, setCookBookState] = useState("")
+    const [expandedRecipe, setExpandedRecipe] = useState("")
 
     const [myIngredients, setMyIngredients] = useState([])
     const [currentIngredient, setCurrentIngredient] = useState("")
@@ -55,7 +56,9 @@ const TheLastCookBook = () => {
             </CookBookNavBar>
 
             <CookBookContainer>
-                <BookModeSelector>
+
+
+                {/* <BookModeSelector>
 
                     <input list="items"/>
 
@@ -64,7 +67,11 @@ const TheLastCookBook = () => {
                         <option value="Vegan Recipes"/>
                         <option value="Add New Recipe"/>
                     </datalist>
-                </BookModeSelector>
+                </BookModeSelector> */}
+                
+                {(viewingRecipe===true) ? (
+                    
+                ) : (
 
                 {(cookBookState==="addIngredient") ? ( 
                     <>
@@ -98,8 +105,7 @@ const TheLastCookBook = () => {
                         <h2>Select Recipe</h2>
                     </>
                 )
-                }
-
+                })}
 
                 <RecipeSection>
                         {savedRecipes.map((recipe) => {
