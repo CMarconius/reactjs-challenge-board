@@ -39,6 +39,10 @@ const TheLastCookBook = () => {
         }
     }
 
+    const ExpandRecipe = (recipe) => {
+        setExpandedRecipe(recipe)
+    }
+
     useEffect(() => {
     }, [myIngredients]);
 
@@ -57,94 +61,99 @@ const TheLastCookBook = () => {
 
             <CookBookContainer>
 
+                {(expandedRecipe) ? (
+                    <ExpandedRecipeContainer>
+                        <ExpandedRecipe recipe={expandedRecipe}>
+                            {expandedRecipe["Recipe Name"]}
+                        </ExpandedRecipe>
+                    </ExpandedRecipeContainer>
+                ) : (
+                    <>
+                    <BookModeSelector>
 
-                {/* <BookModeSelector>
+                        <input list="items"/>
 
-                    <input list="items"/>
-
-                    <datalist id="items">
-                        <option value="Saved Recipes"/>
-                        <option value="Vegan Recipes"/>
-                        <option value="Add New Recipe"/>
-                    </datalist>
-                </BookModeSelector> */}
+                        <datalist id="items">
+                            <option value="Saved Recipes"/>
+                            <option value="Vegan Recipes"/>
+                            <option value="Add New Recipe"/>
+                        </datalist>
+                    </BookModeSelector>
                 
-                {(viewingRecipe===true) ? (
-                    
-                ) : (
 
-                {(cookBookState==="addIngredient") ? ( 
-                    <>
-                        
-                        
-                        <FilterSection>
-                            <MyListOfIngredients>
-                                <>
-                                    <CloseWindow><h2 onClick={() => setCookBookState("")}>Close</h2></CloseWindow>
-                                    <h2>MY INGREDIENTS:</h2>
-                                    
-                                    {myIngredients.map(ingredient => {
-                                        return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
-                                    })}
-                                    
-                                    <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
-                                    <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
-                                    {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
-                                    
-
-                                </>
-                            </MyListOfIngredients>
+                    {(cookBookState==="addIngredient") ? ( 
+                        <>
                             
-                            <h2>FILTERED RECIPES</h2>
-
-                        </FilterSection>
-                    </>
-                ) : (
-                    <>
-                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
-                        <h2>Select Recipe</h2>
-                    </>
-                )
-                })}
-
-                <RecipeSection>
-                        {savedRecipes.map((recipe) => {
-                            let displayed = true;
-                            let currentIngredients = recipe.Ingredients;
-                            
-                            for(let i=0;i<myIngredients.length;i++) {
-                                let found = false;
-                                currentIngredients.forEach((x)=>{
-                                    if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
-                                        found=true;
-                                    }
-                                })
-                                if(!found) {
-                                    displayed = false;
-                                }
-                            }
-                            
-                            if (myIngredients.length == 0 || displayed === true || cookBookState==="") {
-                                return (
+                            <FilterSection>
+                                <MyListOfIngredients>
                                     <>
-                                        <RecipePreviewBox>
-                                            <RecipePreviewImage>
-                                                <img src={images(recipe["ImageURL"]).default}/>
-                                            </RecipePreviewImage>
-                                            <RecipePreviewBar>
-                                                <h1>{recipe["Recipe Name"]}</h1>
-                                                
-                                                <img src={chevron}/>
-                                            </RecipePreviewBar>
-                                        </RecipePreviewBox>
+                                        <CloseWindow><h2 onClick={() => setCookBookState("")}>Close</h2></CloseWindow>
+                                        <h2>MY INGREDIENTS:</h2>
+                                        
+                                        {myIngredients.map(ingredient => {
+                                            return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
+                                        })}
+                                        
+                                        <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
+                                        <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
+                                        {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
+                                        
+
                                     </>
-                                )
-                            }
-                        })}
-                </RecipeSection>
+                                </MyListOfIngredients>
+                                
+                                <h2>FILTERED RECIPES</h2>
 
+                            </FilterSection>
+                        </>
+                    ) : (
+                        <>
+                            <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
+                            <h2>Select Recipe</h2>
+                        </>
+                    )
+                    }
+
+                    <RecipeSection>
+                            {savedRecipes.map((recipe) => {
+                                let displayed = true;
+                                let currentIngredients = recipe.Ingredients;
+                                
+                                for(let i=0;i<myIngredients.length;i++) {
+                                    let found = false;
+                                    currentIngredients.forEach((x)=>{
+                                        if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
+                                            found=true;
+                                        }
+                                    })
+                                    if(!found) {
+                                        displayed = false;
+                                    }
+                                }
+                                
+                                if (myIngredients.length === 0 || displayed === true || cookBookState==="") {
+                                    return (
+                                        <>
+                                            <RecipePreviewBox onClick={()=>ExpandRecipe(recipe)}>
+                                                <RecipePreviewImage>
+                                                    <img src={images(recipe["ImageURL"]).default}/>
+                                                </RecipePreviewImage>
+                                                <RecipePreviewBar>
+                                                    <h1>{recipe["Recipe Name"]}</h1>
+                                                    
+                                                    <img src={chevron}/>
+                                                </RecipePreviewBar>
+                                            </RecipePreviewBox>
+                                        </>
+                                    )
+                                }
+                            })}
+                    </RecipeSection>
+                    </>
+
+                )}
             </CookBookContainer>
-
+            
         </CookBook>
         </>
     )
@@ -377,4 +386,12 @@ const CloseWindow = styled.div`
             color: var(--cmarc-blue-3);
         }
     }
+`
+
+const ExpandedRecipe = styled.div`
+    
+`
+
+const ExpandedRecipeContainer = styled.div`
+    
 `
