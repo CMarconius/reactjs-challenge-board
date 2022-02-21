@@ -62,11 +62,33 @@ const TheLastCookBook = () => {
             <CookBookContainer>
 
                 {(expandedRecipe) ? (
+
                     <ExpandedRecipeContainer>
+                        <Button buttonSize={"btn--medium"}  buttonActive={true} onClick={()=>setExpandedRecipe("")}>Back</Button>
+
                         <ExpandedRecipe recipe={expandedRecipe}>
-                            {expandedRecipe["Recipe Name"]}
+                            <h2>{expandedRecipe["Recipe Name"]}</h2>
+                            <img className="RecipeSeparator" src={images(expandedRecipe["ImageURL"]).default}/>
+                            <h3>Description:</h3>
+                            <p className="RecipeSeparator">
+                                {expandedRecipe["Description"]}
+                            </p>
+                            <h3>Ingredients:</h3>
+                            <p className="RecipeSeparator">
+                                {expandedRecipe["Ingredients"].map((ing)=>{
+                                    return(<li>{ing}</li>)
+                                })}
+                            </p>
+                            <h3>Instructions:</h3>
+                            <p className="RecipeSeparator">
+                                {expandedRecipe["Instructions"].map((step)=>{
+                                    return(<li>{step}</li>)
+                                })}
+                            </p>
                         </ExpandedRecipe>
+
                     </ExpandedRecipeContainer>
+
                 ) : (
                     <>
                     <BookModeSelector>
@@ -93,7 +115,7 @@ const TheLastCookBook = () => {
                                         {myIngredients.map(ingredient => {
                                             return <Ingredient onClick={()=>RemoveIngredient(ingredient)}>{ingredient}</Ingredient>
                                         })}
-                                        
+
                                         <input onChange={handleIngredientChange} type="text" placeholder="Add an ingredient..." value={currentIngredient}/>
                                         <Button buttonSize={"btn--small"}  buttonActive={true} onClick={AddIngredient}>ADD NEW INGREDIENT</Button>
                                         {myIngredients.length ? <h5>CLICK INGREDIENT TO <br></br>REMOVE FROM FILTER</h5>:null}
@@ -389,9 +411,20 @@ const CloseWindow = styled.div`
 `
 
 const ExpandedRecipe = styled.div`
-    
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
 `
 
 const ExpandedRecipeContainer = styled.div`
-    
+    img {
+        max-width: 90%;
+    }
+    .RecipeSeparator {
+        margin-bottom: 20px;
+    }
 `
