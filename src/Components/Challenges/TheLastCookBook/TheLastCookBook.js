@@ -64,27 +64,30 @@ const TheLastCookBook = () => {
                 {(expandedRecipe) ? (
 
                     <ExpandedRecipeContainer>
-                        <Button buttonSize={"btn--medium"}  buttonActive={true} onClick={()=>setExpandedRecipe("")}>Back</Button>
+                        
+                        <ExpandedRecipe recipe={expandedRecipe}><Button buttonSize={"btn--small"}  buttonActive={true} onClick={()=>setExpandedRecipe("")}>Back</Button>
 
-                        <ExpandedRecipe recipe={expandedRecipe}>
-                            <h2>{expandedRecipe["Recipe Name"]}</h2>
                             <img className="RecipeSeparator" src={images(expandedRecipe["ImageURL"]).default}/>
-                            <h3>Description:</h3>
-                            <p className="RecipeSeparator">
-                                {expandedRecipe["Description"]}
-                            </p>
-                            <h3>Ingredients:</h3>
-                            <p className="RecipeSeparator">
-                                {expandedRecipe["Ingredients"].map((ing)=>{
-                                    return(<li>{ing}</li>)
-                                })}
-                            </p>
-                            <h3>Instructions:</h3>
-                            <p className="RecipeSeparator">
-                                {expandedRecipe["Instructions"].map((step)=>{
-                                    return(<li>{step}</li>)
-                                })}
-                            </p>
+
+                            <h2>{expandedRecipe["Recipe Name"]}</h2>
+                            <ExpandedRecipeInner>
+                                <h3>Description:</h3>
+                                <p className="RecipeSeparator">
+                                    {expandedRecipe["Description"]}
+                                </p>
+                                <h3>Ingredients:</h3>
+                                <p className="RecipeSeparator">
+                                    {expandedRecipe["Ingredients"].map((ing)=>{
+                                        return(<li>{ing}</li>)
+                                    })}
+                                </p>
+                                <h3>Instructions:</h3>
+                                <p className="RecipeSeparator">
+                                    {expandedRecipe["Instructions"].map((step)=>{
+                                        return(<li>{step}</li>)
+                                    })}
+                                </p>
+                            </ExpandedRecipeInner>
                         </ExpandedRecipe>
 
                     </ExpandedRecipeContainer>
@@ -410,21 +413,52 @@ const CloseWindow = styled.div`
     }
 `
 
+const ExpandedRecipeContainer = styled.div`
+    .RecipeSeparator {
+        margin-bottom: 20px;
+    }
+    text-align: left;
+    background-color: white;
+    Button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+`
+
 const ExpandedRecipe = styled.div`
-    max-width: 90%;
+    background-color: var(--cmarc-blue-1);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 90px;
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h2 {
+        padding: 15px;
+    }
+    h2,h3 {
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+        background-color: white;
+        color: var(--cmarc-blue-3);
+    }
+    h3 {
+        width: 50%;
+    }
 `
 
-const ExpandedRecipeContainer = styled.div`
-    img {
-        max-width: 90%;
-    }
-    .RecipeSeparator {
-        margin-bottom: 20px;
+const ExpandedRecipeInner = styled.div`
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        
+    margin-left: auto;
+    margin-right: auto;
     }
 `
