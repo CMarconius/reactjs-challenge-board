@@ -62,18 +62,24 @@ const TheLastCookBook = () => {
             <CookBookContainer>
 
                 {(expandedRecipe) ? (
-
                     <ExpandedRecipeContainer>
-                        
-                        <ExpandedRecipe recipe={expandedRecipe}><Button buttonSize={"btn--small"}  buttonActive={true} onClick={()=>setExpandedRecipe("")}>Back</Button>
 
-                            <img className="RecipeSeparator" src={images(expandedRecipe["ImageURL"]).default}/>
+                        <ExpandedRecipe recipe={expandedRecipe}>
+                            
+                            <ExpandedRecipeButton>
+                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={()=>setExpandedRecipe("")}>↩ Back</Button>
+                            </ExpandedRecipeButton>
+                            
 
-                            <h2>{expandedRecipe["Recipe Name"]}</h2>
                             <ExpandedRecipeInner>
+                                <img className="RecipeSeparator" src={images(expandedRecipe["ImageURL"]).default}/>
+                                <h2>{expandedRecipe["Recipe Name"]}</h2>
                                 <h3>Description:</h3>
                                 <p className="RecipeSeparator">
                                     {expandedRecipe["Description"]}
+                                </p>
+                                <p className="RecipeSeparator">
+                                    {expandedRecipe["Serves"]}
                                 </p>
                                 <h3>Ingredients:</h3>
                                 <p className="RecipeSeparator">
@@ -348,7 +354,6 @@ const RecipePreviewBox = styled.div`
         transform: scale(1.05);
         box-shadow: 0 0 6px 1px var(--cmarc-blue-2);
     }
-    
 `
 
 const RecipePreviewImage = styled.div`
@@ -414,6 +419,9 @@ const CloseWindow = styled.div`
 `
 
 const ExpandedRecipeContainer = styled.div`
+    margin: 30px;
+    max-width: 100%;
+    background-color: var(--cmarc-blue-3);
     .RecipeSeparator {
         margin-bottom: 20px;
     }
@@ -423,6 +431,19 @@ const ExpandedRecipeContainer = styled.div`
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    @media (max-width: 524px) {
+        margin: 0px;
+    }
+`
+
+const ExpandedRecipeButton = styled.div`
+    background-color: var(--cmarc-blue-1);
+    width: 100%;
+    Button {
+        margin-left: 20px;
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
 `
 
 const ExpandedRecipe = styled.div`
@@ -438,12 +459,12 @@ const ExpandedRecipe = styled.div`
         margin-bottom: 10px;
     }
     h2 {
-        padding: 15px;
+        padding: 15px 0px;
     }
     h2,h3 {
         text-align: center;
         margin-top: 0;
-        width: 100%;
+        min-width: 100%;
         background-color: white;
         color: var(--cmarc-blue-3);
     }
@@ -453,12 +474,11 @@ const ExpandedRecipe = styled.div`
 `
 
 const ExpandedRecipeInner = styled.div`
-    max-width: 90%;
     display: flex;
     flex-direction: column;
+    padding: 0px 20px 20px 20px;
     h3 {
-        
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 `
