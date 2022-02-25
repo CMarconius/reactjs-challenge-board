@@ -339,6 +339,8 @@ const RecipeSection = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
+    padding-bottom: 80px;
 `
 const RecipePreviewBox = styled.div`
     width: 120px;
@@ -426,18 +428,22 @@ const ExpandedRecipeContainer = styled.div`
         margin-bottom: 20px;
     }
     text-align: left;
-    background-color: white;
+    background-color: var(--cmarc-blue-1);
     Button {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    margin-bottom: 80px;
     @media (max-width: 524px) {
         margin: 0px;
+    }
+    @media (min-width: 524px) {
+        border: solid 4px var(--tlcb-5);
     }
 `
 
 const ExpandedRecipeButton = styled.div`
-    background-color: var(--cmarc-blue-1);
+    background: rgba(76, 175, 80, 0);
     width: 100%;
     Button {
         margin-left: 20px;
@@ -447,16 +453,16 @@ const ExpandedRecipeButton = styled.div`
 `
 
 const ExpandedRecipe = styled.div`
-    background-color: var(--cmarc-blue-1);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 90px;
-    img {
-        width: 100%;
+    padding-bottom: 0px;
+    img, h2, h3 {
+        width: calc(100% - 4px);
         margin-bottom: 10px;
+        border: solid 2px var(--tlcb-5);
     }
     h2 {
         padding: 15px 0px;
@@ -464,7 +470,6 @@ const ExpandedRecipe = styled.div`
     h2,h3 {
         text-align: center;
         margin-top: 0;
-        min-width: 100%;
         background-color: white;
         color: var(--cmarc-blue-3);
     }
