@@ -62,6 +62,7 @@ const TheLastCookBook = () => {
             <CookBookContainer>
 
                 {(expandedRecipe) ? (
+                    <>
                     <ExpandedRecipeContainer>
 
                         <ExpandedRecipe recipe={expandedRecipe}>
@@ -97,19 +98,9 @@ const TheLastCookBook = () => {
                         </ExpandedRecipe>
 
                     </ExpandedRecipeContainer>
-
+                    </>
                 ) : (
                     <>
-                    <BookModeSelector>
-
-                        <input list="items"/>
-
-                        <datalist id="items">
-                            <option value="Saved Recipes"/>
-                            <option value="Vegan Recipes"/>
-                            <option value="Add New Recipe"/>
-                        </datalist>
-                    </BookModeSelector>
                 
 
                     {(cookBookState==="addIngredient") ? ( 
@@ -181,7 +172,6 @@ const TheLastCookBook = () => {
                             })}
                     </RecipeSection>
                     </>
-
                 )}
             </CookBookContainer>
             
@@ -201,7 +191,6 @@ const CookBook = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:5px;
     input {
         box-shadow: 0px 0px 4px #888888;
     }
@@ -282,6 +271,7 @@ const BookModeSelector = styled.div`
 `
 
 const FilterSection = styled.div`
+    padding-top: 20px;
     h2 {
         font-size: 20px;
     }
@@ -375,11 +365,12 @@ const RecipePreviewImage = styled.div`
 const RecipePreviewBar = styled.div`
     width: 120px;
     max-width: 35vw;
-    height: 40px;
     min-height: fit-content;
     background-color: var(--tlcb-3);
     display: flex;
     justify-content: space-between;
+    border-top: solid 4px var(--tlcb-5);
+    align-items: center;
     h1 {
         font-size: 10px;
         margin: 0px;
@@ -388,14 +379,14 @@ const RecipePreviewBar = styled.div`
         text-align: left;
         padding-left: 5px;
         padding-right: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     img {
-        height: 100%;
         width: 20%;
     }
-    border-top: solid 4px var(--tlcb-5);
 `
-
 const CloseWindow = styled.div`
     width: 100%;
     display: flex;
@@ -421,6 +412,7 @@ const CloseWindow = styled.div`
 `
 
 const ExpandedRecipeContainer = styled.div`
+
     margin: 30px;
     max-width: 100%;
     background-color: var(--cmarc-blue-3);
@@ -438,7 +430,7 @@ const ExpandedRecipeContainer = styled.div`
         margin: 0px;
     }
     @media (min-width: 524px) {
-        border: solid 4px var(--tlcb-5);
+        border: solid 3px var(--tlcb-5);
     }
 `
 
