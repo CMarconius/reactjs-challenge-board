@@ -52,11 +52,11 @@ const TheLastCookBook = () => {
         <CookBook>
             <CookBookNavBar>
                 <h1>THE LAST COOKBOOK</h1>
-                <HamburgerBox>
+                {/* <HamburgerBox>
                     <HamburgerLine/>
                     <HamburgerLine/>
                     <HamburgerLine/>
-                </HamburgerBox>
+                </HamburgerBox> */}
             </CookBookNavBar>
 
             <CookBookContainer>
@@ -105,7 +105,6 @@ const TheLastCookBook = () => {
 
                     {(cookBookState==="addIngredient") ? ( 
                         <>
-                            
                             <FilterSection>
                                 <MyListOfIngredients>
                                     <>
@@ -129,11 +128,18 @@ const TheLastCookBook = () => {
                             </FilterSection>
                         </>
                     ) : (
-                        <>
-                            <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
-                            <h2>Select Recipe</h2>
-                        </>
-                    )
+                        (cookBookState==="addRecipe") ? ( 
+                            <>
+                            <h2>Add New Recipe</h2>
+                            </>
+                        ) : (
+                            <>
+                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
+                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addRecipe")}>Add New Recipe <i class="fa fa-plus"></i></Button>
+                                <h2>Select Recipe</h2>
+                            </>
+                        )
+                        )
                     }
 
                     <RecipeSection>
