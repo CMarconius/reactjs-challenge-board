@@ -13,7 +13,7 @@ const TheLastCookBook = () => {
     const [currentIngredient, setCurrentIngredient] = useState("")
 
     const [savedRecipes, setSavedRecipes] = useState(recipeData)
-    const images = require.context('../../../../public/images/TheLastCookBook', true);
+    const images = require.context('../../../../public/images/TheLastCookBook', true)
 
     const handleIngredientChange = (e) => {
         setCurrentIngredient(e.target.value)
@@ -24,7 +24,7 @@ const TheLastCookBook = () => {
         if (ingr !== "") {
             ingr = ingr.charAt(0).toUpperCase() + ingr.slice(1)
             if (!myIngredients.includes(ingr)) {
-                setMyIngredients([...myIngredients, ingr]);
+                setMyIngredients([...myIngredients, ingr])
                 setCurrentIngredient("")
             }
         }
@@ -45,6 +45,42 @@ const TheLastCookBook = () => {
 
     useEffect(() => {
     }, [myIngredients]);
+
+
+    //==========================//
+    // START: Adding New Recipe //
+    //==========================//
+    
+        const [addRecipeName, setAddRecipeName] = useState("")
+        function onChangeAddRecipeName(e) {
+            setAddRecipeName(e.target.value)
+        }
+        
+        const [addDescription, setAddDescription] = useState("")
+        function onChangeAddDescription(e) {
+            setAddDescription(e.target.value)
+        }
+        
+        const [addServes, setAddServes] = useState("")
+        function onChangeAddServes(e) {
+            setAddServes(e.target.value)
+        }
+
+        // "Serves"
+        // "Tags"
+        // "Ingredients"
+        // "Instructions"
+        // "ImageURL"
+
+        const resetAddRecipe = () => {
+            setAddRecipeName("")
+            setAddDescription("")
+            setAddServes("")
+        }
+
+    //==========================//
+    // END: Adding New Recipe   //
+    //==========================//
 
 
     return (
@@ -130,7 +166,24 @@ const TheLastCookBook = () => {
                     ) : (
                         (cookBookState==="addRecipe") ? ( 
                             <>
-                            <h2>Add New Recipe</h2>
+                            <FilterSection>
+                                <MyListOfIngredients>
+                                    <>
+                                        <CloseWindow><h2 onClick={() => {setCookBookState("");resetAddRecipe()}}>Reset and Close</h2></CloseWindow>
+                                        
+                                        <h2>Add New Recipe</h2>
+
+                                        <h3>Recipe Name:</h3>
+                                        <input onChange={onChangeAddRecipeName} value={addRecipeName}></input>
+
+                                        <h3>Description:</h3>
+                                        <input onChange={onChangeAddDescription} value={addDescription}></input>
+
+                                        <h3>Serves how many people:</h3>
+                                        <input onChange={onChangeAddServes} value={addServes}></input>
+                                    </>
+                                </MyListOfIngredients>
+                            </FilterSection>
                             </>
                         ) : (
                             <>
@@ -159,7 +212,7 @@ const TheLastCookBook = () => {
                                     }
                                 }
                                 
-                                if (myIngredients.length === 0 || displayed === true || cookBookState==="") {
+                                if (myIngredients.length === 0 || displayed === true || cookBookState!=="addIngredient") {
                                     return (
                                         <>
                                             <RecipePreviewBox onClick={()=>ExpandRecipe(recipe)}>
