@@ -196,39 +196,44 @@ const TheLastCookBook = () => {
                     }
 
                     <RecipeSection>
-                            {savedRecipes.map((recipe) => {
-                                let displayed = true;
-                                let currentIngredients = recipe.Ingredients;
+                            {cookBookState!=="addRecipe"?(
                                 
-                                for(let i=0;i<myIngredients.length;i++) {
-                                    let found = false;
-                                    currentIngredients.forEach((x)=>{
-                                        if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
-                                            found=true;
+                                savedRecipes.map((recipe) => {
+                                    let displayed = true;
+                                    let currentIngredients = recipe.Ingredients;
+                                    
+                                    for(let i=0;i<myIngredients.length;i++) {
+                                        let found = false;
+                                        currentIngredients.forEach((x)=>{
+                                            if (x.toLowerCase().includes(myIngredients[i].toLowerCase())){
+                                                found=true;
+                                            }
+                                        })
+                                        if(!found) {
+                                            displayed = false;
                                         }
-                                    })
-                                    if(!found) {
-                                        displayed = false;
                                     }
-                                }
+                                    
+                                    if (myIngredients.length === 0 || displayed === true || cookBookState==="") {
+                                        return (
+                                            <>
+                                                <RecipePreviewBox onClick={()=>ExpandRecipe(recipe)}>
+                                                    <RecipePreviewImage>
+                                                        <img src={images(recipe["ImageURL"]).default}/>
+                                                    </RecipePreviewImage>
+                                                    <RecipePreviewBar>
+                                                        <h1>{recipe["Recipe Name"]}</h1>
+                                                        
+                                                        <img src={chevron}/>
+                                                    </RecipePreviewBar>
+                                                </RecipePreviewBox>
+                                            </>
+                                        )
+                                    }
+                                })
                                 
-                                if (myIngredients.length === 0 || displayed === true || cookBookState!=="addIngredient") {
-                                    return (
-                                        <>
-                                            <RecipePreviewBox onClick={()=>ExpandRecipe(recipe)}>
-                                                <RecipePreviewImage>
-                                                    <img src={images(recipe["ImageURL"]).default}/>
-                                                </RecipePreviewImage>
-                                                <RecipePreviewBar>
-                                                    <h1>{recipe["Recipe Name"]}</h1>
-                                                    
-                                                    <img src={chevron}/>
-                                                </RecipePreviewBar>
-                                            </RecipePreviewBox>
-                                        </>
-                                    )
-                                }
-                            })}
+                            ):(<></>)
+                            }
                     </RecipeSection>
                     </>
                 )}
