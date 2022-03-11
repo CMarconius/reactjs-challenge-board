@@ -65,7 +65,29 @@ const TheLastCookBook = () => {
         function onChangeAddServes(e) {
             setAddServes(e.target.value)
         }
+        
+        const [addTags, setAddTags] = useState("")
+        function onChangeAddTags(e) {
+            setAddTags(e.target.value)
+        }
+        
+        const [addIngredients, setAddIngredients] = useState("")
+        function onChangeAddIngredients(e) {
+            setAddIngredients(e.target.value)
+        }
+        
+        const [addInstructions, setAddInstructions] = useState("")
+        function onChangeAddInstructions(e) {
+            setAddInstructions(e.target.value)
+        }
+        
+        const [addImage, setAddImage] = useState("")
+        function onChangeAddImage(e) {
+            setAddImage(e.target.value)
+        }
 
+        // "RecipeName"
+        // "Description"
         // "Serves"
         // "Tags"
         // "Ingredients"
@@ -76,6 +98,7 @@ const TheLastCookBook = () => {
             setAddRecipeName("")
             setAddDescription("")
             setAddServes("")
+            setAddTags("")
         }
 
     //==========================//
@@ -181,6 +204,18 @@ const TheLastCookBook = () => {
 
                                         <h3>Serves how many people:</h3>
                                         <input onChange={onChangeAddServes} value={addServes}></input>
+
+                                        <h3>Tags:</h3>
+                                        <input onChange={onChangeAddTags} value={addTags}></input>
+
+                                        <h3>Ingredients:</h3>
+                                        <input onChange={onChangeAddIngredients} value={addIngredients}></input>
+
+                                        <h3>Instructions:</h3>
+                                        <input onChange={onChangeAddInstructions} value={addInstructions}></input>
+
+                                        <h3>Image:</h3>
+                                        <input onChange={onChangeAddImage} value={addImage}></input>
                                     </>
                                 </MyListOfIngredients>
                             </FilterSection>
