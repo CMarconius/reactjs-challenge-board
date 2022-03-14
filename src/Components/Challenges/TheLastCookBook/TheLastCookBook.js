@@ -223,7 +223,7 @@ const TheLastCookBook = () => {
                         ) : (
                             <>
                                 <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addIngredient")}>Filter Recipes by Ingredients <i class="fa fa-filter"></i></Button>
-                                <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addRecipe")}>Add New Recipe <i class="fa fa-plus"></i></Button>
+                                {/* <Button buttonSize={"btn--small"}  buttonActive={true} onClick={() => setCookBookState("addRecipe")}>Add New Recipe <i class="fa fa-plus"></i></Button> */}
                                 <h2>Select Recipe</h2>
                             </>
                         )
