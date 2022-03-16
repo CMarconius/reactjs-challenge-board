@@ -14,6 +14,7 @@ const TheLastCookBook = () => {
 
     const [savedRecipes, setSavedRecipes] = useState(recipeData)
     const images = require.context('../../../../public/images/TheLastCookBook', true)
+    const compressedImages = require.context('../../../../public/images/TheLastCookBook/compressed', true)
 
     const handleIngredientChange = (e) => {
         setCurrentIngredient(e.target.value)
@@ -254,7 +255,7 @@ const TheLastCookBook = () => {
                                             <>
                                                 <RecipePreviewBox onClick={()=>ExpandRecipe(recipe)}>
                                                     <RecipePreviewImage>
-                                                        <img src={images(recipe["ImageURL"]).default}/>
+                                                        <img src={compressedImages(recipe["ImageURL"]).default}/>
                                                     </RecipePreviewImage>
                                                     <RecipePreviewBar>
                                                         <h1>{recipe["Recipe Name"]}</h1>
